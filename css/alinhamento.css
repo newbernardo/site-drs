@@ -1,0 +1,63 @@
+/* ---------- Padrão de alinhamento (herdado do bloco "verdade dura") ----------
+   Blocos autônomos: centralizados, grid + justify-items:center, text-wrap:balance,
+   largura máxima legível, ritmo vertical por tokens (--s-*).
+   Blocos lado a lado (texto + imagem) mantêm parágrafos longos à esquerda, mas títulos/etiquetas centram. */
+
+/* cabeçalhos de seção que não usavam .sec-head */
+.proof-head { text-align: center; }
+.proof-head h2 { margin-inline: auto; }
+
+/* texto corrido sempre balanceado e com medida confortável */
+.sec-head p, .closing, .band p, .vs-punch, .final-punch { text-wrap: balance; }
+.demo-intro { text-align: center; }
+.demo-body { text-align: center; text-wrap: balance; }
+
+/* virada A: rodapé do pin ("Resultado") centralizado de verdade */
+.turn-foot { justify-items: center; }
+.turn-lead { max-width: 30rem; }
+
+/* solução: "O que é" */
+.sol-is { margin-top: var(--s-9); }
+
+/* prova real: história continua em duas colunas; números, linha e fechos centralizados */
+.real-line { justify-content: center; text-align: center; }
+.stats { margin-inline: auto; }
+.stats li { text-align: center; justify-items: center; }
+.stats li > span { max-width: 12em; }
+.strip-note, .honest { text-align: center; text-wrap: balance; max-width: 40rem; margin-inline: auto; }
+.honest { margin-top: var(--s-5); }
+
+/* demonstração: etiqueta e checklist centradas */
+.demo .real-line { justify-content: center; }
+.demo .watch { width: fit-content; max-width: 100%; margin-inline: auto; grid-template-columns: repeat(3, auto); gap: var(--s-4) var(--s-7); }
+@media (max-width: 56rem) { .demo .watch { grid-template-columns: 1fr; } }
+
+/* âncora de preço: caixa centralizada */
+.anchor-box { margin-inline: auto; justify-items: center; text-align: center; }
+.anchor-box .chips { justify-content: center; }
+.anchor-q { margin-inline: auto; text-wrap: balance; }
+.anchor-sub { text-align: center; text-wrap: balance; }
+.costs { width: 100%; text-align: left; }
+
+/* garantia */
+.guar-text > h2 { text-wrap: balance; }
+.guar-copy .lead { text-wrap: balance; }
+
+/* FAQ e objeções: título centrado, lista centralizada na mesma largura */
+.faq-list { margin-inline: auto; }
+.ob-panel p { text-align: left; }
+
+/* seções com texto ao lado de mídia: texto verticalmente centrado, títulos balanceados */
+.mm-text, .fu-text, .panel-text, .story-text { align-content: center; }
+.mm-text h3, .fu-text h3, .panel-text h3, .story-text .pull { text-wrap: balance; }
+
+/* tablet/mobile: tudo centralizado, como no padrão */
+@media (max-width: 56rem) {
+  .mm-text, .fu-text, .panel-text, .story-text, .guar-text, .vs-who { justify-items: center; text-align: center; }
+  .mm-text, .fu-text, .panel-text, .story-text p, .guar-copy { margin-inline: auto; }
+  .formats { justify-content: center; }
+  .cap-head { justify-content: center; }
+  .cap-body, .callout { text-align: center; }
+  .callout .tag.pain, .callout .tag.good { justify-self: center; }
+  .stats { text-align: center; }
+}
