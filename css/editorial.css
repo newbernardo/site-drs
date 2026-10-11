@@ -57,11 +57,11 @@
 [data-theme="editorial"] .band::before { opacity: .35; }
 [data-theme="editorial"] .progress { height: 1px; }
 
-/* títulos de seção: alinhados à esquerda, com filete de revista */
+/* títulos de seção: centralizados, com filete de revista */
 [data-theme="editorial"] .sec-head { text-align: center; }
-[data-theme="editorial"] .sec-head h2 { margin-inline: 0; }
+[data-theme="editorial"] .sec-head h2 { margin-inline: auto; }
 [data-theme="editorial"] .sec-head::before { content: ""; display: block; width: 3.5rem; height: 1px; background: var(--ink); margin: 0 auto var(--s-6); }
-[data-theme="editorial"] .fu-lead, [data-theme="editorial"] .aud-lead, [data-theme="editorial"] .sec-head p { margin-inline: 0; }
+[data-theme="editorial"] .fu-lead, [data-theme="editorial"] .aud-lead, [data-theme="editorial"] .sec-head p { margin-inline: auto; }
 [data-theme="editorial"] .display { font-optical-sizing: auto; }
 [data-theme="editorial"] .display em { font-weight: 380; }
 [data-theme="editorial"] .hero-in { align-items: center; text-align: center; }

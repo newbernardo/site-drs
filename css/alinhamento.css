@@ -109,3 +109,8 @@
 .pn { font-size: var(--t-lg); letter-spacing: 0; line-height: 1; }
 .pillars h3 { margin-top: 0; font-size: var(--t-lg); max-width: 14em; }
 .pillars p { margin-top: 0; max-width: 22rem; font-size: var(--t-sm); }
+
+/* follow-up: lead centralizado e menos vazio entre o texto e o diagrama */
+.fu-lead { text-align: center; text-wrap: balance; margin: var(--s-5) auto 0; }
+.fu .sec-head { margin-bottom: var(--s-6); }
+.fu.is-pinned .fu-pin { height: auto; display: block; }

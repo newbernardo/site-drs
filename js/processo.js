@@ -99,7 +99,7 @@
             fu.classList.add("is-pinned");
             var tl = gsap.timeline({
               defaults: { ease: "none" },
-              scrollTrigger: { trigger: pin, start: "top " + nav + "px", end: function () { return "+=" + Math.round(innerHeight * 1.3); }, pin: true, scrub: .5, anticipatePin: 1, invalidateOnRefresh: true, refreshPriority: -1 }
+              scrollTrigger: { trigger: pin, start: "center center+=" + Math.round(nav / 2) + "px", end: function () { return "+=" + Math.round(innerHeight * 1.3); }, pin: true, scrub: .5, anticipatePin: 1, invalidateOnRefresh: true, refreshPriority: -1 }
             });
             evs.forEach(function (e, i) { tl.fromTo(e, { "--lit": 0 }, { "--lit": 1, duration: .6, ease: "power2.out" }, .3 + i * 1.2); });
             tl.to(st, { f: 1, duration: 7.2, onUpdate: function () { fillTo(st.f); } }, .3)
