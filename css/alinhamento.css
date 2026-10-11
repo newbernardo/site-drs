@@ -1,0 +1,111 @@
+/* ---------- Padrão de alinhamento (herdado do bloco "verdade dura") ----------
+   Blocos autônomos: centralizados, grid + justify-items:center, text-wrap:balance,
+   largura máxima legível, ritmo vertical por tokens (--s-*).
+   Blocos lado a lado (texto + imagem) mantêm parágrafos longos à esquerda, mas títulos/etiquetas centram. */
+
+/* cabeçalhos de seção que não usavam .sec-head */
+.proof-head { text-align: center; }
+.proof-head h2 { margin-inline: auto; }
+
+/* texto corrido sempre balanceado e com medida confortável */
+.sec-head p, .closing, .band p, .vs-punch, .final-punch { text-wrap: balance; }
+.demo-intro { text-align: center; }
+.demo-body { text-align: center; text-wrap: balance; }
+
+.turn-lead { max-width: 30rem; }
+
+/* solução: "O que é" */
+
+/* prova real: história continua em duas colunas; números, linha e fechos centralizados */
+.real-line { justify-content: center; text-align: center; }
+.stats { margin-inline: auto; }
+.stats li { text-align: center; justify-items: center; }
+.stats li > span { max-width: 12em; }
+.strip-note, .honest { text-align: center; text-wrap: balance; max-width: 40rem; margin-inline: auto; }
+.honest { margin-top: var(--s-5); }
+
+/* demonstração: etiqueta e checklist centradas */
+.demo .real-line { justify-content: center; }
+.demo .watch { width: fit-content; max-width: 100%; margin-inline: auto; grid-template-columns: repeat(3, auto); gap: var(--s-4) var(--s-7); }
+@media (max-width: 56rem) { .demo .watch { grid-template-columns: 1fr; } }
+
+/* âncora de preço: caixa centralizada */
+.anchor-box { margin-inline: auto; justify-items: center; text-align: center; }
+.anchor-box .chips { justify-content: center; }
+.anchor-q { margin-inline: auto; text-wrap: balance; }
+.anchor-sub { text-align: center; text-wrap: balance; }
+.costs { width: 100%; text-align: left; }
+
+/* garantia */
+.guar-text > h2 { text-wrap: balance; }
+.guar-copy .lead { text-wrap: balance; }
+
+/* FAQ e objeções: título centrado, lista centralizada na mesma largura */
+.faq-list { margin-inline: auto; }
+.ob-panel p { text-align: left; }
+
+/* seções com texto ao lado de mídia: texto verticalmente centrado, títulos balanceados */
+.mm-text, .fu-text, .panel-text, .story-text { align-content: center; }
+.mm-text h3, .fu-text h3, .panel-text h3, .story-text .pull { text-wrap: balance; }
+
+/* tablet/mobile: tudo centralizado, como no padrão */
+@media (max-width: 56rem) {
+  .mm-text, .fu-text, .panel-text, .story-text, .guar-text, .vs-who { justify-items: center; text-align: center; }
+  .mm-text, .fu-text, .panel-text, .story-text p, .guar-copy { margin-inline: auto; }
+  .formats { justify-content: center; }
+  .cap-head { justify-content: center; }
+  .cap-body, .callout { text-align: center; }
+  .callout .tag.pain, .callout .tag.good { justify-self: center; }
+  .stats { text-align: center; }
+}
+
+/* ---------- Hierarquia tipográfica ----------
+   Só o título de seção (.h2) usa a escala grande. Frases de fecho e destaques usam --t-stmt,
+   para não serem confundidos com títulos. */
+.closing, .how-close, .diff-close, .sol-close, .vs-punch, .final-punch, .band p, .pull, .anchor-sub, .honest { font-size: var(--t-stmt); line-height: 1.25; }
+.closing, .how-close, .diff-close, .sol-close, .vs-punch { max-width: 26em; margin-inline: auto; }
+.final-punch { max-width: 26em; }
+.pull { max-width: 18em; }
+.truth-big { font-size: clamp(1.9rem, 1.2rem + 3vw, 3rem); }
+
+/* ---------- Ritmo vertical ----------
+   Um único espaçamento entre seções (--sec-gap, aplicado só no topo da seção seguinte),
+   um único espaço título → conteúdo (--head-gap), um único espaço antes de frases de fecho (--close-gap). */
+.turn, .solution, .how, .diff, .spec, .mm, .fu, .pay, .pq, .uses, .proof, .offer, .anchor, .plans-section, .start, .guar, .faq {
+  padding-top: var(--sec-gap); padding-bottom: 0;
+}
+.not, .cmp, .demo { padding-top: var(--sec-gap); }
+.objs, .final { padding-block: var(--sec-gap); }
+.footer { padding-top: var(--sec-gap); }
+
+.sec-head, .proof-head, .sol-head, .turn .sec-head, .how .sec-head, .diff .sec-head, .spec .sec-head, .mm .sec-head, .pay .sec-head,
+.pq .sec-head, .uses .sec-head, .offer .sec-head, .anchor .sec-head, .plans-section .sec-head, .faq .sec-head, .demo .sec-head,
+.not .mid, .cmp .mid { margin-bottom: var(--head-gap); }
+
+.proof-dash, .scen, .truth { margin-top: var(--block-gap); }
+.truth { padding-bottom: var(--block-gap); }
+.scen:not(.is-tabs) .panel + .panel { margin-top: var(--block-gap); }
+.pillars { margin-top: var(--s-7); }
+.real-line { margin-top: var(--block-gap); }
+
+.how-close-wrap, .diff-close-wrap, .mm-close-wrap, .fu-close-wrap, .pay-close-wrap, .vs-punch-wrap { padding: var(--close-gap) 0 0; }
+.caps-wrap { padding-bottom: 0; }
+.closing, .proof .closing, .offer .closing, .sol-close, .vs-punch-wrap .vs-punch { margin-top: var(--close-gap); }
+.vs-punch-wrap { padding-top: 0; }
+.sol-close { margin-inline: auto; }
+
+/* solução: negações numa linha compacta */
+.sol-body { gap: 0; }
+.sol-lead { margin: 0; }
+.negations { grid-auto-flow: column; justify-content: center; gap: var(--s-3) var(--s-6); margin-top: var(--s-5); flex-wrap: wrap; display: flex; }
+.negations li { font-size: var(--t-base); }
+.sol-is { margin-top: var(--s-7); }
+.sol-is-text { font-size: var(--t-lg); }
+@media (max-width: 40rem) { .negations { flex-direction: column; align-items: center; } }
+
+/* pilares da solução: centralizados; número discreto, título em escala de subtítulo, texto em corpo normal */
+.pillars { gap: var(--s-6) clamp(1.5rem, 3vw, 3rem); max-width: 68rem; }
+.pillars li { padding-top: var(--s-5); text-align: center; display: grid; justify-items: center; align-content: start; gap: var(--s-3); }
+.pn { font-size: var(--t-lg); letter-spacing: 0; line-height: 1; }
+.pillars h3 { margin-top: 0; font-size: clamp(1.3rem, 1.1rem + .8vw, 1.6rem); max-width: 16em; }
+.pillars p { margin-top: 0; max-width: 24rem; font-size: var(--t-base); line-height: 1.55; }

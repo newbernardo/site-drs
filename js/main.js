@@ -115,7 +115,7 @@
       mm.add("(prefers-reduced-motion: no-preference)", function () {
         splitHeads.forEach(function (h) {
           gsap.set(h._words, { yPercent: 118 });
-          gsap.to(h._words, { yPercent: 0, duration: DRS.motion().dur * 1.2, stagger: DRS.motion().stagger, ease: DRS.motion().ease, scrollTrigger: { trigger: h, start: "top 85%", once: true } });
+          gsap.to(h._words, { yPercent: 0, duration: DRS.motion().dur * 1.2, stagger: DRS.motion().stagger, ease: DRS.motion().ease, scrollTrigger: { trigger: h, start: h.classList.contains("h2") ? "top 85%" : "top 100%", once: true } });
         });
       });
     }

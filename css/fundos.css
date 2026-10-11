@@ -1,0 +1,54 @@
+/* ---------- Ritmo de fundos ----------
+   Seções alternam entre fundo base, claro/escuro de contraste, verde e tom suave, para a página ganhar ritmo.
+   Cada faixa só redefine os tokens de cor: todo o conteúdo dentro se adapta sozinho.
+   Sequência: hero · problema · oportunidade+solução (verde) · como · diferencial (suave) · especialista · multimídia ·
+   follow-up · pagamentos (suave) · público · casos · prova · oferta · custo (suave) · planos · começar · GARANTIA (verde) ·
+   FAQ · objeções (suave) · final (escuro). */
+
+/* respiro: seções sem faixa usam meio espaço; seções com faixa usam o espaço inteiro dentro do próprio fundo */
+.turn, .solution, .how, .diff, .spec, .mm, .fu, .pay, .pq, .uses, .proof, .offer, .anchor, .plans-section, .start, .guar, .faq {
+  padding-block: calc(var(--sec-gap) / 2);
+}
+.fx { padding-block: var(--sec-gap); background: var(--bg); color: var(--ink); }
+.turn.fx { padding-bottom: 0; }
+.solution.fx { padding-top: calc(var(--sec-gap) / 2); }
+
+/* ---- escuro de contraste ---- */
+:root:not([data-theme="editorial"]) .band-dark {
+  --bg: oklch(.1 .006 165); --bg-raised: oklch(.15 .008 165); --bg-sunken: oklch(.08 .005 165);
+  --line: oklch(1 0 0 / .08); --line-strong: oklch(1 0 0 / .15);
+}
+[data-theme="editorial"] .band-dark {
+  --bg: oklch(.2 .015 70); --bg-raised: oklch(.25 .015 70); --bg-sunken: oklch(.17 .012 70);
+  --line: oklch(1 0 0 / .12); --line-strong: oklch(1 0 0 / .24);
+  --ink: oklch(.96 .01 85); --ink-2: oklch(.82 .012 85); --ink-3: oklch(.7 .012 85);
+  --accent: oklch(.82 .14 150); --accent-ink: oklch(.18 .03 150); --accent-soft: oklch(.82 .14 150 / .16); --accent-glow: oklch(.82 .14 150 / .25);
+  --em-color: var(--accent); --danger: oklch(.74 .15 28); --danger-soft: oklch(.74 .15 28 / .18);
+  --bubble-in: oklch(.3 .015 70); --bubble-out: oklch(.82 .14 150 / .18);
+  --shadow-panel: 0 2px 4px oklch(0 0 0 / .3), 0 24px 60px -12px oklch(0 0 0 / .6);
+}
+
+/* ---- verde (a promessa) ---- */
+:root:not([data-theme="editorial"]) .band-green {
+  --bg: oklch(.2 .045 160); --bg-raised: oklch(.245 .05 160); --bg-sunken: oklch(.17 .04 160);
+  --line: oklch(1 0 0 / .1); --line-strong: oklch(1 0 0 / .2);
+  --bubble-in: oklch(.3 .04 160);
+}
+[data-theme="editorial"] .band-green {
+  --bg: oklch(.27 .06 155); --bg-raised: oklch(.32 .06 155); --bg-sunken: oklch(.23 .055 155);
+  --line: oklch(1 0 0 / .14); --line-strong: oklch(1 0 0 / .28);
+  --ink: oklch(.97 .012 120); --ink-2: oklch(.85 .02 140); --ink-3: oklch(.74 .025 145);
+  --accent: oklch(.86 .15 145); --accent-ink: oklch(.2 .04 155); --accent-soft: oklch(.86 .15 145 / .16); --accent-glow: oklch(.86 .15 145 / .25);
+  --em-color: var(--accent); --danger: oklch(.78 .14 30); --danger-soft: oklch(.78 .14 30 / .2);
+  --bubble-in: oklch(.38 .05 155); --bubble-out: oklch(.86 .15 145 / .2);
+  --shadow-panel: 0 2px 4px oklch(0 0 0 / .25), 0 24px 60px -12px oklch(0 0 0 / .5);
+}
+
+/* ---- tom suave ---- */
+:root:not([data-theme="editorial"]) .band-tint { --bg: oklch(.175 .012 165); --bg-raised: oklch(.215 .014 165); --bg-sunken: oklch(.15 .01 165); }
+[data-theme="editorial"] .band-tint { --bg: oklch(.925 .018 85); --bg-raised: oklch(.985 .008 85); --bg-sunken: oklch(.9 .02 85); }
+
+/* detalhes que usavam cores fixas */
+[data-theme="editorial"] .band-dark .phone, [data-theme="editorial"] .band-green .phone { background: var(--bg-sunken); border-color: var(--line-strong); }
+[data-theme="editorial"] .band-dark .pic, [data-theme="editorial"] .band-dark .shot-frame { filter: none; }
+.fx .wake { z-index: 0; }

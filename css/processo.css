@@ -75,3 +75,6 @@
 .order-s { font-size: var(--t-xs); font-weight: 600; color: var(--accent); background: var(--accent-soft); border-radius: .5rem; padding: .35rem .6rem; }
 .pay-close-wrap { padding: var(--s-9) 0 var(--s-10); }
 @media (max-width: 56rem) { .panel { grid-template-columns: 1fr; } .tabs button { font-size: .8125rem; padding: .4rem .3rem; } }
+
+/* dica acima das abas */
+.scen-hint { margin: 0 auto var(--s-4); text-align: center; text-wrap: balance; font-size: var(--t-lg); font-weight: 600; color: var(--accent); }
