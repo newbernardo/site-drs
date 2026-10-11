@@ -7,7 +7,7 @@ Convenções: **negrito** = ênfase da copy original. `[IMG: …]` = alt text da
 
 ## META
 - **Title:** DRS | DirectResponse Scale — Agentes de IA que vendem no WhatsApp
-- **Description:** Escale suas vendas no WhatsApp com agentes de IA especialistas em venda. Funis prontos, follow-up automático, confirmação de pagamento e entrega — sem programar e sem depender de agências.
+- **Description:** Escale seu negócio no WhatsApp com agentes de IA especializados em venda direta. Funis prontos, follow-up automático, confirmação de pagamento e entrega — sem programar e sem depender de agências.
 - **Mensagem WhatsApp (CTA geral):** "Olá! Quero escalar as minhas vendas no WhatsApp com o DRS."
 - **Mensagem WhatsApp (CTA por plano):** "Olá! Quero começar com o plano {Start|Scale|Pro} do DRS."
 
@@ -18,7 +18,7 @@ Convenções: **negrito** = ênfase da copy original. `[IMG: …]` = alt text da
 ---
 
 ## 1. HERO
-**H1:** Escale suas vendas no WhatsApp com **agentes de IA** **especializados em vendas**
+**H1:** Escale seu negócio no WhatsApp com **agentes de IA** **especializados em venda direta**
 
 **Subhead:** Agentes treinados com **metodologias**, **técnicas de persuasão**, **tratamento de objeções** e **estratégias de follow-up** para conduzir cada conversa até a compra de forma autónoma.
 
