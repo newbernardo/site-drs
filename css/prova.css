@@ -61,3 +61,8 @@
 .band::before { content: ""; position: absolute; inset: auto 0 0 0; height: 60%; background: radial-gradient(60% 100% at 50% 100%, var(--accent-glow), transparent 70%); pointer-events: none; }
 .band p { position: relative; max-width: 24em; margin-inline: auto; font-size: clamp(1.6rem, 1.1rem + 2.2vw, 3rem); }
 @media (max-width: 56rem) { .watch { grid-template-columns: 1fr; } .fph-nodes { flex-direction: column; align-items: stretch; } .fph-nodes li { flex-direction: column; align-items: flex-start; } .fph-nodes li:not(:last-child)::after { width: 2px; height: 1rem; flex: none; margin: .2rem 0 .2rem 1.5rem; } }
+
+/* painel real da prova */
+.pdash { margin: 0; }
+.pdash .shot-frame { position: relative; border-radius: var(--radius-l); overflow: hidden; background: var(--bg-raised); border: 1px solid var(--line-strong); box-shadow: var(--shadow-panel); }
+.pdash-img { display: block; width: 100%; height: auto; }
