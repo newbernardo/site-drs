@@ -33,6 +33,7 @@
           DRS.chat.reveal(tl, tracks[1], ag[4], 4.9);
           DRS.chat.reveal(tl, tracks[1], ag[5], 5.5);
           tl.fromTo(ag[5], { scale: .94 }, { scale: 1, duration: .5, ease: "back.out(3)" }, 5.5);
+          DRS.chat.reveal(tl, tracks[1], ag[6], 6.5, { typing: .55, typingEl: ty[2] });
         }
 
         /* ---- multimídia ---- */

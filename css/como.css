@@ -92,3 +92,8 @@
 /* com pin: as duas imagens cabem na altura da tela e ficam estáticas */
 .how.is-pinned .how-visual { width: 100%; max-width: calc((100svh - var(--nav-h) - 3rem - 4rem) / 2 * 1.75); margin-inline: auto; }
 .how-img:last-child img { aspect-ratio: 1376 / 600; object-position: 50% 62%; }
+
+/* celular (usado em Especialista, Multimídia e Pagamentos) */
+.phone { position: relative; width: min(17.5rem, 100%); height: min(35rem, calc(100svh - var(--nav-h) - 9rem)); min-height: 24rem; padding: .55rem; border-radius: 2.2rem; background: var(--bg-sunken); border: 1px solid var(--line-strong); box-shadow: var(--shadow-panel); }
+.phone-screen { position: relative; height: 100%; border-radius: 1.7rem; overflow: hidden; background: var(--bg-raised); }
+.phone .chat { border: 0; border-radius: 0; font-size: .8125rem; }
