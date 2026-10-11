@@ -14,10 +14,6 @@
 .solution.fx { padding-top: calc(var(--sec-gap) / 2); }
 
 /* ---- escuro de contraste ---- */
-:root:not([data-theme="editorial"]) .band-dark {
-  --bg: oklch(.1 .006 165); --bg-raised: oklch(.15 .008 165); --bg-sunken: oklch(.08 .005 165);
-  --line: oklch(1 0 0 / .08); --line-strong: oklch(1 0 0 / .15);
-}
 [data-theme="editorial"] .band-dark {
   --bg: oklch(.2 .015 70); --bg-raised: oklch(.25 .015 70); --bg-sunken: oklch(.17 .012 70);
   --line: oklch(1 0 0 / .12); --line-strong: oklch(1 0 0 / .24);
@@ -29,11 +25,6 @@
 }
 
 /* ---- verde (a promessa) ---- */
-:root:not([data-theme="editorial"]) .band-green {
-  --bg: oklch(.2 .045 160); --bg-raised: oklch(.245 .05 160); --bg-sunken: oklch(.17 .04 160);
-  --line: oklch(1 0 0 / .1); --line-strong: oklch(1 0 0 / .2);
-  --bubble-in: oklch(.3 .04 160);
-}
 [data-theme="editorial"] .band-green {
   --bg: oklch(.27 .06 155); --bg-raised: oklch(.32 .06 155); --bg-sunken: oklch(.23 .055 155);
   --line: oklch(1 0 0 / .14); --line-strong: oklch(1 0 0 / .28);
@@ -45,7 +36,6 @@
 }
 
 /* ---- tom suave ---- */
-:root:not([data-theme="editorial"]) .band-tint { --bg: oklch(.175 .012 165); --bg-raised: oklch(.215 .014 165); --bg-sunken: oklch(.15 .01 165); }
 [data-theme="editorial"] .band-tint { --bg: oklch(.925 .018 85); --bg-raised: oklch(.985 .008 85); --bg-sunken: oklch(.9 .02 85); }
 
 /* detalhes que usavam cores fixas */
