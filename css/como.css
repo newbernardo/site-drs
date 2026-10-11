@@ -3,7 +3,7 @@
    Com pin (classe .is-pinned): só o passo ativo abre, o celular conta a história em scrub. */
 .how { position: relative; padding-top: var(--s-9); }
 .how .sec-head { margin-bottom: var(--s-8); }
-.how-stage { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+.how-stage { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: clamp(2rem, 6vw, 6rem); align-items: center; }
 
 /* trilho de passos */
 .steps { position: relative; display: grid; gap: var(--s-2); --fill: 1; }
@@ -34,14 +34,10 @@
 .how.is-pinned .step.is-active .step-node { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); box-shadow: 0 0 0 .45rem var(--accent-soft); }
 @media (hover: hover) { .how.is-pinned .step:not(.is-active) .step-btn:hover h3, .how.is-pinned .step:not(.is-active) .step-btn:hover { color: var(--ink); } }
 
-/* celular */
-.how-phone { position: relative; display: grid; justify-items: center; gap: var(--s-4); margin-bottom: 1.4rem; }
-.phone-who { font-size: var(--t-sm); font-weight: 600; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: .3rem .9rem; min-width: 10rem; text-align: center; }
-.phone { position: relative; width: min(17.5rem, 100%); height: min(35rem, calc(100svh - var(--nav-h) - 9rem)); min-height: 24rem; padding: .55rem; border-radius: 2.2rem; background: var(--bg-sunken); border: 1px solid var(--line-strong); box-shadow: var(--shadow-panel); }
-.phone-screen { position: relative; height: 100%; border-radius: 1.7rem; overflow: hidden; background: var(--bg-raised); }
-.phone .chat { border: 0; border-radius: 0; font-size: .8125rem; }
-.phone-note { position: absolute; left: 50%; bottom: -1.1rem; translate: -50% 0; display: inline-flex; align-items: center; gap: .45rem; white-space: nowrap; font-size: var(--t-xs); font-weight: 560; color: var(--ink); background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 999px; padding: .35rem .8rem; box-shadow: var(--shadow-panel); }
-.phone-note svg { width: .95rem; height: .95rem; color: var(--accent); }
+/* imagens à direita: escura em cima, clara embaixo */
+.how-visual { display: grid; gap: var(--s-5); align-content: center; }
+.how-img { margin: 0; border-radius: var(--radius-l); overflow: hidden; border: 1px solid var(--line-strong); box-shadow: var(--shadow-panel); background: var(--bg-raised); }
+.how-img img { width: 100%; height: auto; aspect-ratio: 1344 / 768; object-fit: cover; }
 
 /* balões extras do chat */
 .chat-typing { display: inline-flex; gap: .22rem; padding: .55rem .7rem; border-radius: .75rem; background: var(--bubble-in); border: 1px solid var(--line); }
@@ -66,16 +62,6 @@
 .file-ic { display: grid; place-items: center; width: 2rem; height: 2.4rem; border-radius: .4rem; background: var(--bg-sunken); color: var(--accent); flex: none; }
 .file-ic svg { width: 1.2rem; height: 1.2rem; }
 .file-t { display: grid; line-height: 1.25; } .file-t small { color: var(--ink-3); font-size: .6875rem; }
-
-/* cena do anúncio (só aparece com o pin ligado) */
-.scene-ad { position: absolute; inset: 0; z-index: 4; display: none; flex-direction: column; gap: .8rem; padding: 1rem; background: var(--bg-raised); }
-.ad-head { display: flex; align-items: center; gap: .6rem; }
-.ad-copy { font-size: .875rem; color: var(--ink); }
-.ad-cover { flex: 1; min-height: 0; display: grid; place-items: center; border-radius: var(--radius-m); background: linear-gradient(160deg, var(--accent-soft), var(--bg-sunken)); border: 1px solid var(--line); }
-.ad-cover svg { height: 78%; max-height: 14rem; }
-.bk { fill: var(--bg-raised); stroke: var(--accent); stroke-width: 2; } .bk-spine { fill: var(--accent); opacity: .7; } .bk-line { fill: var(--line-strong); } .bk-seal { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; }
-.ad-cta { display: flex; align-items: center; justify-content: center; gap: .5rem; height: 2.6rem; border-radius: .6rem; background: var(--accent); color: var(--accent-ink); font-weight: 600; font-size: .875rem; }
-.ad-cta svg { width: 1.1rem; height: 1.1rem; }
 
 .how-close-wrap { padding: var(--s-9) 0 var(--s-10); text-align: center; }
 .how-close { font-size: clamp(1.9rem, 1.2rem + 3vw, 3.6rem); max-width: 18em; margin-inline: auto; }
