@@ -1,6 +1,6 @@
 /* BLOCOS 8 e 9 · PÚBLICO, CASOS DE USO E COMPARATIVO
    Ícones animados (SVG + GSAP) que rodam só quando visíveis; fluxos dos casos acendem nó a nó;
-   comparativo risca "sem sistema" e marca "com o DRS" linha a linha.
+   comparativo marca "com o DRS" linha a linha.
    Reduzido/sem JS: tudo estático e visível. */
 (function () {
   var DRS = (window.DRS = window.DRS || {});
@@ -48,12 +48,10 @@
         var rows = $$("[data-row]");
         if (rows.length) {
           var no = rows.map(function (r) { return $(".cmp-no", r); }), ck = rows.map(function (r) { return $(".cmp-yes svg", r); }), yes = rows.map(function (r) { return $(".cmp-yes .cmp-t", r); });
-          gsap.set(no, { "--strike": 0 }); gsap.set(ck, { scale: 0 }); gsap.set(yes, { opacity: .35, x: -6 });
+          gsap.set(ck, { scale: 0 }); gsap.set(yes, { opacity: .35, x: -6 });
           var tl = gsap.timeline({ scrollTrigger: { trigger: $("[data-cmp] .cmp-list"), start: "top 80%", once: true } });
           rows.forEach(function (r, i) {
-            tl.fromTo(no[i], { "--strike": 0 }, { "--strike": 1, duration: .5, ease: "power2.inOut" }, i * .4)
-              .to(no[i], { opacity: .55, duration: .4 }, i * .4 + .3)
-              .to(ck[i], { scale: 1, duration: .45, ease: "back.out(3)" }, i * .4 + .35)
+            tl.to(ck[i], { scale: 1, duration: .45, ease: "back.out(3)" }, i * .4 + .35)
               .to(yes[i], { opacity: 1, x: 0, duration: .5, ease: "expo.out" }, i * .4 + .35);
           });
         }
