@@ -103,14 +103,9 @@
 .sol-is-text { font-size: var(--t-lg); }
 @media (max-width: 40rem) { .negations { flex-direction: column; align-items: center; } }
 
-/* pilares da solução: centralizados e compactos; número pequeno, título em escala de subtítulo */
-.pillars { gap: var(--s-6) clamp(1.5rem, 3vw, 3rem); max-width: 64rem; }
+/* pilares da solução: centralizados; número discreto, título em escala de subtítulo, texto em corpo normal */
+.pillars { gap: var(--s-6) clamp(1.5rem, 3vw, 3rem); max-width: 68rem; }
 .pillars li { padding-top: var(--s-5); text-align: center; display: grid; justify-items: center; align-content: start; gap: var(--s-3); }
 .pn { font-size: var(--t-lg); letter-spacing: 0; line-height: 1; }
-.pillars h3 { margin-top: 0; font-size: var(--t-lg); max-width: 14em; }
-.pillars p { margin-top: 0; max-width: 22rem; font-size: var(--t-sm); }
-
-/* follow-up: lead centralizado e menos vazio entre o texto e o diagrama */
-.fu-lead { text-align: center; text-wrap: balance; margin: var(--s-5) auto 0; }
-.fu .sec-head { margin-bottom: var(--s-6); }
-.fu.is-pinned .fu-pin { height: auto; display: block; }
+.pillars h3 { margin-top: 0; font-size: clamp(1.3rem, 1.1rem + .8vw, 1.6rem); max-width: 16em; }
+.pillars p { margin-top: 0; max-width: 24rem; font-size: var(--t-base); line-height: 1.55; }
