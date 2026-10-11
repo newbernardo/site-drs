@@ -20,6 +20,11 @@
   --s-1: .25rem; --s-2: .5rem; --s-3: .75rem; --s-4: 1rem; --s-5: 1.5rem;
   --s-6: 2rem; --s-7: 3rem; --s-8: 4.5rem; --s-9: 7rem; --s-10: 10rem;
   --gutter: clamp(1.25rem, 4vw, 3rem);
+  /* ritmo vertical único do site */
+  --sec-gap: clamp(4rem, 3rem + 4vw, 6.5rem);   /* entre seções */
+  --head-gap: var(--s-7);                       /* título da seção → conteúdo */
+  --block-gap: var(--s-8);                      /* entre blocos dentro de uma seção */
+  --close-gap: var(--s-7);                      /* conteúdo → frase de fecho */
   --wrap: 76rem;
   --wrap-narrow: 46rem;
 
