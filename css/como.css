@@ -77,3 +77,6 @@
   .how.is-pinned .step { padding-bottom: 0; }
   .how.is-pinned .step h3 { font-size: 1.25rem; }
 }
+
+/* com pin: as duas imagens cabem na altura da tela e ficam estáticas */
+.how.is-pinned .how-visual { width: 100%; max-width: calc((100svh - var(--nav-h) - 3rem - var(--s-5)) / 2 * 1.75); margin-inline: auto; }
