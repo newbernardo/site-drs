@@ -35,7 +35,7 @@
 @media (hover: hover) { .how.is-pinned .step:not(.is-active) .step-btn:hover h3, .how.is-pinned .step:not(.is-active) .step-btn:hover { color: var(--ink); } }
 
 /* imagens à direita: escura em cima, clara embaixo */
-.how-visual { display: grid; gap: var(--s-5); align-content: center; }
+.how-visual { display: grid; justify-items: stretch; gap: 0; align-content: center; }
 .how-img { margin: 0; border-radius: var(--radius-l); overflow: hidden; border: 1px solid var(--line-strong); box-shadow: var(--shadow-panel); background: var(--bg-raised); }
 .how-img img { width: 100%; height: auto; aspect-ratio: 1344 / 768; object-fit: cover; }
 
@@ -78,5 +78,10 @@
   .how.is-pinned .step h3 { font-size: 1.25rem; }
 }
 
+/* ligação entre as imagens: o fio enche com o progresso dos passos, como um fluxo que continua */
+.how-link { position: relative; justify-self: center; width: 2px; height: var(--s-7); background: linear-gradient(to bottom, var(--accent) calc(var(--fill, 1) * 100%), var(--line-strong) 0); }
+.how-link::after { content: ""; position: absolute; left: 50%; bottom: -.3rem; width: .6rem; height: .6rem; translate: -50% 0; rotate: 45deg; border-right: 2px solid var(--accent); border-bottom: 2px solid var(--accent); }
+
 /* com pin: as duas imagens cabem na altura da tela e ficam estáticas */
-.how.is-pinned .how-visual { width: 100%; max-width: calc((100svh - var(--nav-h) - 3rem - var(--s-5)) / 2 * 1.75); margin-inline: auto; }
+.how.is-pinned .how-visual { width: 100%; max-width: calc((100svh - var(--nav-h) - 3rem - var(--s-7)) / 2 * 1.75); margin-inline: auto; }
+.how-img:last-child img { aspect-ratio: 1376 / 600; object-position: 50% 62%; }

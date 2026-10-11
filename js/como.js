@@ -31,7 +31,8 @@
           },
           onUpdate: function () {
             var t = tl.time(), idx = Math.min(4, Math.floor(t / 2));
-            steps_el.style.setProperty("--fill", Math.min(1, Math.max(0, t / (END - 1))));
+            var f = Math.min(1, Math.max(0, t / (END - 1)));
+            steps_el.style.setProperty("--fill", f); sec.style.setProperty("--fill", f);
             if (idx !== lastIdx) { lastIdx = idx; setStep(idx); }
           }
         });
@@ -54,7 +55,7 @@
           sec.classList.remove("is-pinned");
           offs.forEach(function (f) { f(); });
           steps.forEach(function (s) { s.classList.remove("is-active", "is-done"); });
-          steps_el.style.removeProperty("--fill");
+          steps_el.style.removeProperty("--fill"); sec.style.removeProperty("--fill");
         };
       });
     }
