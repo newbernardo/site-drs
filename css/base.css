@@ -79,29 +79,6 @@ html { caret-color: var(--accent); scrollbar-color: var(--line-strong) var(--bg)
   @keyframes progress { to { transform: scaleX(1); } }
 }
 
-/* ---------- seletor de tema (discreto; aparece depois do hero) ---------- */
-.theme-pill {
-  position: fixed; left: var(--gutter); bottom: 1.25rem; z-index: var(--z-ui);
-  display: inline-flex; padding: 3px; border-radius: 999px;
-  background: var(--nav-bg); border: 1px solid var(--line-strong);
-  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
-  font-size: var(--t-xs); font-weight: 560;
-  opacity: 0; transform: translateY(12px); visibility: hidden;
-  transition: opacity var(--d-slow) var(--ease-out), transform var(--d-slow) var(--ease-out), visibility 0s linear var(--d-slow);
-}
-.theme-pill.is-visible { opacity: 1; transform: none; visibility: visible; transition-delay: 0s; }
-.theme-pill button { position: relative; z-index: 1; min-height: 2rem; padding: 0 .9rem; border-radius: 999px; color: var(--ink-3); transition: color var(--d-base) ease; }
-.theme-pill button[aria-pressed="true"] { color: var(--accent-ink); }
-.theme-pill .thumb { position: absolute; z-index: 0; top: 3px; bottom: 3px; left: 3px; border-radius: 999px; background: var(--accent); transition: transform var(--d-slow) var(--ease-out), width var(--d-slow) var(--ease-out); }
-@media (pointer: coarse) { .theme-pill button { min-height: 2.75rem; padding: 0 1.1rem; } }
-
-/* some enquanto uma seção fixada (pin) está ativa, para não cobrir o conteúdo; a tecla T continua valendo */
-.pin-on .theme-pill.is-visible { opacity: 0; transform: translateY(12px); pointer-events: none; }
-
-/* transição de tema (View Transitions) */
-::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
-.theme-fade, .theme-fade * { transition: background-color .35s ease, color .35s ease, border-color .35s ease, fill .35s ease !important; }
-
 footer.stub { padding: var(--s-9) 0 var(--s-10); color: var(--ink-3); font-size: var(--t-sm); }
 
 /* ---------- cabeçalhos de seção ---------- */

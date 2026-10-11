@@ -10,6 +10,5 @@ html.js .hero-title:not(.is-ready) { visibility: hidden; animation: show-fallbac
   html { scroll-behavior: auto; }
   .hero-bg::before, .hero-bg::after { animation: none; }
   .btn-primary::after { display: none; }
-  .theme-pill, .theme-pill * { transition-duration: .01ms !important; }
 }
 .hero-bg.is-off::before, .hero-bg.is-off::after { animation-play-state: paused; }
