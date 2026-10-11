@@ -1,8 +1,7 @@
 /* BLOCO 7 · O PROCESSO NÃO PARA
-   Follow-up: diagrama de duas faixas (Cliente / Sistema) que acende evento a evento, preso ao scroll (pin ≤ 1,3× a viewport);
-   "Compra" fecha com um pulso. Pagamentos: abas animadas para os 3 cenários; cada aba roda uma conversa
+   Follow-up: diagrama de duas faixas (Cliente / Sistema), estático. Pagamentos: abas animadas para os 3 cenários; cada aba roda uma conversa
    (comprovativo → confirmação → entrega / dados → processo de envio no painel do vendedor).
-   Reduzido/sem JS: diagrama aceso; os 3 cenários aparecem um abaixo do outro, completos. */
+   Reduzido/sem JS: os 3 cenários aparecem um abaixo do outro, completos. */
 (function () {
   var DRS = (window.DRS = window.DRS || {});
   var fu = document.getElementById("follow-up"), scen = document.querySelector("[data-scen]");
@@ -87,30 +86,6 @@
   DRS.blocks.processo = {
     mount: function (mm) {
       /* diagrama do follow-up, preso ao scroll */
-      if (fu) {
-        var evs = $$(".ev", fu), seq = $("[data-seq]", fu), fillTo = function (v) { seq.style.setProperty("--fill", v); };
-        mm.add({
-          full: "(prefers-reduced-motion: no-preference) and (min-width: 900px) and (min-height: 600px)",
-          flow: "(prefers-reduced-motion: no-preference) and ((max-width: 899px) or (max-height: 599px))"
-        }, function (ctx) {
-          gsap.set(evs, { "--lit": 0 }); fillTo(0);
-          if (ctx.conditions.full) {
-            var pin = $("[data-fu-pin]", fu), nav = parseFloat(getComputedStyle(document.documentElement).fontSize) * 4.25, st = { f: 0 };
-            fu.classList.add("is-pinned");
-            var tl = gsap.timeline({
-              defaults: { ease: "none" },
-              scrollTrigger: { trigger: pin, start: "center center+=" + Math.round(nav / 2) + "px", end: function () { return "+=" + Math.round(innerHeight * 1.3); }, pin: true, scrub: .5, anticipatePin: 1, invalidateOnRefresh: true, refreshPriority: -1 }
-            });
-            evs.forEach(function (e, i) { tl.fromTo(e, { "--lit": 0 }, { "--lit": 1, duration: .6, ease: "power2.out" }, .3 + i * 1.2); });
-            tl.to(st, { f: 1, duration: 7.2, onUpdate: function () { fillTo(st.f); } }, .3)
-              .fromTo(evs[evs.length - 1], { scale: 1 }, { scale: 1.08, duration: .5, ease: "back.out(3)" }, 7.5)
-              .set({}, {}, 9);
-            return function () { fu.classList.remove("is-pinned"); fillTo(1); };
-          }
-          evs.forEach(function (e) { gsap.fromTo(e, { "--lit": 0 }, { "--lit": 1, duration: .7, ease: "power2.out", scrollTrigger: { trigger: e, start: "top 85%", once: true } }); });
-          gsap.to(seq, { "--fill": 1, ease: "none", scrollTrigger: { trigger: seq, start: "top 75%", end: "bottom 60%", scrub: true } });
-        });
-      }
       /* cenários: toca o primeiro quando a seção entra na tela */
       if (scen) {
         mm.add("(prefers-reduced-motion: no-preference)", function () {
