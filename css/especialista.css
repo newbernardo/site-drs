@@ -73,3 +73,6 @@ mark.hl2 { background: var(--accent-soft); color: inherit; padding: .05em .25em;
   .mm-stage { grid-template-columns: 1fr; }
 }
 .vs-who { min-height: 7.25rem; align-content: start; }
+
+/* celular do chatbot: borda levemente avermelhada */
+.vs-col.bot .phone { border-color: color-mix(in oklab, var(--danger) 55%, var(--line-strong)); background: color-mix(in oklab, var(--danger) 14%, var(--bg-sunken)); }
