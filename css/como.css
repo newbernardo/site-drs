@@ -78,10 +78,17 @@
   .how.is-pinned .step h3 { font-size: 1.25rem; }
 }
 
-/* ligação entre as imagens: o fio enche com o progresso dos passos, como um fluxo que continua */
-.how-link { position: relative; justify-self: center; width: 2px; height: var(--s-7); background: linear-gradient(to bottom, var(--accent) calc(var(--fill, 1) * 100%), var(--line-strong) 0); }
-.how-link::after { content: ""; position: absolute; left: 50%; bottom: -.3rem; width: .6rem; height: .6rem; translate: -50% 0; rotate: 45deg; border-right: 2px solid var(--accent); border-bottom: 2px solid var(--accent); }
+/* seta entre as imagens: desce pela direita, atravessa e entra pela esquerda; pulsos de luz percorrem o trajeto */
+.how-link { --link-h: 4rem; position: relative; display: block; width: 100%; height: var(--link-h); }
+.how-link svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.how-link path { fill: none; vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; }
+.hl-base { stroke: var(--line-strong); stroke-width: 2; }
+.hl-flow { stroke: var(--accent); stroke-width: 3; stroke-dasharray: 10 400; stroke-dashoffset: 10; filter: drop-shadow(0 0 4px var(--accent)); animation: hl-run 2.8s cubic-bezier(.45,.05,.55,.95) infinite; }
+.hl-flow-2 { animation-delay: -1.4s; }
+@keyframes hl-run { from { stroke-dashoffset: 10; } to { stroke-dashoffset: -110; } }
+.how-link::after { content: ""; position: absolute; left: 14%; bottom: 1px; width: .75rem; height: .75rem; translate: -50% 0; rotate: 45deg; border-right: 2px solid var(--accent); border-bottom: 2px solid var(--accent); }
+@media (prefers-reduced-motion: reduce) { .hl-flow { animation: none; stroke-dasharray: none; stroke: var(--accent); filter: none; stroke-width: 2; } .hl-flow-2 { display: none; } }
 
 /* com pin: as duas imagens cabem na altura da tela e ficam estáticas */
-.how.is-pinned .how-visual { width: 100%; max-width: calc((100svh - var(--nav-h) - 3rem - var(--s-7)) / 2 * 1.75); margin-inline: auto; }
+.how.is-pinned .how-visual { width: 100%; max-width: calc((100svh - var(--nav-h) - 3rem - 4rem) / 2 * 1.75); margin-inline: auto; }
 .how-img:last-child img { aspect-ratio: 1376 / 600; object-position: 50% 62%; }
