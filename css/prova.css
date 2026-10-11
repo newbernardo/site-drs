@@ -7,7 +7,7 @@
 .pic-ph { position: absolute; inset: 0; display: grid; place-items: center; background: linear-gradient(160deg, var(--accent-soft), var(--bg-sunken)); }
 .pic-ph svg { width: 55%; fill: none; stroke: var(--ink-3); stroke-width: 2; stroke-linecap: round; opacity: .6; }
 .pic-tag { position: absolute; top: .8rem; left: .8rem; z-index: 3; padding: .15rem .6rem; border: 1px dashed var(--line-strong); border-radius: 999px; font-size: .6875rem; color: var(--ink-3); background: var(--bg-raised); }
-.pic-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; pointer-events: none; transition: opacity var(--d-slow) ease; z-index: 2; }
+.pic-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; opacity: 0; pointer-events: none; transition: opacity var(--d-slow) ease; z-index: 2; }
 .pic.has-img .pic-img { opacity: 1; } .pic.has-img .pic-tag { display: none; }
 .story-text { display: grid; gap: var(--s-6); }
 .pull { font-size: clamp(1.9rem, 1.2rem + 2.6vw, 3.4rem); max-width: 14em; }
