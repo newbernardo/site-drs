@@ -29,6 +29,7 @@
   --t-base: clamp(1rem, .96rem + .2vw, 1.125rem);
   --t-lg: clamp(1.15rem, 1.05rem + .5vw, 1.4rem);
   --t-h3: clamp(1.4rem, 1.2rem + 1vw, 2rem);
+  --t-stmt: clamp(1.4rem, 1.15rem + 1.1vw, 1.9rem); /* frases de fecho: claramente abaixo do título de seção */
   --t-h2: clamp(2rem, 1.4rem + 3vw, 3.75rem);
   --t-h1: clamp(2.4rem, 1.2rem + 5.2vw, 4.9rem);
 

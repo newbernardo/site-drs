@@ -4,46 +4,30 @@
 .turn .sec-head { margin-bottom: var(--s-8); }
 .turn .sec-head h2 { max-width: 22em; margin-inline: auto; }
 .turn .sec-head { text-align: center; }
-.turn-stage { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "right left" "foot foot"; gap: var(--s-7) clamp(2rem, 6vw, 6rem); align-items: start; max-width: 56rem; margin-inline: auto; }
-.turn-left { grid-area: left; }
-.turn-right { grid-area: right; }
-.turn-foot { grid-area: foot; display: grid; gap: var(--s-6); justify-items: left; text-align: center; padding-top: var(--s-6); }
-.turn-lead { font-size: var(--t-lg); color: var(--ink-2); max-width: 30rem; text-wrap: pretty; margin-bottom: var(--s-6); }
+.turn-body { display: grid; justify-items: center; gap: var(--s-6); max-width: 60rem; text-align: center; }
+.turn-lead { font-size: var(--t-lg); color: var(--ink-2); max-width: 36rem; text-wrap: balance; }
 
-.nots { display: grid; gap: var(--s-4); }
-.nots li { --lit: 1; display: flex; align-items: center; gap: var(--s-4); font-family: var(--font-display); font-weight: var(--display-weight); letter-spacing: -.02em; font-size: clamp(1.15rem, min(1rem + 1.1vw, 3.4vh), 1.9rem); line-height: 1.15;
-  color: color-mix(in oklab, var(--ink-3) calc((1 - var(--lit)) * 100%), var(--ink) calc(var(--lit) * 100%)); }
-.nots li b { font-weight: inherit; color: inherit; }
-.nots li span { text-wrap: balance; }
-.nots li > span { color: color-mix(in oklab, var(--ink-3) calc((1 - var(--lit)) * 100%), var(--ink-2) calc(var(--lit) * 100%)); }
-.nots li span b { color: color-mix(in oklab, var(--ink-3) calc((1 - var(--lit)) * 100%), var(--ink) calc(var(--lit) * 100%)); }
-.nots svg { flex: none; width: 2.1rem; height: 2.1rem; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-.nots svg circle { stroke: color-mix(in oklab, var(--line-strong) calc((1 - var(--lit)) * 100%), var(--accent) calc(var(--lit) * 100%)); stroke-width: 1.5; fill: color-mix(in oklab, transparent calc((1 - var(--lit)) * 100%), var(--accent-soft) calc(var(--lit) * 100%)); }
-.nots svg path { stroke: var(--accent); stroke-width: 2; stroke-dasharray: 1; stroke-dashoffset: calc(1 - var(--lit)); }
+.nots { width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-4); }
+.nots li { display: flex; align-items: center; justify-content: center; gap: var(--s-3); padding: var(--s-5) var(--s-4); text-align: left; border-radius: var(--radius-m); background: var(--accent-soft); border-left: 3px solid var(--accent); font-weight: 560; font-size: var(--t-base); line-height: 1.25; color: var(--ink-2); }
+.nots li b { color: var(--ink); font-weight: 700; }
+.nots svg { flex: none; width: 1.75rem; height: 1.75rem; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.nots svg circle { fill: var(--accent); stroke: none; }
+.nots svg path { stroke: var(--accent-ink); stroke-width: 2.2; }
 
-.turn-does { font-size: clamp(2rem, min(1.4rem + 3vw, 6.5vh), 3.75rem); color: var(--ink-3); margin-bottom: var(--s-5); }
-.chain { position: relative; display: grid; gap: var(--s-4); padding-left: 2.25rem; --fill: 1; }
-.chain::before, .chain::after { content: ""; position: absolute; left: .5625rem; top: .9rem; bottom: .9rem; width: 2px; border-radius: 2px; }
-.chain::before { background: var(--line-strong); }
-.chain::after { background: var(--accent); transform-origin: 50% 0; transform: scaleY(var(--fill)); }
-.chain li { --lit: 1; position: relative; font-family: var(--font-display); font-weight: var(--display-weight); letter-spacing: -.02em; font-size: clamp(1.15rem, min(1.05rem + 1.1vw, 3.1vh), 2rem); line-height: 1.2;
-  color: color-mix(in oklab, var(--ink-3) calc((1 - var(--lit)) * 100%), var(--ink) calc(var(--lit) * 100%)); }
-.chain .v { display: inline-block; transform: translateX(calc(var(--lit) * .4rem)); }
-.chain .node { position: absolute; left: -2.25rem; top: .45em; width: 1.2rem; height: 1.2rem; border-radius: 50%; box-sizing: border-box; z-index: 1;
-  background: color-mix(in oklab, var(--bg) calc((1 - var(--lit)) * 100%), var(--accent) calc(var(--lit) * 100%));
-  border: 2px solid color-mix(in oklab, var(--line-strong) calc((1 - var(--lit)) * 100%), var(--accent) calc(var(--lit) * 100%));
-  box-shadow: 0 0 0 calc(var(--lit) * .35rem) var(--accent-soft); }
-
+.turn-does { margin-top: var(--s-4); font-size: var(--t-sm); font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-3); }
+.chain { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s-3); }
+.chain li { display: inline-flex; align-items: center; gap: var(--s-3); padding: var(--s-3) var(--s-5); border-radius: var(--radius-m); background: var(--bg-raised); border: 1px solid var(--line-strong); font-weight: 560; font-size: var(--t-base); color: var(--ink); }
+.chain li::after { content: "→"; color: var(--accent); }
 .turn-pro { font-size: var(--t-lg); color: var(--ink-2); }
-.turn-result { display: flex; align-items: center; gap: var(--s-4); flex-wrap: wrap; justify-content: center; }
-.turn-result p { font-size: var(--t-lg); max-width: none; margin: 0; }
-.tag { flex: none; font-size: .75rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: .2rem .75rem; align-self: center; }
-.turn.is-pinned .turn-pin { height: calc(100svh - var(--nav-h)); display: grid; align-items: center; }
-.turn.is-pinned .turn-stage { align-items: center; gap: var(--s-6) clamp(2rem, 6vw, 6rem); }
-.turn.is-pinned .turn-foot { padding-top: var(--s-5); gap: var(--s-4); }
 
-@media (max-width: 56rem) {
-  .turn-stage { grid-template-columns: 1fr; grid-template-areas: "left" "right" "foot"; gap: var(--s-8); }
+.turn-result { width: 100%; margin-top: var(--s-6); padding: var(--s-7) var(--s-5); display: grid; justify-items: center; gap: var(--s-4); border-radius: var(--radius-l); background: var(--bg-sunken); border: 1px solid var(--line-strong); }
+.turn-result p { font-family: var(--font-display); font-weight: var(--display-weight); letter-spacing: var(--display-tracking); line-height: 1.2; font-size: var(--t-stmt); text-wrap: balance; max-width: 24em; }
+.turn-result em { font-style: var(--em-style); color: var(--em-color); }
+.tag { flex: none; font-size: .75rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: .2rem .75rem; }
+
+@media (max-width: 40rem) {
+  .nots { grid-template-columns: 1fr; }
+  .chain li::after { display: none; }
 }
 
 /* ---------- parte B: solução ---------- */

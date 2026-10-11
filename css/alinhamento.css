@@ -12,8 +12,6 @@
 .demo-intro { text-align: center; }
 .demo-body { text-align: center; text-wrap: balance; }
 
-/* virada A: rodapé do pin ("Resultado") centralizado de verdade */
-.turn-foot { justify-items: center; }
 .turn-lead { max-width: 30rem; }
 
 /* solução: "O que é" */
@@ -61,3 +59,12 @@
   .callout .tag.pain, .callout .tag.good { justify-self: center; }
   .stats { text-align: center; }
 }
+
+/* ---------- Hierarquia tipográfica ----------
+   Só o título de seção (.h2) usa a escala grande. Frases de fecho e destaques usam --t-stmt,
+   para não serem confundidos com títulos. */
+.closing, .sol-close, .vs-punch, .final-punch, .band p, .pull, .anchor-sub, .honest { font-size: var(--t-stmt); line-height: 1.25; }
+.closing, .sol-close, .vs-punch { max-width: 26em; margin-inline: auto; }
+.final-punch { max-width: 26em; }
+.pull { max-width: 18em; }
+.truth-big { font-size: clamp(1.9rem, 1.2rem + 3vw, 3rem); }
