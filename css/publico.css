@@ -6,7 +6,8 @@
 .aud-card { position: relative; display: grid; gap: var(--s-4); align-content: start; padding-top: var(--s-6); border-top: 1px solid var(--line-strong); }
 .aud-card::before { content: ""; position: absolute; left: 0; top: -1px; width: 3.5rem; height: 2px; background: var(--accent); transition: width .8s var(--ease-out); }
 @media (hover: hover) { .aud-card:hover::before { width: 100%; } }
-.aud-ico { width: 6.5rem; height: 6.5rem; fill: none; stroke-linecap: round; stroke-linejoin: round; margin-bottom: var(--s-3); }
+.aud-img { margin: 0 0 var(--s-3); border-radius: 1rem; overflow: hidden; border: 1px solid var(--line); }
+.aud-img img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
 .ic-body { fill: var(--bg-raised); stroke: var(--line-strong); stroke-width: 2; }
 .ic-line, .ic-line2 { fill: var(--line-strong); stroke: none; } .ic-line2 { fill: none; stroke: var(--line-strong); stroke-width: 2; }
 .ic-cover { fill: var(--accent-soft); stroke: none; }
