@@ -1,0 +1,99 @@
+/* Tema C: Editorial / Autoridade. Camada de tokens sobre a mesma estrutura.
+   (Fase 3b: aqui entram também as sobreposições de layout. Por ora, só tokens.) */
+:root[data-theme="editorial"] {
+  color-scheme: light;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --display-weight: 420;
+  --display-tracking: -.02em;
+  --display-leading: 1.06;
+  --display-style: normal;
+
+  --bg: oklch(.965 .012 85);
+  --bg-raised: oklch(.99 .006 85);
+  --bg-sunken: oklch(.93 .014 85);
+  --line: oklch(.2 .02 85 / .14);
+  --line-strong: oklch(.2 .02 85 / .28);
+
+  --ink: oklch(.22 .02 70);
+  --ink-2: oklch(.38 .02 70);
+  --ink-3: oklch(.48 .02 70);
+
+  --accent: oklch(.42 .12 155);
+  --accent-ink: oklch(.98 .01 85);
+  --accent-soft: oklch(.42 .12 155 / .1);
+  --accent-glow: oklch(.42 .12 155 / .12);
+  --danger: oklch(.5 .17 28);
+  --danger-soft: oklch(.5 .17 28 / .12);
+  --bubble-in: oklch(1 0 0);
+  --bubble-out: oklch(.42 .12 155 / .14);
+  --em-style: italic;
+  --em-color: var(--accent);
+
+  --radius-s: .125rem; --radius-m: .25rem; --radius-l: .375rem;
+  --shadow-panel: 0 1px 2px oklch(.2 .02 70 / .1), 0 24px 50px -20px oklch(.2 .02 70 / .3);
+  --nav-bg: oklch(.965 .012 85 / .82);
+
+  --m-dur: 1.15s;
+  --m-ease: "power3.out";
+  --m-stagger: .07;
+}
+
+/* ======================================================================
+   TEMA EDITORIAL: sobreposições de camada (mesma estrutura, outra voz)
+   Papel quente, serifa nos títulos, filetes em vez de brilhos, imagens como revista.
+   ====================================================================== */
+:root[data-theme="editorial"] {
+  --t-h1: clamp(2.5rem, 1.2rem + 5vw, 4.6rem);
+  --wrap: 72rem;
+}
+:root[data-theme="editorial"] body { font-size: clamp(1.0625rem, 1rem + .25vw, 1.1875rem); line-height: 1.7; }
+
+/* luz de neon some; fica papel */
+[data-theme="editorial"] .hero-bg::before { opacity: .35; }
+[data-theme="editorial"] .hero-bg::after { display: none; }
+[data-theme="editorial"] .wake { opacity: .25 !important; }
+[data-theme="editorial"] .final-glow { opacity: .35; }
+[data-theme="editorial"] .band::before { opacity: .35; }
+[data-theme="editorial"] .progress { height: 1px; }
+
+/* títulos de seção: alinhados à esquerda, com filete de revista */
+[data-theme="editorial"] .sec-head { text-align: center; }
+[data-theme="editorial"] .sec-head h2 { margin-inline: 0; }
+[data-theme="editorial"] .sec-head::before { content: ""; display: block; width: 3.5rem; height: 1px; background: var(--ink); margin: 0 auto var(--s-6); }
+[data-theme="editorial"] .fu-lead, [data-theme="editorial"] .aud-lead, [data-theme="editorial"] .sec-head p { margin-inline: 0; }
+[data-theme="editorial"] .display { font-optical-sizing: auto; }
+[data-theme="editorial"] .display em { font-weight: 380; }
+[data-theme="editorial"] .hero-in { align-items: center; text-align: center; }
+[data-theme="editorial"] .hero-cta { align-items: center; }
+[data-theme="editorial"] .hero-title { max-width: 22em; margin-inline: auto; }
+[data-theme="editorial"] .hero-sub { max-width: 44rem; margin-inline: auto; text-align: center; }
+
+/* superfícies: papel e tinta, sem sombra de neon */
+[data-theme="editorial"] .btn { border-radius: var(--radius-s); letter-spacing: 0; }
+[data-theme="editorial"] .btn-primary { box-shadow: none; }
+[data-theme="editorial"] .btn-primary::after { display: none; }
+[data-theme="editorial"] .shot-frame, [data-theme="editorial"] .phone, [data-theme="editorial"] .pcard-in, [data-theme="editorial"] .order, [data-theme="editorial"] .plan, [data-theme="editorial"] .callout, [data-theme="editorial"] .band, [data-theme="editorial"] .pic { box-shadow: 0 1px 0 var(--line), 0 18px 40px -28px oklch(.2 .02 70 / .35); }
+[data-theme="editorial"] .phone { border-radius: 1.6rem; background: oklch(.9 .012 85); }
+[data-theme="editorial"] .phone-screen { border-radius: 1.2rem; }
+[data-theme="editorial"] .plan.feat { background: var(--bg-raised); box-shadow: 0 0 0 1px var(--accent) inset, 0 24px 50px -30px var(--accent-glow); }
+[data-theme="editorial"] .tag, [data-theme="editorial"] .vs-tag, [data-theme="editorial"] .vsf-tag { letter-spacing: .08em; }
+[data-theme="editorial"] mark.mk, [data-theme="editorial"] mark.hl2 { background: color-mix(in oklab, var(--accent) 12%, transparent); }
+[data-theme="editorial"] .hl { background: linear-gradient(var(--danger-soft), var(--danger-soft)) 0 92% / 100% .45em no-repeat; }
+[data-theme="editorial"] .pic, [data-theme="editorial"] .shot-frame { filter: contrast(.98) saturate(.92); }
+[data-theme="editorial"] .pic { border-radius: var(--radius-s); }
+
+/* texto corrido: capitular na história do fundador e nas páginas legais */
+[data-theme="editorial"] .story-text p:nth-child(2)::first-letter,
+[data-theme="editorial"] .doc h1 + .doc-meta + p::first-letter { font-family: var(--font-display); float: left; font-size: 3.6em; line-height: .85; padding: .05em .1em 0 0; color: var(--accent); }
+[data-theme="editorial"] .pull { font-style: normal; }
+
+/* faixa final escura (contraste editorial) */
+[data-theme="editorial"] .final {
+  --bg: oklch(.2 .015 70); --bg-raised: oklch(.25 .015 70); --bg-sunken: oklch(.17 .012 70);
+  --line: oklch(1 0 0 / .12); --line-strong: oklch(1 0 0 / .24);
+  --ink: oklch(.96 .01 85); --ink-2: oklch(.82 .012 85); --ink-3: oklch(.7 .012 85);
+  --accent: oklch(.82 .14 150); --accent-ink: oklch(.18 .03 150); --accent-soft: oklch(.82 .14 150 / .16); --accent-glow: oklch(.82 .14 150 / .25);
+  --em-color: var(--accent); --danger: oklch(.74 .15 28); --danger-soft: oklch(.74 .15 28 / .18);
+  background: var(--bg); color: var(--ink);
+}

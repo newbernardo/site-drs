@@ -1,0 +1,1124 @@
+<!doctype html>
+<html lang="pt" data-theme="premium">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DRS | DirectResponse Scale — Agentes de IA que vendem no WhatsApp</title>
+<meta name="description" content="Escale suas vendas no WhatsApp com agentes de IA especialistas em venda. Funis prontos, follow-up automático, confirmação de pagamento e entrega — sem programar e sem depender de agências.">
+<meta name="color-scheme" content="dark light">
+<!-- Tema antes da primeira pintura: ?theme= > localStorage > premium. Sem flash. -->
+<script>
+(function () {
+  var d = document.documentElement, t = null;
+  try { var q = new URLSearchParams(location.search).get("theme"); if (q === "premium" || q === "editorial") { t = q; localStorage.setItem("drs-theme", q); } } catch (e) {}
+  try { if (!t) t = localStorage.getItem("drs-theme"); } catch (e) {}
+  if (t === "premium" || t === "editorial") d.setAttribute("data-theme", t);
+  d.classList.add("js");
+})();
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 28 28%27%3E%3Crect width=%2728%27 height=%2728%27 rx=%278%27 fill=%27%2338e08c%27/%3E%3Cpath d=%27M8 19.5 13 13.5l3.2 3L21 9.5M16.5 9.5H21V14%27 fill=%27none%27 stroke=%27%23062414%27 stroke-width=%272.2%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/premium.css">
+<link rel="stylesheet" href="css/editorial.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" href="css/vignettes.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/virada.css">
+<link rel="stylesheet" href="css/como.css">
+<link rel="stylesheet" href="css/diferencial.css">
+<link rel="stylesheet" href="css/fecho.css">
+<link rel="stylesheet" href="css/oferta.css">
+<link rel="stylesheet" href="css/prova.css">
+<link rel="stylesheet" href="css/publico.css">
+<link rel="stylesheet" href="css/processo.css">
+<link rel="stylesheet" href="css/especialista.css">
+<link rel="stylesheet" href="css/motion.css">
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav" data-nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#topo" aria-label="DRS — DirectResponse Scale">
+      <svg class="logo-mark" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="8" fill="var(--accent)"/><path d="M8 19.5 13 13.5l3.2 3L21 9.5M16.5 9.5H21V14" fill="none" stroke="var(--accent-ink)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <b>DRS</b><span>DirectResponse Scale</span>
+    </a>
+    <a class="btn btn-ghost btn-sm" href="#entrar">Login do Assinante</a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- ===== 1. HERO ===== -->
+<section class="hero" id="hero" data-section="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <h1 class="hero-title display" data-split>Escale suas vendas no WhatsApp com <span class="hl-a">agentes de IA</span> <span class="hl-b">especializados em vendas</span></h1>
+    <p class="hero-sub" data-hero-sub>Agentes treinados com <mark class="mk">metodologias</mark>, <mark class="mk">técnicas de persuasão</mark>, <mark class="mk">tratamento de objeções</mark> e <mark class="mk">estratégias de follow-up</mark> para conduzir cada conversa até a compra de forma autónoma.</p>
+    <div class="hero-cta" data-hero-cta>
+      <div class="hero-cta-row">
+        <a class="btn btn-primary" href="#planos" data-cta>Quero escalar sem limites
+          
+        </a>
+        <a class="btn btn-ghost" href="#problema">Ver o que resolvemos
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <span class="microcopy">Não precisa construir Workflows nem depender mais de agências</span>
+    </div>
+  </div>
+
+  <div class="wrap hero-shot-wrap">
+    <figure class="shot hero-shot" data-shot aria-label="Painel do DRS com receita, vendas e taxa de conversão">
+      <div class="shot-frame" data-glow>
+        <div class="shot-bar"><i></i><i></i><i></i><span>Painel</span><span class="shot-tag">Imagem real a fornecer</span></div>
+        <img class="shot-img" data-asset="hero-dashboard" data-src="assets/media/hero-dashboard.png" alt="Painel do DRS com receita, vendas e taxa de conversão" width="1901" height="1032" loading="eager" decoding="async">
+      </div>
+    </figure>
+  </div>
+  <div class="hero-fade" aria-hidden="true"></div>
+</section>
+
+<!-- ===== 2. O PROBLEMA ===== -->
+<section class="problem" id="problema" data-section="problema">
+ <div class="wrap problem-head">
+    <div class="problem-head-left">
+      <p class="problem-lead" data-reveal>Você faz anúncios para WhatsApp mas fica limitado na hora de escalar?</p>
+      <h2 class="h2 display" data-split-reveal>Você não tem problema de leads. Tem problema de sistema, <em>veja...</em></h2>
+    </div>
+  </div>
+
+  <div class="problem-pin" data-pin>
+    <div class="wrap problem-stage">
+      <ol class="stack" data-stack>
+
+        <!-- PROBLEMA 1 -->
+        <li class="pcard" data-card>
+          <article class="pcard-in">
+            <div class="pcard-text">
+              <h3><span class="sr-only">Problema 1: </span><span class="ul-err">Você não sabe onde as vendas se perdem</span></h3>
+              <p>Você não sabe quantos leads <b>ENTRAM</b>, quantos <b>AVANÇAM</b>, quantos <b>PARAM</b>, nem <em>PORQUÊ</em>. As conversas acontecem, mas não há um sistema que mostre o que está a funcionar e o que está a falhar.</p>
+              <p>Sem visibilidade, <b class="r">NÃO</b> há decisão assertiva.</p>
+            </div>
+            <div class="vig" data-vig="funil" role="img" aria-label="Funil de vendas que vaza: leads entram, poucos avançam, a maioria escapa pelos lados e ninguém sabe porquê">
+              <span class="vig-tag">Problema 1</span>
+              <svg viewBox="0 0 380 270" aria-hidden="true" focusable="false">
+                <g class="funnel-shape">
+                  <polygon points="80,40 340,40 290,100 130,100"/>
+                  <polygon points="135,112 285,112 260,164 160,164"/>
+                  <polygon points="165,176 255,176 240,220 180,220"/>
+                </g>
+                <g class="funnel-labels">
+                  <line x1="58" y1="69" x2="100" y2="69"/><text x="8" y="72">entram</text>
+                  <line x1="58" y1="139" x2="142" y2="139"/><text x="8" y="142">avançam</text>
+                  <line x1="58" y1="199" x2="166" y2="199"/><text x="8" y="202">param</text>
+                </g>
+                <g class="pose">
+                  <circle class="d-ok" cx="205" cy="62" r="4"/><circle class="d-ok" cx="224" cy="82" r="4"/>
+                  <circle class="d-ok" cx="200" cy="138" r="4"/><circle class="d-ok" cx="214" cy="196" r="4"/>
+                  <circle class="d-leak" cx="300" cy="110" r="4"/><circle class="d-leak" cx="322" cy="146" r="4"/><circle class="d-leak" cx="334" cy="188" r="4"/>
+                  <circle class="d-leak" cx="116" cy="112" r="4"/><circle class="d-leak" cx="108" cy="156" r="4"/>
+                </g>
+                <g class="anim"></g>
+                <g class="funnel-q">
+                  <circle class="q-ring" cx="210" cy="246" r="14"/>
+                  <text class="q-mark" x="210" y="252" text-anchor="middle">?</text>
+                </g>
+              </svg>
+            </div>
+          </article>
+        </li>
+
+        <!-- PROBLEMA 2 -->
+        <li class="pcard" data-card>
+          <article class="pcard-in">
+            <div class="pcard-text">
+              <h3><span class="sr-only">Problema 2: </span><span class="ul-err">O seu WhatsApp bloqueia quando o número de leads cresce</span></h3>
+              <p>À medida que o volume cresce, o seu WhatsApp começa a dar sinais. <b><em class="r">BLOQUEIOS</em>, <em class="r">LIMITAÇÕES</em> e, por fim, <span class="r">BANIMENTO</span>.</b></p>
+              <p>Você perde <span class="hl2"><b>o canal que MAIS vende</b></span> — e com ele, perde <mark class="hl2"><b>clientes que já estavam a caminho da compra.</b></mark></p>            </div>
+            <div class="vig vig-img" role="img" aria-label="Telemóvel com o aviso “Esta conta não pode usar o WhatsApp”">
+              <span class="vig-tag">Problema 2</span>
+              <img class="vig-img-el" data-asset="problema-2" data-src="assets/media/problema-2-whatsapp-bloqueado.png" alt="WhatsApp bloqueado por excesso de leads" width="1200" height="960" loading="lazy" decoding="async">
+            </div>
+          </article>
+        </li>
+
+        <!-- PROBLEMA 3 -->
+        <li class="pcard" data-card>
+          <article class="pcard-in">
+            <div class="pcard-text">
+              <h3><span class="sr-only">Problema 3: </span><span class="ul-err">A sua automação é genérica e inconsistente</span></h3>
+              <p>Pior que atender <b>MANUALMENTE</b> é instalar uma <em class="r">automação genérica e inconsistente.</em> Em vez de ajudar, <b>ATRAPALHA</b> — porque essas automações <b>não seguem um funil de vendas <span class="hl2">ESTRUTURADO</span>.</b></p>
+            </div>
+            <div class="vig" data-vig="loop" role="img" aria-label="Cliente frustrado a ver um chatbot repetir o mesmo menu de opções em vez de responder">
+              <span class="vig-tag">Problema 3</span>
+              <div class="chat" aria-hidden="true">
+                <div class="chat-head"><span class="chat-av">B</span><div class="chat-who"><b>Atendimento</b><small class="on">online</small></div>
+                  <span class="chat-aside"><svg class="loop-ico" viewBox="0 0 24 24" width="16" height="16"><path d="M20 12a8 8 0 1 1-2.6-5.9M20 4v4.5h-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-count>menu ×3</span></span></div>
+                <div class="chat-body">
+                  <div class="chat-track" data-track>
+                    <p class="msg out">Quanto custa?</p>
+                    <div class="msg in">Olá! Escolha uma opção:<span class="menu"><span>1 · Vendas</span><span>2 · Suporte</span><span>3 · Outros</span></span></div>
+                    <p class="msg out hot">Só quero saber o preço.</p>
+                    <div class="msg in">Olá! Escolha uma opção:<span class="menu"><span>1 · Vendas</span><span>2 · Suporte</span><span>3 · Outros</span></span></div>
+                    <p class="msg out hot">Alô??</p>
+                    <div class="msg in">Olá! Escolha uma opção:<span class="menu"><span>1 · Vendas</span><span>2 · Suporte</span><span>3 · Outros</span></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <!-- PROBLEMA 4 -->
+        <li class="pcard" data-card>
+          <article class="pcard-in">
+            <div class="pcard-text">
+              <h3><span class="sr-only">Problema 4: </span><span class="ul-err">Você perde vendas no silêncio</span></h3>
+              <p><b><em>VOCÊ NÃO TEM UM SISTEMA DE FOLLOW-UP.</em></b> A maioria das vendas <b class="r">não acontece na <span class="up">PRIMEIRA</span> conversa.</b> <mark class="hl2">Acontece na segunda, terceira ou quarta.</mark> Mas o seu negócio <b class="r">descarta logo esses clientes</b>, perdendo vendas porque não há <b>SEQUÊNCIA</b>, não há <b>RETOMA</b>, não há <b>SEGUNDO CONTACTO</b>.</p>
+              <p>O cliente <b><em>ESFRIA</em></b>, <b><em>ESQUECE</em></b> e compra de outro. Você <b>NÃO</b> perdeu a venda <b>NO INÍCIO</b> — <b class="r">perdeu-a <span class="up">NO SILÊNCIO.</span></b></p>
+            </div>
+            <div class="vig vig-img" role="img" aria-label="Cliente que escreve “vou pensar depois” e fica sem retorno">
+              <span class="vig-tag">Problema 4</span>
+              <img class="vig-img-el" data-asset="problema-4" data-src="assets/media/problema-4-silencio.png" alt="Venda perdida no silêncio por falta de follow-up" width="1200" height="960" loading="lazy" decoding="async">
+            </div>
+          </article>
+        </li>
+      </ol>
+
+      <div class="pdots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+
+      <div class="truth" data-truth>
+        <p class="truth-pre">E aqui está a verdade dura: enquanto não resolver isto, o seu negócio <span class="r">vai continuar preso no mesmo volume.</span></p>
+        <p class="truth-big" data-truth-big><span>Não por falta de leads.</span><span>Por falta de <em>sistema.</em></span></p>
+        <p class="truth-post">E cada mês que passa é mais um mês no mesmo lugar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. A VIRADA · parte A: a nova oportunidade ===== -->
+<section class="turn" id="oportunidade" data-section="virada">
+  <div class="wrap sec-head">
+    <h2 class="h2 display" data-split-reveal>E se existisse um sistema que <em>vendesse por você</em>, e lhe entregasse relatórios completos de todas as etapas do funil?</h2>
+  </div>
+
+  <div class="turn-pin" data-turn-pin>
+    <div class="wrap turn-stage">
+      <div class="turn-left">
+        <p class="turn-lead">Um sistema que trabalha no seu WhatsApp como uma <mark class="mk">equipa de vendas</mark> — mas que:</p>
+        <ul class="nots">
+          <li data-not><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"/><path d="M7.5 12.5l3 3 6-7" pathLength="1"/></svg><span><b>NÃO PARA</b></span></li>
+          <li data-not><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"/><path d="M7.5 12.5l3 3 6-7" pathLength="1"/></svg><span><b>NÃO SE ESQUECE</b></span></li>
+          <li data-not><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"/><path d="M7.5 12.5l3 3 6-7" pathLength="1"/></svg><span><b>NÃO DEPENDE</b> de intervenção manual</span></li>
+        </ul>
+      </div>
+
+      <div class="turn-right">
+        <p class="turn-does display">Ele…</p>
+        <ol class="chain" data-chain aria-label="Ele atende, qualifica, apresenta, responde objeções, conduz para o pagamento, faz follow-up e processa a venda">
+          <li><span class="node"></span><span class="v">Atende</span></li>
+          <li><span class="node"></span><span class="v">Qualifica</span></li>
+          <li><span class="node"></span><span class="v">Apresenta</span></li>
+          <li><span class="node"></span><span class="v">Responde objeções</span></li>
+          <li><span class="node"></span><span class="v">Conduz para o pagamento</span></li>
+          <li><span class="node"></span><span class="v">Faz follow-up</span></li>
+          <li><span class="node"></span><span class="v">Processa a venda</span></li>
+        </ol>
+      </div>
+
+      <div class="turn-foot">
+        <div class="turn-result">
+          <span class="tag">Resultado</span>
+          <p class="display">Enquanto você cuida do negócio, <em>ele cuida das vendas.</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. A VIRADA · parte B: apresentação da solução ===== -->
+<section class="solution" id="solucao">
+  <div class="wake" aria-hidden="true"></div>
+  <div class="wrap sec-head sol-head">
+    <h2 class="h2 display" data-split-reveal>O sistema que você acabou de imaginar existe. Chama-se <em>DRS | DirectResponse Scale</em>.</h2>
+  </div>
+
+  <div class="wrap sol-body">
+    <p class="sol-lead">Uma solução diferente de tudo o que você já viu:</p>
+    <ul class="negations">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Não é <span class="neg">um chatbot</span>.</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Não é <span class="neg">um construtor de workflows</span>.</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Não é <span class="neg">uma IA que só responde perguntas</span>.</span></li>
+    </ul>
+
+    <p class="sol-is"><span class="tag good">O que é</span><span class="sol-is-text">É um sistema <mark class="mk">completo de vendas</mark> que combina:</span></p>
+
+    <ol class="pillars" data-pillars>
+      <li>
+       <span class="pn">01</span>
+        <h3>Funis de alta conversão</h3>
+        <p>Que se adaptam ao seu produto <span class="g">sem precisar construir nenhum <mark class="mk">workflow</mark>.</span></p>
+      </li>
+      <li>
+        <span class="pn">02</span>
+        <h3>Agentes de IA especializados em vendas</h3>
+        <p>Treinados para <b>atender, persuadir, quebrar objeções</b> e <span class="g">conduzir à compra.</span></p>
+      </li>
+      <li>
+        <span class="pn">03</span>
+        <h3>Automação de follow-up, pagamento e entrega</h3>
+        <p>Para que <b>nenhuma venda se perca no silêncio</b> e <span class="g">nenhum processo dependa de você.</span></p>
+      </li>
+    </ol>
+
+    <p class="sol-close display" data-split-reveal>Desde a primeira mensagem até a venda realizada — <em>sem depender de você.</em></p>
+  </div>
+</section>
+
+<!-- ===== 4. COMO FUNCIONA ===== -->
+<section class="how" id="como-funciona" data-section="como-funciona">
+  <div class="wrap sec-head">
+    <h2 class="h2 display" data-split-reveal>Como o DRS transforma <em>tráfego em vendas</em></h2>
+  </div>
+
+  <div class="how-pin" data-how-pin>
+    <div class="wrap how-stage">
+
+      <ol class="steps" data-steps>
+        <li class="step" data-step>
+          <span class="step-node" aria-hidden="true">1</span>
+          <div class="step-body">
+            <h3><button type="button" class="step-btn"><span class="sr-only">Passo 1: </span>Você Anuncia</button></h3>
+            <div class="step-more"><div class="step-more-in">
+              <p class="who">Quem faz: Você</p>
+              <p>Crie os seus <b>anúncios no Facebook e Instagram</b> e envie <mark class="mk">o tráfego diretamente para o WhatsApp.</mark></p>
+            </div></div>
+          </div>
+        </li>
+        <li class="step" data-step>
+          <span class="step-node" aria-hidden="true">2</span>
+          <div class="step-body">
+            <h3><button type="button" class="step-btn"><span class="sr-only">Passo 2: </span>O Agente Atende e Qualifica</button></h3>
+            <div class="step-more"><div class="step-more-in">
+              <p class="who sys">Quem faz: O sistema</p>
+              <p>O potencial cliente <b>entra na conversa</b> e o agente inicia automaticamente o atendimento. <mark class="mk">Entende</mark> <span class="g">o interesse e o perfil do cliente</span> e faz <mark class="mk">as perguntas certas</mark> para <b>iniciar o funil</b>.</p>
+            </div></div>
+          </div>
+        </li>
+        <li class="step" data-step>
+          <span class="step-node" aria-hidden="true">3</span>
+          <div class="step-body">
+            <h3><button type="button" class="step-btn"><span class="sr-only">Passo 3: </span>O Agente Vende</button></h3>
+            <div class="step-more"><div class="step-more-in">
+              <p class="who sys">Quem faz: O sistema</p>
+              <p>O agente <b>apresenta o produto</b>, <b>responde a dúvidas</b>, <b>trabalha objeções</b> e <mark class="mk">conduz a conversa até à decisão de compra</mark> — com <span class="g">metodologia, persuasão e contexto.</span></p>
+            </div></div>
+          </div>
+        </li>
+        <li class="step" data-step>
+          <span class="step-node" aria-hidden="true">4</span>
+          <div class="step-body">
+            <h3><button type="button" class="step-btn"><span class="sr-only">Passo 4: </span>O Cliente Paga</button></h3>
+            <div class="step-more"><div class="step-more-in">
+              <p class="who sys">Quem faz: O sistema</p>
+              <p>O sistema <b>apresenta os métodos de pagamento</b>, <mark class="mk">orienta o cliente</mark>, <b>recebe o comprovativo</b> e <b>processa a confirmação</b> — <span class="g">sem intervenção manual.</span></p>
+            </div></div>
+          </div>
+        </li>
+        <li class="step" data-step>
+          <span class="step-node" aria-hidden="true">5</span>
+          <div class="step-body">
+            <h3><button type="button" class="step-btn"><span class="sr-only">Passo 5: </span>O Produto é Entregue e o Sistema Continua</button></h3>
+            <div class="step-more"><div class="step-more-in">
+              <p class="who sys">Quem faz: O sistema</p>
+              <p>Para <b>produtos digitais</b>, <mark class="mk">a entrega acontece automaticamente</mark> após a confirmação. E se o cliente <span class="r">não comprar de imediato</span>, o sistema <b>ativa os follow-ups</b> configurados no funil — para <span class="g">recuperar vendas que, de outra forma, se perderiam no silêncio.</span></p>
+            </div></div>
+          </div>
+        </li>
+      </ol>
+
+      <div class="how-phone" data-phone aria-hidden="true">
+        <p class="phone-who" data-who><span data-who-label>Quem faz: O sistema</span></p>
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="chat" data-chat>
+              <div class="chat-head"><span class="chat-av">C</span><div class="chat-who"><b>Cliente</b><small class="on">online</small></div></div>
+              <div class="chat-body">
+                <div class="chat-track" data-track>
+                  <p class="msg in" data-m>Olá! Vi o anúncio do e-book.</p>
+                  <div class="chat-typing out" data-ty><i></i><i></i><i></i></div>
+                  <p class="msg out" data-m>Olá! Posso ajudar. O e-book é para você ou para outra pessoa?</p>
+                  <p class="msg in" data-m>Para mim. Quero vender mais pelo WhatsApp.</p>
+                  <div class="chat-typing out" data-ty><i></i><i></i><i></i></div>
+                  <p class="msg out" data-m>Perfeito. Você já vende com tráfego pago?</p>
+
+                  <div class="chat-typing out" data-ty><i></i><i></i><i></i></div>
+                  <p class="msg out" data-m>O e-book mostra o passo a passo para fechar vendas no WhatsApp, do primeiro contacto à entrega.</p>
+                  <p class="msg in" data-m>Está caro.</p>
+                  <div class="chat-typing out" data-ty><i></i><i></i><i></i></div>
+                  <p class="msg out" data-m>Entendo. Posso mostrar o que está incluso e você decide?</p>
+                  <p class="msg in" data-m>Pode. E como pago?</p>
+
+                  <div class="chat-typing out" data-ty><i></i><i></i><i></i></div>
+                  <p class="msg out" data-m>Pode pagar por transferência ou carteira móvel. Qual prefere?</p>
+                  <div class="msg in rcp" data-m data-display="grid">
+                    <span class="rcp-card"><i></i><i></i><i></i><b></b></span>
+                    <small>Comprovativo</small>
+                  </div>
+                  <p class="sys-chip" data-m data-display="flex">
+                    <span class="sys-wait"><svg class="spin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-dasharray="40 20" stroke-linecap="round"/></svg>A confirmar pagamento…</span>
+                    <span class="sys-ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Pagamento confirmado</span>
+                  </p>
+
+                  <div class="chat-typing out" data-ty><i></i><i></i><i></i></div>
+                  <div class="msg out file" data-m data-display="flex">
+                    <span class="file-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z M14 3v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+                    <span class="file-t"><b>e-book.pdf</b><small>PDF · entregue</small></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="scene-ad" data-ad>
+              <div class="ad-head"><span class="chat-av">L</span><div class="chat-who"><b>Minha loja</b><small>Patrocinado</small></div></div>
+              <p class="ad-copy">Novo e-book. Fale com a gente no WhatsApp.</p>
+              <div class="ad-cover" aria-hidden="true">
+                <svg viewBox="0 0 120 150"><rect x="14" y="8" width="92" height="134" rx="6" class="bk"/><rect x="22" y="8" width="6" height="134" class="bk-spine"/><rect x="38" y="30" width="56" height="8" rx="2" class="bk-line"/><rect x="38" y="46" width="40" height="8" rx="2" class="bk-line"/><circle cx="66" cy="102" r="18" class="bk-seal"/></svg>
+              </div>
+              <button type="button" class="ad-cta" tabindex="-1" data-adcta>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>Enviar mensagem
+              </button>
+            </div>
+          </div>
+        </div>
+        <p class="phone-note" data-note><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Follow-up ativo se o cliente não comprar</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap how-close-wrap">
+    <p class="how-close display" data-split-reveal>Você anuncia. O sistema faz o resto.<br><em>Do primeiro contacto até à venda realizada.</em></p>
+  </div>
+</section>
+
+<!-- ===== 5. DIFERENCIAL ===== -->
+<section class="diff" id="diferencial" data-section="diferencial">
+  <div class="wrap sec-head">
+    <h2 class="h2 display" data-split-reveal>Você não precisa construir automações. <em>Nós já construímos o sistema por você.</em></h2>
+  </div>
+
+  <div class="wrap contrast" data-contrast>
+    <article class="side other">
+      <div class="side-visual vis-other">
+        <span class="vig-tag">Em outras ferramentas</span>
+        <svg class="tangle" viewBox="0 0 480 360" aria-hidden="true" focusable="false" data-tangle>
+<g class="tg-edges">
+<path class="tg-edge" data-a="0" data-b="1" d="M221.3 197.9 C277.8 197.9,217.8 85.4,274.3 85.4"/>
+<path class="tg-edge" data-a="0" data-b="13" d="M221.3 197.9 C264.2 197.9,152.6 317.4,195.5 317.4"/>
+<path class="tg-edge" data-a="1" data-b="2" d="M274.3 85.4 C312.6 85.4,252.6 267.9,290.9 267.9"/>
+<path class="tg-edge" data-a="1" data-b="14" d="M274.3 85.4 C381.3 85.4,321.3 149.2,428.3 149.2"/>
+<path class="tg-edge" data-a="2" data-b="3" d="M290.9 267.9 C384.9 267.9,68.9 57.2,162.9 57.2"/>
+<path class="tg-edge" data-a="2" data-b="15" d="M290.9 267.9 C410.9 267.9,-52.5 269.1,67.5 269.1"/>
+<path class="tg-edge" data-a="3" data-b="4" d="M162.9 57.2 C269.4 57.2,209.4 42.6,315.8 42.6"/>
+<path class="tg-edge" data-a="3" data-b="9" d="M162.9 57.2 C282.9 57.2,254.2 185.7,374.2 185.7"/>
+<path class="tg-edge" data-a="4" data-b="0" d="M315.8 42.6 C393.1 42.6,144.1 197.9,221.3 197.9"/>
+<path class="tg-edge" data-a="4" data-b="5" d="M315.8 42.6 C399.0 42.6,339.0 226.2,422.2 226.2"/>
+<path class="tg-edge" data-a="5" data-b="1" d="M422.2 226.2 C526.2 226.2,170.3 85.4,274.3 85.4"/>
+<path class="tg-edge" data-a="5" data-b="6" d="M422.2 226.2 C542.2 226.2,-14.3 34.5,105.7 34.5"/>
+<path class="tg-edge" data-a="6" data-b="7" d="M105.7 34.5 C154.9 34.5,18.1 87.1,67.3 87.1"/>
+<path class="tg-edge" data-a="6" data-b="15" d="M105.7 34.5 C154.9 34.5,18.3 269.1,67.5 269.1"/>
+<path class="tg-edge" data-a="7" data-b="0" d="M67.3 87.1 C174.3 87.1,114.3 197.9,221.3 197.9"/>
+<path class="tg-edge" data-a="7" data-b="8" d="M67.3 87.1 C103.1 87.1,20.0 169.2,55.8 169.2"/>
+<path class="tg-edge" data-a="7" data-b="10" d="M67.3 87.1 C175.3 87.1,115.3 113.4,223.3 113.4"/>
+<path class="tg-edge" data-a="8" data-b="2" d="M55.8 169.2 C175.8 169.2,170.9 267.9,290.9 267.9"/>
+<path class="tg-edge" data-a="8" data-b="9" d="M55.8 169.2 C175.8 169.2,254.2 185.7,374.2 185.7"/>
+<path class="tg-edge" data-a="8" data-b="11" d="M55.8 169.2 C175.8 169.2,314.3 282.1,434.3 282.1"/>
+<path class="tg-edge" data-a="9" data-b="10" d="M374.2 185.7 C479.7 185.7,117.8 113.4,223.3 113.4"/>
+<path class="tg-edge" data-a="10" data-b="11" d="M223.3 113.4 C343.3 113.4,314.3 282.1,434.3 282.1"/>
+<path class="tg-edge" data-a="11" data-b="7" d="M434.3 282.1 C554.3 282.1,-52.7 87.1,67.3 87.1"/>
+<path class="tg-edge bad" data-a="11" data-b="12" d="M434.3 282.1 C509.3 282.1,269.4 150.1,344.4 150.1"/>
+<path class="tg-edge bad" data-a="12" data-b="2" d="M344.4 150.1 C401.1 150.1,234.2 267.9,290.9 267.9"/>
+<path class="tg-edge bad" data-a="12" data-b="13" d="M344.4 150.1 C448.8 150.1,91.1 317.4,195.5 317.4"/>
+<path class="tg-edge" data-a="13" data-b="14" d="M195.5 317.4 C315.5 317.4,308.3 149.2,428.3 149.2"/>
+<path class="tg-edge" data-a="14" data-b="2" d="M428.3 149.2 C527.0 149.2,192.2 267.9,290.9 267.9"/>
+<path class="tg-edge bad" data-a="14" data-b="12" d="M428.3 149.2 C500.3 149.2,272.4 150.1,344.4 150.1"/>
+<path class="tg-edge" data-a="14" data-b="15" d="M428.3 149.2 C548.3 149.2,-52.5 269.1,67.5 269.1"/>
+</g><g class="tg-nodes">
+<g class="tg-node" data-i="0" data-tx="221.3" data-ty="197.9" data-tr="11.9" transform="translate(221.3 197.9) rotate(11.9)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Trigger</text></g>
+<g class="tg-node" data-i="1" data-tx="274.3" data-ty="85.4" data-tr="0.3" transform="translate(274.3 85.4) rotate(0.3)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">IF</text></g>
+<g class="tg-node" data-i="2" data-tx="290.9" data-ty="267.9" data-tr="-11.4" transform="translate(290.9 267.9) rotate(-11.4)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">ELSE</text></g>
+<g class="tg-node" data-i="3" data-tx="162.9" data-ty="57.2" data-tr="8.7" transform="translate(162.9 57.2) rotate(8.7)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Condição</text></g>
+<g class="tg-node" data-i="4" data-tx="315.8" data-ty="42.6" data-tr="13.5" transform="translate(315.8 42.6) rotate(13.5)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Ação</text></g>
+<g class="tg-node" data-i="5" data-tx="422.2" data-ty="226.2" data-tr="3.2" transform="translate(422.2 226.2) rotate(3.2)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Webhook</text></g>
+<g class="tg-node" data-i="6" data-tx="105.7" data-ty="34.5" data-tr="0.8" transform="translate(105.7 34.5) rotate(0.8)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Delay</text></g>
+<g class="tg-node" data-i="7" data-tx="67.3" data-ty="87.1" data-tr="-7.2" transform="translate(67.3 87.1) rotate(-7.2)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Filtro</text></g>
+<g class="tg-node" data-i="8" data-tx="55.8" data-ty="169.2" data-tr="-1.7" transform="translate(55.8 169.2) rotate(-1.7)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Enviar</text></g>
+<g class="tg-node" data-i="9" data-tx="374.2" data-ty="185.7" data-tr="3.9" transform="translate(374.2 185.7) rotate(3.9)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Tag</text></g>
+<g class="tg-node" data-i="10" data-tx="223.3" data-ty="113.4" data-tr="13.9" transform="translate(223.3 113.4) rotate(13.9)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Variável</text></g>
+<g class="tg-node" data-i="11" data-tx="434.3" data-ty="282.1" data-tr="5.8" transform="translate(434.3 282.1) rotate(5.8)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Loop</text></g>
+<g class="tg-node err" data-i="12" data-tx="344.4" data-ty="150.1" data-tr="9.7" transform="translate(344.4 150.1) rotate(9.7)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Erro</text></g>
+<g class="tg-node" data-i="13" data-tx="195.5" data-ty="317.4" data-tr="9.7" transform="translate(195.5 317.4) rotate(9.7)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Rota</text></g>
+<g class="tg-node" data-i="14" data-tx="428.3" data-ty="149.2" data-tr="-12.0" transform="translate(428.3 149.2) rotate(-12.0)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Merge</text></g>
+<g class="tg-node" data-i="15" data-tx="67.5" data-ty="269.1" data-tr="-9.0" transform="translate(67.5 269.1) rotate(-9.0)"><rect x="-31" y="-12" width="62" height="24" rx="6"/><text y="3.5" text-anchor="middle">Trigger</text></g>
+</g></svg>
+      </div>
+      <h3 class="side-label">Em outras ferramentas</h3>
+      <p>Você recebe <span class="r">dezenas de blocos, triggers, condições, IFs, ELSEs, automações e configurações.</span> Depois <b>passa semanas a tentar transformar tudo isso num processo de venda que funcione.</b></p>
+    </article>
+
+    <article class="side drs">
+      <figure class="side-visual vis-drs shot" data-shot aria-label="Escolha do funil de venda no painel do DRS">
+        <div class="shot-frame">
+          <div class="shot-bar"><i></i><i></i><i></i><span>Painel</span><span class="shot-tag">Imagem real a fornecer</span></div>
+          <img class="shot-img" data-asset="seletor-funil" data-src="assets/media/seletor-funil.png" alt="Escolha do funil de venda no painel do DRS" width="1803" height="930" decoding="async">
+          <div class="picker" data-picker>
+            <p class="picker-q" id="pk-q">Tipo de produto</p>
+            <div class="picker-opts" role="radiogroup" aria-labelledby="pk-q">
+              <button type="button" role="radio" aria-checked="true" data-type="digital" tabindex="0">Produto digital</button>
+              <button type="button" role="radio" aria-checked="false" data-type="fisico" tabindex="-1">Produto físico</button>
+              <button type="button" role="radio" aria-checked="false" data-type="entrega" tabindex="-1">Pagamento na entrega</button>
+            </div>
+            <div class="picker-funnel" aria-live="polite">
+              <p class="funnel-title"><span>Funil pronto</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+              <ol class="funnel-steps" data-funnel-steps>
+                <li><span class="fs-ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="fs-t">Atendimento</span></li>
+                <li><span class="fs-ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="fs-t">Persuasão</span></li>
+                <li><span class="fs-ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="fs-t">Tratamento de objeções</span></li>
+                <li><span class="fs-ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="fs-t">Follow-up</span></li>
+                <li><span class="fs-ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="fs-t" data-step5>Pagamento</span></li>
+                <li><span class="fs-ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="fs-t" data-step6>Entrega</span></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </figure>
+      <h3 class="side-label">No DRS</h3>
+      <p>Você escolhe o tipo de produto. <span class="g">O funil já vem pronto</span> — com atendimento, persuasão, tratamento de objeções, follow-up, pagamento e entrega já configurados.</p>
+    </article>
+  </div>
+
+  <div class="wrap diff-close-wrap">
+    <p class="diff-close display" data-split-reveal>Escolha o funil. Forneça informações sobre o seu produto. Publique. <em>E comece a vender.</em></p>
+  </div>
+</section>
+
+<!-- ===== 6. O ESPECIALISTA (agentes + multimídia) ===== -->
+<section class="spec" id="agentes" data-section="especialista">
+  <div class="wrap sec-head">
+    <h2 class="h2 display" data-split-reveal>Não coloque um chatbot a conversar. <em>Coloque um especialista a vender.</em></h2>
+  </div>
+
+  <div class="wrap vs" data-vs>
+    <div class="vs-col bot">
+      <p class="vs-who"><span class="vs-tag">Chatbot</span><span>Um chatbot <b>responde perguntas.</b></span></p>
+      <div class="phone phone-s" aria-hidden="true"><div class="phone-screen"><div class="chat">
+        <div class="chat-head"><span class="chat-av">L</span><div class="chat-who"><b>Chatbot</b><small class="on">online</small></div></div>
+        <div class="chat-body"><div class="chat-track" data-track>
+          <p class="msg in" data-m>Quanto custa o e-book?</p>
+          <p class="msg out bot" data-m>O e-book custa 500 MZN.</p>
+          <p class="msg in" data-m>Tem desconto?</p>
+          <p class="msg out bot" data-m>Não tenho essa informação.</p>
+          <p class="msg in" data-m>E como pago?</p>
+          <p class="msg out bot" data-m>Digite 1 para falar com um atendente.</p>
+          <p class="sys-chip stuck" data-m data-display="flex"><span>Conversa parada</span></p>
+        </div></div>
+      </div></div></div>
+    </div>
+    <div class="vs-col agent">
+      <p class="vs-who"><span class="vs-tag good">Agente de vendas</span><span>Um agente de vendas <span class="g">conduz uma conversa até a compra.</span></span></p>
+      <div class="phone phone-s" aria-hidden="true"><div class="phone-screen"><div class="chat">
+        <div class="chat-head"><span class="chat-av">A</span><div class="chat-who"><b>Agente de vendas</b><small class="on">online</small></div></div>
+        <div class="chat-body"><div class="chat-track" data-track>
+          <p class="msg in" data-m>Quanto custa o e-book?</p>
+          <div class="chat-typing out" data-ty><i></i><i></i><i></i></div>
+          <p class="msg out" data-m>Antes do preço, posso entender o que você precisa? É para você?</p>
+          <p class="msg in" data-m>Sim, é para mim.</p>
+          <div class="chat-typing out" data-ty><i></i><i></i><i></i></div>
+          <p class="msg out" data-m>Ótimo. Ele mostra o passo a passo para fechar vendas. Envio o link para pagar?</p>
+          <p class="msg in" data-m>Pode enviar.</p>
+          <p class="sys-chip" data-m data-display="flex"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Pagamento confirmado</span></p>
+        </div></div>
+      </div></div></div>
+    </div>
+  </div>
+
+  <div class="wrap vs-punch-wrap">
+    <p class="vs-punch display" data-split-reveal>A diferença não é a tecnologia.<br>É a <em>intenção</em>.</p>
+  </div>
+
+  <div class="wrap caps-wrap">
+    <p class="cap-intro" data-reveal><span class="tag">Na prática</span><span class="cap-intro-text">O que acontece<span class="dots">...</span></span></p>
+    <ol class="caps" data-reveal-group>
+      <li class="cap" data-reveal>
+        <div class="cap-head"><span class="cap-n">01</span><h3>Atendimento</h3></div>
+        <div class="cap-body"><p>O agente recebe o cliente, responde às dúvidas sobre o produto e mantém a conversa activa — <span class="k">com contexto, não com respostas prontas.</span></p><p><b>Sabe o que está a vender, para quem e a que preço.</b> Por isso, cada resposta é relevante — <span class="r">não é um menu de opções nem um FAQ automático.</span></p><p class="resolve"><b>O que resolve:</b> o atendimento manual que consome o seu tempo e a sua equipa.</p></div>
+      </li>
+      <li class="cap" data-reveal>
+        <div class="cap-head"><span class="cap-n">02</span><h3>Qualificação</h3></div>
+        <div class="cap-body"><p>O agente faz <b>as perguntas certas</b> para entender o interesse e o perfil do potencial cliente. <b>Não avança para a apresentação</b> sem saber se aquele cliente faz sentido.</p><p>Faz perguntas como um vendedor faria: <mark class="hl2">o que procura</mark>, <mark class="hl2">para quem é</mark>, <mark class="hl2">que problema quer resolver</mark>. E ajusta a conversa com base nas respostas.</p><p class="resolve"><b>O que resolve:</b> leads que não avançam porque ninguém os qualificou.</p></div>
+      </li>
+      <li class="cap" data-reveal>
+        <div class="cap-head"><span class="cap-n">03</span><h3>Persuasão</h3></div>
+        <div class="cap-body"><p>O agente apresenta o produto com base no que o cliente disse — <span class="r">não com um script fixo.</span> Liga os benefícios <b>ao que aquele cliente específico valoriza.</b></p><p>Usa técnicas de persuasão treinadas: prova social, urgência, autoridade, benefício antes de característica. Não é conversa solta. <span class="g">É método.</span></p><p class="resolve"><b>O que resolve:</b> apresentações genéricas que não convencem.</p></div>
+      </li>
+      <li class="cap" data-reveal>
+        <div class="cap-head"><span class="cap-n">04</span><h3>Objeções</h3></div>
+        <div class="cap-body"><p>O agente reconhece as objeções mais comuns — preço, tempo, dúvida, adiamento — e responde <span class="k">com método, não com improviso.</span></p><p><b>“Está caro” não termina a conversa. “Vou pensar” não é um adeus.</b> O agente sabe quando insistir, quando reformular e quando dar espaço.</p><p class="resolve"><b>O que resolve:</b> vendas perdidas por objeções mal tratadas.</p></div>
+      </li>
+      <li class="cap" data-reveal>
+        <div class="cap-head"><span class="cap-n">05</span><h3>Conversão</h3></div>
+        <div class="cap-body"><p>O agente conduz a conversa até à decisão. <b>Não espera que o cliente peça para comprar</b> — <span class="g">orienta-o para o próximo passo.</span></p><p>Quando o cliente está pronto, apresenta <b>o método de pagamento</b>, envia os dados e <span class="g">acompanha o processo até à confirmação.</span></p><p class="resolve"><b>O que resolve:</b> leads que ficam “quentes” mas nunca chegam a comprar.</p></div>
+      </li>
+      <li class="cap" data-reveal>
+        <div class="cap-head"><span class="cap-n">06</span><h3>Follow-up</h3></div>
+        <div class="cap-body"><p>Se o cliente não comprar de imediato, o agente <span class="k">não o abandona.</span> Activa a sequência de follow-up definida no funil — com <b>mensagens contextualizadas</b>, não spam.</p><p>Retoma a conversa no momento certo, responde a novas dúvidas e conduz novamente à decisão.</p><p class="resolve"><b>O que resolve:</b> vendas perdidas no silêncio.</p></div>
+      </li>
+    </ol>
+    <p class="closing display" data-split-reveal>Cada conversa segue um processo.<br>Não é improviso. <em>É método.</em></p>
+  </div>
+</section>
+
+<!-- ===== 6. O ESPECIALISTA · parte B: multimídia ===== -->
+<section class="mm" id="multimidia">
+  <div class="wrap sec-head">
+    <h2 class="h2 display" data-split-reveal>Atenda e venda <em>como um humano faria</em></h2>
+  </div>
+  <div class="wrap mm-stage" data-mm>
+    <div class="mm-text">
+      <p class="mm-lead">O agente entende e processa <b>todos</b> os formatos de mensagem:</p>
+      <ul class="formats" data-formats>
+        <li data-f="texto">texto</li><li data-f="audio">áudio</li><li data-f="imagem">imagem</li><li data-f="video">vídeo</li><li data-f="pdf">PDFs</li>
+      </ul>
+      <p class="mm-lead">E combina esses formatos ao longo do funil, <mark class="mk">nas ocasiões certas</mark> — deixando a conversa <span class="g">mais fluida</span> e <span class="g">mais natural.</span></p>
+    </div>
+    <div class="mm-phone" aria-hidden="true">
+      <div class="phone"><div class="phone-screen"><div class="chat">
+        <div class="chat-head"><span class="chat-av">C</span><div class="chat-who"><b>Cliente</b><small class="on">online</small></div></div>
+        <div class="chat-body"><div class="chat-track" data-track>
+          <p class="msg in" data-m data-f="texto">Oi! Pode me explicar como funciona?</p>
+          <div class="msg out aud" data-m data-f="audio"><span class="aud-play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg></span><span class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><small>0:24</small></div>
+          <div class="msg out img" data-m data-f="imagem"><span class="img-ph"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 3-3 6 6M3 4h18v16H3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="16" cy="9" r="1.6" fill="currentColor"/></svg></span></div>
+          <div class="msg out vid" data-m data-f="video"><span class="vid-ph"><span class="vid-play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg></span></span><small>0:45</small></div>
+          <p class="msg in" data-m data-f="texto">Gostei! Tem algum material para ler?</p>
+          <div class="msg out file" data-m data-f="pdf" data-display="flex"><span class="file-ic"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z M14 3v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><span class="file-t"><b>guia.pdf</b><small>PDF</small></span></div>
+        </div></div>
+      </div></div></div>
+    </div>
+  </div>
+  <div class="wrap mm-close-wrap">
+    <p class="closing display" data-split-reveal>Não é uma sequência de mensagens.<br><em>É uma conversa de alta conversão.</em></p>
+  </div>
+</section>
+
+<!-- ===== 7. O PROCESSO NÃO PARA (follow-up + pagamentos) ===== -->
+<section class="fu" id="follow-up" data-section="processo">
+  <div class="wrap sec-head">
+    <h2 class="h2 display" data-split-reveal>A venda não termina quando o cliente diz <em>“vou pensar”</em>.</h2>
+    <p class="fu-lead" data-reveal>Estudos mostram que são necessários <b>de 1 a 7 contactos</b> para o cliente decidir comprar. Mas a maioria dos negócios <span class="r">desiste na primeira</span> — e perde <span class="r">dinheiro que já estava a caminho.</span></p>
+  </div>
+
+  <div class="fu-pin" data-fu-pin>
+    <div class="wrap fu-stage">
+      <div class="fu-text">
+        <p><span class="g">O DRS não desiste.</span> Se o cliente não comprar de imediato, o sistema activa a sequência de follow-up definida no funil.</p>
+        <p><b>Não é spam.</b> É <span class="k">uma sequência contextualizada:</span> uma mensagem no momento certo, com a informação certa, para retomar a conversa <mark class="mk">sem pressionar.</mark></p>
+      </div>
+      <div class="seq-wrap">
+        <p class="lanes" aria-hidden="true"><span>Cliente</span><span>Sistema</span></p>
+        <ol class="seq" data-seq>
+          <li class="ev cli"><span class="ev-t">Cliente não comprou</span></li>
+          <li class="ev sys"><span class="ev-t">Follow-up 1</span></li>
+          <li class="ev sys"><span class="ev-t">Follow-up 2</span></li>
+          <li class="ev cli"><span class="ev-t">Nova objeção</span></li>
+          <li class="ev sys"><span class="ev-t">Resposta do Agente</span></li>
+          <li class="ev sys"><span class="ev-t">Follow-up</span></li>
+          <li class="ev cli end"><span class="ev-t">Compra</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="wrap fu-close-wrap">
+    <p class="closing display" data-split-reveal>Seu vendedor continua trabalhando <em>mesmo quando você está offline.</em></p>
+  </div>
+</section>
+
+<section class="pay" id="pagamentos">
+  <div class="wrap sec-head">
+    <h2 class="h2 display" data-split-reveal>Da confirmação de pagamento <em>à entrega do produto</em></h2>
+  </div>
+
+  <div class="wrap pay-callouts" data-reveal-group>
+    <div class="callout pain" data-reveal>
+      <span class="tag pain">O problema</span>
+      <p class="accent">Este é o ponto onde a maioria dos negócios falha.</p>
+      <p>O cliente decide comprar, paga e envia o comprovativo. E é <b>exactamente</b> aqui que <span class="r">os chatbots comuns falham.</span> Porque <b>não têm como confirmar o pagamento.</b> E se a venda acontece enquanto você está offline ou a dormir, o cliente fica frustrado — porque o seu chatbot só sabe dizer <span class="r">“estou verificando o seu pagamento”</span> e nunca sai desse estágio.</p>
+      <p class="chipline" aria-hidden="true"><span class="sys-chip stuck"><span><svg class="spin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-dasharray="40 20" stroke-linecap="round"/></svg>estou verificando o seu pagamento…</span></span></p>
+      <p class="punch">A confiança do negócio quebra. <span class="r">E a venda também.</span></p>
+    </div>
+    <div class="callout good" data-reveal>
+      <span class="tag good">No DRS</span>
+      <p class="accent"><span class="k">O processo não para no comprovativo.</span></p>
+      <p>O sistema confirma o pagamento, processa a informação e dá seguimento ao processo de entrega — <span class="g">sem intervenção manual, a qualquer hora.</span></p>
+      <p class="chipline" aria-hidden="true"><span class="sys-chip"><span><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Pagamento confirmado</span></span></p>
+      <p class="punch">Veja como funciona para cada cenário <span class="arrow-down">↓</span></p>
+    </div>
+  </div>
+
+  <div class="wrap scen" data-scen>
+    <div class="tabs" role="tablist" aria-label="Cenários de entrega">
+      <span class="tab-ind" aria-hidden="true"></span>
+      <button type="button" role="tab" id="tab-1" aria-controls="sc-1" aria-selected="true"><small>Cenário 1</small>Produto Digital</button>
+      <button type="button" role="tab" id="tab-2" aria-controls="sc-2" aria-selected="false" tabindex="-1"><small>Cenário 2</small>Produto Físico</button>
+      <button type="button" role="tab" id="tab-3" aria-controls="sc-3" aria-selected="false" tabindex="-1"><small>Cenário 3</small>Pagamento na Entrega</button>
+    </div>
+
+    <div class="panel" id="sc-1" role="tabpanel" aria-labelledby="tab-1" data-panel>
+      <div class="panel-text">
+        <h3>Produto Digital</h3>
+        <p>O cliente <b>paga</b>. O sistema <b>confirma</b>. O produto (<mark class="mk">PDFs, link de acesso ou de download</mark>) é entregue <b>automaticamente</b> após a confirmação.</p>
+        <p class="kicker">Sem espera. Sem intervenção. Sem frustração.</p>
+      </div>
+      <div class="panel-scene"><div class="phone phone-s" aria-hidden="true"><div class="phone-screen"><div class="chat"><div class="chat-head"><span class="chat-av">C</span><div class="chat-who"><b>Cliente</b><small class="on">online</small></div></div>
+<div class="chat-body"><div class="chat-track" data-track>
+<div class="msg in rcp" data-m data-display="grid"><span class="rcp-card"><i></i><i></i><i></i><b></b></span><small>Comprovativo</small></div>
+<p class="sys-chip" data-m data-display="flex"><span class="sys-wait"><svg class="spin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-dasharray="40 20" stroke-linecap="round"/></svg>A confirmar pagamento…</span><span class="sys-ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Pagamento confirmado</span></p>
+<div class="chat-typing out" data-ty><i></i><i></i><i></i></div>
+<div class="msg out file" data-m data-display="flex"><span class="file-ic"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z M14 3v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><span class="file-t"><b>produto.pdf</b><small>PDF · entregue</small></span></div>
+<p class="msg out" data-m>Link de acesso enviado também. Bom proveito!</p>
+</div></div></div></div></div></div>
+    </div>
+    <div class="panel" id="sc-2" role="tabpanel" aria-labelledby="tab-2" data-panel>
+      <div class="panel-text">
+        <h3>Produto Físico</h3>
+        <p>O cliente <b>paga</b>. O sistema <b>confirma</b>. Em seguida, <mark class="mk">solicita os dados de entrega</mark> (endereço, contacto, referência, entre outros).</p>
+        <p class="kicker">Assim que o cliente fornece as informações, um <span class="g">processo de envio</span> é criado <b>no painel do vendedor</b> com todas as informações e contacto do cliente para os últimos acertos da entrega.</p>
+      </div>
+      <div class="panel-scene"><div class="phone phone-s" aria-hidden="true"><div class="phone-screen"><div class="chat"><div class="chat-head"><span class="chat-av">C</span><div class="chat-who"><b>Cliente</b><small class="on">online</small></div></div>
+<div class="chat-body"><div class="chat-track" data-track>
+<p class="sys-chip" data-m data-display="flex"><span class="sys-wait"><svg class="spin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-dasharray="40 20" stroke-linecap="round"/></svg>A confirmar pagamento…</span><span class="sys-ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Pagamento confirmado</span></p>
+<div class="chat-typing out" data-ty><i></i><i></i><i></i></div>
+<p class="msg out" data-m>Para o envio, preciso do endereço, contacto e referência.</p>
+<p class="msg in" data-m>Av. Exemplo 123, 84 000 0000, perto da escola.</p>
+</div></div></div></div></div> <div class="order" data-order aria-hidden="true">
+  <p class="order-h"><span>Painel do vendedor</span><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+  <p class="order-t">Processo de envio criado</p>
+  <ul><li><span>Cliente</span><b>Nome do cliente</b></li><li><span>Endereço</span><b>Av. Exemplo 123</b></li><li><span>Contacto</span><b>84 000 0000</b></li><li><span>Referência</span><b>Perto da escola</b></li></ul>
+  <p class="order-s">Pagamento confirmado · pronto para envio</p>
+</div></div>
+    </div>
+    <div class="panel" id="sc-3" role="tabpanel" aria-labelledby="tab-3" data-panel>
+      <div class="panel-text">
+        <h3>Pagamento na Entrega</h3>
+        <p>Se o seu funil for de <b>pagamento na entrega</b>, o sistema segue <span class="k">o mesmo processo</span>: <b>confirma o pedido</b>, <b>recolhe os dados de entrega</b> e <mark class="mk">cria o processo de envio</mark> no painel do vendedor.</p>
+      </div>
+      <div class="panel-scene"><div class="phone phone-s" aria-hidden="true"><div class="phone-screen"><div class="chat"><div class="chat-head"><span class="chat-av">C</span><div class="chat-who"><b>Cliente</b><small class="on">online</small></div></div>
+<div class="chat-body"><div class="chat-track" data-track>
+<p class="msg in" data-m>Quero pagar na entrega.</p>
+<div class="chat-typing out" data-ty><i></i><i></i><i></i></div>
+<p class="msg out" data-m>Pedido confirmado. Preciso do endereço, contacto e referência.</p>
+<p class="msg in" data-m>Av. Exemplo 123, 84 000 0000, perto da escola.</p>
+</div></div></div></div></div> <div class="order" data-order aria-hidden="true">
+  <p class="order-h"><span>Painel do vendedor</span><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+  <p class="order-t">Processo de envio criado</p>
+  <ul><li><span>Cliente</span><b>Nome do cliente</b></li><li><span>Endereço</span><b>Av. Exemplo 123</b></li><li><span>Contacto</span><b>84 000 0000</b></li><li><span>Referência</span><b>Perto da escola</b></li></ul>
+  <p class="order-s">Pagamento na entrega · pronto para envio</p>
+</div></div>
+    </div>
+  </div>
+
+  <div class="wrap pay-close-wrap">
+    <p class="closing display" data-split-reveal>Do comprovativo à entrega, o processo não para.<br><em>E o cliente nunca fica sem resposta.</em></p>
+  </div>
+</section>
+
+<!-- ===== 8. PARA QUEM É / NÃO É ===== -->
+<section class="pq" id="para-quem" data-section="publico">
+  <div class="wrap sec-head">
+    <h2 class="h2 display" data-split-reveal>Para quem é o <em>DRS</em></h2>
+    <p class="aud-lead" data-reveal>O DRS foi construído para quem vende através de tráfego e WhatsApp — e já percebeu que <span class="k">escalar exige mais</span> do que responder mensagens.</p>
+  </div>
+
+  <div class="wrap aud-grid" data-reveal-group>
+    <article class="aud-card" data-reveal>
+      <svg class="aud-ico" viewBox="0 0 120 120" aria-hidden="true" data-ico="digital">
+  <rect class="ic-body" x="30" y="12" width="60" height="86" rx="9"/>
+  <rect class="ic-line" x="40" y="26" width="40" height="6" rx="3"/><rect class="ic-line" x="40" y="38" width="28" height="6" rx="3"/>
+  <rect class="ic-cover" x="40" y="52" width="40" height="30" rx="4"/>
+  <g class="dl"><path class="ic-acc" d="M60 54v22M50 68l10 10 10-10"/></g>
+  <path class="ic-tray" d="M36 106h48"/>
+</svg>
+      <h3>Para Infoprodutores</h3>
+      <p class="examples">E-books, cursos online, mentorias, conteúdos digitais.</p>
+      <p>Se <b>vende conhecimento</b> e <b>depende do WhatsApp</b> para fechar vendas — ou se já tentou automatizar e <span class="r">a automação não acompanhou o volume</span> — o DRS foi feito para o seu caso.</p>
+      <p class="solves"><b>O que resolve:</b> <mark class="hl2">entrega automática</mark>, <mark class="hl2">follow-up que recupera vendas</mark>, e um processo que escala sem depender de você.</p>
+    </article>
+    <article class="aud-card" data-reveal>
+      <svg class="aud-ico" viewBox="0 0 120 120" aria-hidden="true" data-ico="fisico">
+  <rect class="ic-body" x="28" y="52" width="64" height="46" rx="5"/>
+  <path class="ic-line2" d="M60 52v46"/>
+  <g class="lid"><rect class="ic-lid" x="24" y="40" width="72" height="14" rx="4"/></g>
+  <g class="pkg"><circle class="ic-acc-f" cx="60" cy="34" r="8"/><path class="ic-acc" d="M56 34l3 3 6-7"/></g>
+  <path class="ic-tray" d="M30 108h60"/>
+</svg>
+      <h3>Para Vendedores de produtos físicos</h3>
+      <p class="examples">Nutras, produtos de beleza, roupas, acessórios etc.</p>
+      <p>Se recebe pedidos pelo WhatsApp e processa pagamentos e entregas <b>manualmente</b> — ou se perde vendas porque não consegue responder a <b>todos</b> — o DRS foi feito para o seu caso.</p>
+      <p class="solves"><b>O que resolve:</b> <mark class="hl2">confirmação automática de pagamento</mark>, <mark class="hl2">recolha de dados de entrega</mark> e <mark class="hl2">criação do processo de envio</mark> no seu painel.</p>
+    </article>
+  </div>
+  <div class="wrap">
+    <p class="closing display" data-split-reveal>Se o seu negócio depende de conversas no WhatsApp para vender, <em>isto foi construído para o seu caso.</em></p>
+  </div>
+
+  <div class="wrap not">
+    <h2 class="h2 display mid" data-split-reveal>O DRS não é para você <em>se…</em></h2>
+    <ul class="exclusions" data-reveal-group>
+      <li data-reveal><span class="dots3">…</span><span>vende serviços que exigem negociação complexa, com condições específicas para cada cliente.</span></li>
+      <li data-reveal><span class="dots3">…</span><span>tem um ciclo de vendas muito longo, onde o processo entre o primeiro contacto e a compra leva <span class="r">semanas ou meses</span>.</span></li>
+      <li data-reveal><span class="dots3">…</span><span>precisa de intervenção humana em cada venda, porque cada decisão exige um vendedor especializado.</span></li>
+      <li data-reveal><span class="dots3">…</span><span>vende produtos que não se explicam por conversa — que exigem <b>demonstração técnica</b>, <b>visita presencial</b> ou <b>avaliação personalizada</b>.</span></li>
+    </ul>
+    <p class="not-note" data-reveal>O DRS foi construído para produtos que podem ser vendidos através de <b>conversa</b> e uma estratégia de <b>resposta direta</b>.</p>
+  </div>
+</section>
+
+<!-- ===== 9. CASOS DE USO + COMPARATIVO ===== -->
+<section class="uses" id="casos" data-section="casos">
+  <div class="wrap sec-head">
+    <h2 class="h2 display" data-split-reveal>Como o DRS funciona <em>no seu caso</em></h2>
+  </div>
+  <div class="wrap">
+    <ol class="cases">
+      <li class="case" data-case>
+        <div class="case-head"><span class="case-n">CASO 1</span><h3>E-book</h3></div>
+        <div class="case-body"><p>Um cliente clica no seu anúncio e entra no WhatsApp. <b>O agente atende, apresenta o e-book, responde a dúvidas</b> e <span class="g">conduz ao pagamento.</span> O cliente paga, envia o comprovativo, e <mark class="mk">o e-book é entregue</mark> automaticamente.</p><ol class="flow" data-flow aria-label="Fluxo: Meta Ads → WhatsApp → Agente → Pagamento → Entrega"><li><span>Meta Ads</span></li><li><span>WhatsApp</span></li><li><span>Agente</span></li><li><span>Pagamento</span></li><li><span>Entrega</span></li></ol></div>
+      </li>
+      <li class="case" data-case>
+        <div class="case-head"><span class="case-n">CASO 2</span><h3>Curso online</h3></div>
+        <div class="case-body"><p>O cliente chega com dúvidas sobre o curso. O agente <b>apresenta o conteúdo</b>, <b>trabalha objeções</b> e <span class="g">conduz à decisão.</span> Após o pagamento, o acesso é enviado automaticamente.</p><ol class="flow" data-flow aria-label="Fluxo: Meta Ads → WhatsApp → Agente → Objeções → Pagamento → Acesso"><li><span>Meta Ads</span></li><li><span>WhatsApp</span></li><li><span>Agente</span></li><li><span>Objeções</span></li><li><span>Pagamento</span></li><li><span>Acesso</span></li></ol></div>
+      </li>
+      <li class="case" data-case>
+        <div class="case-head"><span class="case-n">CASO 3</span><h3>Produto físico</h3></div>
+        <div class="case-body"><p>O cliente faz o pedido pelo WhatsApp. <b>O agente confirma o pagamento</b>, <b>recolhe os dados de entrega</b> e <span class="g">cria o processo de envio</span> no seu painel.</p><ol class="flow" data-flow aria-label="Fluxo: Meta Ads → WhatsApp → Agente → Pagamento → Recolha de dados → Processo de envio"><li><span>Meta Ads</span></li><li><span>WhatsApp</span></li><li><span>Agente</span></li><li><span>Pagamento</span></li><li><span>Recolha de dados</span></li><li><span>Processo de envio</span></li></ol></div>
+      </li>
+      <li class="case" data-case>
+        <div class="case-head"><span class="case-n">CASO 4</span><h3>Cliente que não comprou</h3></div>
+        <div class="case-body"><p>O cliente disse “vou pensar”. O sistema <b>activa o follow-up</b>, <mark class="mk">retoma a conversa no momento certo</mark> e <span class="g">conduz novamente à decisão.</span></p><ol class="flow" data-flow aria-label="Fluxo: WhatsApp → Follow-up automático → Nova conversa → Compra"><li><span>WhatsApp</span></li><li><span>Follow-up automático</span></li><li><span>Nova conversa</span></li><li><span>Compra</span></li></ol></div>
+      </li>
+    </ol>
+    <p class="closing display" data-split-reveal>Digital ou físico, com compra imediata ou follow-up — <em>o DRS adapta-se ao seu modelo.</em></p>
+  </div>
+
+  <div class="wrap cmp" data-cmp>
+    <h2 class="h2 display mid" data-split-reveal>Sem sistema <em>vs.</em> com o DRS</h2>
+    <div class="cmp-head" aria-hidden="true"><span>Sem sistema</span><span>Com o DRS</span></div>
+    <ul class="cmp-list">
+      <li class="cmp-row" data-row><span class="cmp-no"><span class="cmp-t">Atendimento manual</span></span><span class="cmp-yes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="cmp-t">Agentes de IA que atendem e vendem</span></span></li>
+      <li class="cmp-row" data-row><span class="cmp-no"><span class="cmp-t">Follow-up manual (ou <b>nenhum</b>)</span></span><span class="cmp-yes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="cmp-t">Follow-up automático</span></span></li>
+      <li class="cmp-row" data-row><span class="cmp-no"><span class="cmp-t">Construir workflows</span></span><span class="cmp-yes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="cmp-t">Funis <b>prontos</b></span></span></li>
+      <li class="cmp-row" data-row><span class="cmp-no"><span class="cmp-t">Pagamento e comprovativo manuais</span></span><span class="cmp-yes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="cmp-t">Confirmação automática</span></span></li>
+      <li class="cmp-row" data-row><span class="cmp-no"><span class="cmp-t">Entrega manual</span></span><span class="cmp-yes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="cmp-t">Entrega automática</span></span></li>
+      <li class="cmp-row" data-row><span class="cmp-no"><span class="cmp-t">Dependência de você para <b>tudo</b></span></span><span class="cmp-yes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="cmp-t">Autonomia do sistema</span></span></li>
+    </ul>
+    <p class="closing display" data-split-reveal>Não se trata apenas de automatizar.<br><em>Trata-se de ter um sistema.</em></p>
+  </div>
+</section>
+
+<!-- ===== 10. PROVA REAL (fundador, números e demonstração) ===== -->
+<section class="proof" id="prova" data-section="prova">
+  <div class="wrap proof-head">
+    <h2 class="h2 display" data-split-reveal>Não vendo teoria. <em>Vendo o que uso.</em></h2>
+  </div>
+
+  <div class="wrap story">
+    <figure class="pic" aria-label="Retrato do fundador do DRS">
+      <div class="pic-ph" aria-hidden="true"><svg viewBox="0 0 120 150"><circle cx="60" cy="52" r="24"/><path d="M14 148c4-34 24-50 46-50s42 16 46 50"/></svg></div>
+      <span class="pic-tag">Imagem real a fornecer</span>
+      <img class="pic-img" data-asset="retrato-fundador" data-src="assets/media/retrato-fundador.jpg" alt="Retrato do fundador do DRS" width="800" height="1000" decoding="async">
+    </figure>
+    <div class="story-text" data-reveal-group>
+      <p class="pull display" data-reveal>O DRS não nasceu num escritório. <em>Nasceu da necessidade.</em></p>
+      <p data-reveal>Eu vendo produtos digitais — ebooks, materiais educativos, guias práticos. E durante muito tempo, fiz <b>tudo manualmente</b>: respondia a cada conversa, enviava dados de pagamento, confirmava comprovativos, entregava os produtos. Quando o volume subiu, percebi que <span class="r">não conseguia escalar sozinho.</span></p>
+      <p class="story-call" data-reveal>Foi por isso que construí o DRS. E é <mark class="mk">o mesmo sistema que uso todos os dias para vender.</mark></p>
+    </div>
+  </div>
+
+  <div class="wrap proof-dash">
+    <figure class="shot pdash" aria-label="Painel real do DRS com receita total, vendas e taxa de conversão">
+      <div class="shot-frame">
+        <div class="shot-bar"><i></i><i></i><i></i><span>Painel</span><span class="shot-tag">Imagem real a fornecer</span></div>
+        <img class="shot-img" data-asset="painel-prova" data-src="assets/media/painel-prova.png" alt="Painel real do DRS com receita total, vendas e taxa de conversão" width="1920" height="1032" decoding="async">
+        <div class="pd" aria-hidden="true">
+          <div class="pd-tiles"><i></i><i></i><i></i><i></i><i></i></div>
+          <svg viewBox="0 0 600 160" preserveAspectRatio="none"><defs><linearGradient id="pdFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--accent)" stop-opacity=".25"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></linearGradient></defs><path d="M0 130 C60 120 100 112 150 96 S250 90 300 70 S420 56 470 38 S560 24 600 12 V160 H0Z" fill="url(#pdFill)"/><path d="M0 130 C60 120 100 112 150 96 S250 90 300 70 S420 56 470 38 S560 24 600 12" fill="none" stroke="var(--accent)" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+        </div>
+      </div>
+    </figure>
+
+    <p class="real-line" data-reveal><span class="tag">Prova real</span><span>Estes são os números da minha <span class="k">própria operação</span>:</span></p>
+    <ul class="stats" data-reveal-group>
+      <li data-reveal><b><span data-counter="114682" data-decimals="0">114.682</span><small>MZN</small></b><span>em receita total</span></li>
+      <li data-reveal><b><span data-counter="823" data-decimals="0">823</span></b><span>vendas realizadas</span></li>
+      <li data-reveal><b><span data-counter="7.2" data-decimals="1" data-suffix="%">7,2%</span></b><span>de taxa de conversão</span></li>
+      <li data-reveal><b><span data-counter="5" data-decimals="0">5</span></b><span>contas de WhatsApp conectadas</span></li>
+      <li data-reveal><b><span data-counter="12" data-decimals="0">12</span></b><span>produtos activos</span></li>
+    </ul>
+    <p class="strip-note" data-reveal><b>Tudo</b> gerido pelo DRS. <b>Sem equipa.</b> <b>Sem atendimento manual.</b></p>
+    <p class="honest" data-reveal>É isso que o DRS faz: <span class="g">permite escalar sem quebrar.</span></p>
+    <p class="closing display" data-split-reveal>Se funciona para mim, <em>funciona para você.</em></p>
+  </div>
+
+  <div class="wrap demo" id="demo" data-demo>
+    <div class="sec-head">
+      <h2 class="h2 display" data-split-reveal>Veja o DRS <em>por dentro</em></h2>
+      <p class="demo-intro" data-reveal><span class="di-no">Não é uma promessa.</span> <span class="di-yes">É o <b>sistema real</b>.</span></p>
+      <p class="demo-body" data-reveal>Este é o painel onde o seu funil fica <mark class="mk">pronto a vender</mark>: <span class="g">do anúncio até à entrega do produto.</span></p>
+    </div>
+    <figure class="shot fdash" aria-label="Funil de venda configurado no painel do DRS">
+      <div class="shot-frame">
+        <div class="shot-bar"><i></i><i></i><i></i><span>Painel · Funil</span><span class="shot-tag">Imagem real a fornecer</span></div>
+        <img class="shot-img" data-asset="demo-funil" data-src="assets/media/demo-funil.png" alt="Funil de venda configurado no painel do DRS" width="1920" height="1032" decoding="async">
+        <div class="fph" aria-hidden="true"><ol class="fph-nodes" data-nodes><li data-n><span>Anúncio</span></li><li data-n><span>Atende</span></li><li data-n><span>Decisão</span></li><li data-n><span>Pagamento</span></li><li data-n><span>Comprovativo</span></li><li data-n><span>Entrega</span></li></ol></div>
+      </div>
+    </figure>
+    <p class="real-line" data-reveal><span class="tag">O que o funil faz por si</span></p>
+    <ol class="watch" data-watch>
+<li data-w><span class="w-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Recebe o cliente que chega pelo anúncio</span></li>
+<li data-w><span class="w-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Atende e qualifica</span></li>
+<li data-w><span class="w-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Conduz a conversa até à decisão</span></li>
+<li data-w><span class="w-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Processa o pagamento</span></li>
+<li data-w><span class="w-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Confirma o comprovativo</span></li>
+<li data-w><span class="w-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Entrega o produto <b>automaticamente</b></span></li>
+    </ol>
+    <div class="band" data-reveal><p class="display">Este é o sistema por dentro. <em>Agora imagine-o a vender todos os dias no seu negócio.</em></p></div>
+  </div>
+</section>
+
+<!-- ===== 11. OFERTA, VALOR E PLANOS ===== -->
+<section class="offer" id="oferta" data-section="oferta">
+  <div class="wrap sec-head">
+    <h2 class="h2 display" data-split-reveal>Tudo o que você precisa para colocar o seu processo de vendas no WhatsApp <em>a funcionar.</em></h2>
+  </div>
+  <div class="wrap">
+    <ul class="offer-list" data-reveal-group>
+<li data-reveal><span class="of-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>Funis <b>prontos</b></strong><p>Configurados para o seu tipo de produto, sem precisar construir automações.</p></div></li>
+<li data-reveal><span class="of-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>Agentes de IA especialistas em vendas</strong><p>Que atendem, qualificam, persuadem, tratam objeções e conduzem à compra.</p></div></li>
+<li data-reveal><span class="of-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>Follow-up automático</strong><p>Para recuperar vendas que, de outra forma, se perderiam no <b>silêncio</b>.</p></div></li>
+<li data-reveal><span class="of-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>Confirmação de pagamento</strong><p>O sistema recebe e processa o comprovativo sem intervenção manual.</p></div></li>
+<li data-reveal><span class="of-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>Entrega automática</strong><p>Produtos digitais entregues após confirmação; produtos físicos com processo de envio iniciado <b>automaticamente</b>.</p></div></li>
+<li data-reveal><span class="of-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>Gestão de conversas</strong><p><b>Todas</b> as conversas num <b>único</b> painel, com histórico e visibilidade.</p></div></li>
+<li data-reveal><span class="of-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>Relatórios e dados</strong><p>Saiba quantos leads entram, quantos avançam e onde as vendas se perdem.</p></div></li>
+    </ul>
+    <p class="closing display" data-split-reveal>Não é uma <b>ferramenta</b>.<br><em>É um <b>sistema completo</b> de vendas.</em></p>
+  </div>
+</section>
+
+<section class="anchor" id="valor">
+  <div class="wrap sec-head">
+    <h2 class="h2 display" data-split-reveal>Quanto custa <em>continuar sem um sistema?</em></h2>
+  </div>
+  <div class="wrap anchor-box" data-anchor>
+    <p class="real-line" data-reveal><span class="tag pain">Pense no que faz hoje</span></p>
+    <ul class="chips" data-reveal-group><li data-reveal>Atendimento manual</li><li data-reveal>Follow-up manual (ou <b>nenhum</b>)</li><li data-reveal>Confirmação manual de comprovativos</li><li data-reveal>Entrega manual de produtos</li><li data-reveal>Gestão manual de conversas</li></ul>
+    <p class="anchor-q" data-reveal>Se isto fosse feito por uma pessoa, <b>quanto custaria por mês</b>? E se não for feito, <span class="r">quantas vendas se perdem</span>?</p>
+    <ul class="costs" data-costs>
+      <li><span>Uma pessoa para atender e fazer follow-up</span><b><span data-counter="8000" data-decimals="0">8.000</span> MZN/mês</b></li>
+      <li><span>Uma agência para gerir tráfego e conversões</span><b><span data-counter="15000" data-decimals="0">15.000</span> a <span data-counter="25000" data-decimals="0">25.000</span> MZN/mês</b></li>
+      <li class="lost"><span>Custo de não escalar: o crescimento que fica preso no mesmo volume.</span><b>Incalculável</b></li>
+      <li class="lost"><span>Vendas perdidas por falta de follow-up</span><b>incalculável</b></li>
+    </ul>
+    <p class="anchor-sub" data-sub>O DRS substitui <b>tudo</b> isto por <mark class="mk">uma <b>única</b> subscrição.</mark></p>
+  </div>
+  <div class="wrap">
+    <div class="band" data-reveal><p class="display">O DRS não é um custo. <em>É a escolha entre continuar no mesmo volume e escalar com lucro.</em></p></div>
+  </div>
+</section>
+
+<section class="plans-section" id="planos">
+  <div class="wrap sec-head">
+    <h2 class="h2 display" data-split-reveal>Escolha o plano <em>conforme o estágio do seu negócio</em></h2>
+  </div>
+  <div class="wrap plans" data-reveal-group>
+      <article class="plan" data-reveal>
+        <h3>Start</h3>
+        <p class="price"><b><span data-counter="2500" data-decimals="0">2.500</span> MZN</b> / mês</p>
+        <ul><li>1 conta de WhatsApp</li><li>1 produto ativo</li><li>Funis <b>prontos</b></li><li>Agentes de IA especialistas em vendas</li><li>Follow-up automático</li><li>Entrega automática de produto</li><li>Relatórios <b>completos</b></li><li>Até 2.000 conversas activas</li><li>1 assento</li></ul>
+        <a class="btn btn-ghost" href="#planos" data-cta data-plan="start">Escolher Start</a>
+      </article>
+      <article class="plan feat" data-reveal>
+        <h3>Scale</h3>
+        <p class="price"><b><span data-counter="5000" data-decimals="0">5.000</span> MZN</b> / mês</p>
+        <ul><li class="key">3 contas de WhatsApp</li><li class="key">5 produtos (3 ativos)</li><li>Funis <b>prontos</b></li><li>Agentes de IA especialistas em vendas</li><li>Follow-up automático</li><li>Entrega automática de produto</li><li>Relatórios <b>completos</b></li><li class="key">Funil de upsell &amp; downsell</li><li class="key">Envio automático de eventos de compra para a Meta</li><li class="key">Conversas <b>ilimitadas</b></li><li>Até 2 assentos</li></ul>
+        <a class="btn btn-primary" href="#planos" data-cta data-plan="scale">Escolher Scale</a>
+      </article>
+      <article class="plan" data-reveal>
+        <h3>Pro</h3>
+        <p class="price"><b><span data-counter="8500" data-decimals="0">8.500</span> MZN</b> / mês</p>
+        <ul><li class="key">10 contas de WhatsApp</li><li class="key">Produtos <b>ilimitados</b></li><li>Funis <b>prontos</b></li><li>Agentes de IA especialistas em vendas</li><li>Follow-up automático</li><li>Entrega automática de produto</li><li>Relatórios <b>completos</b></li><li>Funil de upsell &amp; downsell</li><li>Envio automático de eventos de compra para a Meta</li><li>Conversas <b>ilimitadas</b></li><li class="key">Até 5 assentos</li></ul>
+        <a class="btn btn-ghost" href="#planos" data-cta data-plan="pro">Escolher Pro</a>
+      </article>
+  </div>
+</section>
+
+<!-- ===== 12. COMEÇAR + GARANTIA ===== -->
+<section class="start" id="comecar" data-section="comecar">
+  <div class="wrap start-in">
+    <h2 class="h2 display" data-split-reveal>Seu próximo vendedor <em>pode começar a trabalhar hoje.</em></h2>
+    <p class="start-lead" data-reveal>Já viu <span class="r">quanto custa</span> continuar sem um sistema. Agora veja <span class="g">como é simples mudar</span>:</p>
+    <ol class="mini" data-mini>
+      <li><span class="mini-n">1</span><span class="mini-t">Configure o seu produto</span></li>
+      <li><span class="mini-n">2</span><span class="mini-t">Escolha o seu funil</span></li>
+      <li><span class="mini-n">3</span><span class="mini-t">Coloque o agente de IA a trabalhar</span></li>
+    </ol>
+    <p class="punch-line" data-reveal>Em <b>minutos</b>, o DRS está a <b>atender</b>, <b>vender</b> e <b>entregar</b> por você.</p>
+    <div class="cta" data-reveal>
+      <a class="btn btn-primary" href="#planos" data-cta>Quero escalar sem limites <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <span class="microcopy">Sem programar. Sem depender de agências.</span>
+    </div>
+  </div>
+</section>
+
+<section class="guar" id="garantia">
+  <div class="wrap guar-grid" data-guar>
+    <div class="seal-wrap">
+      <svg class="seal" viewBox="0 0 200 200" role="img" aria-label="Selo de 14 dias de garantia">
+        <circle class="seal-ring" cx="100" cy="100" r="92"/>
+        <circle class="seal-ring2" cx="100" cy="100" r="80"/>
+        <path id="sealPath" d="M100 100m-64 0a64 64 0 1 1 128 0a64 64 0 1 1 -128 0" fill="none"/>
+        <text class="seal-arc"><textPath href="#sealPath" startOffset="0" textLength="396" lengthAdjust="spacing">GARANTIA · SEM RISCO · GARANTIA · SEM RISCO ·</textPath></text>
+        <text class="seal-n" x="100" y="116" text-anchor="middle">14</text>
+        <text class="seal-d" x="100" y="138" text-anchor="middle">DIAS</text>
+      </svg>
+      <span class="seal-shock" aria-hidden="true"></span>
+    </div>
+    <div class="guar-text">
+      <h2 class="h2 display" data-split-reveal>Experimente <em>sem risco</em></h2>
+      <div data-reveal-group class="guar-copy">
+        <p class="lead" data-reveal>Confio tanto no DRS que assumo o risco por você.</p>
+        <p data-reveal>Experimente durante <mark class="mk">14 dias</mark>. Configure o seu produto, escolha o seu funil e veja o sistema a trabalhar.</p>
+        <p data-reveal>Se não funcionar como esperava, <span class="g">devolvemos o seu dinheiro.</span> Sem complicações, sem perguntas desnecessárias.</p>
+        <p class="condition" data-reveal>Para que a garantia se aplique, pedimos apenas que <b>configure o seu produto</b> e <b>o seu funil</b> — porque é isso que permite ao sistema trabalhar. Nós fazemos o resto.</p>
+        <p class="guar-end" data-reveal>Você não arrisca <b>nada</b>. O <b>único</b> risco possível é <span class="r">se não tomar uma decisão e continuar a tentar vender sem um sistema.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 13. FAQ + OBJEÇÕES ===== -->
+<section class="faq" id="faq" data-section="faq">
+  <div class="wrap sec-head">
+    <h2 class="h2 display" data-split-reveal>Perguntas <em>frequentes</em></h2>
+  </div>
+  <div class="wrap faq-list" data-faq>
+<details class="qa" data-qa><summary><span>Preciso de equipa para gerir isto?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p><span class="k">Não.</span> O DRS foi construído para funcionar <mark class="hl2">sem depender de atendimento manual</mark>. Você configura, o sistema trabalha.</p></div></div></details>
+<details class="qa" data-qa><summary><span>Preciso de instalar algo?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p><span class="k">Não.</span> O DRS funciona na cloud. Só precisa de conectar o seu WhatsApp e configurar o produto.</p></div></div></details>
+<details class="qa" data-qa><summary><span>Funciona no meu número de WhatsApp?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> O DRS foi desenhado para funcionar com <b>contas oficiais</b> e integrações que <span class="g">não colocam o seu número em risco de bloqueio.</span></p></div></div></details>
+<details class="qa" data-qa><summary><span>Vocês usam API Oficial?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> O DRS usa a <b>API Oficial do WhatsApp</b> — a mesma usada por empresas que operam <mark class="hl2">em escala</mark>.</p><p>E <b>não precisa de ter uma BM verificada</b> para se conectar. Através dos nossos parceiros, nós tratamos de toda a conexão por você. O seu número continua a funcionar normalmente, e você usa a API <span class="g">sem as limitações de uma BM não verificada.</span></p><p><span class="k">Isto não é uma solução improvisada.</span> É uma <b>integração oficial</b> — o modelo chama-se <mark class="hl2">coexistência</mark>: o seu WhatsApp continua a funcionar como sempre, e a API é adicionada em paralelo. Sem substituir o seu número, <span class="g">sem risco de bloqueio por configuração não oficial.</span></p></div></div></details>
+<details class="qa" data-qa><summary><span>Posso ter mais do que uma conta de WhatsApp?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> O DRS suporta múltiplas contas — útil se vende para diferentes públicos ou quer separar operações.</p></div></div></details>
+<details class="qa" data-qa><summary><span>O sistema pode ser banido?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p>O DRS usa uma configuração <b>preparada para escalar</b>, <mark class="hl2">evitando os problemas que causam bloqueios.</mark> No entanto, como com <b>qualquer</b> sistema, o <b>cumprimento</b> das políticas do WhatsApp é essencial.</p></div></div></details>
+<details class="qa" data-qa><summary><span>O que acontece se a IA não souber responder?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p>Pode definir regras de fallback. Se a IA não souber, a conversa é encaminhada para você ou para um humano.</p></div></div></details>
+<details class="qa" data-qa><summary><span>Posso intervir nas conversas?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> Pode assumir <b>qualquer</b> conversa a <b>qualquer</b> momento. O sistema é autónomo, mas não é uma caixa fechada.</p></div></div></details>
+<details class="qa" data-qa><summary><span>O sistema pode cometer erros?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p>O DRS segue um funil <b>estruturado</b>, o que reduz drasticamente os erros comuns em automações genéricas. Mas pode <b>sempre</b> supervisionar e ajustar.</p></div></div></details>
+<details class="qa" data-qa><summary><span>Os meus dados estão seguros?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> Os dados são tratados de acordo com boas práticas de segurança e privacidade.</p></div></div></details>
+<details class="qa" data-qa><summary><span>Posso cancelar quando quiser?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> A subscrição é mensal e pode ser cancelada a <b>qualquer</b> momento.</p></div></div></details>
+<details class="qa" data-qa><summary><span>Existe suporte?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> O suporte está incluído para o ajudar na configuração e no uso do sistema.</p></div></div></details>
+<details class="qa" data-qa><summary><span>Isto funciona para o meu tipo de negócio?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p>Se vende produtos que podem ser vendidos por <b>conversa e resposta direta</b>, <span class="g">sim.</span> Se tiver dúvidas, fale connosco antes de avançar.</p></div></div></details>
+<details class="qa" data-qa><summary><span>E se o cliente enviar um comprovativo falso?</span><i class="qa-ico" aria-hidden="true"></i></summary><div class="ans"><div class="ans-in"><p>O DRS <b>não</b> confia apenas no print ou mensagem de pagamento partilhada pelo cliente. Ele verifica o comprovativo em duas camadas:</p><p>Primeiro, compara os dados com o pedido — valor, referência, produto.</p><p>Depois, <b>confirma a transação diretamente</b> com o serviço de pagamento. Se o comprovativo for falso, <mark class="hl2">a transação <b>não</b> existe do lado do serviço</mark> — e o sistema <span class="g">detecta isso.</span></p><p>Se quiser, pode configurar para que <b>a confirmação final passe por você.</b> Se preferir autonomia total, o sistema <span class="g">confirma automaticamente.</span></p><p>Não prometemos “100% antifraude” porque isso não existe. Mas garantimos que o processo é <b>consistente</b>, <b>auditável</b> e <span class="g">sempre sob o seu controlo.</span></p></div></div></details>
+  </div>
+</section>
+
+<section class="objs" id="objecoes">
+  <div class="wrap objs-grid" data-objs>
+    <div class="ob-tabs" role="tablist" aria-label="Objeções finais" aria-orientation="vertical">
+<button type="button" role="tab" id="ob-t0" aria-controls="ob-p0" aria-selected="true" tabindex="0"><span>“Já tentei automatizar e não funcionou.”</span><i class="ob-bar" aria-hidden="true"></i></button>
+<button type="button" role="tab" id="ob-t1" aria-controls="ob-p1" aria-selected="false" tabindex="-1"><span>“Tenho medo de perder o controlo da minha operação.”</span><i class="ob-bar" aria-hidden="true"></i></button>
+<button type="button" role="tab" id="ob-t2" aria-controls="ob-p2" aria-selected="false" tabindex="-1"><span>“E se o meu produto não encaixar?”</span><i class="ob-bar" aria-hidden="true"></i></button>
+<button type="button" role="tab" id="ob-t3" aria-controls="ob-p3" aria-selected="false" tabindex="-1"><span>“Não tenho tempo para configurar isto.”</span><i class="ob-bar" aria-hidden="true"></i></button>
+<button type="button" role="tab" id="ob-t4" aria-controls="ob-p4" aria-selected="false" tabindex="-1"><span>“E se eu não gostar?”</span><i class="ob-bar" aria-hidden="true"></i></button>
+    </div>
+    <div class="ob-stage">
+<div class="ob-panel" role="tabpanel" id="ob-p0" aria-labelledby="ob-t0" data-ob-panel><p><span class="g">Desta vez é <b>diferente</b>.</span> Você não vai construir <b>nada</b> do zero — vai usar um funil <b>pronto</b>, com método e estrutura. O trabalho de montar o sistema já foi feito.</p></div>
+<div class="ob-panel" role="tabpanel" id="ob-p1" aria-labelledby="ob-t1" data-ob-panel><p>O sistema é autónomo, mas não é uma caixa fechada. Você pode intervir em <b>qualquer</b> conversa, a <b>qualquer</b> momento. <span class="g">O controlo é <b>sempre</b> seu.</span></p></div>
+<div class="ob-panel" role="tabpanel" id="ob-p2" aria-labelledby="ob-t2" data-ob-panel><p><b>Se você vende por conversa e resposta directa</b>, <span class="g">encaixa.</span> Se tiver dúvidas, fale connosco antes de avançar — <mark class="hl2">preferimos dizer-lhe a verdade</mark> do que vender-lhe algo que não serve.</p></div>
+<div class="ob-panel" role="tabpanel" id="ob-p3" aria-labelledby="ob-t3" data-ob-panel><p><span class="g">A configuração leva <b>minutos</b>, não dias.</span> Você responde a algumas perguntas sobre o seu produto, escolhe o funil, e o sistema está <b>pronto</b>.</p></div>
+<div class="ob-panel" role="tabpanel" id="ob-p4" aria-labelledby="ob-t4" data-ob-panel><p>Você tem 14 dias para testar. Se não funcionar como esperava, devolvemos o dinheiro. <span class="g">O risco é <b>nosso</b>.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 14. CTA FINAL ===== -->
+<section class="final" id="final" data-section="final">
+  <div class="final-glow" aria-hidden="true"></div>
+  <div class="wrap final-in">
+    <h2 class="h2 display" data-split-reveal>Pare de construir automações. <em>Comece a construir vendas.</em></h2>
+    <div class="vsf" data-reveal-group>
+      <p class="vsf-row bot" data-reveal><span class="vsf-tag">Hoje</span><span><b>Cada venda</b> depende de você.</span></p>
+      <p class="vsf-row agent" data-reveal><span class="vsf-tag good">Com o DRS</span><span>Cada venda depende de um sistema que <mark class="mk">não para, não se esquece e não se cansa.</mark></span></p>
+    </div>
+    <ul class="final-grid" data-reveal-group>
+      <li data-reveal><span class="fg-k">Seus <b>anúncios</b></span><span>trazem as pessoas.</span></li>
+      <li data-reveal><span class="fg-k">Seus <b>funis</b></span><span>estruturam a jornada.</span></li>
+      <li data-reveal><span class="fg-k">Seus <b>agentes</b></span><span>conduzem as conversas.</span></li>
+      <li data-reveal><span class="fg-k">Seu <b>sistema</b></span><span>processa a venda.</span></li>
+    </ul>
+    <p class="final-punch display" data-final-punch>Agora falta colocar <b>tudo</b> a <em>trabalhar</em>.</p>
+    <div class="cta" data-final-cta>
+      <a class="btn btn-primary btn-lg" href="#planos" data-cta data-magnet>Quero escalar sem limites <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <span class="microcopy">14 dias de garantia. Cancele quando quiser.</span>
+    </div>
+  </div>
+</section>
+
+<!-- fim dos blocos -->
+
+</main>
+
+<footer class="footer" id="rodape">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <a class="logo" href="#topo" aria-label="DRS | DirectResponse Scale">
+          <svg class="logo-mark" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="8" fill="var(--accent)"/><path d="M8 19.5 13 13.5l3.2 3L21 9.5M16.5 9.5H21V14" fill="none" stroke="var(--accent-ink)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <b>DRS</b><span>DirectResponse Scale</span>
+        </a>
+        <p>Agentes de IA especialistas em vendas, funis prontos e automação de follow-up, pagamento e entrega — tudo no seu WhatsApp.</p>
+        <div class="social"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a></div>
+      </div>
+      <div><h4>Produto</h4><ul><li><a href="#agentes">Funcionalidades</a></li><li><a href="#planos">Preços</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="legal/termos.html">Termos</a></li><li><a href="legal/privacidade.html">Privacidade</a></li><li><a href="legal/cookies.html">Cookies</a></li><li><a href="legal/reembolsos.html">Reembolsos</a></li></ul></div>
+      <div><h4>Empresa</h4><ul><li><a href="legal/sobre.html">Sobre nós</a></li></ul></div>
+      <div class="f-contact"><h4>Contacto</h4><ul><li><span>Contacto</span><a href="mailto:info@directresponsescale.com">info@directresponsescale.com</a></li><li><span>Localização</span>Maputo, Moçambique</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 DRS | DirectResponse Scale. Todos os direitos reservados.</span><a href="#topo" class="to-top">Voltar ao topo</a></div>
+  </div>
+</footer>
+
+<div class="theme-pill" data-theme-pill role="group" aria-label="Tema visual (atalho: T)">
+  <span class="thumb" aria-hidden="true"></span>
+  <button type="button" data-set-theme="premium" aria-pressed="true">Premium</button>
+  <button type="button" data-set-theme="editorial" aria-pressed="false">Editorial</button>
+</div>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/vignettes.js"></script>
+<script src="js/main.js"></script>
+<script src="js/problem.js"></script>
+<script src="js/turn.js"></script>
+<script src="js/como.js"></script>
+<script src="js/diferencial.js"></script>
+<script src="js/especialista.js"></script>
+<script src="js/processo.js"></script>
+<script src="js/publico.js"></script>
+<script src="js/prova.js"></script>
+<script src="js/oferta.js"></script>
+<script src="js/fecho.js"></script>
+</body>
+</html>
