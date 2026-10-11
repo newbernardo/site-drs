@@ -76,9 +76,5 @@
 .pay-close-wrap { padding: var(--s-9) 0 var(--s-10); }
 @media (max-width: 56rem) { .panel { grid-template-columns: 1fr; } .tabs button { font-size: .8125rem; padding: .4rem .3rem; } }
 
-/* dica acima das abas: três setas saem do texto e apontam para cada cenário */
-.scen-hint { position: relative; width: min(100%, 44rem); margin: 0 auto var(--s-2); display: grid; justify-items: center; }
-.scen-hint-t { font-size: var(--t-base); font-weight: 600; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: .3rem 1rem; position: relative; z-index: 1; }
-.scen-hint svg { width: 100%; height: 2.75rem; margin-top: -.15rem; overflow: visible; }
-.scen-hint path { fill: none; stroke: var(--accent); stroke-width: 2; vector-effect: non-scaling-stroke; stroke-linecap: round; }
-.hint-head { position: absolute; bottom: .1rem; width: .65rem; height: .65rem; translate: -50% 0; rotate: 45deg; border-right: 2px solid var(--accent); border-bottom: 2px solid var(--accent); }
+/* dica acima das abas */
+.scen-hint { margin: 0 auto var(--s-4); text-align: center; text-wrap: balance; font-size: var(--t-lg); font-weight: 600; color: var(--accent); }
