@@ -71,3 +71,6 @@
 .fdash { margin: 0; }
 .fdash .shot-frame { position: relative; min-height: 0; border-radius: var(--radius-l); overflow: hidden; background: var(--bg-raised); border: 1px solid var(--line-strong); box-shadow: var(--shadow-panel); }
 .fdash-img { display: block; width: 100%; height: auto; }
+
+/* retrato com cantos bem arredondados em qualquer tema */
+.story .pic, [data-theme="editorial"] .story .pic { border-radius: 1.75rem; }
