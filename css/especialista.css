@@ -48,7 +48,8 @@ mark.hl2 { background: var(--accent-soft); color: inherit; padding: .05em .25em;
 .formats { display: flex; flex-wrap: wrap; gap: var(--s-3); }
 .formats li { font-family: var(--font-display); font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2.1rem); letter-spacing: -.02em; padding: .35rem 1.1rem; border: 1px solid var(--line-strong); border-radius: 999px; color: var(--ink-3); transition: color var(--d-base) ease, border-color var(--d-base) ease, background-color var(--d-base) ease, transform var(--d-base) var(--ease-out); }
 .formats li.on { color: var(--ink); border-color: var(--accent); background: var(--accent-soft); transform: translateY(-2px); }
-.mm-phone { display: grid; justify-items: center; }
+.mm-phone { margin: 0; display: grid; justify-items: center; }
+.mm-phone img { width: min(100%, 24rem); height: auto; border-radius: 1.25rem; box-shadow: var(--shadow-panel); }
 .mm-close-wrap { padding: var(--s-9) 0 var(--s-10); }
 
 .aud { display: flex; align-items: center; gap: .55rem; min-width: 11rem; }
