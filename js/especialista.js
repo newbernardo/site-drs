@@ -29,9 +29,12 @@
           DRS.chat.reveal(tl, tracks[1], ag[0], .4);
           DRS.chat.reveal(tl, tracks[1], ag[1], 1.2, { typing: .55, typingEl: ty[0] });
           DRS.chat.reveal(tl, tracks[1], ag[2], 2.7);
-          DRS.chat.reveal(tl, tracks[1], ag[3], 3.3, { typing: .55, typingEl: ty[1] });
-          DRS.chat.reveal(tl, tracks[1], ag[4], 4.9);
-          DRS.chat.reveal(tl, tracks[1], ag[5], 5.7, { typing: .55, typingEl: ty[2] });
+          DRS.chat.reveal(tl, tracks[1], ag[3], 3.3, { typing: .45, typingEl: ty[1] });
+          DRS.chat.reveal(tl, tracks[1], ag[4], 4.4);
+          DRS.chat.reveal(tl, tracks[1], ag[5], 5.4);
+          DRS.chat.reveal(tl, tracks[1], ag[6], 6.0, { typing: .55, typingEl: ty[2] });
+          DRS.chat.reveal(tl, tracks[1], ag[7], 7.5);
+          DRS.chat.reveal(tl, tracks[1], ag[8], 8.1, { typing: .45, typingEl: ty[3] });
         }
 
         return function () { offs.forEach(function (f) { f(); }); };

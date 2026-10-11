@@ -13,7 +13,7 @@ mark.hl2 { background: var(--accent-soft); color: inherit; padding: .05em .25em;
 .vs-tag.good { color: var(--accent); border-color: var(--accent); }
 .vs-who b { color: var(--ink); }
 .vs-who .g { color: var(--accent); }
-.phone-s { width: min(17.5rem, 100%); height: 31rem; min-height: 0; }
+.phone-s { width: min(18.5rem, 100%); height: 40rem; min-height: 0; }
 .sys-chip.stuck { background: var(--danger-soft); color: var(--danger); }
 .vs-punch-wrap { padding: var(--s-9) 0 var(--s-8); text-align: center; }
 .vs-punch { font-size: clamp(2rem, 1.3rem + 3.4vw, 4rem); }
