@@ -1,4 +1,4 @@
-# DRS — Copy das páginas legais e institucional (branch `claude/oi-f0qhfu`)
+# WatSeller — Copy das páginas legais e institucional (branch `claude/oi-f0qhfu`)
 
 
 ---
@@ -12,11 +12,11 @@
 
 ## 1. Aceitação
 
-Ao criar uma conta, subscrever um plano ou usar o DRS | DirectResponse Scale («DRS», «nós»), concorda com estes Termos. Se não concordar, não utilize o serviço.
+Ao criar uma conta, subscrever um plano ou usar o WatSeller («nós»), concorda com estes Termos. Se não concordar, não utilize o serviço.
 
 ## 2. O serviço
 
-O DRS disponibiliza agentes de IA especializados em vendas, funis prontos e automação de atendimento, follow-up, confirmação de pagamento e entrega, para uso através do WhatsApp. As funcionalidades dependem do plano subscrito (Start, Scale ou Pro).
+O WatSeller disponibiliza agentes de IA especializados em vendas, funis prontos e automação de atendimento, follow-up, confirmação de pagamento e entrega, para uso através do WhatsApp. As funcionalidades dependem do plano subscrito (Start, Scale ou Pro).
 
 ## 3. Conta e acesso
 
@@ -32,17 +32,17 @@ Os preços e o que cada plano inclui são os apresentados na página de planos n
 
 ## 5. Garantia de 14 dias
 
-Os novos subscritores têm 14 dias para experimentar o DRS. As condições estão descritas na página de Reembolsos.
+Os novos subscritores têm 14 dias para experimentar o WatSeller. As condições estão descritas na página de Reembolsos.
 
 ## 6. Uso aceitável
 
-Compromete-se a usar o DRS apenas para fins legítimos. É proibido:
+Compromete-se a usar o WatSeller apenas para fins legítimos. É proibido:
 
 - enviar spam ou mensagens a pessoas que não as esperam ou que pediram para não ser contactadas;
 
 - promover produtos ou serviços ilegais, fraudulentos ou enganosos;
 
-- violar os termos e políticas do WhatsApp/Meta ou de outras plataformas que utilize em conjunto com o DRS;
+- violar os termos e políticas do WhatsApp/Meta ou de outras plataformas que utilize em conjunto com o WatSeller;
 
 - tentar aceder indevidamente aos sistemas, interferir com o seu funcionamento ou contornar limites do plano.
 
@@ -52,7 +52,7 @@ Os produtos, textos, ficheiros e dados que carrega continuam a ser seus. Concede
 
 ## 8. Resultados e disponibilidade
 
-O DRS é uma ferramenta: os resultados de vendas dependem do seu produto, oferta, tráfego e mercado, pelo que não os garantimos. Trabalhamos para manter o serviço disponível, mas podem ocorrer interrupções por manutenção ou por falhas de serviços de terceiros (como o WhatsApp). Na medida permitida pela lei, a nossa responsabilidade limita-se ao valor pago por si nos três meses anteriores ao evento que originou a reclamação.
+O WatSeller é uma ferramenta: os resultados de vendas dependem do seu produto, oferta, tráfego e mercado, pelo que não os garantimos. Trabalhamos para manter o serviço disponível, mas podem ocorrer interrupções por manutenção ou por falhas de serviços de terceiros (como o WhatsApp). Na medida permitida pela lei, a nossa responsabilidade limita-se ao valor pago por si nos três meses anteriores ao evento que originou a reclamação.
 
 ## 9. Suspensão e cancelamento
 
@@ -60,11 +60,11 @@ Podemos suspender ou encerrar contas que violem estes Termos, com aviso sempre q
 
 ## 10. Alterações
 
-Podemos atualizar estes Termos. Quando as alterações forem relevantes, avisaremos por email ou na plataforma. Continuar a usar o DRS depois disso implica aceitação da nova versão.
+Podemos atualizar estes Termos. Quando as alterações forem relevantes, avisaremos por email ou na plataforma. Continuar a usar o WatSeller depois disso implica aceitação da nova versão.
 
 ## 11. Lei aplicável e contacto
 
-Estes Termos regem-se pela lei de Moçambique. Para qualquer questão, escreva para info@directresponsescale.com.
+Estes Termos regem-se pela lei de Moçambique. Para qualquer questão, escreva para info@watseller.com.
 
 
 ---
@@ -76,7 +76,7 @@ Estes Termos regem-se pela lei de Moçambique. Para qualquer questão, escreva p
 
 Última atualização: 9 de outubro de 2026
 
-Esta política explica que dados tratamos, para quê e que direitos tem. Aplica-se ao site e à plataforma DRS | DirectResponse Scale.
+Esta política explica que dados tratamos, para quê e que direitos tem. Aplica-se ao site e à plataforma WatSeller.
 
 ## 1. Dados que recolhemos
 
@@ -90,7 +90,7 @@ Esta política explica que dados tratamos, para quê e que direitos tem. Aplica-
 
 ## 2. Dados dos seus clientes
 
-Quando o DRS conversa com os seus clientes, trata esses dados em seu nome: o seu negócio decide porquê e como são usados e o DRS atua como entidade subcontratada, tratando-os apenas para prestar o serviço. É responsável por ter fundamento legal para contactar essas pessoas e por as informar, quando aplicável.
+Quando o WatSeller conversa com os seus clientes, trata esses dados em seu nome: o seu negócio decide porquê e como são usados e o WatSeller atua como entidade subcontratada, tratando-os apenas para prestar o serviço. É responsável por ter fundamento legal para contactar essas pessoas e por as informar, quando aplicável.
 
 ## 3. Para que usamos os dados
 
@@ -112,7 +112,7 @@ Guardamos os dados enquanto a conta estiver ativa e pelo tempo necessário para 
 
 ## 6. Os seus direitos
 
-Pode pedir acesso, correção, eliminação ou limitação do tratamento dos seus dados, bem como opor-se a certos usos. Para exercer estes direitos, escreva para info@directresponsescale.com.
+Pode pedir acesso, correção, eliminação ou limitação do tratamento dos seus dados, bem como opor-se a certos usos. Para exercer estes direitos, escreva para info@watseller.com.
 
 ## 7. Segurança
 
@@ -124,7 +124,7 @@ Consulte a Política de Cookies.
 
 ## 9. Alterações e contacto
 
-Podemos atualizar esta política e indicaremos a data da última atualização no topo. Questões: info@directresponsescale.com.
+Podemos atualizar esta política e indicaremos a data da última atualização no topo. Questões: info@watseller.com.
 
 
 ---
@@ -154,7 +154,7 @@ Pode apagar ou bloquear cookies nas definições do seu navegador. Ao bloquear o
 
 ## Contacto
 
-Dúvidas sobre cookies: info@directresponsescale.com. Veja também a Política de Privacidade.
+Dúvidas sobre cookies: info@watseller.com. Veja também a Política de Privacidade.
 
 
 ---
@@ -169,7 +169,7 @@ Se não funcionar como esperava, devolvemos o seu dinheiro.
 
 ## Garantia de 14 dias
 
-Experimente o DRS durante 14 dias. Se não funcionar como esperava, devolvemos o seu dinheiro — sem complicações e sem perguntas desnecessárias.
+Experimente o WatSeller durante 14 dias. Se não funcionar como esperava, devolvemos o seu dinheiro — sem complicações e sem perguntas desnecessárias.
 
 ## Condição para a garantia se aplicar
 
@@ -177,7 +177,7 @@ Pedimos apenas que configure o seu produto e o seu funil, porque é isso que per
 
 ## Como pedir o reembolso
 
-- Escreva para info@directresponsescale.com dentro dos 14 dias seguintes à subscrição.
+- Escreva para info@watseller.com dentro dos 14 dias seguintes à subscrição.
 
 - Indique o email da sua conta.
 
@@ -201,15 +201,15 @@ Ver planosTermos de Uso
 
 ← Voltar à página inicial
 
-## O DRS não nasceu num escritório. Nasceu da necessidade.
+## O WatSeller não nasceu num escritório. Nasceu da necessidade.
 
 O fundador vende produtos digitais — ebooks, materiais educativos, guias práticos. Durante muito tempo fez tudo manualmente: respondia a cada conversa, enviava dados de pagamento, confirmava comprovativos e entregava os produtos. Quando o volume subiu, percebeu que não conseguia escalar sozinho.
 
-Foi por isso que construiu o DRS. E é o mesmo sistema que usa todos os dias para vender.
+Foi por isso que construiu o WatSeller. E é o mesmo sistema que usa todos os dias para vender.
 
 ## O que fazemos
 
-O DRS | DirectResponse Scale dá-lhe agentes de IA especializados em vendas no WhatsApp: atendem, qualificam, apresentam o produto, tratam objeções, conduzem para o pagamento, confirmam o comprovativo, entregam e fazem follow-up — sem workflows para construir e sem depender de agências.
+O WatSeller dá-lhe agentes de IA especializados em vendas no WhatsApp: atendem, qualificam, apresentam o produto, tratam objeções, conduzem para o pagamento, confirmam o comprovativo, entregam e fazem follow-up — sem workflows para construir e sem depender de agências.
 
 ## No que acreditamos
 
@@ -221,6 +221,6 @@ O DRS | DirectResponse Scale dá-lhe agentes de IA especializados em vendas no W
 
 ## Fale connosco
 
-Maputo, Moçambique · info@directresponsescale.com
+Maputo, Moçambique · info@watseller.com
 
 Ver planos

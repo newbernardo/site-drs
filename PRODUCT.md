@@ -15,7 +15,7 @@ Static HTML/CSS/JS, sem build. GSAP 3.15 + ScrollTrigger servidos localmente (`v
 Vendedores de infoprodutos (e-books, cursos, mentorias) e de produtos físicos (nutras, beleza, roupas) em Moçambique/lusofonia que vendem por tráfego pago (Meta Ads) e fecham pelo WhatsApp. Já sentem o limite de responder mensagens manualmente. *(inferido da copy)*
 
 ## Product Purpose
-DRS | DirectResponse Scale: agentes de IA especializados em vendas no WhatsApp, com funis prontos, follow-up, confirmação de pagamento e entrega automáticos. A landing deve fazer o visitante escolher um plano (CTA "Quero escalar sem limites").
+WatSeller: agentes de IA especializados em vendas no WhatsApp, com funis prontos, follow-up, confirmação de pagamento e entrega automáticos. A landing deve fazer o visitante escolher um plano (CTA "Quero escalar sem limites").
 
 ## Positioning
 Não é chatbot nem construtor de workflows: o funil já vem pronto e o agente conduz a conversa até a compra, inclusive pagamento e entrega.
@@ -24,7 +24,7 @@ Não é chatbot nem construtor de workflows: o funil já vem pronto e o agente c
 Planos Start 2.500 / Scale 5.000 / Pro 8.500 MZN por mês; garantia de 14 dias; WhatsApp via API oficial (coexistência). Toda a copy vem de `copy-original.md` e `copy-legal.md` (aprovada, não reescrever). Português com "você".
 
 ## Brand Commitments
-Nome "DRS | DirectResponse Scale". Dois temas alternáveis (`data-theme="premium"` padrão e `"editorial"`), ver plano da Fase 2.
+Nome "WatSeller" (domínio watseller.com). Um único tema visual: Editorial (`data-theme="editorial"`).
 
 ## Evidence on Hand
 Não há imagens reais ainda. O usuário fornecerá 5: painel do hero, print do seletor de funil, retrato do fundador, painel da prova real, print do funil da demo. Até lá, placeholders marcados. Os números da prova real (114.682 MZN, 823 vendas, 7,2 %, 5 contas, 12 produtos) vêm da copy original; não inventar outros.

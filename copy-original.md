@@ -1,4 +1,4 @@
-# DRS — Copy original (branch `claude/oi-f0qhfu`)
+# WatSeller — Copy original (branch `claude/oi-f0qhfu`)
 
 Fonte: `index.html` da branch (somente leitura via `git show`). Só texto; sem CSS/HTML/estrutura.
 Convenções: **negrito** = ênfase da copy original. `[IMG: …]` = alt text da imagem (descreve a cena, útil para decidir animação). Idioma: português europeu/moçambicano (mistura "você" e "tu" nas objeções — mantido como está).
@@ -6,13 +6,13 @@ Convenções: **negrito** = ênfase da copy original. `[IMG: …]` = alt text da
 ---
 
 ## META
-- **Title:** DRS | DirectResponse Scale — Agentes de IA que vendem no WhatsApp
+- **Title:** WatSeller — Agentes de IA que vendem no WhatsApp
 - **Description:** Escale seu negócio no WhatsApp com agentes de IA especializados em venda direta. Funis prontos, follow-up automático, confirmação de pagamento e entrega — sem programar e sem depender de agências.
-- **Mensagem WhatsApp (CTA geral):** "Olá! Quero escalar as minhas vendas no WhatsApp com o DRS."
-- **Mensagem WhatsApp (CTA por plano):** "Olá! Quero começar com o plano {Start|Scale|Pro} do DRS."
+- **Mensagem WhatsApp (CTA geral):** "Olá! Quero escalar as minhas vendas no WhatsApp com o WatSeller."
+- **Mensagem WhatsApp (CTA por plano):** "Olá! Quero começar com o plano {Start|Scale|Pro} do WatSeller."
 
 ## NAV
-- Logo: **DRS** · DirectResponse Scale
+- Logo: **WatSeller**
 - Botão: Login do Assinante
 
 ---
@@ -22,7 +22,7 @@ Convenções: **negrito** = ênfase da copy original. `[IMG: …]` = alt text da
 
 **Subhead:** Agentes treinados com **metodologias**, **técnicas de persuasão**, **tratamento de objeções** e **estratégias de follow-up** para conduzir cada conversa até a compra de forma autónoma.
 
-[IMG: Painel do DRS com receita, vendas e taxa de conversão]
+[IMG: Painel do WatSeller com receita, vendas e taxa de conversão]
 
 **CTA:** Quero escalar sem limites
 **Microcopy:** Não precisa construir Workflows nem depender mais de agências
@@ -94,7 +94,7 @@ Ele…
 ---
 
 ## 4. APRESENTAÇÃO DA SOLUÇÃO
-**H2:** O sistema que você acabou de imaginar existe. Chama-se *DRS | DirectResponse Scale*.
+**H2:** O sistema que você acabou de imaginar existe. Chama-se *WatSeller*.
 
 Uma solução diferente de tudo o que você já viu:
 - ✕ Não é um chatbot.
@@ -107,14 +107,14 @@ Uma solução diferente de tudo o que você já viu:
 - **02 — Agentes de IA especializados em vendas** — Treinados para **atender, persuadir, quebrar objeções** e conduzir à compra.
 - **03 — Automação de follow-up, pagamento e entrega** — Para que **nenhuma venda se perca no silêncio** e nenhum processo dependa de você.
 
-[IMG: Funil de venda no painel do DRS]
+[IMG: Funil de venda no painel do WatSeller]
 
 Desde a primeira mensagem até a venda realizada — *sem depender de você.*
 
 ---
 
 ## 5. COMO FUNCIONA
-**H2:** Como o DRS transforma *tráfego em vendas*
+**H2:** Como o WatSeller transforma *tráfego em vendas*
 
 ### PASSO 1 — Você Anuncia
 *Quem faz: Você*
@@ -153,8 +153,8 @@ Para **produtos digitais**, a entrega acontece automaticamente após a confirma�
 [IMG: Construtor de workflows típico: emaranhado de blocos, IFs e ELSEs]
 Você recebe dezenas de blocos, triggers, condições, IFs, ELSEs, automações e configurações. Depois **passa semanas a tentar transformar tudo isso num processo de venda que funcione.**
 
-**No DRS**
-[IMG: Escolha do funil de venda no painel do DRS]
+**No WatSeller**
+[IMG: Escolha do funil de venda no painel do WatSeller]
 Você escolhe o tipo de produto. O funil já vem pronto — com atendimento, persuasão, tratamento de objeções, follow-up, pagamento e entrega já configurados.
 
 **Fecho:** Escolha o funil. Forneça informações sobre o seu produto. Publique. *E comece a vender.*
@@ -236,7 +236,7 @@ Estudos mostram que são necessários **de 1 a 7 contactos** para o cliente deci
 6. Follow-up *(sistema)*
 7. Compra *(fim)*
 
-O DRS não desiste. Se o cliente não comprar de imediato, o sistema activa a sequência de follow-up definida no funil.
+O WatSeller não desiste. Se o cliente não comprar de imediato, o sistema activa a sequência de follow-up definida no funil.
 
 **Não é spam.** É uma sequência contextualizada: uma mensagem no momento certo, com a informação certa, para retomar a conversa sem pressionar.
 
@@ -251,7 +251,7 @@ O DRS não desiste. Se o cliente não comprar de imediato, o sistema activa a se
 O cliente decide comprar, paga e envia o comprovativo. E é exactamente aqui que os chatbots comuns falham. Porque **não têm como confirmar o pagamento.** E se a venda acontece enquanto você está offline ou a dormir, o cliente fica frustrado — porque o seu chatbot só sabe dizer "estou verificando o seu pagamento" e nunca sai desse estágio.
 A confiança do negócio quebra. E a venda também.
 
-**No DRS** — *O processo não para no comprovativo.*
+**No WatSeller** — *O processo não para no comprovativo.*
 O sistema confirma o pagamento, processa a informação e dá seguimento ao processo de entrega — sem intervenção manual, a qualquer hora.
 Veja como funciona para cada cenário ↓
 
@@ -275,20 +275,20 @@ Se o seu funil for de **pagamento na entrega**, o sistema segue o mesmo processo
 ---
 
 ## 11. PARA QUEM É
-**H2:** Para quem é o *DRS*
+**H2:** Para quem é o *WatSeller*
 
-O DRS foi construído para quem vende através de tráfego e WhatsApp — e já percebeu que escalar exige mais do que responder mensagens.
+O WatSeller foi construído para quem vende através de tráfego e WhatsApp — e já percebeu que escalar exige mais do que responder mensagens.
 
 ### Para Infoprodutores
 [IMG: Infoprodutor a trabalhar no portátil num curso online]
 *E-books, cursos online, mentorias, conteúdos digitais.*
-Se **vende conhecimento** e **depende do WhatsApp** para fechar vendas — ou se já tentou automatizar e a automação não acompanhou o volume — o DRS foi feito para o seu caso.
+Se **vende conhecimento** e **depende do WhatsApp** para fechar vendas — ou se já tentou automatizar e a automação não acompanhou o volume — o WatSeller foi feito para o seu caso.
 **O que resolve:** entrega automática, follow-up que recupera vendas, e um processo que escala sem depender de você.
 
 ### Para Vendedores de produtos físicos
 [IMG: Produtos físicos e um telemóvel com pedidos de clientes no WhatsApp]
 *Nutras, produtos de beleza, roupas, acessórios etc.*
-Se recebe pedidos pelo WhatsApp e processa pagamentos e entregas manualmente — ou se perde vendas porque não consegue responder a todos — o DRS foi feito para o seu caso.
+Se recebe pedidos pelo WhatsApp e processa pagamentos e entregas manualmente — ou se perde vendas porque não consegue responder a todos — o WatSeller foi feito para o seu caso.
 **O que resolve:** confirmação automática de pagamento, recolha de dados de entrega e criação do processo de envio no seu painel.
 
 **Fecho:** Se o seu negócio depende de conversas no WhatsApp para vender, *isto foi construído para o seu caso.*
@@ -296,18 +296,18 @@ Se recebe pedidos pelo WhatsApp e processa pagamentos e entregas manualmente —
 ---
 
 ## 12. PARA QUEM NÃO É
-**H2:** O DRS não é para você *se…*
+**H2:** O WatSeller não é para você *se…*
 - …vende serviços que exigem negociação complexa, com condições específicas para cada cliente.
 - …tem um ciclo de vendas muito longo, onde o processo entre o primeiro contacto e a compra leva semanas ou meses.
 - …precisa de intervenção humana em cada venda, porque cada decisão exige um vendedor especializado.
 - …vende produtos que não se explicam por conversa — que exigem **demonstração técnica**, **visita presencial** ou **avaliação personalizada**.
 
-O DRS foi construído para produtos que podem ser vendidos através de **conversa** e uma estratégia de **resposta direta**.
+O WatSeller foi construído para produtos que podem ser vendidos através de **conversa** e uma estratégia de **resposta direta**.
 
 ---
 
 ## 13. CASOS DE USO
-**H2:** Como o DRS funciona *no seu caso*
+**H2:** Como o WatSeller funciona *no seu caso*
 
 ### CASO 1 — E-book
 Um cliente clica no seu anúncio e entra no WhatsApp. **O agente atende, apresenta o e-book, responde a dúvidas** e conduz ao pagamento. O cliente paga, envia o comprovativo, e o e-book é entregue automaticamente.
@@ -325,14 +325,14 @@ Fluxo: Meta Ads → WhatsApp → Agente → Pagamento → Recolha de dados → P
 O cliente disse "vou pensar". O sistema **activa o follow-up**, retoma a conversa no momento certo e conduz novamente à decisão.
 Fluxo: WhatsApp → Follow-up automático → Nova conversa → Compra
 
-**Fecho:** Digital ou físico, com compra imediata ou follow-up — *o DRS adapta-se ao seu modelo.*
+**Fecho:** Digital ou físico, com compra imediata ou follow-up — *o WatSeller adapta-se ao seu modelo.*
 
 ---
 
-## 14. SEM SISTEMA vs. COM O DRS
-**H2:** Sem sistema *vs.* com o DRS
+## 14. SEM SISTEMA vs. COM O WatSeller
+**H2:** Sem sistema *vs.* com o WatSeller
 
-| Sem sistema | Com o DRS |
+| Sem sistema | Com o WatSeller |
 |---|---|
 | Atendimento manual | Agentes de IA que atendem e vendem |
 | Follow-up manual (ou nenhum) | Follow-up automático |
@@ -349,15 +349,15 @@ Fluxo: WhatsApp → Follow-up automático → Nova conversa → Compra
 ## 15. PROVA SOCIAL (história do fundador)
 **H2:** Não vendo teoria. *Vendo o que uso.*
 
-[IMG: Retrato do fundador do DRS]
+[IMG: Retrato do fundador do WatSeller]
 
-**Pull-quote:** O DRS não nasceu num escritório. Nasceu da necessidade.
+**Pull-quote:** O WatSeller não nasceu num escritório. Nasceu da necessidade.
 
 Eu vendo produtos digitais — ebooks, materiais educativos, guias práticos. E durante muito tempo, fiz tudo manualmente: respondia a cada conversa, enviava dados de pagamento, confirmava comprovativos, entregava os produtos. Quando o volume subiu, percebi que não conseguia escalar sozinho.
 
-**Callout:** Foi por isso que construí o DRS. E é o mesmo sistema que uso todos os dias para vender.
+**Callout:** Foi por isso que construí o WatSeller. E é o mesmo sistema que uso todos os dias para vender.
 
-[IMG: Painel real do DRS com receita total, vendas e taxa de conversão]
+[IMG: Painel real do WatSeller com receita total, vendas e taxa de conversão]
 
 **Prova real** — Estes são os números da minha própria operação:
 - **114.682 MZN** em receita total
@@ -366,21 +366,21 @@ Eu vendo produtos digitais — ebooks, materiais educativos, guias práticos. E 
 - **5** contas de WhatsApp conectadas
 - **12** produtos activos
 
-Tudo gerido pelo DRS. **Sem equipa.** **Sem atendimento manual.**
+Tudo gerido pelo WatSeller. **Sem equipa.** **Sem atendimento manual.**
 
-**Callout:** É isso que o DRS faz: permite escalar sem quebrar.
+**Callout:** É isso que o WatSeller faz: permite escalar sem quebrar.
 
 **Fecho:** Se funciona para mim, *funciona para você.*
 
 ---
 
 ## 16. DEMONSTRAÇÃO
-**H2:** Veja o DRS *por dentro*
+**H2:** Veja o WatSeller *por dentro*
 
 **Não é uma promessa.** É o sistema real.
 Este é o painel onde o seu funil fica pronto a vender: do anúncio até à entrega do produto.
 
-[IMG: Funil de venda configurado no painel do DRS]
+[IMG: Funil de venda configurado no painel do WatSeller]
 
 **O que o funil faz por si:**
 1. Recebe o cliente que chega pelo anúncio
@@ -429,9 +429,9 @@ Se isto fosse feito por uma pessoa, quanto custaria por mês? E se não for feit
 | Custo de não escalar: o crescimento que fica preso no mesmo volume. | Incalculável |
 | Vendas perdidas por falta de follow-up | incalculável |
 
-**Callout:** O DRS substitui tudo isto por uma única subscrição.
+**Callout:** O WatSeller substitui tudo isto por uma única subscrição.
 
-**Faixa:** O DRS não é um custo. *É a escolha entre continuar no mesmo volume e escalar com lucro.*
+**Faixa:** O WatSeller não é um custo. *É a escolha entre continuar no mesmo volume e escalar com lucro.*
 
 ---
 
@@ -493,7 +493,7 @@ Já viu quanto custa continuar sem um sistema. Agora veja como é simples mudar:
 2. Escolha o seu funil
 3. Coloque o agente de IA a trabalhar
 
-Em **minutos**, o DRS está a **atender**, **vender** e **entregar** por você.
+Em **minutos**, o WatSeller está a **atender**, **vender** e **entregar** por você.
 
 **CTA:** Quero escalar sem limites
 **Microcopy:** Sem programar. Sem depender de agências.
@@ -505,7 +505,7 @@ Em **minutos**, o DRS está a **atender**, **vender** e **entregar** por você.
 
 [IMG: Selo de 14 dias de garantia]
 
-Confio tanto no DRS que assumo o risco por você.
+Confio tanto no WatSeller que assumo o risco por você.
 
 Experimente durante **14 dias**. Configure o seu produto, escolha o seu funil e veja o sistema a trabalhar.
 
@@ -521,24 +521,24 @@ Você não arrisca nada. O único risco possível é se não tomar uma decisão 
 **H2:** Perguntas *frequentes*
 
 **Preciso de equipa para gerir isto?**
-Não. O DRS foi construído para funcionar sem depender de atendimento manual. Você configura, o sistema trabalha.
+Não. O WatSeller foi construído para funcionar sem depender de atendimento manual. Você configura, o sistema trabalha.
 
 **Preciso de instalar algo?**
-Não. O DRS funciona na cloud. Só precisa de conectar o seu WhatsApp e configurar o produto.
+Não. O WatSeller funciona na cloud. Só precisa de conectar o seu WhatsApp e configurar o produto.
 
 **Funciona no meu número de WhatsApp?**
-Sim. O DRS foi desenhado para funcionar com **contas oficiais** e integrações que não colocam o seu número em risco de bloqueio.
+Sim. O WatSeller foi desenhado para funcionar com **contas oficiais** e integrações que não colocam o seu número em risco de bloqueio.
 
 **Vocês usam API Oficial?**
-Sim. O DRS usa a **API Oficial do WhatsApp** — a mesma usada por empresas que operam em escala.
+Sim. O WatSeller usa a **API Oficial do WhatsApp** — a mesma usada por empresas que operam em escala.
 E **não precisa de ter uma BM verificada** para se conectar. Através dos nossos parceiros, nós tratamos de toda a conexão por você. O seu número continua a funcionar normalmente, e você usa a API sem as limitações de uma BM não verificada.
 Isto não é uma solução improvisada. É uma **integração oficial** — o modelo chama-se coexistência: o seu WhatsApp continua a funcionar como sempre, e a API é adicionada em paralelo. Sem substituir o seu número, sem risco de bloqueio por configuração não oficial.
 
 **Posso ter mais do que uma conta de WhatsApp?**
-Sim. O DRS suporta múltiplas contas — útil se vende para diferentes públicos ou quer separar operações.
+Sim. O WatSeller suporta múltiplas contas — útil se vende para diferentes públicos ou quer separar operações.
 
 **O sistema pode ser banido?**
-O DRS usa uma configuração **preparada para escalar**, evitando os problemas que causam bloqueios. No entanto, como com qualquer sistema, o cumprimento das políticas do WhatsApp é essencial.
+O WatSeller usa uma configuração **preparada para escalar**, evitando os problemas que causam bloqueios. No entanto, como com qualquer sistema, o cumprimento das políticas do WhatsApp é essencial.
 
 **O que acontece se a IA não souber responder?**
 Pode definir regras de fallback. Se a IA não souber, a conversa é encaminhada para você ou para um humano.
@@ -547,7 +547,7 @@ Pode definir regras de fallback. Se a IA não souber, a conversa é encaminhada 
 Sim. Pode assumir qualquer conversa a qualquer momento. O sistema é autónomo, mas não é uma caixa fechada.
 
 **O sistema pode cometer erros?**
-O DRS segue um funil estruturado, o que reduz drasticamente os erros comuns em automações genéricas. Mas pode sempre supervisionar e ajustar.
+O WatSeller segue um funil estruturado, o que reduz drasticamente os erros comuns em automações genéricas. Mas pode sempre supervisionar e ajustar.
 
 **Os meus dados estão seguros?**
 Sim. Os dados são tratados de acordo com boas práticas de segurança e privacidade.
@@ -562,7 +562,7 @@ Sim. O suporte está incluído para o ajudar na configuração e no uso do siste
 Se vende produtos que podem ser vendidos por **conversa e resposta direta**, sim. Se tiver dúvidas, fale connosco antes de avançar.
 
 **E se o cliente enviar um comprovativo falso?**
-O DRS não confia apenas no print ou mensagem de pagamento partilhada pelo cliente. Ele verifica o comprovativo em duas camadas:
+O WatSeller não confia apenas no print ou mensagem de pagamento partilhada pelo cliente. Ele verifica o comprovativo em duas camadas:
 Primeiro, compara os dados com o pedido — valor, referência, produto.
 Depois, **confirma a transação diretamente** com o serviço de pagamento. Se o comprovativo for falso, a transação não existe do lado do serviço — e o sistema detecta isso.
 Se quiser, pode configurar para que **a confirmação final passe por você.** Se preferir autonomia total, o sistema confirma automaticamente.
@@ -592,7 +592,7 @@ Você tem 14 dias para testar. Se não funcionar como esperava, devolvemos o din
 **H2:** Pare de construir automações. *Comece a construir vendas.*
 
 - **Hoje:** Cada venda depende de você.
-- **Com o DRS:** Cada venda depende de um sistema que não para, não se esquece e não se cansa.
+- **Com o WatSeller:** Cada venda depende de um sistema que não para, não se esquece e não se cansa.
 
 - **Seus anúncios** trazem as pessoas.
 - **Seus funis** estruturam a jornada.
@@ -607,15 +607,15 @@ Agora falta colocar tudo a **trabalhar**.
 ---
 
 ## FOOTER
-- **Marca:** DRS · DirectResponse Scale
+- **Marca:** WatSeller
 - **Descrição:** Agentes de IA especialistas em vendas, funis prontos e automação de follow-up, pagamento e entrega — tudo no seu WhatsApp.
 - **Social:** Instagram · Facebook · YouTube
 - **Produto:** Funcionalidades · Preços · FAQ
 - **Legal:** Termos · Privacidade · Cookies · Reembolsos
 - **Empresa:** Sobre nós
-- **Contacto:** info@directresponsescale.com
+- **Contacto:** info@watseller.com
 - **Localização:** Maputo, Moçambique
-- **Copyright:** © 2026 DRS | DirectResponse Scale. Todos os direitos reservados.
+- **Copyright:** © 2026 WatSeller. Todos os direitos reservados.
 - Botão flutuante: "Voltar ao topo"
 
 ---
