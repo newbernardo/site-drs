@@ -1,0 +1,78 @@
+/* Mockups de WhatsApp (verde do WhatsApp só aqui dentro) + vinhetas SVG do problema */
+.phone { position: relative; width: min(18rem, 100%); padding: .55rem; border-radius: 2rem; background: var(--bg-sunken); border: 1px solid var(--line-strong); box-shadow: var(--shadow-panel); }
+.phone-s { width: min(18.5rem, 100%); height: 40rem; }
+.phone-screen { position: relative; height: 100%; border-radius: 1.5rem; overflow: hidden; background: var(--wa-bg); }
+.chat { display: flex; flex-direction: column; width: 100%; height: 100%; background: var(--wa-bg); border: 1px solid var(--line); border-radius: var(--radius-m); overflow: hidden; font-family: var(--f-body); font-size: .8125rem; line-height: 1.35; position: relative; color: var(--wa-ink); }
+.phone .chat { border: 0; border-radius: 0; }
+.chat-head { display: flex; align-items: center; gap: .6rem; padding: .65rem .85rem; border-bottom: 1px solid var(--line); flex: none; background: var(--bg-raised); color: var(--ink); }
+.chat-av { width: 1.75rem; height: 1.75rem; border-radius: 50%; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font-weight: 600; font-size: .75rem; flex: none; }
+.chat-who { display: grid; line-height: 1.2; min-width: 0; }
+.chat-who b { font-size: .8125rem; font-weight: 600; color: var(--ink); }
+.chat-who small { font-size: .6875rem; color: var(--ink-2); }
+.chat-who small.on::before { content: ""; display: inline-block; width: .4rem; height: .4rem; border-radius: 50%; background: var(--ok); margin-right: .3rem; vertical-align: .05em; }
+.chat-aside { margin-left: auto; display: inline-flex; align-items: center; gap: .4rem; color: var(--ink-2); font-size: .6875rem; font-variant-numeric: tabular-nums; }
+.chat-body { position: relative; flex: 1; min-height: 0; overflow: hidden; padding: .75rem; display: flex; flex-direction: column; justify-content: flex-end; gap: .4rem; background: var(--wa-bg); }
+.chat-track { display: flex; flex-direction: column; gap: .4rem; }
+.msg { max-width: 86%; padding: .45rem .65rem; border-radius: .75rem; background: var(--wa-in); color: var(--wa-ink); box-shadow: 0 1px 1px rgba(11, 20, 26, .13); }
+.msg.in { align-self: flex-start; border-bottom-left-radius: .25rem; }
+.msg.out { align-self: flex-end; background: var(--wa-out); border-bottom-right-radius: .25rem; }
+.msg.hot { background: var(--danger-soft); color: var(--ink); box-shadow: none; }
+.msg small { display: block; margin-top: .15rem; font-size: .625rem; color: var(--wa-meta); text-align: right; }
+.menu { display: grid; gap: .1rem; margin-top: .25rem; color: var(--wa-meta); font-size: .75rem; }
+.chat-typing { display: none; gap: .22rem; padding: .55rem .7rem; border-radius: .75rem; background: var(--wa-out); align-self: flex-end; }
+.chat-typing i { width: .3rem; height: .3rem; border-radius: 50%; background: var(--wa-meta); animation: dot 1s ease-in-out infinite; }
+.chat-typing i:nth-child(2) { animation-delay: .15s; } .chat-typing i:nth-child(3) { animation-delay: .3s; }
+.chat-typing.is-on { display: inline-flex; }
+@keyframes dot { 0%, 60%, 100% { transform: translateY(0); opacity: .5; } 30% { transform: translateY(-3px); opacity: 1; } }
+.msg.is-off, .sys-chip.is-off { display: none; }
+.sys-chip { align-self: center; display: flex; margin: .1rem 0; padding: .35rem .75rem; border-radius: 999px; font-size: .75rem; font-weight: 600; background: var(--ok-soft); color: var(--ok); }
+.sys-chip.stuck { background: var(--danger-soft); color: var(--danger); }
+.sys-chip > span { display: inline-flex; align-items: center; gap: .4rem; }
+.sys-chip.is-off { display: none; }
+.rcp { display: grid; gap: .3rem; padding: .4rem; }
+.rcp small { color: var(--wa-meta); font-size: .6875rem; padding: 0 .25rem; }
+.rcp-card { display: grid; gap: .3rem; width: 7.5rem; padding: .55rem; border-radius: .5rem; background: var(--bg-sunken); border: 1px dashed var(--line-strong); }
+.rcp-card i { display: block; height: .3rem; border-radius: 2px; background: var(--line-strong); } .rcp-card i:nth-child(2) { width: 70%; } .rcp-card i:nth-child(3) { width: 45%; }
+.rcp-card b { display: block; height: .5rem; width: 55%; border-radius: 2px; background: var(--accent); margin-top: .2rem; }
+.file { display: flex; align-items: center; gap: .6rem; }
+.file-ic { display: grid; place-items: center; width: 2rem; height: 2.4rem; border-radius: .4rem; background: var(--bg-sunken); color: var(--accent); flex: none; }
+.file-ic svg { width: 1.2rem; height: 1.2rem; }
+.file-t { display: grid; line-height: 1.25; } .file-t b { color: var(--wa-ink); } .file-t small { color: var(--wa-meta); font-size: .6875rem; }
+.menu span { display: block; }
+
+/* --- vinhetas do problema (SVG estático) --- */
+/* P1 funil */
+.vig[data-vig="funil"] svg { overflow: visible; }
+.funnel-shape polygon { fill: var(--bg-raised); stroke: var(--line-strong); stroke-width: 1.25; stroke-linejoin: round; }
+.funnel-labels line { stroke: var(--line-strong); stroke-dasharray: 2 3; }
+.funnel-labels text { font: 500 11px var(--f-body); fill: var(--ink-2); }
+.d-ok { fill: var(--ok); }
+.d-leak { fill: var(--danger); }
+.pose .d-leak { opacity: .75; }
+.q-ring { fill: var(--danger-soft); stroke: var(--danger); stroke-width: 1.5; }
+.q-mark { font: 650 18px var(--f-body); fill: var(--danger); }
+.vig.is-live .pose { display: none; }
+
+/* P2 banimento */
+.ban { position: absolute; inset: 0; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .6rem; text-align: center; padding: 1rem;
+  background: color-mix(in oklab, var(--bg-sunken) 96%, transparent); border-top: 1px solid var(--danger); color: var(--ink); }
+.ban svg { width: 2rem; height: 2rem; fill: none; stroke: var(--danger); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.ban b { font-size: .875rem; max-width: 14rem; line-height: 1.3; }
+.vig[data-vig="ban"] .chat-track { opacity: .1; }
+
+/* P3 bot em loop: pose estática = fim do track; vivo = track duplicado rolando */
+.vig[data-vig="loop"] .chat-body { -webkit-mask: linear-gradient(transparent, #000 18%, #000 82%, transparent); mask: linear-gradient(transparent, #000 18%, #000 82%, transparent); }
+.vig[data-vig="loop"].is-live .chat-body { justify-content: flex-start; }
+.loop-ico { color: var(--danger); transform-origin: center; }
+
+/* P4 silêncio */
+.vig[data-vig="silencio"] .chat-track { opacity: .3; }
+.clock { position: absolute; inset: .7rem 0 auto 0; z-index: 3; display: grid; justify-items: center; gap: .3rem; }
+.clock svg { width: 5.25rem; height: 5.25rem; }
+.c-face { fill: var(--bg-raised); stroke: var(--line-strong); stroke-width: 2; }
+.c-marks path { stroke: var(--ink-2); stroke-width: 2; stroke-linecap: round; }
+.h-hour, .h-min { stroke: var(--ink); stroke-width: 3; stroke-linecap: round; transform-box: view-box; transform-origin: 40px 40px; }
+.h-min { stroke: var(--danger); stroke-width: 2.2; transform: rotate(200deg); }
+.h-hour { transform: rotate(70deg); }
+.c-pin { fill: var(--ink); }
+.clock b { font-size: .8125rem; color: var(--danger); font-variant-numeric: tabular-nums; letter-spacing: .01em; }
