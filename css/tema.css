@@ -304,3 +304,34 @@ html:not(.js) .shot-tag { display: none; }
 
 /* cabeçalho claro (a página não abre em escuro) */
 .nav:not(.band-dark) .nav-links a:hover, .nav:not(.band-dark) .nav-links a.is-active { color: var(--ink); }
+
+/* ---------- Fase F: página em molduras (cabeçalho em pílula, secções em caixas arredondadas) ---------- */
+:root { --frame-r: clamp(1.5rem, 1rem + 2.4vw, 2.5rem); --frame-m: clamp(.5rem, .2rem + 1.2vw, 1rem); }
+html, body { background: var(--hl); }
+/* :not(#_) sobe a especificidade para vencer os paddings antigos de cada secção */
+main > section[id]:not(#_), main.doc:not(#_) {
+  margin: var(--frame-m); border-radius: var(--frame-r); background: var(--bg); border: 1px solid var(--line);
+  padding-block: var(--sec-gap); overflow: clip;
+}
+main > section.hero[id]:not(#_) { padding-top: calc(var(--nav-h) + clamp(3rem, 8vh, 6rem)); padding-bottom: 0;
+  background: radial-gradient(70% 55% at 50% 0, var(--accent-glow), transparent 70%), var(--bg); }
+main.doc:not(#_) { padding-top: calc(var(--nav-h) + clamp(3rem, 8vw, 6rem)); }
+.footer { margin: var(--frame-m); border-radius: var(--frame-r); border: 1px solid var(--line); overflow: clip; }
+
+/* cabeçalho: pílula flutuante dentro da moldura */
+.nav { inset: calc(var(--frame-m) + .625rem) auto auto 50%; translate: -50% 0; width: min(calc(100% - 2 * (var(--frame-m) + .625rem)), 74rem);
+  border: 1px solid var(--line-strong); border-radius: 999px; background: var(--nav-bg);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3); backdrop-filter: blur(14px) saturate(1.3); box-shadow: var(--shadow-panel); }
+.nav.is-solid { background: var(--nav-bg); }
+.nav .nav-in { max-width: none; padding-inline: var(--s-5) var(--s-3); }
+.nav .btn-sm { border-radius: 999px; }
+@media (max-width: 56rem) {
+  .nav .nav-in { padding-inline: var(--s-4) var(--s-2); }
+  .nav-menu { top: calc(100% + .5rem); border: 1px solid var(--line-strong); border-radius: 1.5rem; box-shadow: var(--shadow-panel); }
+  .nav.is-open { background: var(--bg); }
+}
+
+/* CTA do cabeçalho escondido sem deixar buraco: o "Entrar" encosta à direita */
+.nav-actions .btn-primary { max-width: 20rem; transition: opacity var(--d-base) var(--ease-out), max-width var(--d-slow) var(--ease-out), padding var(--d-slow) var(--ease-out), margin var(--d-slow) var(--ease-out), visibility 0s; }
+.nav.cta-off:not(.is-open) .nav-actions .btn-primary { max-width: 0; padding-inline: 0; margin-left: calc(-1 * var(--s-4)); overflow: hidden; border-width: 0; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity var(--d-base) var(--ease-out), max-width var(--d-slow) var(--ease-out), padding var(--d-slow) var(--ease-out), margin var(--d-slow) var(--ease-out), visibility 0s linear var(--d-base); }
+@media (max-width: 56rem) { .nav-actions .btn-primary { max-width: none; } }
