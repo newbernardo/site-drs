@@ -154,8 +154,8 @@
 @media (min-width: 56rem) { .problem .wrap.problem-stage { width: min(100% - 2 * var(--gutter), 70rem); } }
 
 /* ---------- destaques tipográficos dentro dos cartões do Bloco 2 ---------- */
-.pcard-text em { font-style: italic; font-weight: 700; color: var(--ink); }
-.pcard-text em.r { color: var(--danger); font-style: italic; font-weight: 700; }
+.pcard-text em { font-style: normal; font-weight: 700; color: var(--ink); }
+.pcard-text em.r { color: var(--danger); font-style: normal; font-weight: 700; }
 .pcard-text b.r { color: var(--danger); font-weight: 700; }
 .pcard-text .up { text-transform: uppercase; }
 .pcard-text .hl2 {

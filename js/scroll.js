@@ -14,6 +14,38 @@
     upd();
   }
 
+
+  /* menu recolhível (celular), fecha ao escolher um link ou com Esc */
+  var menuBtn = document.querySelector("[data-menu-toggle]");
+  if (nav && menuBtn) {
+    var setMenu = function (open) { nav.classList.toggle("is-open", open); menuBtn.setAttribute("aria-expanded", open ? "true" : "false"); menuBtn.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu"); };
+    menuBtn.addEventListener("click", function () { setMenu(!nav.classList.contains("is-open")); });
+    nav.addEventListener("click", function (e) { if (e.target.closest(".nav-menu a")) setMenu(false); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
+    window.matchMedia("(min-width: 56.01rem)").addEventListener("change", function () { setMenu(false); });
+  }
+
+  /* realce da âncora ativa no cabeçalho */
+  var links = [].slice.call(document.querySelectorAll(".nav-links a[href^='#']"));
+  if (links.length && "IntersectionObserver" in window) {
+    var map = {};
+    links.forEach(function (a) { var t = document.getElementById(a.getAttribute("href").slice(1)); if (t) map[t.id] = a; });
+    var spy = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (map[e.target.id]) map[e.target.id].classList.toggle("is-active", e.isIntersecting); });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    Object.keys(map).forEach(function (id) { spy.observe(document.getElementById(id)); });
+  }
+
+  /* botão voltar ao topo */
+  var topBtn = document.querySelector("[data-top]");
+  if (topBtn) {
+    var tt = false;
+    var tu = function () { var on = window.scrollY > 700; if (on) topBtn.hidden = false; topBtn.classList.toggle("is-visible", on); tt = false; };
+    window.addEventListener("scroll", function () { if (!tt) { tt = true; requestAnimationFrame(tu); } }, { passive: true });
+    topBtn.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); });
+    tu();
+  }
+
   /* barra de progresso: fallback para navegadores sem animation-timeline */
   var bar = document.querySelector(".progress");
   if (bar && !(window.CSS && CSS.supports("animation-timeline: scroll()"))) {
@@ -32,7 +64,7 @@
     new IntersectionObserver(function (e) { bg.classList.toggle("is-off", !e[0].isIntersecting); }).observe(hero);
   }
 
-  /* marca <html> enquanto alguma seção fixada está ativa (o seletor de tema se esconde) */
+  /* marca <html> enquanto alguma seção fixada está ativa  */
   if (hasGSAP) {
     var pinTick = false, root = document.documentElement;
     var pinCheck = function () {

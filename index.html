@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="pt" data-theme="editorial">
+<html lang="pt">
 <head>
 <meta charset="utf-8">
 <link rel="canonical" href="https://watseller.com/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WatSeller — Agentes de IA que vendem no WhatsApp</title>
 <meta name="description" content="Escale seu negócio no WhatsApp com agentes de IA especializados em venda direta. Funis prontos, follow-up automático, confirmação de pagamento e entrega — sem programar e sem depender de agências.">
-<meta name="color-scheme" content="light">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#090d1a">
 <script>document.documentElement.classList.add("js");</script>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 28 28%27%3E%3Crect width=%2728%27 height=%2728%27 rx=%278%27 fill=%27%2338e08c%27/%3E%3Cpath d=%27M8 19.5 13 13.5l3.2 3L21 9.5M16.5 9.5H21V14%27 fill=%27none%27 stroke=%27%23062414%27 stroke-width=%272.2%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 28 28%27%3E%3Crect width=%2728%27 height=%2728%27 rx=%278%27 fill=%27%237090ff%27/%3E%3Cpath d=%27M8 19.5 13 13.5l3.2 3L21 9.5M16.5 9.5H21V14%27 fill=%27none%27 stroke=%27%23060a18%27 stroke-width=%272.2%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/tokens.css">
-<link rel="stylesheet" href="css/editorial.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/chat.css">
 <link rel="stylesheet" href="css/vignettes.css">
@@ -24,6 +24,7 @@
 <link rel="stylesheet" href="css/publico.css">
 <link rel="stylesheet" href="css/processo.css">
 <link rel="stylesheet" href="css/especialista.css">
+<link rel="stylesheet" href="css/tema.css">
 <link rel="stylesheet" href="css/alinhamento.css">
 <link rel="stylesheet" href="css/fundos.css">
 <link rel="stylesheet" href="css/motion.css">
@@ -32,20 +33,32 @@
 
 <div class="progress" aria-hidden="true"></div>
 
-<header class="nav" data-nav>
+<header class="nav band-dark" data-nav>
   <div class="wrap nav-in">
     <a class="logo" href="#topo" aria-label="WatSeller">
       <svg class="logo-mark" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="8" fill="var(--accent)"/><path d="M8 19.5 13 13.5l3.2 3L21 9.5M16.5 9.5H21V14" fill="none" stroke="var(--accent-ink)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <b>WatSeller</b>
     </a>
-    <a class="btn btn-ghost btn-sm" href="#entrar">Login do Assinante</a>
+    <div class="nav-menu" id="menu-principal" data-menu>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#planos">Preços</a>
+        <a href="#faq">Perguntas frequentes</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-login" href="https://app.watseller.com">Entrar</a>
+        <a class="btn btn-primary btn-sm" href="#planos">Quero escalar</a>
+      </div>
+    </div>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu" data-menu-toggle><svg class="ic-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><svg class="ic-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
   </div>
 </header>
 
 <main id="topo">
 
 <!-- ===== 1. HERO ===== -->
-<section class="hero" id="hero" data-section="hero">
+<section class="hero band-dark" id="hero" data-section="hero">
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="wrap hero-in">
     <h1 class="hero-title display" data-split>Escale seu negócio no WhatsApp com <span class="hl-a">agentes de IA</span> <span class="hl-b">especializados em venda direta</span></h1>
@@ -193,7 +206,7 @@
 </section>
 
 <!-- ===== 3. A VIRADA · parte A: a nova oportunidade ===== -->
-<section class="turn fx band-green" id="oportunidade" data-section="virada">
+<section class="turn fx band-dark" id="oportunidade" data-section="virada">
   <div class="wrap sec-head">
     <h2 class="h2 display" data-split-reveal>E se existisse um sistema que <em>vendesse por você</em>, e lhe entregasse relatórios completos de todas as etapas do funil?</h2>
   </div>
@@ -226,7 +239,7 @@
 </section>
 
 <!-- ===== 3. A VIRADA · parte B: apresentação da solução ===== -->
-<section class="solution fx band-green" id="solucao">
+<section class="solution fx band-dark" id="solucao">
   <div class="wake" aria-hidden="true"></div>
   <div class="wrap sec-head sol-head">
     <h2 class="h2 display" data-split-reveal>O sistema que você acabou de imaginar existe. Chama-se <em>WatSeller</em>.</h2>
@@ -690,7 +703,7 @@
 </section>
 
 <!-- ===== 10. PROVA REAL (fundador, números e demonstração) ===== -->
-<section class="proof" id="prova" data-section="prova">
+<section class="proof" id="resultados" data-section="prova">
   <div class="wrap proof-head">
     <h2 class="h2 display" data-split-reveal>Não vendo teoria. <em>Vendo o que uso.</em></h2>
   </div>
@@ -836,7 +849,7 @@
   </div>
 </section>
 
-<section class="guar fx band-green" id="garantia">
+<section class="guar fx band-dark" id="garantia">
   <div class="wrap guar-grid" data-guar>
     <div class="seal-wrap">
       <svg class="seal" viewBox="0 0 200 200" role="img" aria-label="Selo de 14 dias de garantia">
@@ -905,7 +918,7 @@
 </section>
 
 <!-- ===== 14. CTA FINAL ===== -->
-<section class="final" id="final" data-section="final">
+<section class="final band-dark" id="final" data-section="final">
   <div class="final-glow" aria-hidden="true"></div>
   <div class="wrap final-in">
     <h2 class="h2 display" data-split-reveal>Pare de construir automações. <em>Comece a construir vendas.</em></h2>
@@ -931,7 +944,7 @@
 
 </main>
 
-<footer class="footer" id="rodape">
+<footer class="footer band-dark" id="rodape">
   <div class="wrap">
     <div class="footer-grid">
       <div class="f-brand">
@@ -942,14 +955,16 @@
         <p>Agentes de IA especialistas em vendas, funis prontos e automação de follow-up, pagamento e entrega — tudo no seu WhatsApp.</p>
         <div class="social"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a></div>
       </div>
-      <div><h4>Produto</h4><ul><li><a href="#agentes">Funcionalidades</a></li><li><a href="#planos">Preços</a></li><li><a href="#faq">FAQ</a></li></ul></div>
-      <div><h4>Legal</h4><ul><li><a href="legal/termos.html">Termos</a></li><li><a href="legal/privacidade.html">Privacidade</a></li><li><a href="legal/cookies.html">Cookies</a></li><li><a href="legal/reembolsos.html">Reembolsos</a></li></ul></div>
-      <div><h4>Empresa</h4><ul><li><a href="legal/sobre.html">Sobre nós</a></li></ul></div>
-      <div class="f-contact"><h4>Contacto</h4><ul><li><span>Contacto</span><a href="mailto:info@watseller.com">info@watseller.com</a></li><li><span>Localização</span>Maputo, Moçambique</li></ul></div>
+      <div><h4>Produto</h4><ul><li><a href="#como-funciona">Como funciona</a></li><li><a href="#agentes">Funcionalidades</a></li><li><a href="#planos">Preços</a></li><li><a href="#faq">Perguntas frequentes</a></li></ul></div>
+      <div><h4>Empresa</h4><ul><li><a href="legal/sobre.html">Sobre nós</a></li><li><a href="#resultados">Resultados</a></li><li><a href="https://app.watseller.com">Entrar no painel</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="legal/privacidade.html">Política de Privacidade</a></li><li><a href="legal/termos.html">Termos de Serviço</a></li><li><a href="legal/cookies.html">Cookies</a></li><li><a href="legal/reembolsos.html">Reembolsos</a></li></ul></div>
+      <div class="f-contact"><h4>Contacto</h4><ul><li><span>E-mail</span><a href="mailto:info@watseller.com">info@watseller.com</a></li><li><span>WhatsApp</span><a href="https://api.whatsapp.com/send?phone=258867372079" target="_blank" rel="noopener">+258 86 737 2079</a></li><li><span>Localização</span>Maputo, Moçambique</li></ul><a class="btn btn-ghost btn-sm f-panel" href="https://app.watseller.com">Entrar no painel</a></div>
     </div>
     <div class="footer-bottom"><span>© 2026 WatSeller. Todos os direitos reservados.</span><a href="#topo" class="to-top">Voltar ao topo</a></div>
   </div>
 </footer>
+
+<button type="button" class="top-fab" aria-label="Voltar ao topo" data-top hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg></button>
 
 <script src="vendor/gsap.min.js"></script>
 <script src="vendor/ScrollTrigger.min.js"></script>

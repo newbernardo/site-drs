@@ -73,4 +73,4 @@
 .fdash-img { display: block; width: 100%; height: auto; }
 
 /* retrato com cantos bem arredondados em qualquer tema */
-.story .pic, [data-theme="editorial"] .story .pic { border-radius: 1.75rem; }
+.story .pic { border-radius: 1.75rem; }

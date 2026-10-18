@@ -24,7 +24,7 @@ Não é chatbot nem construtor de workflows: o funil já vem pronto e o agente c
 Planos Start 2.500 / Scale 5.000 / Pro 8.500 MZN por mês; garantia de 14 dias; WhatsApp via API oficial (coexistência). Toda a copy vem de `copy-original.md` e `copy-legal.md` (aprovada, não reescrever). Português com "você".
 
 ## Brand Commitments
-Nome "WatSeller" (domínio watseller.com). Um único tema visual: Editorial (`data-theme="editorial"`).
+Nome "WatSeller" (domínio watseller.com). Identidade visual "Safira Noite", igual à do painel (app.watseller.com): fonte única Plus Jakarta Sans; índigo (#3d5bd9 no claro, #7090ff no escuro) como única cor de ação; verde só para sucesso e dentro de mockups do WhatsApp; cartões de 20px; seções alternando claro e escuro. Tokens em `css/tema.css`.
 
 ## Evidence on Hand
 Não há imagens reais ainda. O usuário fornecerá 5: painel do hero, print do seletor de funil, retrato do fundador, painel da prova real, print do funil da demo. Até lá, placeholders marcados. Os números da prova real (114.682 MZN, 823 vendas, 7,2 %, 5 contas, 12 produtos) vêm da copy original; não inventar outros.
