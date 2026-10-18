@@ -36,6 +36,20 @@
     Object.keys(map).forEach(function (id) { spy.observe(document.getElementById(id)); });
   }
 
+  /* um CTA primário por ecrã: o do cabeçalho (e o botão fixo do telemóvel) só aparecem
+     quando nenhum CTA da página (hero, começar, fecho) nem os planos estão à vista */
+  var watch = [].slice.call(document.querySelectorAll("[data-cta], #planos"));
+  if (nav && watch.length && "IntersectionObserver" in window) {
+    var fab = document.querySelector("[data-cta-fab]"), seen = new Set();
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) seen.add(e.target); else seen.delete(e.target); });
+      var off = seen.size > 0;
+      nav.classList.toggle("cta-off", off);
+      if (fab) fab.classList.toggle("is-off", off);
+    }, { rootMargin: "-64px 0px 0px 0px" });
+    watch.forEach(function (w) { io.observe(w); });
+  }
+
   /* botão voltar ao topo */
   var topBtn = document.querySelector("[data-top]");
   if (topBtn) {
