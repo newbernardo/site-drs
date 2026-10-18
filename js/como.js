@@ -20,7 +20,10 @@
         var END = 10, lastIdx = -1;
 
         function setStep(idx) {
-          steps.forEach(function (s, i) { s.classList.toggle("is-active", i === idx); s.classList.toggle("is-done", i < idx); });
+          steps.forEach(function (s, i) {
+            s.classList.toggle("is-active", i === idx); s.classList.toggle("is-done", i < idx);
+            var sb = $(".step-btn", s); if (sb) { if (i === idx) sb.setAttribute("aria-current", "step"); else sb.removeAttribute("aria-current"); }
+          });
         }
 
         var tl = gsap.timeline({

@@ -21,7 +21,7 @@
     var setMenu = function (open) { nav.classList.toggle("is-open", open); menuBtn.setAttribute("aria-expanded", open ? "true" : "false"); menuBtn.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu"); };
     menuBtn.addEventListener("click", function () { setMenu(!nav.classList.contains("is-open")); });
     nav.addEventListener("click", function (e) { if (e.target.closest(".nav-menu a")) setMenu(false); });
-    document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && nav.classList.contains("is-open")) { setMenu(false); menuBtn.focus(); } });
     window.matchMedia("(min-width: 56.01rem)").addEventListener("change", function () { setMenu(false); });
   }
 

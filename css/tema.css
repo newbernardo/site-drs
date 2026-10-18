@@ -248,3 +248,21 @@ mark.mk, mark.hl2 { background: var(--accent-soft); color: inherit; }
 .plans-guar svg { flex: none; width: 1.75rem; height: 1.75rem; fill: none; stroke: var(--accent); stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
 .plans-guar b { font-weight: 700; }
 @media (max-width: 40rem) { .plans-guar { align-items: flex-start; } }
+
+/* ---------- Fase A: acessibilidade ---------- */
+.skip-link { position: fixed; left: var(--s-4); top: var(--s-3); z-index: calc(var(--z-ui) + 1); padding: .75rem 1.1rem; min-height: 2.75rem; display: inline-flex; align-items: center; border-radius: var(--radius-m); background: var(--accent); color: var(--accent-ink); font-weight: 600; transform: translateY(-200%); transition: transform var(--d-base) var(--ease-out); }
+.skip-link:focus-visible { transform: none; outline: 2px solid var(--ink); outline-offset: 2px; }
+/* contraste do realce e das legendas das abas */
+.pcard-text .hl2, .pcard-text mark.hl2, mark.hl2 { color: var(--ink); }
+.tabs button small { opacity: 1; font-size: .75rem; }
+.tabs button:not([aria-selected="true"]) small { color: var(--ink-2); }
+.tabs button[aria-selected="true"] small { color: var(--accent-ink); }
+/* alvos de toque >= 44px (área clicável; o aspeto não muda) */
+.logo { min-height: 2.75rem; }
+.nav-links a, .nav-login { display: inline-flex; align-items: center; min-height: 2.75rem; }
+.step-btn { min-height: 2.75rem; }
+.footer li a, .footer .f-contact li a, .footer .social a, .footer .to-top, .footer .f-panel { display: inline-flex; align-items: center; min-height: 2.75rem; }
+.footer ul { gap: 0; }
+/* texto mínimo 12px */
+.shot-tag, .vig-tag, .vig-tag b { font-size: max(.75rem, 12px); }
+.seal-arc { font-size: 12px; }

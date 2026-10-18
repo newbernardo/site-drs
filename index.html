@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="css/motion.css">
 </head>
 <body>
+<a class="skip-link" href="#topo">Saltar para o conteúdo</a>
 
 <div class="progress" aria-hidden="true"></div>
 
@@ -39,6 +40,7 @@
       <svg class="logo-mark" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="8" fill="var(--accent)"/><path d="M8 19.5 13 13.5l3.2 3L21 9.5M16.5 9.5H21V14" fill="none" stroke="var(--accent-ink)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <b>WatSeller</b>
     </a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu" data-menu-toggle><svg class="ic-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><svg class="ic-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
     <div class="nav-menu" id="menu-principal" data-menu>
       <nav class="nav-links" aria-label="Principal">
         <a href="#como-funciona">Como funciona</a>
@@ -51,7 +53,6 @@
         <a class="btn btn-primary btn-sm" href="#planos" data-nav-cta>Quero escalar sem limites</a>
       </div>
     </div>
-    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu" data-menu-toggle><svg class="ic-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><svg class="ic-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
   </div>
 </header>
 
@@ -80,7 +81,7 @@
     <figure class="shot hero-shot" data-shot aria-label="Painel do WatSeller com receita, vendas e taxa de conversão">
       <div class="shot-frame" data-glow>
         <div class="shot-bar"><i></i><i></i><i></i><span>Painel</span><span class="shot-tag">Imagem real a fornecer</span></div>
-        <img class="shot-img" data-asset="hero-dashboard" data-src="assets/media/hero-dashboard.png" alt="Painel do WatSeller com receita, vendas e taxa de conversão" width="1901" height="1032" loading="eager" decoding="async">
+        <img class="shot-img" data-asset="hero-dashboard" src="assets/media/hero-dashboard.png" data-src="assets/media/hero-dashboard.png" alt="Painel do WatSeller com receita, vendas e taxa de conversão" width="1901" height="1032" loading="eager" decoding="async">
       </div>
     </figure>
   </div>
@@ -146,7 +147,7 @@
               <p>Você perde <span class="hl2"><b>o canal que MAIS vende</b></span> — e com ele, perde <mark class="hl2"><b>clientes que já estavam a caminho da compra.</b></mark></p>            </div>
             <div class="vig vig-img" role="img" aria-label="Telemóvel com o aviso “Esta conta não pode usar o WhatsApp”">
               <span class="vig-tag">Problema 2</span>
-              <img class="vig-img-el" data-asset="problema-2" data-src="assets/media/problema-2-whatsapp-bloqueado.png" alt="WhatsApp bloqueado por excesso de leads" width="1200" height="960" loading="lazy" decoding="async">
+              <img class="vig-img-el" data-asset="problema-2" src="assets/media/problema-2-whatsapp-bloqueado.png" data-src="assets/media/problema-2-whatsapp-bloqueado.png" alt="WhatsApp bloqueado por excesso de leads" width="1200" height="960" loading="lazy" decoding="async">
             </div>
           </article>
         </li>
@@ -188,7 +189,7 @@
             </div>
             <div class="vig vig-img" role="img" aria-label="Cliente que escreve “vou pensar depois” e fica sem retorno">
               <span class="vig-tag">Problema 4</span>
-              <img class="vig-img-el" data-asset="problema-4" data-src="assets/media/problema-4-silencio.png" alt="Venda perdida no silêncio por falta de follow-up" width="1200" height="960" loading="lazy" decoding="async">
+              <img class="vig-img-el" data-asset="problema-4" src="assets/media/problema-4-silencio.png" data-src="assets/media/problema-4-silencio.png" alt="Venda perdida no silêncio por falta de follow-up" width="1200" height="960" loading="lazy" decoding="async">
             </div>
           </article>
         </li>
@@ -958,10 +959,10 @@
         <p>Agentes de IA especialistas em vendas, funis prontos e automação de follow-up, pagamento e entrega — tudo no seu WhatsApp.</p>
         <div class="social"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a></div>
       </div>
-      <div><h4>Produto</h4><ul><li><a href="#como-funciona">Como funciona</a></li><li><a href="#agentes">Funcionalidades</a></li><li><a href="#planos">Preços</a></li><li><a href="#faq">Perguntas frequentes</a></li></ul></div>
-      <div><h4>Empresa</h4><ul><li><a href="legal/sobre.html">Sobre nós</a></li><li><a href="#resultados">Resultados</a></li><li><a href="https://app.watseller.com">Entrar no painel</a></li></ul></div>
-      <div><h4>Legal</h4><ul><li><a href="legal/privacidade.html">Política de Privacidade</a></li><li><a href="legal/termos.html">Termos de Serviço</a></li><li><a href="legal/cookies.html">Cookies</a></li><li><a href="legal/reembolsos.html">Reembolsos</a></li></ul></div>
-      <div class="f-contact"><h4>Contacto</h4><ul><li><span>E-mail</span><a href="mailto:info@watseller.com">info@watseller.com</a></li><li><span>WhatsApp</span><a href="https://api.whatsapp.com/send?phone=258867372079" target="_blank" rel="noopener">+258 86 737 2079</a></li><li><span>Localização</span>Maputo, Moçambique</li></ul><a class="btn btn-ghost btn-sm f-panel" href="https://app.watseller.com">Entrar no painel</a></div>
+      <div><h3>Produto</h3><ul><li><a href="#como-funciona">Como funciona</a></li><li><a href="#agentes">Funcionalidades</a></li><li><a href="#planos">Preços</a></li><li><a href="#faq">Perguntas frequentes</a></li></ul></div>
+      <div><h3>Empresa</h3><ul><li><a href="legal/sobre.html">Sobre nós</a></li><li><a href="#resultados">Resultados</a></li><li><a href="https://app.watseller.com">Entrar no painel</a></li></ul></div>
+      <div><h3>Legal</h3><ul><li><a href="legal/privacidade.html">Política de Privacidade</a></li><li><a href="legal/termos.html">Termos de Serviço</a></li><li><a href="legal/cookies.html">Cookies</a></li><li><a href="legal/reembolsos.html">Reembolsos</a></li></ul></div>
+      <div class="f-contact"><h3>Contacto</h3><ul><li><span>E-mail</span><a href="mailto:info@watseller.com">info@watseller.com</a></li><li><span>WhatsApp</span><a href="https://api.whatsapp.com/send?phone=258867372079" target="_blank" rel="noopener">+258 86 737 2079</a></li><li><span>Localização</span>Maputo, Moçambique</li></ul><a class="btn btn-ghost btn-sm f-panel" href="https://app.watseller.com">Entrar no painel</a></div>
     </div>
     <div class="footer-bottom"><span>© 2026 WatSeller. Todos os direitos reservados.</span><a href="#topo" class="to-top">Voltar ao topo</a></div>
   </div>
