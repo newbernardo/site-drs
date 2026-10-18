@@ -266,3 +266,28 @@ mark.mk, mark.hl2 { background: var(--accent-soft); color: inherit; }
 /* texto mínimo 12px */
 .shot-tag, .vig-tag, .vig-tag b { font-size: max(.75rem, 12px); }
 .seal-arc { font-size: 12px; }
+
+/* ---------- Fase B: acabamento visual (só apresentação; layout e copy intactos) ---------- */
+/* superfícies do navegador também seguem a paleta */
+::selection { background: var(--accent); color: var(--accent-ink); }
+html { scrollbar-color: var(--line-strong) transparent; }
+input, textarea, select, progress { accent-color: var(--accent); caret-color: var(--accent); }
+a { text-underline-offset: .2em; text-decoration-thickness: 1px; }
+
+/* faixa suave com arestas definidas: sem elas confundia-se com o fundo claro */
+.band-tint { border-block: 1px solid var(--line-strong); }
+/* duas secções claras seguidas ganham uma divisória fina */
+section:not(.band-dark):not(.band-tint) + section:not(.band-dark):not(.band-tint) { border-top: 1px solid var(--line-strong); }
+
+/* título da solução volta à escala dos outros títulos de secção */
+.sol-head h2 { font-size: var(--t-h2); }
+
+/* planos: título, preço, lista e botão alinham-se entre cartões */
+.plan { grid-template-rows: auto auto 1fr auto; }
+.plan .btn { margin-top: var(--s-2); }
+.plan.feat { transform: none; }
+
+/* etiquetas das secções: texto discreto em vez de pílula */
+.tag, .vs-tag, .vsf-tag { padding: 0; background: none; border: 0; border-radius: 0; font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.tag.pain { background: none; border: 0; color: var(--danger); }
+.tag.good { color: var(--accent); }
