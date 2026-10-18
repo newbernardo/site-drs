@@ -47,7 +47,7 @@
 
   --radius-s: 12px; --radius-m: 14px; --radius-l: 20px;
   --shadow-panel: 0 1px 2px rgba(11, 17, 36, .05), 0 16px 36px -22px rgba(61, 91, 217, .30);
-  --nav-bg: rgba(9, 13, 26, .86);
+  --nav-bg: rgba(244, 246, 252, .88);
 
   --m-dur: .9s;
   --m-ease: "expo.out";
@@ -301,3 +301,6 @@ html:not(.js) .shot-tag { display: none; }
 .footer h3 { margin: 0 0 var(--s-4); font-size: var(--t-sm); color: var(--ink); font-weight: 600; }
 .doc a.btn { color: var(--accent-ink); text-decoration: none; }
 .doc a.btn-primary:hover { color: var(--accent-ink); }
+
+/* cabeçalho claro (a página não abre em escuro) */
+.nav:not(.band-dark) .nav-links a:hover, .nav:not(.band-dark) .nav-links a.is-active { color: var(--ink); }
