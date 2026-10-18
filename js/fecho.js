@@ -99,14 +99,14 @@
         }
 
         /* final: frase por scrub, CTA no fim, botão magnético */
-        var punch = $("[data-final-punch]"), cta = $("[data-final-cta]");
+        var punch = $("[data-final-punch]");
         if (punch) {
           var words = DRS.splitWords(punch);
           punch.setAttribute("aria-label", punch.textContent);
           $$(".w", punch).forEach(function (w) { w.setAttribute("aria-hidden", "true"); w.style.overflow = "visible"; w.style.padding = "0"; w.style.margin = "0"; });
-          gsap.set(words, { opacity: .12, y: 12 }); gsap.set(cta, { opacity: 0, y: 22 });
+          gsap.set(words, { opacity: .12, y: 12 }); /* o botao nunca fica preso ao scrub: sempre visivel */
           var ptl = gsap.timeline({ scrollTrigger: { trigger: punch, start: "top 85%", end: "top 40%", scrub: .6 } });
-          ptl.to(words, { opacity: 1, y: 0, stagger: .2, ease: "none" }).to(cta, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, ">-.2");
+          ptl.to(words, { opacity: 1, y: 0, stagger: .2, ease: "none" });
         }
         var offs = [];
         $$("[data-magnet]").forEach(function (b) {
