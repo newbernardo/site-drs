@@ -242,3 +242,9 @@ mark.mk, mark.hl2 { background: var(--accent-soft); color: inherit; }
   .nav.is-open ~ .cta-fab { visibility: hidden; }
 }
 @media (prefers-reduced-motion: reduce) { .cta-fab, .cta-fab.is-off { transition: opacity var(--d-fast) linear, visibility 0s; transform: none; } }
+
+/* ---------- garantia junto aos planos (frases da secção #garantia) ---------- */
+.plans-guar { display: flex; align-items: center; justify-content: center; gap: var(--s-4); width: fit-content; max-width: 100%; margin: var(--s-6) auto 0; padding: var(--s-4) var(--s-5); border: 1px solid var(--line-strong); border-radius: var(--radius-l); background: var(--bg-raised); color: var(--ink); font-size: var(--t-base); line-height: 1.5; text-wrap: balance; }
+.plans-guar svg { flex: none; width: 1.75rem; height: 1.75rem; fill: none; stroke: var(--accent); stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.plans-guar b { font-weight: 700; }
+@media (max-width: 40rem) { .plans-guar { align-items: flex-start; } }
