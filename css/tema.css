@@ -296,3 +296,8 @@ section:not(.band-dark):not(.band-tint) + section:not(.band-dark):not(.band-tint
 html:not(.js) img[data-asset] { display: none; }
 html:not(.js) .shot-img, html:not(.js) .vig-img-el { opacity: 1; }
 html:not(.js) .shot-tag { display: none; }
+
+/* rodapé: títulos h3 com o mesmo aspeto dos antigos h4 */
+.footer h3 { margin: 0 0 var(--s-4); font-size: var(--t-sm); color: var(--ink); font-weight: 600; }
+.doc a.btn { color: var(--accent-ink); text-decoration: none; }
+.doc a.btn-primary:hover { color: var(--accent-ink); }
