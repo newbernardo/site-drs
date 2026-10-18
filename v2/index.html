@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WatSeller — Agentes de IA que vendem no WhatsApp</title>
+<meta name="description" content="Escale seu negócio no WhatsApp com agentes de IA especializados em venda direta. Funis prontos, follow-up automático, confirmação de pagamento e entrega — sem programar e sem depender de agências.">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#090d1a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 28 28%27%3E%3Crect width=%2728%27 height=%2728%27 rx=%278%27 fill=%27%237090ff%27/%3E%3Cpath d=%27M8 19.5 13 13.5l3.2 3L21 9.5M16.5 9.5H21V14%27 fill=%27none%27 stroke=%27%23060a18%27 stroke-width=%272.2%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../vendor/fonts/bricolage-grotesque-latin.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../vendor/fonts/geist-latin.woff2">
+<script>document.documentElement.classList.add("js");</script>
+<link rel="stylesheet" href="css/v2.css">
+<link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header class="nav t-dark" data-nav="">
+<div class="wrap nav-in">
+<a aria-label="WatSeller" class="logo" href="#topo">
+<svg aria-hidden="true" class="logo-mark" viewbox="0 0 28 28"><rect fill="var(--accent)" height="28" rx="8" width="28"></rect><path d="M8 19.5 13 13.5l3.2 3L21 9.5M16.5 9.5H21V14" fill="none" stroke="var(--accent-ink)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg>
+<b>WatSeller</b>
+</a>
+<div class="nav-menu" data-menu="" id="menu-principal">
+<nav aria-label="Principal" class="nav-links">
+<a href="#como-funciona">Como funciona</a>
+<a href="#resultados">Resultados</a>
+<a href="#planos">Preços</a>
+<a href="#faq">Perguntas frequentes</a>
+</nav>
+<div class="nav-actions">
+<a class="nav-login" href="https://app.watseller.com">Entrar</a>
+<a class="btn btn-primary btn-sm" href="#planos">Quero escalar</a>
+</div>
+</div>
+<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu" class="nav-toggle" data-menu-toggle="" type="button"><svg aria-hidden="true" class="ic-open" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg aria-hidden="true" class="ic-close" viewbox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"></path></svg></button>
+</div>
+</header>
+
+<main id="topo">
+
+<section class="hero t-dark" id="hero" data-section="hero">
+  <div class="hero-bg" aria-hidden="true"><span class="hb-grid"></span><span class="hb-glow"></span><span class="hb-orb"></span></div>
+  <div class="frame hero-frame">
+    <h1 class="hero-title">Escale seu negócio no WhatsApp com <span class="hl-a">agentes de IA</span> <span class="hl-b">especializados em venda direta</span></h1>
+    <p class="hero-sub">Agentes treinados com <mark class="mk">metodologias</mark>, <mark class="mk">técnicas de persuasão</mark>, <mark class="mk">tratamento de objeções</mark> e <mark class="mk">estratégias de follow-up</mark> para conduzir cada conversa até a compra de forma autónoma.</p>
+    <div class="hero-cta">
+      <div class="hero-cta-row">
+        <a class="btn btn-primary btn-lg" href="#planos" data-cta>Quero escalar sem limites <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost btn-lg" href="#problema">Ver o que resolvemos <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+      </div>
+      <span class="microcopy">Não precisa construir Workflows nem depender mais de agências</span>
+    </div>
+  </div>
+  <div class="hero-shot-wrap">
+    <figure class="hero-shot" data-tilt aria-label="Painel do WatSeller com receita, vendas e taxa de conversão">
+      <div class="browser">
+        <div class="browser-bar"><i></i><i></i><i></i><span>Painel</span></div>
+        <img src="../assets/media/hero-dashboard.png" alt="Painel do WatSeller com receita, vendas e taxa de conversão" width="1901" height="1032" loading="eager" decoding="async">
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section class="sec t-light" id="problema" data-section="problema">
+  <div class="frame">
+    <header class="sec-head rv">
+      <p class="lead-up">Você faz anúncios para WhatsApp mas fica limitado na hora de escalar?</p>
+      <h2 class="h2 display">Você não tem problema de leads. Tem problema de sistema, <em>veja...</em></h2>
+    </header>
+    <ol class="bento b2 rv"><li class="cell spot pc"><div class="pc-text"><h3><span class="sr-only">Problema 1: </span><span class="ul-err">Você não sabe onde as vendas se perdem</span></h3>
+<p>Você não sabe quantos leads <b>ENTRAM</b>, quantos <b>AVANÇAM</b>, quantos <b>PARAM</b>, nem <em>PORQUÊ</em>. As conversas acontecem, mas não há um sistema que mostre o que está a funcionar e o que está a falhar.</p>
+<p>Sem visibilidade, <b class="r">NÃO há decisão assertiva.</b></p></div><div aria-label="Funil de vendas que vaza: leads entram, poucos avançam, a maioria escapa pelos lados e ninguém sabe porquê" class="vig" data-vig="funil" role="img">
+<span class="vig-tag">Problema 1</span>
+<svg aria-hidden="true" focusable="false" viewbox="0 0 380 270">
+<g class="funnel-shape">
+<polygon points="80,40 340,40 290,100 130,100"></polygon>
+<polygon points="135,112 285,112 260,164 160,164"></polygon>
+<polygon points="165,176 255,176 240,220 180,220"></polygon>
+</g>
+<g class="funnel-labels">
+<line x1="58" x2="100" y1="69" y2="69"></line><text x="8" y="72">entram</text>
+<line x1="58" x2="142" y1="139" y2="139"></line><text x="8" y="142">avançam</text>
+<line x1="58" x2="166" y1="199" y2="199"></line><text x="8" y="202">param</text>
+</g>
+<g class="pose">
+<circle class="d-ok" cx="205" cy="62" r="4"></circle><circle class="d-ok" cx="224" cy="82" r="4"></circle>
+<circle class="d-ok" cx="200" cy="138" r="4"></circle><circle class="d-ok" cx="214" cy="196" r="4"></circle>
+<circle class="d-leak" cx="300" cy="110" r="4"></circle><circle class="d-leak" cx="322" cy="146" r="4"></circle><circle class="d-leak" cx="334" cy="188" r="4"></circle>
+<circle class="d-leak" cx="116" cy="112" r="4"></circle><circle class="d-leak" cx="108" cy="156" r="4"></circle>
+</g>
+<g class="anim"></g>
+<g class="funnel-q">
+<circle class="q-ring" cx="210" cy="246" r="14"></circle>
+<text class="q-mark" text-anchor="middle" x="210" y="252">?</text>
+</g>
+</svg>
+</div></li><li class="cell spot pc"><div class="pc-text"><h3><span class="sr-only">Problema 2: </span><span class="ul-err">O seu WhatsApp bloqueia quando o número de leads cresce</span></h3>
+<p>À medida que o volume cresce, o seu WhatsApp começa a dar sinais. <b><em class="r">BLOQUEIOS</em>, <em class="r">LIMITAÇÕES</em> e, por fim, <span class="r">BANIMENTO</span>.</b></p>
+<p>Você perde <span class="hl2"><b>o canal que MAIS vende</b></span> — e com ele, perde <mark class="hl2"><b>clientes que já estavam a caminho da compra.</b></mark></p></div><div aria-label="Telemóvel com o aviso “Esta conta não pode usar o WhatsApp”" class="vig vig-img" role="img">
+<span class="vig-tag">Problema 2</span>
+<img alt="WhatsApp bloqueado por excesso de leads" class="vig-img-el" data-asset="problema-2" data-src="../assets/media/problema-2-whatsapp-bloqueado.png" decoding="async" height="960" loading="lazy" width="1200"/>
+</div></li><li class="cell spot pc"><div class="pc-text"><h3><span class="sr-only">Problema 3: </span><span class="ul-err">A sua automação é genérica e inconsistente</span></h3>
+<p>Pior que atender <b>MANUALMENTE</b> é instalar uma <em class="r">automação genérica.</em> Em vez de ajudar, <b>ATRAPALHA</b> — porque essas automações <b>não seguem um funil de vendas <span class="hl2">ESTRUTURADO</span>.</b></p></div><div aria-label="Cliente frustrado a ver um chatbot repetir o mesmo menu de opções em vez de responder" class="vig" data-vig="loop" role="img">
+<span class="vig-tag">Problema 3</span>
+<div aria-hidden="true" class="chat">
+<div class="chat-head"><span class="chat-av">B</span><div class="chat-who"><b>Atendimento</b><small class="on">online</small></div>
+<span class="chat-aside"><svg class="loop-ico" height="16" viewbox="0 0 24 24" width="16"><path d="M20 12a8 8 0 1 1-2.6-5.9M20 4v4.5h-4.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span data-count="">menu ×3</span></span></div>
+<div class="chat-body">
+<div class="chat-track" data-track="">
+<p class="msg out">Quanto custa?</p>
+<div class="msg in">Olá! Escolha uma opção:<span class="menu"><span>1 · Vendas</span><span>2 · Suporte</span><span>3 · Outros</span></span></div>
+<p class="msg out hot">Só quero saber o preço.</p>
+<div class="msg in">Olá! Escolha uma opção:<span class="menu"><span>1 · Vendas</span><span>2 · Suporte</span><span>3 · Outros</span></span></div>
+<p class="msg out hot">Alô??</p>
+<div class="msg in">Olá! Escolha uma opção:<span class="menu"><span>1 · Vendas</span><span>2 · Suporte</span><span>3 · Outros</span></span></div>
+</div>
+</div>
+</div>
+</div></li><li class="cell spot pc"><div class="pc-text"><h3><span class="sr-only">Problema 4: </span><span class="ul-err">Você perde vendas no silêncio</span></h3>
+<p><b><em>VOCÊ NÃO TEM UM SISTEMA DE FOLLOW-UP.</em></b> Estudos revelam que a maioria das vendas <b class="r">não acontece na <span class="up">PRIMEIRA</span> conversa.</b> <mark class="hl2">Acontece na segunda, terceira ou quarta.</mark> Mas o seu negócio <b class="r">descarta logo esses clientes</b>, perdendo vendas porque não há <b>SEQUÊNCIA</b>, não há <b>RETOMA</b>, não há <b>SEGUNDO CONTACTO</b>.</p>
+<p>O cliente <b><em>ESFRIA</em></b>, <b><em>ESQUECE</em></b> e compra de outro. Você <b>NÃO</b> perdeu a venda <b>NO INÍCIO</b> — <b class="r">perdeu-a <span class="up">NO SILÊNCIO.</span></b></p></div><div aria-label="Cliente que escreve “vou pensar depois” e fica sem retorno" class="vig vig-img" role="img">
+<span class="vig-tag">Problema 4</span>
+<img alt="Venda perdida no silêncio por falta de follow-up" class="vig-img-el" data-asset="problema-4" data-src="../assets/media/problema-4-silencio.png" decoding="async" height="960" loading="lazy" width="1200"/>
+</div></li></ol>
+    <div class="truth rv">
+      <p class="truth-pre">E aqui está a verdade dura: enquanto não resolver isto, o seu negócio <span class="r">vai continuar preso no mesmo volume.</span></p>
+      <p class="truth-big"><span>Não por falta de leads.</span><span>Por falta de <em>sistema.</em></span></p>
+      <p class="truth-post">E cada mês que passa é mais um mês no mesmo lugar.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec t-dark glow" id="oportunidade" data-section="virada">
+  <div class="frame">
+    <header class="sec-head rv "><h2 class="h2 display">E se existisse um sistema que <em>vendesse por você</em>, e lhe entregasse relatórios completos de todas as etapas do funil?</h2></header>
+    <p class="turn-lead rv">Um sistema que trabalha no seu WhatsApp como uma <mark class="mk">equipa de vendas</mark> — mas que:</p>
+    <ul class="bento b3 nots rv"><li><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10.5"></circle><path d="M7.5 12.5l3 3 6-7"></path></svg><span><b>NÃO PARA</b></span></li><li><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10.5"></circle><path d="M7.5 12.5l3 3 6-7"></path></svg><span><b>NÃO SE ESQUECE</b></span></li><li><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10.5"></circle><path d="M7.5 12.5l3 3 6-7"></path></svg><span><b>NÃO DEPENDE</b> de intervenção manual</span></li></ul>
+    <p class="turn-does rv">Ele…</p>
+    <ol class="pipe rv" aria-label="Ele atende, qualifica, apresenta, responde objeções, conduz para o pagamento, faz follow-up e processa a venda"><li>Atende</li><li>Qualifica</li><li>Apresenta</li><li>Responde objeções</li><li>Conduz para o pagamento</li><li>Faz follow-up</li><li>Processa a venda</li></ol>
+    <p class="turn-pro rv">…como um verdadeiro profissional.</p>
+    <div class="turn-result spot rv">
+      <span class="tag">Resultado</span>
+      <p>Enquanto você cuida do negócio, <em>ele cuida das vendas.</em></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec t-dark glow2" id="solucao">
+  <div class="frame">
+    <header class="sec-head rv "><h2 class="h2 display">O sistema que você acabou de imaginar existe. Chama-se <em>WatSeller</em>.</h2></header>
+    <p class="sol-lead rv">Uma solução diferente de tudo o que você já viu:</p>
+    <ul class="bento b3 negations rv"><li><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg><span>Não é <span class="neg">um chatbot</span>.</span></li><li><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg><span>Não é <span class="neg">um construtor de workflows</span>.</span></li><li><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg><span>Não é <span class="neg">uma IA que só responde perguntas</span>.</span></li></ul>
+    <p class="sol-is rv"><span class="tag good">O que é</span><span class="sol-is-text">É um sistema <mark class="mk">completo de vendas</mark> que combina:</span></p>
+    <ol class="bento b3 pillars rv"><li>
+<span class="pn">01</span>
+<h3>Funis de alta conversão</h3>
+<p>Que se adaptam ao seu produto <span class="g">sem precisar construir nenhum <mark class="mk">workflow</mark>.</span></p>
+</li><li>
+<span class="pn">02</span>
+<h3>Agentes de IA especializados em venda direta</h3>
+<p>Treinados para <b>atender, persuadir, quebrar objeções</b> e <span class="g">conduzir à compra.</span></p>
+</li><li>
+<span class="pn">03</span>
+<h3>Automação de follow-up, pagamento e entrega</h3>
+<p>Para que <b>nenhuma venda se perca no silêncio</b> e <span class="g">nenhum processo dependa de você.</span></p>
+</li></ol>
+    <p class="sol-close display rv">Desde a primeira mensagem até a venda realizada — <em>sem depender de você.</em></p>
+  </div>
+</section>
+
+<section class="sec t-light" id="como-funciona" data-section="como-funciona">
+  <div class="frame">
+    <header class="sec-head rv "><h2 class="h2 display">Como o WatSeller transforma <em>tráfego em vendas</em></h2></header>
+    <div class="how rv" data-how>
+      <ol class="steps"><li class="step" data-step="">
+<span aria-hidden="true" class="step-node">1</span>
+<div class="step-body">
+<h3><button class="step-btn" type="button"><span class="sr-only">Passo 1: </span>Você Anuncia</button></h3>
+<div class="step-more"><div class="step-more-in">
+<p class="who">Quem faz: Você</p>
+<p>Crie os seus <b>anúncios no Facebook e Instagram</b> e envie <mark class="mk">o tráfego diretamente para o WhatsApp.</mark></p>
+</div></div>
+</div>
+</li><li class="step" data-step="">
+<span aria-hidden="true" class="step-node">2</span>
+<div class="step-body">
+<h3><button class="step-btn" type="button"><span class="sr-only">Passo 2: </span>O Agente Atende e Qualifica</button></h3>
+<div class="step-more"><div class="step-more-in">
+<p class="who sys">Quem faz: O sistema</p>
+<p>O potencial cliente <b>entra na conversa</b> e o agente inicia automaticamente o atendimento. <mark class="mk">Entende</mark> <span class="g">o interesse e o perfil do cliente</span> e faz <mark class="mk">as perguntas certas</mark> para <b>iniciar o funil</b>.</p>
+</div></div>
+</div>
+</li><li class="step" data-step="">
+<span aria-hidden="true" class="step-node">3</span>
+<div class="step-body">
+<h3><button class="step-btn" type="button"><span class="sr-only">Passo 3: </span>O Agente Vende</button></h3>
+<div class="step-more"><div class="step-more-in">
+<p class="who sys">Quem faz: O sistema</p>
+<p>O agente <b>apresenta o produto</b>, <b>responde a dúvidas</b>, <b>trabalha objeções</b> e <mark class="mk">conduz a conversa até a decisão de compra</mark> — com <span class="g">metodologia, persuasão e contexto.</span></p>
+</div></div>
+</div>
+</li><li class="step" data-step="">
+<span aria-hidden="true" class="step-node">4</span>
+<div class="step-body">
+<h3><button class="step-btn" type="button"><span class="sr-only">Passo 4: </span>O Cliente Paga</button></h3>
+<div class="step-more"><div class="step-more-in">
+<p class="who sys">Quem faz: O sistema</p>
+<p>O sistema <b>apresenta os métodos de pagamento</b>, <mark class="mk">orienta o cliente</mark>, <b>recebe o comprovativo</b> e <b>processa a confirmação</b> — <span class="g">sem intervenção manual.</span></p>
+</div></div>
+</div>
+</li><li class="step" data-step="">
+<span aria-hidden="true" class="step-node">5</span>
+<div class="step-body">
+<h3><button class="step-btn" type="button"><span class="sr-only">Passo 5: </span>O Produto é Entregue e o Sistema Continua</button></h3>
+<div class="step-more"><div class="step-more-in">
+<p class="who sys">Quem faz: O sistema</p>
+<p>Para <b>produtos digitais</b>, <mark class="mk">a entrega acontece automaticamente</mark> após a confirmação. E se o cliente <span class="r">não comprar de imediato</span>, o sistema <b>ativa os follow-ups</b> configurados no funil — para <span class="g">recuperar vendas que, de outra forma, se perderiam no silêncio.</span></p>
+</div></div>
+</div>
+</li></ol>
+      <div class="how-visual">
+<figure class="how-img"><img alt="Anúncio no Facebook e Instagram com botão Enviar mensagem, que leva o cliente a uma conversa de venda no WhatsApp" decoding="async" height="768" loading="lazy" src="../assets/media/como-anuncio-whatsapp.jpg" width="1344"/></figure>
+<span aria-hidden="true" class="how-link">
+<svg focusable="false" preserveaspectratio="none" viewbox="0 0 100 40">
+<path class="hl-base" d="M86 0 V8 Q86 20 74 20 H26 Q14 20 14 32 V40" pathlength="1"></path>
+<path class="hl-flow" d="M86 0 V8 Q86 20 74 20 H26 Q14 20 14 32 V40" pathlength="1"></path>
+<path class="hl-flow hl-flow-2" d="M86 0 V8 Q86 20 74 20 H26 Q14 20 14 32 V40" pathlength="1"></path>
+</svg>
+</span>
+<figure class="how-img"><img alt="Pedido com pagamento na entrega registado no painel do vendedor, com os dados do cliente recolhidos e o envio criado, e a entrega do produto ao cliente" decoding="async" height="768" loading="lazy" src="../assets/media/como-pagamento-entrega.jpg" width="1376"/></figure>
+</div>
+    </div>
+    <p class="closing display rv">Você anuncia. O sistema faz o resto.<br/><em>Do primeiro contacto até à venda realizada.</em></p>
+  </div>
+</section>
+
+<section class="sec t-tint gridded" id="diferencial" data-section="diferencial">
+  <div class="frame">
+    <header class="sec-head rv "><h2 class="h2 display">Você não precisa construir automações. <em>Nós já construímos o sistema por você.</em></h2></header>
+    <div class="duo rv">
+      <article class="side other">
+<div class="side-media">
+<figure class="side-visual vis-other">
+<span class="vig-tag">Em outras ferramentas</span>
+<img alt="Editor de fluxos de outras ferramentas, com dezenas de blocos ligados por linhas e marcado com um X vermelho" decoding="async" height="864" loading="lazy" src="../assets/media/diferencial-outras-ferramentas.jpg" width="1236"/>
+</figure>
+<span aria-hidden="true" class="vs-badge">vs</span>
+</div>
+<h3 class="side-label">Em outras ferramentas</h3>
+<p>Você recebe <span class="r">dezenas de blocos, triggers, condições, IFs, DELAYs, automações e configurações.</span> Depois <b>passa semanas a tentar transformar tudo isso num processo de venda que funcione.</b></p>
+</article>
+      <article class="side drs">
+<figure class="side-visual vis-drs">
+<div class="shot-frame">
+<div class="shot-bar"><i></i><i></i><i></i><span>Painel · Funis de Venda</span></div>
+<img alt="Painel do WatSeller com os passos do funil prontos: Essencial, Qualificação, Follow-ups e Upsell, e os templates de mensagem já preenchidos" decoding="async" height="930" loading="lazy" src="../assets/media/diferencial-painel-funis.png" width="1803"/>
+</div>
+</figure>
+<h3 class="side-label">No WatSeller</h3>
+<p>Você escolhe o tipo de produto. <span class="g">O funil já vem pronto</span> — com atendimento, persuasão, tratamento de objeções, follow-up, pagamento e entrega já configurados.</p>
+</article>
+    </div>
+    <p class="closing display rv">Escolha o funil. Forneça informações sobre o seu produto. Publique. <em>E comece a vender.</em></p>
+  </div>
+</section>
+
+<section class="sec t-dark glow" id="agentes" data-section="especialista">
+  <div class="frame">
+    <header class="sec-head rv "><h2 class="h2 display">Não coloque um chatbot a conversar. <em>Coloque um especialista a vender.</em></h2></header>
+    <div class="stage vs rv" data-vs>
+      <div class="vs-col bot">
+<p class="vs-who"><span class="vs-tag">Chatbot</span><span>Um chatbot <b>responde perguntas.</b></span></p>
+<div aria-hidden="true" class="phone phone-s"><div class="phone-screen"><div class="chat">
+<div class="chat-head"><span class="chat-av">L</span><div class="chat-who"><b>Chatbot</b><small class="on">online</small></div></div>
+<div class="chat-body"><div class="chat-track" data-track="">
+<p class="msg in" data-m="">Quanto custa a bolsa?</p>
+<p class="msg out" data-m="">A bolsa custa 1.800 Mt.</p>
+<p class="msg in" data-m="">Tem desconto?</p>
+<p class="msg out" data-m="">Sim, temos desconto.</p>
+<p class="msg in" data-m="">Quanto?</p>
+<p class="msg out" data-m="">A bolsa custa 1.800 Mt.</p>
+<p class="msg in" data-m="">Isso é uma IA, né?</p>
+<p class="sys-chip stuck" data-display="flex" data-m=""><span>Conversa parada</span></p>
+</div></div>
+</div></div></div>
+</div>
+      <div class="vs-col agent">
+<p class="vs-who"><span class="vs-tag good">Agente de vendas</span><span>Um agente de vendas <span class="g">conduz uma conversa até a compra.</span></span></p>
+<div aria-hidden="true" class="phone phone-s"><div class="phone-screen"><div class="chat">
+<div class="chat-head"><span class="chat-av">A</span><div class="chat-who"><b>Agente de vendas</b><small class="on">online</small></div></div>
+<div class="chat-body"><div class="chat-track" data-track="">
+<p class="msg in" data-m="">Quanto custa a bolsa?</p>
+<div class="chat-typing out" data-ty=""><i></i><i></i><i></i></div>
+<p class="msg out" data-m="">Antes do preço, gostaria de saber: é para você a bolsa?</p>
+<p class="msg in" data-m="">Sim, é para mim. Tem desconto?</p>
+<div class="chat-typing out" data-ty=""><i></i><i></i><i></i></div>
+<p class="msg out" data-m="">Ótimo!</p>
+<p class="msg out" data-m="">Deixe-me ver se temos algum desconto disponível, um minuto só…</p>
+<p class="msg in" data-m="">Ok!</p>
+<div class="chat-typing out" data-ty=""><i></i><i></i><i></i></div>
+<p class="msg out" data-m="">Oi, consegui um desconto especial só para você. Posso te enviar os detalhes de pagamento com o desconto?</p>
+<p class="msg in" data-m="">Sim!</p>
+<div class="chat-typing out" data-ty=""><i></i><i></i><i></i></div>
+<p class="msg out" data-m="">Ok! É para já…</p>
+</div></div>
+</div></div></div>
+</div>
+    </div>
+    <p class="punch display rv">A diferença não é a tecnologia.<br/>É a <em>intenção</em>.</p>
+    <p class="cap-intro rv"><span class="tag">Na prática</span><span class="cap-intro-text">O que acontece<span class="dots">...</span></span></p>
+    <ol class="bento b3 caps rv"><li class="cap">
+<div class="cap-head"><span class="cap-n">01</span><h3>Atendimento</h3></div>
+<div class="cap-body"><p>O agente recebe o cliente, responde às dúvidas sobre o produto e mantém a conversa activa — <span class="k">com contexto, não com respostas prontas.</span></p><p><b>Sabe o que está a vender, para quem e a que preço.</b> Por isso, cada resposta é relevante — <span class="r">não é um menu de opções nem um FAQ automático.</span></p><p class="resolve"><b>O que resolve:</b> o atendimento manual que consome o seu tempo e o da sua equipa.</p></div>
+</li><li class="cap">
+<div class="cap-head"><span class="cap-n">02</span><h3>Qualificação</h3></div>
+<div class="cap-body"><p>O agente faz <b>as perguntas certas</b> para entender o interesse e o perfil do potencial cliente. <b>Não avança para a apresentação</b> sem saber se aquele cliente faz sentido.</p><p>Faz perguntas como um vendedor faria: <mark class="hl2">o que procura</mark>, <mark class="hl2">para quem é</mark>, <mark class="hl2">que problema quer resolver</mark>. E ajusta a conversa com base nas respostas.</p><p class="resolve"><b>O que resolve:</b> leads que não avançam porque ninguém os qualificou.</p></div>
+</li><li class="cap">
+<div class="cap-head"><span class="cap-n">03</span><h3>Persuasão</h3></div>
+<div class="cap-body"><p>O agente apresenta o produto com base no que o cliente disse — <span class="r">não com um script fixo.</span> Liga os benefícios <b>ao que aquele cliente específico valoriza.</b></p><p>Usa técnicas de persuasão treinadas: prova social, urgência, autoridade, benefício antes de característica. Não é conversa solta. <span class="g">É método.</span></p><p class="resolve"><b>O que resolve:</b> apresentações genéricas que não convencem.</p></div>
+</li><li class="cap">
+<div class="cap-head"><span class="cap-n">04</span><h3>Objeções</h3></div>
+<div class="cap-body"><p>O agente reconhece as objeções mais comuns — preço, tempo, dúvida, adiamento — e responde <span class="k">com método, não com improviso.</span></p><p><b>“Está caro” não termina a conversa. “Vou pensar” não é um adeus.</b> O agente sabe quando insistir, quando reformular e quando dar espaço.</p><p class="resolve"><b>O que resolve:</b> vendas perdidas por objeções mal tratadas.</p></div>
+</li><li class="cap">
+<div class="cap-head"><span class="cap-n">05</span><h3>Conversão</h3></div>
+<div class="cap-body"><p>O agente conduz a conversa até à decisão. <b>Não espera que o cliente peça para comprar</b> — <span class="g">orienta-o para o próximo passo.</span></p><p>Quando o cliente está pronto, apresenta <b>o método de pagamento</b>, envia os dados e <span class="g">acompanha o processo até à confirmação.</span></p><p class="resolve"><b>O que resolve:</b> leads que ficam “quentes” mas nunca chegam a comprar.</p></div>
+</li><li class="cap">
+<div class="cap-head"><span class="cap-n">06</span><h3>Follow-up</h3></div>
+<div class="cap-body"><p>Se o cliente não comprar de imediato, o agente <span class="k">não o abandona.</span> Activa a sequência de follow-up definida no funil — com <b>mensagens contextualizadas</b>, não spam.</p><p>Retoma a conversa no momento certo, responde a novas dúvidas e conduz novamente à decisão.</p><p class="resolve"><b>O que resolve:</b> vendas perdidas no silêncio.</p></div>
+</li></ol>
+    <p class="closing display rv">Cada conversa segue um processo.<br/>Não é improviso. <em>É método.</em></p>
+  </div>
+</section>
+
+<section class="sec t-light" id="multimidia">
+  <div class="frame">
+    <header class="sec-head rv "><h2 class="h2 display">Atenda e venda <em>como um humano faria</em></h2></header>
+    <div class="mm-grid rv">
+      <div class="mm-text"><p class="mm-lead">O agente entende e processa <b>todos</b> os formatos de mensagem:</p>
+<ul class="formats" data-formats="">
+<li class="on">texto</li><li class="on">áudio</li><li class="on">imagem</li><li class="on">vídeo</li><li class="on">PDFs</li>
+</ul>
+<p class="mm-lead">E combina esses formatos ao longo do funil, <mark class="mk">nas ocasiões certas</mark> — deixando a conversa <span class="g">mais fluida</span> e <span class="g">mais natural.</span></p></div>
+      <figure class="mm-phone">
+<img alt="Conversa de WhatsApp em que o cliente envia um áudio e o agente responde com texto, imagem do produto, vídeo e PDF, com ícones de cada formato ao redor do celular" decoding="async" height="1200" loading="lazy" src="../assets/media/multimidia-whatsapp.jpg" width="860"/>
+</figure>
+    </div>
+    <p class="closing display rv">Não é uma sequência de mensagens.<br/><em>É uma conversa de alta conversão.</em></p>
+  </div>
+</section>
+
+<section class="sec t-dark glow" id="follow-up" data-section="processo">
+  <div class="frame">
+    <header class="sec-head rv"><h2 class="h2 display">A venda não termina quando o cliente diz <em>“vou pensar”</em>.</h2><p class="fu-lead">Estudos mostram que são necessários <b>de 1 a 7 contactos</b> para o cliente decidir comprar. Mas a maioria dos negócios <span class="r">desiste na primeira</span> — e perde <span class="r">dinheiro que já estava a caminho.</span></p></header>
+    <div class="fu-grid rv">
+      <div class="fu-text"><p><span class="g">O WatSeller não desiste.</span> Se o cliente não comprar de imediato, o sistema activa a sequência de follow-up definida no funil.</p>
+<p><b>Não é spam.</b> É <span class="k">uma sequência contextualizada:</span> uma mensagem no momento certo, com a informação certa, para retomar a conversa <mark class="mk">sem pressionar.</mark></p></div>
+      <div class="seq-wrap">
+<p aria-hidden="true" class="lanes"><span>Cliente</span><span>Sistema</span></p>
+<ol class="seq" data-seq="">
+<li class="ev cli"><span class="ev-t">Cliente não comprou</span></li>
+<li class="ev sys"><span class="ev-t">Follow-up 1</span></li>
+<li class="ev sys"><span class="ev-t">Follow-up 2</span></li>
+<li class="ev cli"><span class="ev-t">Nova objeção</span></li>
+<li class="ev sys"><span class="ev-t">Resposta do Agente</span></li>
+<li class="ev sys"><span class="ev-t">Follow-up</span></li>
+<li class="ev cli end"><span class="ev-t">Compra</span></li>
+</ol>
+</div>
+    </div>
+    <p class="closing display rv">Seu vendedor continua trabalhando <em>mesmo quando você está offline.</em></p>
+  </div>
+</section>
+
+<section class="sec t-light" id="pagamentos">
+  <div class="frame">
+    <header class="sec-head rv "><h2 class="h2 display">Da confirmação de pagamento <em>à entrega do produto</em></h2></header>
+    <div class="duo callouts rv"><div class="callout pain">
+<span class="tag pain">O problema</span>
+<p class="accent">Este é o ponto onde a maioria dos negócios falha.</p>
+<p>O cliente decide comprar, paga e envia o comprovativo. E é <b>exactamente</b> aqui que <span class="r">os chatbots comuns falham.</span> Porque <b>não têm como confirmar o pagamento.</b> E se a venda acontece enquanto você está offline ou a dormir, o cliente fica frustrado — porque o seu chatbot só sabe dizer <span class="r">“estou verificando o seu pagamento”</span> e nunca sai desse estágio.</p>
+<p aria-hidden="true" class="chipline"><span class="sys-chip stuck"><span><svg class="spin" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="9" stroke="currentColor" stroke-dasharray="40 20" stroke-linecap="round" stroke-width="2.4"></circle></svg>estou verificando o seu pagamento…</span></span></p>
+<p class="punch">A confiança do negócio quebra. <span class="r">E a venda também.</span></p>
+</div><div class="callout good">
+<span class="tag good">No WatSeller</span>
+<p class="accent"><span class="k">O processo não para no comprovativo.</span></p>
+<p>O sistema confirma o pagamento, processa a informação e dá seguimento ao processo de entrega — <span class="g">sem intervenção manual, a qualquer hora.</span></p>
+<p aria-hidden="true" class="chipline"><span class="sys-chip"><span><svg viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"></path></svg>Pagamento confirmado</span></span></p>
+<p class="punch">Veja como funciona para cada cenário <span class="arrow-down">↓</span></p>
+</div></div>
+    <div class="scen-wrap rv" data-scen>
+      <p class="scen-hint">Veja uma simulação para cada cenário e estratégia de negócio</p>
+      <div aria-label="Cenários de entrega" class="tabs" role="tablist">
+<span aria-hidden="true" class="tab-ind"></span>
+<button aria-controls="sc-1" aria-selected="true" id="tab-1" role="tab" type="button"><small>Cenário 1</small>Produto Digital</button>
+<button aria-controls="sc-2" aria-selected="false" id="tab-2" role="tab" tabindex="-1" type="button"><small>Cenário 2</small>Produto Físico</button>
+<button aria-controls="sc-3" aria-selected="false" id="tab-3" role="tab" tabindex="-1" type="button"><small>Cenário 3</small>Pagamento na Entrega</button>
+</div>
+      <div aria-labelledby="tab-1" class="panel" data-panel="" id="sc-1" role="tabpanel">
+<div class="panel-text">
+<h3>Produto Digital</h3>
+<p>O cliente <b>paga</b>. O sistema <b>confirma</b>. O produto (<mark class="mk">PDFs, link de acesso ou de download</mark>) é entregue <b>automaticamente</b> após a confirmação.</p>
+<p class="kicker">Sem espera. Sem intervenção. Sem frustração.</p>
+</div>
+<div class="panel-scene"><div aria-hidden="true" class="phone phone-s"><div class="phone-screen"><div class="chat"><div class="chat-head"><span class="chat-av">C</span><div class="chat-who"><b>Cliente</b><small class="on">online</small></div></div>
+<div class="chat-body"><div class="chat-track" data-track="">
+<div class="msg in rcp" data-display="grid" data-m=""><span class="rcp-card"><i></i><i></i><i></i><b></b></span><small>Comprovativo</small></div>
+<p class="sys-chip" data-display="flex" data-m=""><span class="sys-wait"><svg aria-hidden="true" class="spin" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="9" stroke="currentColor" stroke-dasharray="40 20" stroke-linecap="round" stroke-width="2.4"></circle></svg>A confirmar pagamento…</span><span class="sys-ok"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"></path></svg>Pagamento confirmado</span></p>
+<div class="chat-typing out" data-ty=""><i></i><i></i><i></i></div>
+<div class="msg out file" data-display="flex" data-m=""><span class="file-ic"><svg viewbox="0 0 24 24"><path d="M7 3h7l4 4v14H7z M14 3v4h4" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></svg></span><span class="file-t"><b>produto.pdf</b><small>PDF · entregue</small></span></div>
+<p class="msg out" data-m="">Link de acesso enviado também. Bom proveito!</p>
+</div></div></div></div></div></div>
+</div><div aria-labelledby="tab-2" class="panel" data-panel="" id="sc-2" role="tabpanel">
+<div class="panel-text">
+<h3>Produto Físico</h3>
+<p>O cliente <b>paga</b>. O sistema <b>confirma</b>. Em seguida, <mark class="mk">solicita os dados de entrega</mark> (endereço, contacto, referência, entre outros).</p>
+<p class="kicker">Assim que o cliente fornece as informações, um <span class="g">processo de envio</span> é criado <b>no painel do vendedor</b> com todas as informações e contacto do cliente para os últimos acertos da entrega.</p>
+</div>
+<div class="panel-scene"><div aria-hidden="true" class="phone phone-s"><div class="phone-screen"><div class="chat"><div class="chat-head"><span class="chat-av">C</span><div class="chat-who"><b>Cliente</b><small class="on">online</small></div></div>
+<div class="chat-body"><div class="chat-track" data-track="">
+<p class="sys-chip" data-display="flex" data-m=""><span class="sys-wait"><svg aria-hidden="true" class="spin" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="9" stroke="currentColor" stroke-dasharray="40 20" stroke-linecap="round" stroke-width="2.4"></circle></svg>A confirmar pagamento…</span><span class="sys-ok"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"></path></svg>Pagamento confirmado</span></p>
+<div class="chat-typing out" data-ty=""><i></i><i></i><i></i></div>
+<p class="msg out" data-m="">Para o envio, preciso do endereço, contacto e referência.</p>
+<p class="msg in" data-m="">Av. Exemplo 123, 84 000 0000, perto da escola.</p>
+</div></div></div></div></div> <div aria-hidden="true" class="order" data-order="">
+<p class="order-h"><span>Painel do vendedor</span><svg viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"></path></svg></p>
+<p class="order-t">Processo de envio criado</p>
+<ul><li><span>Cliente</span><b>Nome do cliente</b></li><li><span>Endereço</span><b>Av. Exemplo 123</b></li><li><span>Contacto</span><b>84 000 0000</b></li><li><span>Referência</span><b>Perto da escola</b></li></ul>
+<p class="order-s">Pagamento confirmado · pronto para envio</p>
+</div></div>
+</div><div aria-labelledby="tab-3" class="panel" data-panel="" id="sc-3" role="tabpanel">
+<div class="panel-text">
+<h3>Pagamento na Entrega</h3>
+<p>Se o seu funil for de <b>pagamento na entrega</b>, o sistema segue <span class="k">o mesmo processo</span>: <b>confirma o pedido</b>, <b>recolhe os dados de entrega</b> e <mark class="mk">cria o processo de envio</mark> no painel do vendedor.</p>
+</div>
+<div class="panel-scene"><div aria-hidden="true" class="phone phone-s"><div class="phone-screen"><div class="chat"><div class="chat-head"><span class="chat-av">C</span><div class="chat-who"><b>Cliente</b><small class="on">online</small></div></div>
+<div class="chat-body"><div class="chat-track" data-track="">
+<p class="msg in" data-m="">Quero pagar na entrega.</p>
+<div class="chat-typing out" data-ty=""><i></i><i></i><i></i></div>
+<p class="msg out" data-m="">Pedido confirmado. Preciso do endereço, contacto e referência.</p>
+<p class="msg in" data-m="">Av. Exemplo 123, 84 000 0000, perto da escola.</p>
+</div></div></div></div></div> <div aria-hidden="true" class="order" data-order="">
+<p class="order-h"><span>Painel do vendedor</span><svg viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"></path></svg></p>
+<p class="order-t">Processo de envio criado</p>
+<ul><li><span>Cliente</span><b>Nome do cliente</b></li><li><span>Endereço</span><b>Av. Exemplo 123</b></li><li><span>Contacto</span><b>84 000 0000</b></li><li><span>Referência</span><b>Perto da escola</b></li></ul>
+<p class="order-s">Pagamento na entrega · pronto para envio</p>
+</div></div>
+</div>
+    </div>
+    <p class="closing display rv">Do comprovativo à entrega, o processo não para.<br/><em>E o cliente nunca fica sem resposta.</em></p>
+  </div>
+</section>
+
+<section class="sec t-tint gridded" id="para-quem" data-section="publico">
+  <div class="frame">
+    <header class="sec-head rv"><h2 class="h2 display">Para quem é o <em>WatSeller</em></h2><p class="aud-lead">O WatSeller foi construído para quem vende através de tráfego e WhatsApp — e já percebeu que <span class="k">escalar exige mais</span> do que responder mensagens.</p></header>
+    <div class="duo aud rv"><article class="aud-card">
+<figure class="aud-img"><img alt="Infoprodutor a trabalhar no portátil, com o painel de um curso digital e um guia em destaque, com ícones de vídeo, documento e link a flutuar" decoding="async" height="848" loading="lazy" src="../assets/media/publico-infoprodutores.jpg" width="1264"/></figure>
+<h3>Para Infoprodutores</h3>
+<p class="examples">E-books, cursos online, mentorias, conteúdos digitais.</p>
+<p>Se <b>vende conhecimento</b> e <b>depende do WhatsApp</b> para fechar vendas — ou se já tentou automatizar e <span class="r">a automação não acompanhou o volume</span> — o WatSeller foi feito para o seu caso.</p>
+<p class="solves"><b>O que resolve:</b> <mark class="hl2">entrega automática</mark>, <mark class="hl2">follow-up que recupera vendas</mark>, e um processo que escala sem depender de você.</p>
+</article><article class="aud-card">
+<figure class="aud-img"><img alt="Mesa com perucas, cosméticos, roupa e perfume ao lado de um telemóvel com conversas de WhatsApp e avisos de novo pedido" decoding="async" height="848" loading="lazy" src="../assets/media/publico-produtos-fisicos.jpg" width="1264"/></figure>
+<h3>Para Vendedores de produtos físicos</h3>
+<p class="examples">Nutras, produtos de beleza, roupas, acessórios etc.</p>
+<p>Se recebe pedidos pelo WhatsApp e processa pagamentos e entregas <b>manualmente</b> — ou se perde vendas porque não consegue responder a <b>todos</b> — o WatSeller foi feito para o seu caso.</p>
+<p class="solves"><b>O que resolve:</b> <mark class="hl2">confirmação automática de pagamento</mark>, <mark class="hl2">recolha de dados de entrega</mark> e <mark class="hl2">criação do processo de envio</mark> no seu painel.</p>
+</article></div>
+    <p class="closing display rv">Se o seu negócio depende de conversas no WhatsApp para vender, <em>isto foi construído para o seu caso.</em></p>
+    <div class="not rv">
+      <h2 class="h2 display mid">O WatSeller não é para você <em>se…</em></h2>
+      <ul class="exclusions"><li><span class="dots3">…</span><span>vende serviços que exigem negociação complexa, com condições específicas para cada cliente.</span></li><li><span class="dots3">…</span><span>tem um ciclo de vendas muito longo, onde o processo entre o primeiro contacto e a compra leva <span class="r">semanas ou meses</span>.</span></li><li><span class="dots3">…</span><span>precisa de intervenção humana em cada venda, porque cada decisão exige um vendedor especializado.</span></li><li><span class="dots3">…</span><span>vende produtos que não se explicam por conversa — que exigem <b>demonstração técnica</b>, <b>visita presencial</b> ou <b>avaliação personalizada</b>.</span></li></ul>
+      <p class="not-note">O WatSeller foi construído para produtos que podem ser vendidos através de <b>conversa</b> e uma estratégia de <b>resposta direta</b>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec t-light" id="casos" data-section="casos">
+  <div class="frame">
+    <header class="sec-head rv "><h2 class="h2 display">Como o WatSeller funciona <em>no seu caso</em></h2></header>
+    <ol class="bento b2 cases rv"><li class="case" data-case="">
+<div class="case-head"><span class="case-n">CASO 1</span><h3>E-book</h3></div>
+<div class="case-body"><p>Um cliente clica no seu anúncio e entra no WhatsApp. <b>O agente atende, apresenta o e-book, responde a dúvidas</b> e <span class="g">conduz ao pagamento.</span> O cliente paga, envia o comprovativo, e <mark class="mk">o e-book é entregue</mark> automaticamente.</p><ol aria-label="Fluxo: Meta Ads → WhatsApp → Agente → Pagamento → Entrega" class="flow" data-flow=""><li><span>Meta Ads</span></li><li><span>WhatsApp</span></li><li><span>Agente</span></li><li><span>Pagamento</span></li><li><span>Entrega</span></li></ol></div>
+</li><li class="case" data-case="">
+<div class="case-head"><span class="case-n">CASO 2</span><h3>Curso online</h3></div>
+<div class="case-body"><p>O cliente chega com dúvidas sobre o curso. O agente <b>apresenta o conteúdo</b>, <b>trabalha objeções</b> e <span class="g">conduz à decisão.</span> Após o pagamento, o acesso é enviado automaticamente.</p><ol aria-label="Fluxo: Meta Ads → WhatsApp → Agente → Objeções → Pagamento → Acesso" class="flow" data-flow=""><li><span>Meta Ads</span></li><li><span>WhatsApp</span></li><li><span>Agente</span></li><li><span>Objeções</span></li><li><span>Pagamento</span></li><li><span>Acesso</span></li></ol></div>
+</li><li class="case" data-case="">
+<div class="case-head"><span class="case-n">CASO 3</span><h3>Produto físico</h3></div>
+<div class="case-body"><p>O cliente faz o pedido pelo WhatsApp. <b>O agente confirma o pagamento</b>, <b>recolhe os dados de entrega</b> e <span class="g">cria o processo de envio</span> no seu painel.</p><ol aria-label="Fluxo: Meta Ads → WhatsApp → Agente → Pagamento → Recolha de dados → Processo de envio" class="flow" data-flow=""><li><span>Meta Ads</span></li><li><span>WhatsApp</span></li><li><span>Agente</span></li><li><span>Pagamento</span></li><li><span>Recolha de dados</span></li><li><span>Processo de envio</span></li></ol></div>
+</li><li class="case" data-case="">
+<div class="case-head"><span class="case-n">CASO 4</span><h3>Cliente que não comprou</h3></div>
+<div class="case-body"><p>O cliente disse “vou pensar”. O sistema <b>activa o follow-up</b>, <mark class="mk">retoma a conversa no momento certo</mark> e <span class="g">conduz novamente à decisão.</span></p><ol aria-label="Fluxo: WhatsApp → Follow-up automático → Nova conversa → Compra" class="flow" data-flow=""><li><span>WhatsApp</span></li><li><span>Follow-up automático</span></li><li><span>Nova conversa</span></li><li><span>Compra</span></li></ol></div>
+</li></ol>
+    <p class="closing display rv">Digital ou físico, com compra imediata ou follow-up — <em>o WatSeller adapta-se ao seu modelo.</em></p>
+    <div class="cmp rv">
+      <h2 class="h2 display mid">Sem sistema <em>vs.</em> com o WatSeller</h2>
+      <div class="cmp-table">
+        <div aria-hidden="true" class="cmp-head"><span>Sem sistema</span><span>Com o WatSeller</span></div>
+        <ul class="cmp-list"><li class="cmp-row" data-row=""><span class="cmp-no"><span class="cmp-t">Atendimento manual</span></span><span class="cmp-yes"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg><span class="cmp-t">Agentes de IA que atendem e vendem</span></span></li><li class="cmp-row" data-row=""><span class="cmp-no"><span class="cmp-t">Follow-up manual (ou <b>nenhum</b>)</span></span><span class="cmp-yes"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg><span class="cmp-t">Follow-up automático</span></span></li><li class="cmp-row" data-row=""><span class="cmp-no"><span class="cmp-t">Construir workflows</span></span><span class="cmp-yes"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg><span class="cmp-t">Funis <b>prontos</b></span></span></li><li class="cmp-row" data-row=""><span class="cmp-no"><span class="cmp-t">Pagamento e comprovativo manuais</span></span><span class="cmp-yes"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg><span class="cmp-t">Confirmação automática</span></span></li><li class="cmp-row" data-row=""><span class="cmp-no"><span class="cmp-t">Entrega manual</span></span><span class="cmp-yes"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg><span class="cmp-t">Entrega automática</span></span></li><li class="cmp-row" data-row=""><span class="cmp-no"><span class="cmp-t">Dependência de você para <b>tudo</b></span></span><span class="cmp-yes"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg><span class="cmp-t">Autonomia do sistema</span></span></li></ul>
+      </div>
+      <p class="closing display">Não se trata apenas de automatizar.<br/><em>Trata-se de ter um sistema.</em></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec t-dark glow" id="resultados" data-section="prova">
+  <div class="frame">
+    <header class="sec-head rv"><h2 class="h2 display">Não vendo teoria. <em>Vendo o que uso.</em></h2></header>
+    <div class="story rv">
+      <figure aria-label="Retrato do fundador do WatSeller" class="pic has-img">
+<img alt="Retrato do fundador do WatSeller, de camisa azul e suspensórios castanhos, num evento do WhatsApp" class="pic-img" decoding="async" height="1280" loading="lazy" src="../assets/media/fundador.jpg" width="960"/>
+</figure>
+      <div class="story-text"><p class="pull display">O WatSeller não nasceu num escritório. <em>Nasceu da necessidade.</em></p>
+<p>Eu vendo produtos digitais — ebooks, materiais educativos, guias práticos. E durante muito tempo, fiz <b>tudo manualmente</b>: respondia a cada conversa, enviava dados de pagamento, confirmava comprovativos, entregava os produtos. Quando o volume subiu, percebi que <span class="r">não conseguia escalar do jeito que trabalhava.</span></p>
+<p class="story-call">Foi por isso que construí o WatSeller. E é <mark class="mk">o mesmo sistema que uso todos os dias para vender.</mark></p></div>
+    </div>
+    <figure class="pdash rv" aria-label="Painel real do WatSeller com receita total, vendas e taxa de conversão">
+      <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>Painel · Dashboard</span></div>
+      <img alt="Dashboard do WatSeller com lucro líquido estimado de 45.460 MZN, receita total de 114.682 MZN, 823 vendas, taxa de conversão de 7,2% e ticket médio de 139 MZN, com um botão de play e uma seta tracejada desenhados sobre a imagem" class="pdash-img" decoding="async" height="690" loading="lazy" src="../assets/media/painel-dashboard.png" width="1280"/></div>
+    </figure>
+    <p class="real-line rv"><span class="tag">Prova real</span><span>Estes são os números da minha <span class="k">própria operação</span>:</span></p>
+    <ul class="bento b5 stats rv"><li><b><span data-counter="114682" data-decimals="0">114.682</span><small>MZN</small></b><span>em receita total</span></li><li><b><span data-counter="823" data-decimals="0">823</span></b><span>vendas realizadas</span></li><li><b><span data-counter="7.2" data-decimals="1" data-suffix="%">7,2%</span></b><span>de taxa de conversão</span></li><li><b><span data-counter="5" data-decimals="0">5</span></b><span>contas de WhatsApp conectadas</span></li><li><b><span data-counter="12" data-decimals="0">12</span></b><span>produtos activos</span></li></ul>
+    <p class="strip-note rv"><b>Tudo</b> gerido pelo WatSeller. <b>Sem equipa.</b> <b>Sem atendimento manual.</b></p>
+    <p class="honest rv">É isso que o WatSeller faz: <span class="g">permite escalar sem quebrar.</span></p>
+    <p class="closing display rv">Se funciona para mim, <em>funciona para você.</em></p>
+
+    <div class="demo rv" id="demo">
+      <header class="sec-head">
+        <h2 class="h2 display">Veja o WatSeller <em>por dentro</em></h2>
+        <p class="demo-intro"><span class="di-no">Não é uma promessa.</span> <span class="di-yes">É o <b>sistema real</b>.</span></p>
+        <p class="demo-body">Este é o painel onde o seu funil fica <mark class="mk">pronto a vender</mark>: <span class="g">do anúncio até à entrega do produto.</span></p>
+      </header>
+      <figure class="fdash" aria-label="Painel do WatSeller com receita, vendas e taxa de conversão">
+        <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>Painel</span></div>
+        <img alt="Painel do WatSeller com receita, vendas e taxa de conversão" class="fdash-img" decoding="async" height="1032" loading="lazy" src="../assets/media/hero-dashboard.png" width="1901"/></div>
+      </figure>
+      <p class="real-line"><span class="tag">O que o funil faz por si</span></p>
+      <ol class="bento b3 watch"><li data-w=""><span class="w-ck"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg></span><span>Recebe o cliente que chega pelo anúncio</span></li><li data-w=""><span class="w-ck"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg></span><span>Atende e qualifica</span></li><li data-w=""><span class="w-ck"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg></span><span>Conduz a conversa até à decisão</span></li><li data-w=""><span class="w-ck"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg></span><span>Processa o pagamento</span></li><li data-w=""><span class="w-ck"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg></span><span>Confirma o comprovativo</span></li><li data-w=""><span class="w-ck"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg></span><span>Entrega o produto <b>automaticamente</b></span></li></ol>
+      <div class="band spot"><p class="display">Este é o sistema por dentro. <em>Agora imagine-o a vender todos os dias no seu negócio.</em></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec t-light" id="oferta" data-section="oferta">
+  <div class="frame">
+    <header class="sec-head rv "><h2 class="h2 display">Tudo o que você precisa para colocar o seu processo de vendas no WhatsApp <em>a funcionar.</em></h2></header>
+    <ul class="bento b3 offer-list rv"><li><span class="of-ck"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg></span><div><strong>Funis <b>prontos</b></strong><p>Configurados para o seu tipo de produto, sem precisar construir automações.</p></div></li><li><span class="of-ck"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg></span><div><strong>Agentes de IA especialistas em vendas</strong><p>Que atendem, qualificam, persuadem, tratam objeções e conduzem à compra.</p></div></li><li><span class="of-ck"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg></span><div><strong>Follow-up automático</strong><p>Para recuperar vendas que, de outra forma, se perderiam no <b>silêncio</b>.</p></div></li><li><span class="of-ck"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg></span><div><strong>Confirmação de pagamento</strong><p>O sistema recebe e processa o comprovativo sem intervenção manual.</p></div></li><li><span class="of-ck"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg></span><div><strong>Entrega automática</strong><p>Produtos digitais entregues após confirmação; produtos físicos com processo de envio iniciado <b>automaticamente</b>.</p></div></li><li><span class="of-ck"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg></span><div><strong>Gestão de conversas</strong><p><b>Todas</b> as conversas num <b>único</b> painel, com histórico e visibilidade.</p></div></li><li><span class="of-ck"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path></svg></span><div><strong>Relatórios e dados</strong><p>Saiba quantos leads entram, quantos avançam e onde as vendas se perdem.</p></div></li></ul>
+    <p class="closing display rv">Não é uma <b>ferramenta</b>.<br/><em>É um <b>sistema completo</b> de vendas.</em></p>
+  </div>
+</section>
+
+<section class="sec t-tint gridded" id="valor">
+  <div class="frame">
+    <header class="sec-head rv "><h2 class="h2 display">Quanto custa <em>continuar sem um sistema?</em></h2></header>
+    <div class="anchor-box rv">
+      <p class="real-line"><span class="tag pain">Pense no que faz hoje</span></p>
+      <ul class="chips"><li>Atendimento manual</li><li>Follow-up manual (ou <b>nenhum</b>)</li><li>Confirmação manual de comprovativos</li><li>Entrega manual de produtos</li><li>Gestão manual de conversas</li></ul>
+      <p class="anchor-q">Se isto fosse feito por uma pessoa, <b>quanto custaria por mês</b>? E se não for feito, <span class="r">quantas vendas se perdem</span>?</p>
+      <ul class="costs"><li><span>Uma pessoa para atender e fazer follow-up</span><b>8.000 MZN/mês</b></li><li><span>Uma agência para gerir tráfego e conversões</span><b>15.000 a 25.000 MZN/mês</b></li><li class="lost"><span>Custo de não escalar: o crescimento que fica preso no mesmo volume.</span><b>Incalculável</b></li><li class="lost"><span>Vendas perdidas por falta de follow-up</span><b>incalculável</b></li></ul>
+      <p class="anchor-sub">O WatSeller substitui <b>tudo</b> isto por <mark class="mk">uma <b>única</b> subscrição.</mark></p>
+    </div>
+    <div class="band spot rv"><p class="display">O WatSeller não é um custo. <em>É a escolha entre continuar no mesmo volume e escalar com lucro.</em></p></div>
+  </div>
+</section>
+
+<section class="sec t-light" id="planos">
+  <div class="frame">
+    <header class="sec-head rv "><h2 class="h2 display">Escolha o plano <em>conforme o estágio do seu negócio</em></h2></header>
+    <div class="plans rv"><article class="plan">
+<h3>Start</h3>
+<p class="price"><b>2.500 MZN</b> / mês</p>
+<ul><li>1 conta de WhatsApp</li><li>1 produto ativo</li><li>Funis <b>prontos</b></li><li>Agentes de IA especialistas em vendas</li><li>Follow-up automático</li><li>Entrega automática de produto</li><li>Relatórios <b>completos</b></li><li>Até 2.000 conversas activas</li><li>1 assento</li></ul>
+<a class="btn btn-ghost" data-plan="start" href="https://api.whatsapp.com/send?phone=258867372079&amp;text=Ol%C3%A1%21%20Tenho%20interesse%20no%20plano%20Start%20do%20WatSeller." rel="noopener" target="_blank">Escolher Start</a>
+</article><article class="plan feat">
+<h3>Scale</h3>
+<p class="price"><b>5.000 MZN</b> / mês</p>
+<ul><li class="key">3 contas de WhatsApp</li><li class="key">5 produtos (3 ativos)</li><li>Funis <b>prontos</b></li><li>Agentes de IA especialistas em vendas</li><li>Follow-up automático</li><li>Entrega automática de produto</li><li>Relatórios <b>completos</b></li><li class="key">Funil de upsell &amp; downsell</li><li class="key">Envio automático de eventos de compra para a Meta</li><li class="key">Conversas <b>ilimitadas</b></li><li>Até 2 assentos</li></ul>
+<a class="btn btn-primary" data-plan="scale" href="https://api.whatsapp.com/send?phone=258867372079&amp;text=Ol%C3%A1%21%20Tenho%20interesse%20no%20plano%20Scale%20do%20WatSeller." rel="noopener" target="_blank">Escolher Scale</a>
+</article><article class="plan">
+<h3>Pro</h3>
+<p class="price"><b>8.500 MZN</b> / mês</p>
+<ul><li class="key">10 contas de WhatsApp</li><li class="key">Produtos <b>ilimitados</b></li><li>Funis <b>prontos</b></li><li>Agentes de IA especialistas em vendas</li><li>Follow-up automático</li><li>Entrega automática de produto</li><li>Relatórios <b>completos</b></li><li>Funil de upsell &amp; downsell</li><li>Envio automático de eventos de compra para a Meta</li><li>Conversas <b>ilimitadas</b></li><li class="key">Até 5 assentos</li></ul>
+<a class="btn btn-ghost" data-plan="pro" href="https://api.whatsapp.com/send?phone=258867372079&amp;text=Ol%C3%A1%21%20Tenho%20interesse%20no%20plano%20Pro%20do%20WatSeller." rel="noopener" target="_blank">Escolher Pro</a>
+</article></div>
+  </div>
+</section>
+
+<section class="sec t-light" id="comecar" data-section="comecar">
+  <div class="frame start-frame">
+    <header class="sec-head rv"><h2 class="h2 display">Seu próximo vendedor <em>pode começar a trabalhar hoje.</em></h2><p class="start-lead">Já viu <span class="r">quanto custa</span> continuar sem um sistema. Agora veja <span class="g">como é simples mudar</span>:</p></header>
+    <ol class="mini rv"><li><span class="mini-n">1</span><span class="mini-t">Configure o seu produto</span></li><li><span class="mini-n">2</span><span class="mini-t">Escolha o seu funil</span></li><li><span class="mini-n">3</span><span class="mini-t">Coloque o agente de IA a trabalhar</span></li></ol>
+    <p class="punch-line rv">Em <b>minutos</b>, o WatSeller está a <b>atender</b>, <b>vender</b> e <b>entregar</b> por você.</p>
+    <div class="cta rv"><a class="btn btn-primary btn-lg" href="#planos" data-cta>Quero escalar sem limites <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><span class="microcopy">Sem programar. Sem depender de agências.</span></div>
+  </div>
+</section>
+
+<section class="sec t-dark glow2" id="garantia">
+  <div class="frame">
+    <div class="guar-grid rv">
+      <div class="seal-wrap">
+<svg aria-label="Selo de 14 dias de garantia" class="seal" role="img" viewbox="0 0 200 200">
+<circle class="seal-ring" cx="100" cy="100" r="92"></circle>
+<circle class="seal-ring2" cx="100" cy="100" r="80"></circle>
+<path d="M100 100m-64 0a64 64 0 1 1 128 0a64 64 0 1 1 -128 0" fill="none" id="sealPath"></path>
+<text class="seal-arc"><textpath href="#sealPath" lengthadjust="spacing" startoffset="0" textlength="396">GARANTIA · SEM RISCO · GARANTIA · SEM RISCO ·</textpath></text>
+<text class="seal-n" text-anchor="middle" x="100" y="116">14</text>
+<text class="seal-d" text-anchor="middle" x="100" y="138">DIAS</text>
+</svg>
+<span aria-hidden="true" class="seal-shock"></span>
+</div>
+      <div class="guar-text"><h2 class="h2 display">Experimente <em>sem risco</em></h2><div class="guar-copy"><p class="lead">Confiamos tanto no WatSeller que assumimos o risco por você.</p>
+<p>Experimente durante <mark class="mk">14 dias</mark>. Configure o seu produto, escolha o seu funil e veja o sistema a trabalhar.</p>
+<p>Se não funcionar como esperava, <span class="g">devolvemos o seu dinheiro.</span> Sem complicações, sem perguntas desnecessárias.</p>
+<p class="condition">Para que a garantia se aplique, pedimos apenas que <b>configure o seu produto</b> e <b>o seu funil</b> — porque é isso que permite ao sistema trabalhar. Nós fazemos o resto.</p>
+<p class="guar-end">Você não arrisca <b>nada</b>. O <b>único</b> risco possível é <span class="r">se não tomar uma decisão e continuar a tentar vender sem um sistema.</span></p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec t-light" id="faq" data-section="faq">
+  <div class="frame faq-frame">
+    <header class="sec-head faq-head rv"><h2 class="h2 display">Perguntas <em>frequentes</em></h2></header>
+    <div class="faq-list rv"><details class="qa" data-qa=""><summary><span>Preciso de equipa para gerir isto?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p><span class="k">Não.</span> O WatSeller foi construído para funcionar <mark class="hl2">sem depender de atendimento manual</mark>. Você configura, o sistema trabalha.</p></div></div></details><details class="qa" data-qa=""><summary><span>Preciso de instalar algo?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p><span class="k">Não.</span> O WatSeller funciona na cloud. Só precisa de conectar o seu WhatsApp e configurar o produto.</p></div></div></details><details class="qa" data-qa=""><summary><span>Funciona no meu número de WhatsApp?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> O WatSeller foi desenhado para funcionar com <b>contas oficiais</b> e integrações que <span class="g">não colocam o seu número em risco de bloqueio.</span></p></div></div></details><details class="qa" data-qa=""><summary><span>Vocês usam API Oficial?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> O WatSeller usa a <b>API Oficial do WhatsApp</b> — a mesma usada por empresas que operam <mark class="hl2">em escala</mark>.</p><p>E <b>não precisa de ter uma BM verificada</b> para se conectar. Através dos nossos parceiros, nós tratamos de toda a conexão por você. O seu número continua a funcionar normalmente, e você usa a API <span class="g">sem as limitações de uma BM não verificada.</span></p><p><span class="k">Isto não é uma solução improvisada.</span> É uma <b>integração oficial</b> — o modelo chama-se <mark class="hl2">coexistência</mark>: o seu WhatsApp continua a funcionar como sempre, e a API é adicionada em paralelo. Sem substituir o seu número, <span class="g">sem risco de bloqueio por configuração não oficial.</span></p></div></div></details><details class="qa" data-qa=""><summary><span>Posso ter mais do que uma conta de WhatsApp?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> O WatSeller suporta múltiplas contas — útil se vende para diferentes públicos ou quer separar operações.</p></div></div></details><details class="qa" data-qa=""><summary><span>O sistema pode ser banido?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p>O WatSeller usa uma configuração <b>preparada para escalar</b>, <mark class="hl2">evitando os problemas que causam bloqueios.</mark> No entanto, como com <b>qualquer</b> sistema, o <b>cumprimento</b> das políticas do WhatsApp é essencial.</p></div></div></details><details class="qa" data-qa=""><summary><span>O que acontece se a IA não souber responder?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p>Pode definir regras de fallback. Se a IA não souber, a conversa é encaminhada para você ou para um humano.</p></div></div></details><details class="qa" data-qa=""><summary><span>Posso intervir nas conversas?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> Pode assumir <b>qualquer</b> conversa a <b>qualquer</b> momento. O sistema é autónomo, mas não é uma caixa fechada.</p></div></div></details><details class="qa" data-qa=""><summary><span>O sistema pode cometer erros?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p>O WatSeller segue um funil <b>estruturado</b>, o que reduz drasticamente os erros comuns em automações genéricas. Mas pode <b>sempre</b> supervisionar e ajustar.</p></div></div></details><details class="qa" data-qa=""><summary><span>Os meus dados estão seguros?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> Os dados são tratados de acordo com boas práticas de segurança e privacidade.</p></div></div></details><details class="qa" data-qa=""><summary><span>Posso cancelar quando quiser?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> A subscrição é mensal e pode ser cancelada a <b>qualquer</b> momento.</p></div></div></details><details class="qa" data-qa=""><summary><span>Existe suporte?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p><span class="g">Sim.</span> O suporte está incluído para o ajudar na configuração e no uso do sistema.</p></div></div></details><details class="qa" data-qa=""><summary><span>Isto funciona para o meu tipo de negócio?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p>Se vende produtos que podem ser vendidos por <b>conversa e resposta direta</b>, <span class="g">sim.</span> Se tiver dúvidas, fale connosco antes de avançar.</p></div></div></details><details class="qa" data-qa=""><summary><span>E se o cliente enviar um comprovativo falso?</span><i aria-hidden="true" class="qa-ico"></i></summary><div class="ans"><div class="ans-in"><p>O WatSeller <b>não</b> confia apenas no print ou mensagem de pagamento partilhada pelo cliente. Ele verifica o comprovativo em duas camadas:</p><p>Primeiro, compara os dados com o pedido — valor, referência, produto.</p><p>Depois, <b>confirma a transação diretamente</b> com o serviço de pagamento. Se o comprovativo for falso, <mark class="hl2">a transação <b>não</b> existe do lado do serviço</mark> — e o sistema <span class="g">detecta isso.</span></p><p>Se quiser, pode configurar para que <b>a confirmação final passe por você.</b> Se preferir autonomia total, o sistema <span class="g">confirma automaticamente.</span></p><p>Não prometemos “100% antifraude” porque isso não existe. Mas garantimos que o processo é <b>consistente</b>, <b>auditável</b> e <span class="g">sempre sob o seu controlo.</span></p></div></div></details></div>
+  </div>
+</section>
+
+<section class="sec t-tint gridded" id="objecoes">
+  <div class="frame">
+    <div class="objs-grid rv">
+      <div class="ob-tabs" role="tablist" aria-label="Objeções finais" aria-orientation="vertical"><button aria-controls="ob-p0" aria-selected="true" id="ob-t0" role="tab" tabindex="0" type="button"><span>“Já tentei automatizar e não funcionou.”</span><i aria-hidden="true" class="ob-bar"></i></button><button aria-controls="ob-p1" aria-selected="false" id="ob-t1" role="tab" tabindex="-1" type="button"><span>“Tenho medo de perder o controlo da minha operação.”</span><i aria-hidden="true" class="ob-bar"></i></button><button aria-controls="ob-p2" aria-selected="false" id="ob-t2" role="tab" tabindex="-1" type="button"><span>“E se o meu produto não encaixar?”</span><i aria-hidden="true" class="ob-bar"></i></button><button aria-controls="ob-p3" aria-selected="false" id="ob-t3" role="tab" tabindex="-1" type="button"><span>“Não tenho tempo para configurar isto.”</span><i aria-hidden="true" class="ob-bar"></i></button><button aria-controls="ob-p4" aria-selected="false" id="ob-t4" role="tab" tabindex="-1" type="button"><span>“E se eu não gostar?”</span><i aria-hidden="true" class="ob-bar"></i></button></div>
+      <div class="ob-stage"><div aria-labelledby="ob-t0" class="ob-panel" data-ob-panel="" id="ob-p0" role="tabpanel"><p><span class="g">Desta vez é <b>diferente</b>.</span> Você não vai construir <b>nada</b> do zero — vai usar um funil <b>pronto</b>, com método e estrutura. O trabalho de montar o sistema já foi feito.</p></div><div aria-labelledby="ob-t1" class="ob-panel" data-ob-panel="" id="ob-p1" role="tabpanel"><p>O sistema é autónomo, mas não é uma caixa fechada. Você pode intervir em <b>qualquer</b> conversa, a <b>qualquer</b> momento. <span class="g">O controlo é <b>sempre</b> seu.</span></p></div><div aria-labelledby="ob-t2" class="ob-panel" data-ob-panel="" id="ob-p2" role="tabpanel"><p><b>Se você vende por conversa e resposta directa</b>, <span class="g">encaixa.</span> Se tiver dúvidas, fale connosco antes de avançar — <mark class="hl2">preferimos dizer-lhe a verdade</mark> do que vender-lhe algo que não serve.</p></div><div aria-labelledby="ob-t3" class="ob-panel" data-ob-panel="" id="ob-p3" role="tabpanel"><p><span class="g">A configuração leva <b>minutos</b>, não dias.</span> Você responde a algumas perguntas sobre o seu produto, escolhe o funil, e o sistema está <b>pronto</b>.</p></div><div aria-labelledby="ob-t4" class="ob-panel" data-ob-panel="" id="ob-p4" role="tabpanel"><p>Você tem 14 dias para testar. Se não funcionar como esperava, devolvemos o dinheiro. <span class="g">O risco é <b>nosso</b>.</span></p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec t-dark final" id="final" data-section="final">
+  <div class="final-glow" aria-hidden="true"></div>
+  <div class="frame final-frame">
+    <header class="sec-head rv "><h2 class="h2 display">Pare de construir automações. <em>Comece a construir vendas.</em></h2></header>
+    <div class="vsf rv"><p class="vsf-row bot"><span class="vsf-tag">Hoje</span><span><b>Cada venda</b> depende de você.</span></p><p class="vsf-row agent"><span class="vsf-tag good">Com o WatSeller</span><span>Cada venda depende de um sistema que <mark class="mk">não para, não se esquece e não se cansa.</mark></span></p></div>
+    <ul class="bento b4 final-grid rv"><li><span class="fg-k">Seus <b>anúncios</b></span><span>trazem as pessoas.</span></li><li><span class="fg-k">Seus <b>funis</b></span><span>estruturam a jornada.</span></li><li><span class="fg-k">Seus <b>agentes</b></span><span>conduzem as conversas.</span></li><li><span class="fg-k">Seu <b>sistema</b></span><span>processa a venda.</span></li></ul>
+    <p class="final-punch display rv">Agora falta colocar <b>tudo</b> a <em>trabalhar</em>.</p>
+    <div class="cta rv"><a class="btn btn-primary btn-lg" href="#planos" data-cta>Quero escalar sem limites <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><span class="microcopy">14 dias de garantia. Cancele quando quiser.</span></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer t-dark" id="rodape">
+<div class="wrap">
+<div class="footer-grid">
+<div class="f-brand">
+<a aria-label="WatSeller" class="logo" href="#topo">
+<svg aria-hidden="true" class="logo-mark" viewbox="0 0 28 28"><rect fill="var(--accent)" height="28" rx="8" width="28"></rect><path d="M8 19.5 13 13.5l3.2 3L21 9.5M16.5 9.5H21V14" fill="none" stroke="var(--accent-ink)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg>
+<b>WatSeller</b>
+</a>
+<p>Agentes de IA especialistas em vendas, funis prontos e automação de follow-up, pagamento e entrega — tudo no seu WhatsApp.</p>
+<div class="social"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a></div>
+</div>
+<div><h4>Produto</h4><ul><li><a href="#como-funciona">Como funciona</a></li><li><a href="#agentes">Funcionalidades</a></li><li><a href="#planos">Preços</a></li><li><a href="#faq">Perguntas frequentes</a></li></ul></div>
+<div><h4>Empresa</h4><ul><li><a href="../legal/sobre.html">Sobre nós</a></li><li><a href="#resultados">Resultados</a></li><li><a href="https://app.watseller.com">Entrar no painel</a></li></ul></div>
+<div><h4>Legal</h4><ul><li><a href="../legal/privacidade.html">Política de Privacidade</a></li><li><a href="../legal/termos.html">Termos de Serviço</a></li><li><a href="../legal/cookies.html">Cookies</a></li><li><a href="../legal/reembolsos.html">Reembolsos</a></li></ul></div>
+<div class="f-contact"><h4>Contacto</h4><ul><li><span>E-mail</span><a href="mailto:info@watseller.com">info@watseller.com</a></li><li><span>WhatsApp</span><a href="https://api.whatsapp.com/send?phone=258867372079" rel="noopener" target="_blank">+258 86 737 2079</a></li><li><span>Localização</span>Maputo, Moçambique</li></ul><a class="btn btn-ghost btn-sm f-panel" href="https://app.watseller.com">Entrar no painel</a></div>
+</div>
+<div class="footer-bottom"><span>© 2026 WatSeller. Todos os direitos reservados.</span><a class="to-top" href="#topo">Voltar ao topo</a></div>
+</div>
+</footer>
+
+<button type="button" class="top-fab" aria-label="Voltar ao topo" data-top hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg></button>
+<nav class="vsw" aria-label="Escolher versão do site" data-preview-switch>
+  <a href="../index.html">Versão 1</a><a href="./index.html" aria-current="page">Versão 2</a><a class="vsw-all" href="../versoes.html" aria-label="Comparar as versões">⇄</a>
+</nav>
+<script src="js/v2.js"></script>
+</body>
+</html>
