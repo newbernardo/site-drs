@@ -313,13 +313,13 @@ main > section[id]:not(#_), main.doc:not(#_) {
   margin: var(--frame-m); border-radius: var(--frame-r); background: var(--bg); border: 1px solid var(--line);
   padding-block: var(--sec-gap); overflow: clip;
 }
-main > section.hero[id]:not(#_) { padding-top: calc(var(--nav-h) + clamp(3rem, 8vh, 6rem)); padding-bottom: 0;
+main > section.hero[id]:not(#_) { padding-top: calc(var(--nav-h) + .75rem + clamp(3rem, 8vh, 6rem)); padding-bottom: 0;
   background: radial-gradient(70% 55% at 50% 0, var(--accent-glow), transparent 70%), var(--bg); }
-main.doc:not(#_) { padding-top: calc(var(--nav-h) + clamp(3rem, 8vw, 6rem)); }
+main.doc:not(#_) { padding-top: calc(var(--nav-h) + .75rem + clamp(3rem, 8vw, 6rem)); }
 .footer { margin: var(--frame-m); border-radius: var(--frame-r); border: 1px solid var(--line); overflow: clip; }
 
 /* cabeçalho: pílula flutuante dentro da moldura */
-.nav { inset: calc(var(--frame-m) + .625rem) auto auto 50%; translate: -50% 0; width: min(calc(100% - 2 * (var(--frame-m) + .625rem)), 74rem);
+.nav { inset: calc(var(--frame-m) + 1.375rem) auto auto 50%; translate: -50% 0; width: min(calc(100% - 2 * (var(--frame-m) + .625rem)), 74rem);
   border: 1px solid var(--line-strong); border-radius: 999px; background: var(--nav-bg);
   -webkit-backdrop-filter: blur(14px) saturate(1.3); backdrop-filter: blur(14px) saturate(1.3); box-shadow: var(--shadow-panel); }
 .nav.is-solid { background: var(--nav-bg); }
@@ -352,4 +352,9 @@ main > #pagamentos[id]:not(#_), main > #casos[id]:not(#_), main > #valor[id]:not
 /* hero com margens maiores (as restantes secções mantêm as normais) */
 :root { --hero-mx: clamp(1rem, .4rem + 3.2vw, 4rem); --hero-my: clamp(.75rem, .3rem + 1.6vw, 1.5rem); }
 main > section.hero[id]:not(#_) { margin: var(--hero-my) var(--hero-mx); }
-body:has(#hero) .nav { inset-block-start: calc(var(--hero-my) + .625rem); width: min(calc(100% - 2 * (var(--hero-mx) + .625rem)), 74rem); }
+body:has(#hero) .nav { inset-block-start: calc(var(--hero-my) + 1.375rem); width: min(calc(100% - 2 * (var(--hero-mx) + .625rem)), 74rem); }
+
+/* termos em destaque no hero: mesmo sublinhado dos cartões do problema ("o canal que MAIS vende…") */
+.hero-sub mark.mk { color: var(--ink); font-weight: 560; padding-inline: .08em; margin-inline: -.08em;
+  background: linear-gradient(color-mix(in oklab, var(--accent) 35%, transparent), color-mix(in oklab, var(--accent) 35%, transparent)) 0 100% / var(--mk, 100%) .5em no-repeat;
+  white-space: nowrap; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
