@@ -348,3 +348,8 @@ main > #pagamentos[id]:not(#_), main > #casos[id]:not(#_), main > #valor[id]:not
 /* faixas lisas assentam direto no fundo da página (mesma cor): sem emendas */
 main > #problema[id]:not(#_), main > #solucao[id]:not(#_), main > #diferencial[id]:not(#_), main > #agentes[id]:not(#_),
 main > #pagamentos[id]:not(#_), main > #casos[id]:not(#_), main > #valor[id]:not(#_) { background: transparent; margin-block: 0; }
+
+/* hero com margens maiores (as restantes secções mantêm as normais) */
+:root { --hero-mx: clamp(1rem, .4rem + 3.2vw, 4rem); --hero-my: clamp(.75rem, .3rem + 1.6vw, 1.5rem); }
+main > section.hero[id]:not(#_) { margin: var(--hero-my) var(--hero-mx); }
+body:has(#hero) .nav { inset-block-start: calc(var(--hero-my) + .625rem); width: min(calc(100% - 2 * (var(--hero-mx) + .625rem)), 74rem); }
