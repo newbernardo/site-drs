@@ -572,3 +572,18 @@ main .closing, main .diff-close { text-wrap: balance; }
 .mini-n { background: var(--accent); color: var(--accent-ink); }
 .mini-t { color: var(--ink); }
 .cmp-head, .cmp-list { max-width: 68rem; }
+
+/* ---- textura de grelha: fundo discreto que esmorece em gradiente, só em algumas seções (não mexe na estrutura) ---- */
+main > #hero, main > #oportunidade, main > #como-funciona, main > #planos, main > #garantia, main > #final { position: relative; isolation: isolate; }
+main > #hero::before, main > #oportunidade::before, main > #como-funciona::before, main > #planos::before, main > #garantia::before, main > #final::before {
+  content: ""; position: absolute; z-index: -1; pointer-events: none; width: min(46rem, 75%); height: min(28rem, 60%);
+  background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 44px 44px; }
+/* cada seção tem o seu canto e a sua direção de esmorecimento */
+main > #hero::before { top: 0; right: 0; -webkit-mask: radial-gradient(ellipse at top right, #000 0%, transparent 72%); mask: radial-gradient(ellipse at top right, #000 0%, transparent 72%); }
+main > #oportunidade::before { top: 0; left: 0; -webkit-mask: radial-gradient(ellipse at top left, #000 0%, transparent 70%); mask: radial-gradient(ellipse at top left, #000 0%, transparent 70%); }
+main > #como-funciona::before { bottom: 0; right: 0; -webkit-mask: radial-gradient(ellipse at bottom right, #000 0%, transparent 70%); mask: radial-gradient(ellipse at bottom right, #000 0%, transparent 70%); }
+main > #planos::before { top: 0; left: 0; -webkit-mask: radial-gradient(ellipse at top left, #000 0%, transparent 70%); mask: radial-gradient(ellipse at top left, #000 0%, transparent 70%); }
+main > #garantia::before { bottom: 0; right: 0; -webkit-mask: radial-gradient(ellipse at bottom right, #000 0%, transparent 72%); mask: radial-gradient(ellipse at bottom right, #000 0%, transparent 72%); }
+main > #final::before { bottom: 0; left: 0; -webkit-mask: radial-gradient(ellipse at bottom left, #000 0%, transparent 72%); mask: radial-gradient(ellipse at bottom left, #000 0%, transparent 72%); }
+@media (max-width: 40rem) { main > #hero::before, main > #oportunidade::before, main > #como-funciona::before, main > #planos::before, main > #garantia::before, main > #final::before { opacity: .6; width: 90%; } }
