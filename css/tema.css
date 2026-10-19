@@ -307,7 +307,7 @@ html:not(.js) .shot-tag { display: none; }
 
 /* ---------- Fase F: página em molduras (cabeçalho em pílula, secções em caixas arredondadas) ---------- */
 :root { --frame-r: clamp(1.5rem, 1rem + 2.4vw, 2.5rem); --frame-m: clamp(.5rem, .2rem + 1.2vw, 1rem); }
-html, body { background: var(--hl); }
+html, body { background: var(--bg-sunken); }
 /* :not(#_) sobe a especificidade para vencer os paddings antigos de cada secção */
 main > section[id]:not(#_), main.doc:not(#_) {
   margin: var(--frame-m); border-radius: var(--frame-r); background: var(--bg); border: 1px solid var(--line);
@@ -344,3 +344,7 @@ main > #pagamentos[id]:not(#_), main > #casos[id]:not(#_), main > #valor[id]:not
 
 /* cabeçalho não fixo: acompanha a página ao rolar */
 .nav { position: absolute; }
+
+/* faixas lisas assentam direto no fundo da página (mesma cor): sem emendas */
+main > #problema[id]:not(#_), main > #solucao[id]:not(#_), main > #diferencial[id]:not(#_), main > #agentes[id]:not(#_),
+main > #pagamentos[id]:not(#_), main > #casos[id]:not(#_), main > #valor[id]:not(#_) { background: transparent; margin-block: 0; }
