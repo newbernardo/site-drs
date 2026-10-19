@@ -11,7 +11,7 @@
 
    | flag               | arquivo (assets/media/)  | tamanho    | onde aparece          |
    |--------------------|--------------------------|------------|-----------------------|
-   | hero-dashboard     | hero-dashboard.png       | 1901x1032  | Bloco 1 (Hero)        |
+   | hero-dashboard     | hero-dashboard.png       | 1280x720   | Bloco 1 (Hero)        |
    | seletor-funil      | seletor-funil.png        | 1803x930   | Bloco 5 (Diferencial) |
    | retrato-fundador   | retrato-fundador.jpg     | retrato    | Bloco 10 (Prova real) |
    | painel-prova       | painel-prova.png         | 1920x1032  | Bloco 10 (Prova real) |
