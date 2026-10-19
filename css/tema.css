@@ -566,3 +566,8 @@ main .closing, main .diff-close { text-wrap: balance; }
 @keyframes tab-call { 0%, 100% { box-shadow: var(--shadow-panel), 0 0 0 0 var(--accent-glow); } 50% { box-shadow: var(--shadow-panel), 0 0 0 7px transparent; border-color: var(--accent); } }
 @media (prefers-reduced-motion: reduce) { .scen.is-tabs .tabs button:not([aria-selected="true"]) { animation: none; } }
 .scen.is-tabs .tab-ind { left: 4px; }
+
+/* passos suaves: o botão "Quero escalar sem limites" é o único azul sólido da secção */
+.mini li { background: color-mix(in oklab, var(--accent) 9%, var(--bg-raised)); border: 1px solid color-mix(in oklab, var(--accent) 25%, var(--line)); color: var(--ink); box-shadow: none; }
+.mini-n { background: var(--accent); color: var(--accent-ink); }
+.mini-t { color: var(--ink); }
