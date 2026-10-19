@@ -13,7 +13,7 @@
         var items = $$("[data-w]", demo), nodes = $$("[data-n]", demo);
         nodes.forEach(function (n) { n.classList.remove("on"); });
         gsap.set(items, { "--lit": 0 });
-        var tl = gsap.timeline({ scrollTrigger: { trigger: $$(".watch", demo)[0], start: "top 85%", once: true } });
+        var tl = gsap.timeline({ scrollTrigger: { trigger: $$(".watch", demo)[0], start: "top 92%", once: true } });
         items.forEach(function (it, i) {
           tl.fromTo(it, { "--lit": 0 }, { "--lit": 1, duration: .5, ease: "power2.out" }, i * .55)
             .call(function () { if (nodes[i]) nodes[i].classList.add("on"); }, null, i * .55);

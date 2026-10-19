@@ -79,7 +79,7 @@
           var li = $$("li", mini);
           gsap.set(li, { "--lit": 0 }); mini.style.setProperty("--fill", 0);
           var st = { f: 0 };
-          var tl = gsap.timeline({ scrollTrigger: { trigger: mini, start: "top 82%", once: true } });
+          var tl = gsap.timeline({ scrollTrigger: { trigger: mini, start: "top 92%", once: true } });
           li.forEach(function (l, i) { tl.fromTo(l, { "--lit": 0 }, { "--lit": 1, duration: .5, ease: "power2.out" }, i * .6); });
           tl.to(st, { f: 1, duration: 1.2, ease: "none", onUpdate: function () { mini.style.setProperty("--fill", st.f); } }, 0);
         }

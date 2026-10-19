@@ -49,7 +49,7 @@
         if (rows.length) {
           var no = rows.map(function (r) { return $(".cmp-no", r); }), ck = rows.map(function (r) { return $(".cmp-yes svg", r); }), yes = rows.map(function (r) { return $(".cmp-yes .cmp-t", r); });
           gsap.set(ck, { scale: 0 }); gsap.set(yes, { opacity: .35, x: -6 });
-          var tl = gsap.timeline({ scrollTrigger: { trigger: $("[data-cmp] .cmp-list"), start: "top 80%", once: true } });
+          var tl = gsap.timeline({ scrollTrigger: { trigger: $("[data-cmp] .cmp-list"), start: "top 90%", once: true } });
           rows.forEach(function (r, i) {
             tl.to(ck[i], { scale: 1, duration: .45, ease: "back.out(3)" }, i * .4 + .35)
               .to(yes[i], { opacity: 1, x: 0, duration: .5, ease: "expo.out" }, i * .4 + .35);

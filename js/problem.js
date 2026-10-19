@@ -109,9 +109,9 @@
           ScrollTrigger.create({ trigger: c, start: "top 85%", end: "bottom 15%", onToggle: function (s) { DRS.vigSet(vigs[i], s.isActive); } });
         });
         gsap.set([pre, post], { opacity: 0, y: 16 });
-        gsap.to(pre, { opacity: 1, y: 0, duration: .8, ease: "power2.out", scrollTrigger: { trigger: pre, start: "top 88%", once: true } });
-        gsap.to(w, { opacity: 1, y: 0, stagger: .12, ease: "none", scrollTrigger: { trigger: big, start: "top 85%", end: "bottom 55%", scrub: true } });
-        gsap.to(post, { opacity: 1, y: 0, duration: .8, ease: "power2.out", scrollTrigger: { trigger: post, start: "top 92%", once: true } });
+        gsap.to(pre, { opacity: 1, y: 0, duration: .8, ease: "power2.out", scrollTrigger: { trigger: pre, start: "top 98%", once: true } });
+        gsap.to(w, { opacity: 1, y: 0, stagger: .12, ease: "none", scrollTrigger: { trigger: big, start: "top 100%", end: "top 55%", scrub: true } });
+        gsap.to(post, { opacity: 1, y: 0, duration: .8, ease: "power2.out", scrollTrigger: { trigger: post, start: "top 98%", once: true } });
         return function () { offTilt(); setActive(-1); };
       });
     }

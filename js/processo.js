@@ -89,7 +89,7 @@
       /* cenários: toca o primeiro quando a seção entra na tela */
       if (scen) {
         mm.add("(prefers-reduced-motion: no-preference)", function () {
-          ScrollTrigger.create({ trigger: scen, start: "top 65%", once: true, onEnter: function () { play(panels[0], false); played = true; } });
+          ScrollTrigger.create({ trigger: scen, start: "top 85%", once: true, onEnter: function () { play(panels[0], false); played = true; } });
           /* se a janela ainda estiver acima, o primeiro painel começa vazio (pose é preparada ao tocar) */
         });
       }

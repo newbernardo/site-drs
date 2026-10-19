@@ -115,7 +115,8 @@
       mm.add("(prefers-reduced-motion: no-preference)", function () {
         splitHeads.forEach(function (h) {
           gsap.set(h._words, { yPercent: 118 });
-          gsap.to(h._words, { yPercent: 0, duration: DRS.motion().dur * 1.2, stagger: DRS.motion().stagger, ease: DRS.motion().ease, scrollTrigger: { trigger: h, start: h.classList.contains("h2") ? "top 85%" : "top 100%", once: true } });
+          /* revelação logo à entrada: começa assim que o topo aparece e termina em ~0,8 s, mesmo em títulos longos */
+          gsap.to(h._words, { yPercent: 0, duration: .65, stagger: Math.min(DRS.motion().stagger, .25 / Math.max(1, h._words.length)), ease: DRS.motion().ease, scrollTrigger: { trigger: h, start: "top 98%", once: true } });
         });
       });
     }
@@ -142,11 +143,11 @@
           var items = $$("[data-reveal]", g);
           if (!items.length) return;
           gsap.set(items, { opacity: 0, y: 28 });
-          gsap.to(items, { opacity: 1, y: 0, duration: .9, stagger: .12, ease: "expo.out", scrollTrigger: { trigger: g, start: "top 82%", once: true } });
+          gsap.to(items, { opacity: 1, y: 0, duration: .7, stagger: .08, ease: "expo.out", scrollTrigger: { trigger: g, start: "top 94%", once: true } });
         });
         $$("[data-reveal]").forEach(function (el) {
           if (el.closest("[data-reveal-group]")) return;
-          gsap.fromTo(el, { opacity: 0, y: 28 }, { opacity: 1, y: 0, duration: .9, ease: "expo.out", scrollTrigger: { trigger: el, start: "top 88%", once: true } });
+          gsap.fromTo(el, { opacity: 0, y: 28 }, { opacity: 1, y: 0, duration: .7, ease: "expo.out", scrollTrigger: { trigger: el, start: "top 96%", once: true } });
         });
         $$("[data-counter]").forEach(function (el) {
           var to = parseFloat(el.getAttribute("data-counter")), d = +(el.getAttribute("data-decimals") || 0), o = { v: 0 };

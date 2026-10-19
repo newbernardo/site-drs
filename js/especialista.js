@@ -21,7 +21,7 @@
           measure(); ScrollTrigger.addEventListener("refreshInit", measure); offs.push(function () { ScrollTrigger.removeEventListener("refreshInit", measure); });
           tracks.forEach(function (t) { DRS.chat.hideAll(t); });
 
-          var tl = gsap.timeline({ scrollTrigger: { trigger: vs, start: "top 72%", once: true } });
+          var tl = gsap.timeline({ scrollTrigger: { trigger: vs, start: "top 90%", once: true } });
           var bot = $$("[data-m]", tracks[0]);
           bot.forEach(function (m, i) { DRS.chat.reveal(tl, tracks[0], m, .4 + i * .8); });
 
