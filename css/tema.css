@@ -455,3 +455,4 @@ main .fu-lead, main .sol-lead, main .start-lead, main .anchor-sub, main .truth-p
 
 /* cartões dos pilares: fundo suave (mistura do branco com o tom da faixa), sombra mais leve */
 .pillars li { background: color-mix(in oklab, var(--bg-raised) 45%, var(--bg)); border-color: var(--line); box-shadow: 0 1px 2px rgba(11, 17, 36, .04), 0 12px 28px -22px rgba(61, 91, 217, .28); }
+.pillars li { background: color-mix(in oklab, var(--bg-raised) 15%, var(--bg)); box-shadow: 0 8px 22px -20px rgba(61, 91, 217, .22); }
