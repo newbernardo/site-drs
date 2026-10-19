@@ -473,7 +473,7 @@ CTA: Escolher Scale Pro
 ## 20. CTA PRINCIPAL
 **H2:** Seu próximo vendedor *pode começar a trabalhar hoje.*
 
-Já viu quanto custa continuar sem um sistema. Agora veja como é simples mudar:
+Agora veja como é simples mudar:
 1. Configure o seu produto
 2. Escolha o seu funil
 3. Coloque o agente de IA a trabalhar
