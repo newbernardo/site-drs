@@ -335,3 +335,12 @@ main.doc:not(#_) { padding-top: calc(var(--nav-h) + clamp(3rem, 8vw, 6rem)); }
 .nav-actions .btn-primary { max-width: 20rem; transition: opacity var(--d-base) var(--ease-out), max-width var(--d-slow) var(--ease-out), padding var(--d-slow) var(--ease-out), margin var(--d-slow) var(--ease-out), visibility 0s; }
 .nav.cta-off:not(.is-open) .nav-actions .btn-primary { max-width: 0; padding-inline: 0; margin-left: calc(-1 * var(--s-4)); overflow: hidden; border-width: 0; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity var(--d-base) var(--ease-out), max-width var(--d-slow) var(--ease-out), padding var(--d-slow) var(--ease-out), margin var(--d-slow) var(--ease-out), visibility 0s linear var(--d-base); }
 @media (max-width: 56rem) { .nav-actions .btn-primary { max-width: none; } }
+
+/* secções em faixa lisa, sem caixa: largura total, sem borda nem cantos arredondados */
+main > #problema[id]:not(#_), main > #solucao[id]:not(#_), main > #diferencial[id]:not(#_), main > #agentes[id]:not(#_),
+main > #pagamentos[id]:not(#_), main > #casos[id]:not(#_), main > #valor[id]:not(#_) {
+  margin-inline: 0; border: 0; border-radius: 0;
+}
+
+/* cabeçalho não fixo: acompanha a página ao rolar */
+.nav { position: absolute; }
