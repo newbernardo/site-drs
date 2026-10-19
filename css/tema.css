@@ -536,3 +536,12 @@ main .closing, main .diff-close { text-wrap: balance; }
 }
 .mini { gap: 2.25rem; }
 @media (max-width: 56rem) { .mini { gap: var(--s-3); } }
+
+/* comparativo: cabeçalhos das colunas em destaque; fundo ainda mais suave */
+.cmp { padding-top: var(--s-8); }
+.cmp-head { padding: var(--s-5) var(--s-6); font-family: var(--font-display); font-size: clamp(1.15rem, 1rem + .6vw, 1.5rem); font-weight: 700; letter-spacing: -.02em; color: var(--ink-2); }
+.cmp-head span:last-child { color: var(--accent); }
+.cmp-head, .cmp-list { background: color-mix(in oklab, var(--bg-raised) 6%, var(--bg)); }
+.cmp-head { background: color-mix(in oklab, var(--bg-sunken) 40%, var(--bg)); }
+.cmp-list, .cmp-head { border-color: var(--line); }
+.cmp { padding-top: var(--s-6); }
