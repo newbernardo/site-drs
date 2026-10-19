@@ -11,7 +11,8 @@
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
 
   var cards = $$("[data-card]", sec), vigs = cards.map(function (c) { return $(".vig", c); });
-  var uls = cards.map(function (c) { return $(".ul-err", c); });
+  /* os títulos já não têm sublinhado: um elemento solto mantém os índices sem animar nada visível */
+  var uls = cards.map(function (c) { return $(".ul-err", c) || document.createElement("i"); });
   var truth = $("[data-truth]", sec), pre = $(".truth-pre", sec), post = $(".truth-post", sec), big = $("[data-truth-big]", sec);
   var dots = $$(".pdots i", sec);
   var words = null;

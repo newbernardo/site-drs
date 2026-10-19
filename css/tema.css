@@ -373,3 +373,9 @@ body:has(#hero) .nav { inset-block-start: calc(var(--hero-my) + 1.375rem); width
 /* dois planos: grelha de duas colunas, centrada */
 .plans { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 56rem; margin-inline: auto; }
 @media (max-width: 56rem) { .plans { grid-template-columns: 1fr; max-width: 30rem; } }
+
+/* problema: títulos dos cartões um pouco maiores (sem sublinhado) */
+.pcard h3 { font-size: clamp(1.65rem, 1.3rem + 1.4vw, 2.5rem); }
+/* cartão 1: funil dentro de uma caixa branca interna, como nos outros cartões */
+.vig-box { --bp: clamp(.5rem, 1.5vw, 1rem); position: relative; min-height: 0; overflow: hidden; background: var(--bg-raised); border-radius: var(--radius-s); border: 1px solid var(--line); }
+.vig-box svg { position: absolute; inset: var(--bp); width: calc(100% - 2 * var(--bp)); height: calc(100% - 2 * var(--bp)); }
