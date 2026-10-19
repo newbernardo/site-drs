@@ -379,3 +379,65 @@ body:has(#hero) .nav { inset-block-start: calc(var(--hero-my) + 1.375rem); width
 /* cartão 1: funil dentro de uma caixa branca interna, como nos outros cartões */
 .vig-box { --bp: clamp(.5rem, 1.5vw, 1rem); position: relative; min-height: 0; overflow: hidden; background: var(--bg-raised); border-radius: var(--radius-s); border: 1px solid var(--line); }
 .vig-box svg { position: absolute; inset: var(--bp); width: calc(100% - 2 * var(--bp)); height: calc(100% - 2 * var(--bp)); }
+
+/* ================= Fase G: alinhamento e enquadramento de 5 secções ================= */
+
+/* ---- Como funciona: uma só imagem, enquadrada ---- */
+.how-img:last-child img { aspect-ratio: 1344 / 768; object-position: 50% 50%; }
+.how.is-pinned .how-visual { max-width: none; }
+.how-stage { align-items: center; }
+
+/* ---- Solução: três cartões iguais, com título e texto alinhados entre si ---- */
+.pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: auto auto 1fr; gap: 0 var(--s-5); max-width: none; margin-top: var(--s-7); }
+.pillars li { position: relative; grid-row: span 3; display: grid; grid-template-rows: subgrid; row-gap: var(--s-3); justify-items: start; align-content: start; text-align: left;
+  padding: var(--s-6); background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius-l); box-shadow: var(--shadow-panel); overflow: hidden; }
+.pillars li::before, .pillars li::after { left: 0; right: 0; top: 0; }
+.pn { font-size: var(--t-sm); font-weight: 650; color: var(--accent); letter-spacing: .04em; font-variant-numeric: tabular-nums; line-height: 1; margin-bottom: var(--s-1); }
+.pillars h3 { margin: 0; max-width: none; font-size: clamp(1.25rem, 1.05rem + .7vw, 1.5rem); text-align: left; text-wrap: balance; }
+.pillars p { margin: 0; max-width: none; text-align: left; font-size: var(--t-base); }
+@media (max-width: 56rem) { .pillars { grid-template-columns: 1fr; grid-template-rows: none; gap: var(--s-4); } .pillars li { grid-row: auto; grid-template-rows: none; } }
+
+/* ---- Diferencial: dois cartões iguais; imagem, título e texto na mesma linha ---- */
+.contrast { --cg: clamp(1.5rem, 4vw, 4rem); --cp: clamp(1.1rem, 2vw, 1.75rem); gap: var(--cg); align-items: stretch; }
+.contrast .side { display: grid; grid-template-rows: auto auto 1fr; gap: var(--s-4); align-content: start; padding: var(--cp); background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: var(--radius-l); box-shadow: var(--shadow-panel); }
+.contrast .side.drs { border-color: var(--accent); }
+.contrast .side-media, .contrast .side.drs .side-visual { aspect-ratio: 16 / 10; }
+.contrast .side-media { position: relative; }
+.contrast .side-media .side-visual { height: 100%; aspect-ratio: auto; }
+.contrast .vis-other, .contrast .vis-drs { border-radius: var(--radius-m); box-shadow: none; }
+.contrast .vis-drs { overflow: hidden; }
+.contrast .vis-drs .shot-frame { box-shadow: none; border-radius: var(--radius-m); }
+.contrast .side p { max-width: none; }
+.contrast .vs-badge { right: calc(-1 * (var(--cp) + var(--cg) / 2 + 1.35rem)); }
+
+/* ---- Follow-up: texto à esquerda, sequência dentro de um cartão ---- */
+.fu-stage { align-items: center; }
+.fu-text { max-width: none; font-size: var(--t-lg); }
+.seq-wrap { gap: var(--s-4); padding: var(--s-6); background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius-l); box-shadow: var(--shadow-panel); }
+.lanes { padding-bottom: var(--s-3); border-bottom: 1px solid var(--line); }
+@media (max-width: 56rem) { .fu-text { max-width: 38rem; margin-inline: auto; } }
+
+/* ---- Comparativo: tabela dentro de um cartão único ---- */
+.cmp-head, .cmp-list { max-width: 52rem; margin-inline: auto; background: var(--bg-raised); border: 1px solid var(--line-strong); }
+.cmp-head { padding: var(--s-4) var(--s-6); border-bottom: 0; border-radius: var(--radius-l) var(--radius-l) 0 0; background: var(--bg-sunken); box-shadow: var(--shadow-panel); }
+.cmp-list { border-top: 1px solid var(--line); border-radius: 0 0 var(--radius-l) var(--radius-l); overflow: hidden; box-shadow: var(--shadow-panel); }
+.cmp-row { max-width: none; padding: var(--s-4) var(--s-6); border-top: 1px solid var(--line); gap: var(--s-6); }
+.cmp-list li:first-child .cmp-row, .cmp-list li:first-child.cmp-row { border-top: 0; }
+.cmp-list li:last-child { border-bottom: 0; }
+@media (max-width: 40rem) { .cmp-head, .cmp-row { gap: var(--s-4); padding-inline: var(--s-4); } .cmp-no, .cmp-yes { font-size: var(--t-base); } }
+.pillars .pn { justify-self: start; text-align: left; }
+.contrast .side-media, .contrast .side.drs .side-visual { aspect-ratio: 1.74 / 1; }
+
+/* casos: etiquetas do fluxo mais compactas para não quebrarem de linha (e deixarem conectores soltos) */
+.flow li span { padding: .3rem .65rem; font-size: .8125rem; }
+.flow li:not(:last-child)::after { width: .9rem; }
+
+@media (max-width: 56rem) {
+  .pillars li, .pillars li h3, .pillars li p { text-align: left; justify-items: start; }
+}
+@media (max-width: 40rem) {
+  .seq-wrap { padding: var(--s-4); }
+  .ev-t { padding: .45rem .7rem; font-size: var(--t-sm); }
+  .ev.cli .ev-t { margin-right: .9rem; } .ev.sys .ev-t { margin-left: .9rem; }
+}
+.pillars li h3, .pillars li p { margin-inline: 0; justify-self: start; }
