@@ -452,3 +452,6 @@ body:has(#hero) .nav { inset-block-start: calc(var(--hero-my) + 1.375rem); width
 .problem-lead { margin-inline: auto; }
 main .sec-head h2, main .proof-head h2, main .cmp .mid, main .closing, main .how-close, main .diff-close, main .sol-close, main .vs-punch,
 main .fu-lead, main .sol-lead, main .start-lead, main .anchor-sub, main .truth-pre, main .truth-post { margin-inline: auto; }
+
+/* cartões dos pilares: fundo suave (mistura do branco com o tom da faixa), sombra mais leve */
+.pillars li { background: color-mix(in oklab, var(--bg-raised) 45%, var(--bg)); border-color: var(--line); box-shadow: 0 1px 2px rgba(11, 17, 36, .04), 0 12px 28px -22px rgba(61, 91, 217, .28); }
