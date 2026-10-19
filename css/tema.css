@@ -522,3 +522,17 @@ main .closing, main .diff-close { text-wrap: balance; }
 .contrast .side.drs { border-color: color-mix(in oklab, var(--accent) 28%, var(--line)); }
 .contrast .vis-other { border-color: color-mix(in oklab, var(--danger) 25%, var(--line)); }
 .contrast .vis-drs .shot-frame { border-color: var(--line); }
+
+/* começar: cada passo é uma pílula azul com o número e o texto dentro */
+.mini { width: min(100%, 68rem); gap: var(--s-4); align-items: center; }
+.mini::before, .mini::after { top: 50%; left: 8%; right: 8%; translate: 0 -1px; }
+.mini li { display: flex; align-items: center; justify-content: flex-start; gap: var(--s-3); text-align: left; min-height: 4.75rem; padding: .65rem 1.5rem .65rem .65rem;
+  border-radius: 999px; background: var(--accent); color: var(--accent-ink); box-shadow: 0 14px 30px -18px var(--accent-glow), 0 2px 6px rgba(11, 17, 36, .12); }
+.mini-n { flex: none; width: 3.5rem; height: 3.5rem; font-size: 1.5rem; font-weight: 700; background: var(--accent-ink); color: var(--accent); border: 0; }
+.mini-t { color: var(--accent-ink); font-size: clamp(1rem, .9rem + .4vw, 1.2rem); font-weight: 650; line-height: 1.2; white-space: normal; text-wrap: balance; }
+@media (max-width: 56rem) {
+  .mini { grid-template-columns: 1fr; width: min(100%, 26rem); }
+  .mini::before, .mini::after { display: none; }
+}
+.mini { gap: 2.25rem; }
+@media (max-width: 56rem) { .mini { gap: var(--s-3); } }
