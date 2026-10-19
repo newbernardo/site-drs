@@ -623,3 +623,6 @@ main > #final::before { bottom: 0; left: 0; -webkit-mask: radial-gradient(ellips
 @media (hover: hover) { .wa-fab:hover { transform: translateY(-3px) scale(1.04); box-shadow: 0 16px 32px -10px rgba(18, 140, 126, .7), 0 2px 6px rgba(11, 17, 36, .2); } }
 .wa-fab:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
 @media (max-width: 56rem) { .cta-fab { right: calc(max(1rem, env(safe-area-inset-right)) + 4.5rem); } }
+/* WhatsApp neutro: cartão claro com borda fina e ícone na cor do texto (não compete com o desenho) */
+.wa-fab { background: var(--bg-raised); color: var(--ink); border: 1px solid var(--line-strong); box-shadow: var(--shadow-panel); }
+@media (hover: hover) { .wa-fab:hover { box-shadow: 0 14px 28px -14px rgba(11, 17, 36, .35); border-color: var(--ink-2); } }
