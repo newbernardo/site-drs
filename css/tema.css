@@ -545,3 +545,9 @@ main .closing, main .diff-close { text-wrap: balance; }
 .cmp-head { background: color-mix(in oklab, var(--bg-sunken) 40%, var(--bg)); }
 .cmp-list, .cmp-head { border-color: var(--line); }
 .cmp { padding-top: var(--s-6); }
+
+/* chatbot vs agente: telefones mais largos e mais baixos, menos espaço sobrando */
+.vs { gap: clamp(1rem, 3vw, 3rem); }
+.vs .phone.phone-s { width: min(100%, 26rem); height: 32.5rem; }
+.vs-who { min-height: 0; }
+@media (max-width: 56rem) { .vs .phone.phone-s { height: 36rem; } }
