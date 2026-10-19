@@ -358,3 +358,8 @@ body:has(#hero) .nav { inset-block-start: calc(var(--hero-my) + 1.375rem); width
 .hero-sub mark.mk { color: var(--ink); font-weight: 560; padding-inline: .08em; margin-inline: -.08em;
   background: linear-gradient(color-mix(in oklab, var(--accent) 35%, transparent), color-mix(in oklab, var(--accent) 35%, transparent)) 0 100% / var(--mk, 100%) .5em no-repeat;
   white-space: nowrap; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+
+/* formatos dentro da FAQ: etiquetas em escala de corpo */
+.ans .formats { margin: var(--s-4) 0; gap: var(--s-2); }
+.ans .formats li { font-size: var(--t-base); padding: .3rem .95rem; }
+.ans .formats li.on { transform: none; }
