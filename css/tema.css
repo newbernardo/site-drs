@@ -485,3 +485,26 @@ main .closing, main .diff-close { text-wrap: balance; }
 .fu-text { align-content: start; gap: var(--s-5); max-width: none; }
 .fu-text .fu-lead { margin: 0; max-width: none; text-align: left; font-size: var(--t-lg); padding-bottom: var(--s-5); border-bottom: 1px solid var(--line); }
 @media (max-width: 56rem) { .fu-text .fu-lead { text-align: center; border-bottom: 0; padding-bottom: 0; } }
+
+/* "Veja como funciona para cada cenário": destaque grande que preenche o fim do cartão */
+.callout .punch:has(.arrow-down) { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: var(--s-4);
+  padding: var(--s-6); border-radius: var(--radius-l); border: 1px solid color-mix(in oklab, var(--accent) 35%, transparent);
+  background: linear-gradient(135deg, var(--accent-soft), transparent 85%); color: var(--ink); font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.4rem); line-height: 1.12; letter-spacing: -.025em; text-wrap: balance; min-height: 9rem; }
+.callout .punch .arrow-down { flex: none; display: grid; place-items: center; width: 3.5rem; height: 3.5rem; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-size: 1.75rem; line-height: 1; animation: punch-bob 1.8s var(--ease-in-out) infinite; }
+@keyframes punch-bob { 0%, 100% { transform: translateY(-2px); } 50% { transform: translateY(4px); } }
+@media (prefers-reduced-motion: reduce) { .callout .punch .arrow-down { animation: none; } }
+
+/* cenários: dica + abas passam para a coluna do texto; o telemóvel sobe e fica alinhado ao topo dessa coluna */
+@media (min-width: 57rem) {
+  .scen.is-tabs { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); column-gap: clamp(2rem, 5vw, 5rem); align-items: start; grid-template-rows: auto auto 1fr; }
+  .scen.is-tabs .scen-hint { grid-column: 1; grid-row: 1; margin: 0 0 var(--s-4); text-align: left; }
+  .scen.is-tabs .tabs { grid-column: 1; grid-row: 2; width: 100%; margin: 0 0 var(--s-6); }
+  .scen.is-tabs .panel:not([hidden]) { display: contents; }
+  .scen.is-tabs .panel-text { grid-column: 1; grid-row: 3; align-content: start; }
+  .scen.is-tabs .panel-scene { grid-column: 2; grid-row: 1 / span 3; align-self: start; }
+}
+
+/* comparativo: linhas com fundo suave (mesma lógica dos pilares) */
+.cmp-list { background: color-mix(in oklab, var(--bg-raised) 15%, var(--bg)); box-shadow: 0 8px 22px -20px rgba(61, 91, 217, .22); }
+.cmp-head { background: color-mix(in oklab, var(--bg-sunken) 70%, var(--bg)); box-shadow: none; }
