@@ -479,3 +479,9 @@ main .closing .w, main .how-close .w, main .diff-close .w, main .vs-punch .w { o
 main .closing, main .how-close, main .diff-close, main .vs-punch { text-wrap: pretty; }
 main .closing em, main .diff-close em { white-space: normal; }
 main .closing, main .diff-close { text-wrap: balance; }
+
+/* follow-up: o parágrafo de abertura passa para a coluna do texto, ao lado da sequência */
+.fu-stage { align-items: start; }
+.fu-text { align-content: start; gap: var(--s-5); max-width: none; }
+.fu-text .fu-lead { margin: 0; max-width: none; text-align: left; font-size: var(--t-lg); padding-bottom: var(--s-5); border-bottom: 1px solid var(--line); }
+@media (max-width: 56rem) { .fu-text .fu-lead { text-align: center; border-bottom: 0; padding-bottom: 0; } }
