@@ -572,3 +572,46 @@ main .closing, main .diff-close { text-wrap: balance; }
 .mini-n { background: var(--accent); color: var(--accent-ink); }
 .mini-t { color: var(--ink); }
 .cmp-head, .cmp-list { max-width: 68rem; }
+
+/* ================= Grelha estilo "blueprint": trilhos verticais, linhas de secção, cruzes e textura lateral =================
+   Substitui as molduras arredondadas. Para desfazer, reverter o commit "Grelha ...". */
+:root { --col: 76rem; --cross: 11px; }
+html, body { background: var(--bg); }
+main > section[id]:not(#_), main.doc:not(#_) { margin: 0; border: 0; border-top: 1px solid var(--line-strong); border-radius: 0; background: var(--bg); position: relative; isolation: isolate; }
+main > section.hero[id]:not(#_) { border-top: 0; }
+main > #problema[id]:not(#_), main > #solucao[id]:not(#_), main > #diferencial[id]:not(#_), main > #agentes[id]:not(#_),
+main > #pagamentos[id]:not(#_), main > #casos[id]:not(#_), main > #valor[id]:not(#_) { margin: 0; }
+.band-tint:not(#_) { background: var(--bg); }
+.footer { margin: 0; border: 0; border-radius: 0; border-top: 1px solid var(--line-strong); position: relative; isolation: isolate; }
+
+@media (min-width: 80rem) {
+  /* textura de risquinhos diagonais só nas laterais, fora da coluna */
+  main > section[id]::before, .footer::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background: repeating-linear-gradient(135deg, var(--line) 0 1px, transparent 1px 9px);
+    -webkit-mask: linear-gradient(90deg, #000 calc(50% - var(--col) / 2), transparent calc(50% - var(--col) / 2), transparent calc(50% + var(--col) / 2), #000 calc(50% + var(--col) / 2));
+            mask: linear-gradient(90deg, #000 calc(50% - var(--col) / 2), transparent calc(50% - var(--col) / 2), transparent calc(50% + var(--col) / 2), #000 calc(50% + var(--col) / 2)); }
+  /* trilhos verticais nas bordas da coluna e cruzes (+) onde cruzam a linha de topo da secção */
+  main > section[id]:not(.hero)::after, .footer::after { content: ""; position: absolute; z-index: 1; pointer-events: none;
+    inset: -6px calc(50% - var(--col) / 2 - 6px) 0;
+    background:
+      linear-gradient(var(--ink-2), var(--ink-2)) left 6px top 0 / 1px var(--cross) no-repeat,
+      linear-gradient(var(--ink-2), var(--ink-2)) left 1px top 5px / var(--cross) 1px no-repeat,
+      linear-gradient(var(--ink-2), var(--ink-2)) right 6px top 0 / 1px var(--cross) no-repeat,
+      linear-gradient(var(--ink-2), var(--ink-2)) right 1px top 5px / var(--cross) 1px no-repeat,
+      linear-gradient(var(--line-strong), var(--line-strong)) left 6px top 0 / 1px 100% no-repeat,
+      linear-gradient(var(--line-strong), var(--line-strong)) right 6px top 0 / 1px 100% no-repeat; }
+  main > section.hero[id]::after { content: ""; position: absolute; z-index: 1; pointer-events: none; inset: 0 calc(50% - var(--col) / 2); border-inline: 1px solid var(--line-strong); }
+}
+main > section[id]:not(#_), .footer { overflow-x: clip; overflow-y: visible; }
+main > section.hero[id]:not(#_) { margin: 0; }
+body:has(#hero) .nav { inset-block-start: 1rem; width: min(calc(100% - 2rem), 74rem); }
+main > section.hero[id]:not(#_) { padding-top: calc(var(--nav-h) + 2rem + clamp(3rem, 8vh, 6rem)); }
+/* páginas legais e 404: mesma grelha (trilhos + textura lateral) */
+@media (min-width: 80rem) {
+  main.doc { position: relative; isolation: isolate; overflow-x: clip; }
+  main.doc::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background: repeating-linear-gradient(135deg, var(--line) 0 1px, transparent 1px 9px);
+    -webkit-mask: linear-gradient(90deg, #000 calc(50% - var(--col) / 2), transparent calc(50% - var(--col) / 2), transparent calc(50% + var(--col) / 2), #000 calc(50% + var(--col) / 2));
+            mask: linear-gradient(90deg, #000 calc(50% - var(--col) / 2), transparent calc(50% - var(--col) / 2), transparent calc(50% + var(--col) / 2), #000 calc(50% + var(--col) / 2)); }
+  main.doc::after { content: ""; position: absolute; inset: 0 calc(50% - var(--col) / 2); border-inline: 1px solid var(--line-strong); pointer-events: none; }
+}
