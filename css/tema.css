@@ -508,3 +508,11 @@ main .closing, main .diff-close { text-wrap: balance; }
 /* comparativo: linhas com fundo suave (mesma lógica dos pilares) */
 .cmp-list { background: color-mix(in oklab, var(--bg-raised) 15%, var(--bg)); box-shadow: 0 8px 22px -20px rgba(61, 91, 217, .22); }
 .cmp-head { background: color-mix(in oklab, var(--bg-sunken) 70%, var(--bg)); box-shadow: none; }
+
+/* começar: passos com texto em escala de subtítulo, alinhados pelo topo e centrados */
+.mini { align-items: start; }
+.mini li { align-content: start; align-self: start; text-align: center; gap: var(--s-3); }
+.mini-t { font-size: clamp(1.1rem, 1rem + .5vw, 1.35rem); font-weight: 650; line-height: 1.25; max-width: 14em; text-wrap: balance; }
+.mini-t { max-width: none; font-size: clamp(1.05rem, .95rem + .45vw, 1.25rem); }
+@media (max-width: 40rem) { .mini-t { text-wrap: balance; } }
+@media (min-width: 57rem) { .mini-t { white-space: nowrap; } }
