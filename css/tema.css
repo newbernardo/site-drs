@@ -516,3 +516,9 @@ main .closing, main .diff-close { text-wrap: balance; }
 .mini-t { max-width: none; font-size: clamp(1.05rem, .95rem + .45vw, 1.25rem); }
 @media (max-width: 40rem) { .mini-t { text-wrap: balance; } }
 @media (min-width: 57rem) { .mini-t { white-space: nowrap; } }
+
+/* diferencial: cartões suaves, integrados na página */
+.contrast .side { background: color-mix(in oklab, var(--bg-raised) 15%, var(--bg)); border: 1px solid var(--line); box-shadow: 0 8px 22px -20px rgba(61, 91, 217, .22); }
+.contrast .side.drs { border-color: color-mix(in oklab, var(--accent) 28%, var(--line)); }
+.contrast .vis-other { border-color: color-mix(in oklab, var(--danger) 25%, var(--line)); }
+.contrast .vis-drs .shot-frame { border-color: var(--line); }
