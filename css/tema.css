@@ -602,3 +602,15 @@ main > #final::before { bottom: 0; left: 0; -webkit-mask: radial-gradient(ellips
 .hero-shot .shot-bar { display: none; }
 .hero-shot .shot-frame { grid-template-rows: 1fr; }
 @media (max-width: 40rem) { .hero-shot { --fr: 8px; } }
+
+/* chatbot vs agente: o lado certo (direita) em verde de sucesso, o lado errado (esquerda) com X vermelho */
+.vs-col { position: relative; }
+.vs-col .phone { position: relative; overflow: visible; }
+.vs-col.agent .phone { border: 2px solid var(--ok); box-shadow: 0 0 0 6px var(--ok-soft), 0 28px 60px -30px color-mix(in oklab, var(--ok) 55%, transparent); }
+.vs-col.agent .vs-tag { color: var(--ok); border-color: var(--ok); background: var(--ok-soft); }
+.vs-col.agent .vs-who .g { color: var(--ok); }
+.vs-col.bot .vs-tag { color: var(--danger); border-color: var(--danger); background: var(--danger-soft); }
+.vs-col .phone::after { content: ""; position: absolute; top: -1.1rem; right: -1.1rem; width: 3rem; height: 3rem; border-radius: 50%; z-index: 5;
+  background-repeat: no-repeat; background-position: center; background-size: 1.5rem; box-shadow: 0 8px 20px -8px rgba(11, 17, 36, .35), 0 0 0 4px var(--bg); }
+.vs-col.agent .phone::after { background-color: var(--ok); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E"); }
+.vs-col.bot .phone::after { background-color: var(--danger); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E"); }
