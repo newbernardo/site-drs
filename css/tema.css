@@ -441,3 +441,9 @@ body:has(#hero) .nav { inset-block-start: calc(var(--hero-my) + 1.375rem); width
   .ev.cli .ev-t { margin-right: .9rem; } .ev.sys .ev-t { margin-left: .9rem; }
 }
 .pillars li h3, .pillars li p { margin-inline: 0; justify-self: start; }
+
+/* rodapé: faixa escura de largura total, sem borda nem cantos arredondados */
+.footer { margin: var(--frame-m) 0 0; border: 0; border-radius: 0; }
+/* dois planos: dividem toda a largura do conteúdo (o espaço que era do terceiro) */
+.plans { max-width: none; }
+@media (max-width: 56rem) { .plans { max-width: 30rem; } }
