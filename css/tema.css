@@ -587,3 +587,8 @@ main > #planos::before { top: 0; left: 0; -webkit-mask: radial-gradient(ellipse 
 main > #garantia::before { bottom: 0; right: 0; -webkit-mask: radial-gradient(ellipse at bottom right, #000 0%, transparent 72%); mask: radial-gradient(ellipse at bottom right, #000 0%, transparent 72%); }
 main > #final::before { bottom: 0; left: 0; -webkit-mask: radial-gradient(ellipse at bottom left, #000 0%, transparent 72%); mask: radial-gradient(ellipse at bottom left, #000 0%, transparent 72%); }
 @media (max-width: 40rem) { main > #hero::before, main > #oportunidade::before, main > #como-funciona::before, main > #planos::before, main > #garantia::before, main > #final::before { opacity: .6; width: 90%; } }
+
+/* diferencial: as duas imagens (16:9) já trazem o X e o visto; sem molduras nem filtros por cima */
+.contrast .side-media, .contrast .side.drs .side-visual, .contrast .side-media .side-visual { aspect-ratio: 16 / 9; }
+.contrast .side-visual { overflow: hidden; background: var(--bg-raised); }
+.contrast .vis-other img, .contrast .vis-drs img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; filter: none; display: block; }
