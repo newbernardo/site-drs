@@ -16,7 +16,7 @@ Ao criar uma conta, subscrever um plano ou usar o WatSeller («nós»), concorda
 
 ## 2. O serviço
 
-O WatSeller disponibiliza agentes de IA especializados em vendas, funis prontos e automação de atendimento, follow-up, confirmação de pagamento e entrega, para uso através do WhatsApp. As funcionalidades dependem do plano subscrito (Start, Scale ou Pro).
+O WatSeller disponibiliza agentes de IA especializados em vendas, funis prontos e automação de atendimento, follow-up, confirmação de pagamento e entrega, para uso através do WhatsApp. As funcionalidades dependem do plano subscrito (Scale ou Scale Pro).
 
 ## 3. Conta e acesso
 

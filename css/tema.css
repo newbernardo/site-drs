@@ -369,3 +369,7 @@ body:has(#hero) .nav { inset-block-start: calc(var(--hero-my) + 1.375rem); width
 .offer-list li { border-top: 1px solid var(--line); }
 .offer-list li:nth-last-child(-n+2) { border-bottom: 0; }
 .offer-list li:last-child { border-bottom: 1px solid var(--line); }
+
+/* dois planos: grelha de duas colunas, centrada */
+.plans { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 56rem; margin-inline: auto; }
+@media (max-width: 56rem) { .plans { grid-template-columns: 1fr; max-width: 30rem; } }

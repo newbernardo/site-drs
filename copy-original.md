@@ -9,7 +9,7 @@ Convenções: **negrito** = ênfase da copy original. `[IMG: …]` = alt text da
 - **Title:** WatSeller — Agentes de IA que vendem no WhatsApp
 - **Description:** Escale seu negócio no WhatsApp com agentes de IA especializados em venda direta. Funis prontos, follow-up automático, confirmação de pagamento e entrega — sem programar e sem depender de agências.
 - **Mensagem WhatsApp (CTA geral):** "Olá! Quero escalar as minhas vendas no WhatsApp com o WatSeller."
-- **Mensagem WhatsApp (CTA por plano):** "Olá! Quero começar com o plano {Start|Scale|Pro} do WatSeller."
+- **Mensagem WhatsApp (CTA por plano):** "Olá! Quero começar com o plano {Scale|Scale Pro} do WatSeller."
 
 ## NAV
 - Logo: **WatSeller**
@@ -438,7 +438,7 @@ Se isto fosse feito por uma pessoa, quanto custaria por mês? E se não for feit
 ## 19. PLANOS
 **H2:** Escolha o plano *conforme o estágio do seu negócio*
 
-### Start — 2.500 MZN / mês
+### Scale (destaque) — 2.500 MZN / mês
 - 1 conta de WhatsApp
 - 1 produto ativo
 - Funis prontos
@@ -449,24 +449,9 @@ Se isto fosse feito por uma pessoa, quanto custaria por mês? E se não for feit
 - Até 2.000 conversas activas
 - 1 assento
 
-CTA: Escolher Start
-
-### Scale (destaque) — 5.000 MZN / mês
-- **3 contas de WhatsApp**
-- **5 produtos (3 ativos)**
-- Funis prontos
-- Agentes de IA especialistas em vendas
-- Follow-up automático
-- Entrega automática de produto
-- Relatórios completos
-- **Funil de upsell & downsell**
-- **Envio automático de eventos de compra para a Meta**
-- **Conversas ilimitadas**
-- Até 2 assentos
-
 CTA: Escolher Scale
 
-### Pro — 8.500 MZN / mês
+### Scale Pro — 8.500 MZN / mês
 - **10 contas de WhatsApp**
 - **Produtos ilimitados**
 - Funis prontos
@@ -479,7 +464,7 @@ CTA: Escolher Scale
 - Conversas ilimitadas
 - **Até 5 assentos**
 
-CTA: Escolher Pro
+CTA: Escolher Scale Pro
 
 (Negrito = itens que diferenciam o plano em relação ao anterior.)
 
