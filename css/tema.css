@@ -592,3 +592,13 @@ main > #final::before { bottom: 0; left: 0; -webkit-mask: radial-gradient(ellips
 .contrast .side-media, .contrast .side.drs .side-visual, .contrast .side-media .side-visual { aspect-ratio: 16 / 9; }
 .contrast .side-visual { overflow: hidden; background: var(--bg-raised); }
 .contrast .vis-other img, .contrast .vis-drs img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; filter: none; display: block; }
+
+/* hero: painel dentro de uma segunda moldura translúcida (janela dentro de janela) */
+.hero-shot { --fr: 14px; padding: var(--fr); border-radius: calc(var(--radius-l) + var(--fr) + 4px);
+  background: linear-gradient(160deg, color-mix(in oklab, var(--accent) 16%, transparent), color-mix(in oklab, var(--accent) 5%, transparent) 55%, color-mix(in oklab, var(--accent) 12%, transparent));
+  border: 1px solid color-mix(in oklab, var(--accent) 28%, var(--line));
+  box-shadow: 0 40px 80px -48px var(--accent-glow), inset 0 1px 0 color-mix(in oklab, #fff 55%, transparent); }
+.hero-shot .shot-frame { border-radius: var(--radius-l); border-color: color-mix(in oklab, var(--accent) 18%, var(--line)); box-shadow: 0 12px 30px -18px rgba(11, 17, 36, .28); }
+.hero-shot .shot-bar { display: none; }
+.hero-shot .shot-frame { grid-template-rows: 1fr; }
+@media (max-width: 40rem) { .hero-shot { --fr: 8px; } }
