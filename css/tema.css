@@ -614,3 +614,12 @@ main > #final::before { bottom: 0; left: 0; -webkit-mask: radial-gradient(ellips
   background-repeat: no-repeat; background-position: center; background-size: 1.5rem; box-shadow: 0 8px 20px -8px rgba(11, 17, 36, .35), 0 0 0 4px var(--bg); }
 .vs-col.agent .phone::after { background-color: var(--ok); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E"); }
 .vs-col.bot .phone::after { background-color: var(--danger); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E"); }
+
+/* botão flutuante do WhatsApp (substitui o "voltar ao topo") */
+.wa-fab { position: fixed; right: max(1rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom)); z-index: var(--z-ui); width: 3.5rem; height: 3.5rem; border-radius: 50%;
+  display: grid; place-items: center; background: #128c7e; color: #fff; box-shadow: 0 12px 28px -10px rgba(18, 140, 126, .6), 0 2px 6px rgba(11, 17, 36, .2);
+  transition: transform var(--d-base) var(--ease-out), box-shadow var(--d-base) ease; }
+.wa-fab svg { width: 1.9rem; height: 1.9rem; fill: currentColor; }
+@media (hover: hover) { .wa-fab:hover { transform: translateY(-3px) scale(1.04); box-shadow: 0 16px 32px -10px rgba(18, 140, 126, .7), 0 2px 6px rgba(11, 17, 36, .2); } }
+.wa-fab:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+@media (max-width: 56rem) { .cta-fab { right: calc(max(1rem, env(safe-area-inset-right)) + 4.5rem); } }
