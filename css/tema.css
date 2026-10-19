@@ -551,3 +551,18 @@ main .closing, main .diff-close { text-wrap: balance; }
 .vs .phone.phone-s { width: min(100%, 26rem); height: 32.5rem; }
 .vs-who { min-height: 0; }
 @media (max-width: 56rem) { .vs .phone.phone-s { height: 36rem; } }
+
+/* cenários: abas com cara de botão (convidam ao clique) */
+.scen.is-tabs .tabs { background: transparent; border: 0; padding: 0; gap: var(--s-3); border-radius: 0; }
+.scen.is-tabs .tab-ind { top: 0; bottom: 0; left: 0; border-radius: var(--radius-m); box-shadow: 0 10px 24px -12px var(--accent-glow); }
+.scen.is-tabs .tabs button { position: relative; cursor: pointer; background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: var(--radius-m);
+  box-shadow: var(--shadow-panel); padding: .75rem 2.4rem .75rem 1rem; transition: transform var(--d-base) var(--ease-out), border-color var(--d-base) ease, box-shadow var(--d-base) ease, color var(--d-base) ease; }
+.scen.is-tabs .tabs button[aria-selected="true"] { background: transparent; border-color: var(--accent); }
+.scen.is-tabs .tabs button:not([aria-selected="true"])::after { content: ""; position: absolute; right: .9rem; top: 50%; width: .6rem; height: .6rem; translate: 0 -50%; rotate: -45deg;
+  border-right: 2px solid var(--accent); border-bottom: 2px solid var(--accent); }
+.scen.is-tabs .tabs button:not([aria-selected="true"]) { color: var(--ink); animation: tab-call 2.4s var(--ease-out) 3; }
+@media (hover: hover) { .scen.is-tabs .tabs button:not([aria-selected="true"]):hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 14px 28px -16px var(--accent-glow); animation: none; } }
+.scen.is-tabs .tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@keyframes tab-call { 0%, 100% { box-shadow: var(--shadow-panel), 0 0 0 0 var(--accent-glow); } 50% { box-shadow: var(--shadow-panel), 0 0 0 7px transparent; border-color: var(--accent); } }
+@media (prefers-reduced-motion: reduce) { .scen.is-tabs .tabs button:not([aria-selected="true"]) { animation: none; } }
+.scen.is-tabs .tab-ind { left: 4px; }
