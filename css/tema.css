@@ -465,3 +465,17 @@ main .fu-lead, main .sol-lead, main .start-lead, main .anchor-sub, main .truth-p
 main .solution .sol-close { max-width: 44rem; font-style: italic; }
 main .solution .sol-close .w { overflow: visible; padding-inline: .06em; margin-inline: -.06em; }
 main .solution .sol-close { max-width: 62rem; text-wrap: wrap; font-size: clamp(1.5rem, 1.1rem + 1.5vw, 2.4rem); }
+
+/* ---- frases de fecho de secção: itálico, mais largas, sem divisória a separá-las da ideia ---- */
+main .closing, main .how-close, main .diff-close, main .vs-punch,
+main .closing em, main .how-close em, main .diff-close em, main .vs-punch em { font-style: italic; }
+main .closing, main .how-close, main .diff-close, main .vs-punch { max-width: 62rem; text-wrap: wrap; font-size: clamp(1.5rem, 1.1rem + 1.5vw, 2.4rem); }
+main .closing .w, main .how-close .w, main .diff-close .w, main .vs-punch .w { overflow: visible; padding-inline: .06em; margin-inline: -.06em; }
+/* a linha final das listas não leva divisória quando é seguida da frase de fecho */
+.caps > li:last-child, .cap:last-child { border-bottom: 0; }
+.cases .case:last-child, .case:last-child { border-bottom: 0; }
+.cmp .closing, .caps-wrap .closing { margin-top: var(--close-gap); }
+.offer-list li:last-child { border-bottom: 0; }
+main .closing, main .how-close, main .diff-close, main .vs-punch { text-wrap: pretty; }
+main .closing em, main .diff-close em { white-space: normal; }
+main .closing, main .diff-close { text-wrap: balance; }
