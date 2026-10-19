@@ -447,3 +447,8 @@ body:has(#hero) .nav { inset-block-start: calc(var(--hero-my) + 1.375rem); width
 /* dois planos: dividem toda a largura do conteúdo (o espaço que era do terceiro) */
 .plans { max-width: none; }
 @media (max-width: 56rem) { .plans { max-width: 30rem; } }
+
+/* títulos e frases centradas: caixa centrada na página (sem encostar à esquerda) */
+.problem-lead { margin-inline: auto; }
+main .sec-head h2, main .proof-head h2, main .cmp .mid, main .closing, main .how-close, main .diff-close, main .sol-close, main .vs-punch,
+main .fu-lead, main .sol-lead, main .start-lead, main .anchor-sub, main .truth-pre, main .truth-post { margin-inline: auto; }
