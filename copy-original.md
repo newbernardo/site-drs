@@ -9,7 +9,7 @@ Convenções: **negrito** = ênfase da copy original. `[IMG: …]` = alt text da
 - **Title:** WatSeller — Agentes de IA que vendem no WhatsApp
 - **Description:** Escale seu negócio no WhatsApp com agentes de IA especializados em venda direta. Funis prontos, follow-up automático, confirmação de pagamento e entrega — sem programar e sem depender de agências.
 - **Mensagem WhatsApp (CTA geral):** "Olá! Quero escalar as minhas vendas no WhatsApp com o WatSeller."
-- **Mensagem WhatsApp (CTA por plano):** "Olá! Quero começar com o plano {Scale|Scale Pro} do WatSeller."
+- **Mensagem WhatsApp (CTA por plano):** "Olá! Quero começar com o plano {Scale|Scale Pro|Scale Agency} do WatSeller."
 
 ## NAV
 - Logo: **WatSeller**
@@ -438,35 +438,84 @@ Se isto fosse feito por uma pessoa, quanto custaria por mês? E se não for feit
 ## 19. PLANOS
 **H2:** Escolha o plano *conforme o estágio do seu negócio*
 
-### Scale (destaque) — 2.500 MZN / mês
-- 1 conta de WhatsApp
-- 1 produto ativo
-- Funis prontos
-- Agentes de IA especialistas em vendas
-- Follow-up automático
-- Entrega automática de produto
+### Scale — 2.499 MZN / mês
+- Agentes de IA autônomos
+- Follow-ups automáticos
+- Editor de funis de vendas
+- Funil de Upsell’s & Downsell
+- Entrega automática de produtos
+- Caixa de Entrada Unificada
+
+- Produtos cadastrados: Até 3
+- Clientes ativos: 2.000/mês
+- Conta de WhatsApp: 1
+- Usuários da plataforma: Até 2
+
+- Pixel do facebook
+
+- Base de conhecimento da IA
 - Relatórios completos
-- Até 2.000 conversas activas
-- 1 assento
+- Suporte via WhatsApp
+
+Recursos adicionais
+- WhatsApp adicional: 500 MZN/mês por número
+- Contactos adicionais: 350 MZN/mês por cada pacote de 1.000 contactos ativos
 
 CTA: Escolher Scale
 
-### Scale Pro — 8.500 MZN / mês
-- **10 contas de WhatsApp**
-- **Produtos ilimitados**
-- Funis prontos
-- Agentes de IA especialistas em vendas
-- Follow-up automático
-- Entrega automática de produto
+### Scale Pro (destaque) — 5.099 MZN / mês
+- Agentes de IA autônomos
+- Follow-ups automáticos
+- Editor de funis de vendas
+- Funil de Upsell’s & Downsell
+- Entrega automática de produtos
+- Caixa de Entrada Unificada
+
+- Produtos cadastrados: Até 5
+- Clientes ativos: 10.000/mês
+- Conta de WhatsApp: 3
+- Usuários da plataforma: Até 5
+
+- Pixel do facebook
+- Análise de Anúncios (em breve)
+- Campanhas de WhatsApp (em breve)
+
+- Base de conhecimento da IA
 - Relatórios completos
-- Funil de upsell & downsell
-- Envio automático de eventos de compra para a Meta
-- Conversas ilimitadas
-- **Até 5 assentos**
+- Suporte via WhatsApp
+
+Recursos adicionais
+- WhatsApp adicional: 400 MZN/mês por número
+- Contactos adicionais: 150 MZN/mês por cada pacote de 1.000 contactos ativos
 
 CTA: Escolher Scale Pro
 
-(Negrito = itens que diferenciam o plano em relação ao anterior.)
+### Scale Agency — 10.499 MZN / mês
+- Agentes de IA autônomos
+- Follow-ups automáticos
+- Editor de funis de vendas
+- Funil de Upsell’s & Downsell
+- Entrega automática de produtos
+- Caixa de Entrada Unificada
+
+- Produtos cadastrados: Ilimitados
+- Clientes ativos: 50.000/mês
+- Conta de WhatsApp: 10
+- Usuários da plataforma: 25
+
+- Pixel do facebook
+- Análise de Anúncios (em breve)
+- Campanhas de WhatsApp (em breve)
+
+- Base de conhecimento da IA
+- Relatórios completos
+- Suporte via WhatsApp
+
+Recursos adicionais
+- WhatsApp adicional: 300 MZN/mês por número
+- Contactos adicionais: 70 MZN/mês por cada pacote de 1.000 contactos ativos
+
+CTA: Escolher Scale Agency
 
 ---
 

@@ -21,7 +21,7 @@ WatSeller: agentes de IA especializados em vendas no WhatsApp, com funis prontos
 Não é chatbot nem construtor de workflows: o funil já vem pronto e o agente conduz a conversa até a compra, inclusive pagamento e entrega.
 
 ## Capabilities and Constraints
-Planos Scale 2.500 / Scale Pro 8.500 MZN por mês; garantia de 14 dias; WhatsApp via API oficial (coexistência). Toda a copy vem de `copy-original.md` e `copy-legal.md` (aprovada, não reescrever). Português com "você".
+Planos Scale 2.499 / Scale Pro 5.099 / Scale Agency 10.499 MZN por mês; garantia de 14 dias; WhatsApp via API oficial (coexistência). Toda a copy vem de `copy-original.md` e `copy-legal.md` (aprovada, não reescrever). Português com "você".
 
 ## Brand Commitments
 Nome "WatSeller" (domínio watseller.com). Identidade visual "Safira Noite", igual à do painel (app.watseller.com): fonte única Plus Jakarta Sans; índigo (#3d5bd9 no claro, #7090ff no escuro) como única cor de ação; verde só para sucesso e dentro de mockups do WhatsApp; cartões de 20px; seções alternando claro e escuro. Tokens em `css/tema.css`.

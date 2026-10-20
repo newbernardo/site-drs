@@ -626,3 +626,32 @@ main > #final::before { bottom: 0; left: 0; -webkit-mask: radial-gradient(ellips
 /* WhatsApp neutro: cartão claro com borda fina e ícone na cor do texto (não compete com o desenho) */
 .wa-fab { background: var(--bg-raised); color: var(--ink); border: 1px solid var(--line-strong); box-shadow: var(--shadow-panel); }
 @media (hover: hover) { .wa-fab:hover { box-shadow: 0 14px 28px -14px rgba(11, 17, 36, .35); border-color: var(--ink-2); } }
+
+/* ---- planos: 3 cartões, listas agrupadas por categoria com separadores suaves ---- */
+.plans { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: none; align-items: stretch; }
+@media (max-width: 64rem) { .plans { grid-template-columns: 1fr; max-width: 32rem; } }
+.plan { gap: 0; padding: clamp(1.4rem, 2.2vw, 2rem); background: color-mix(in oklab, var(--bg-raised) 55%, var(--bg)); }
+.plan.feat { background: color-mix(in oklab, var(--bg-raised) 70%, var(--bg)); }
+.plan h3 { margin-bottom: var(--s-2); }
+.plan .price { margin-bottom: var(--s-5); }
+.plan .pg { padding: var(--s-4) 0; border-top: 1px solid var(--line); }
+.plan .pg:first-of-type { border-top: 1px solid var(--line); }
+.plan .pl, .plan .kv { display: grid; gap: .55rem; }
+.plan .pl li { position: relative; padding-left: 1.55rem; color: var(--ink); font-size: var(--t-sm); line-height: 1.4; }
+.plan .pl li::before { content: ""; position: absolute; left: 0; top: .12em; width: 1.05rem; height: 1.05rem; border-radius: 50%; background: var(--accent-soft)
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233d5bd9' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center / 62% no-repeat; }
+.plan .kv li { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s-3); padding-left: 0; font-size: var(--t-sm); line-height: 1.35; color: var(--ink-2); }
+.plan .kv li::before { content: none; }
+.plan .kv li > span { flex: 1 1 auto; }
+.plan .kv li > b { flex: 0 1 auto; text-align: right; color: var(--ink); font-weight: 650; font-variant-numeric: tabular-nums; }
+.plan .soon { display: inline-block; margin-left: .35rem; padding: .08rem .5rem; border-radius: 999px; font-size: .6875rem; font-weight: 600; letter-spacing: .02em; color: var(--ink-2); background: var(--bg-sunken); border: 1px solid var(--line); vertical-align: .08em; }
+.plan .pg-extra { margin-top: var(--s-1); padding: var(--s-4); border: 1px dashed var(--line-strong); border-radius: var(--radius-m); background: color-mix(in oklab, var(--bg-sunken) 45%, transparent); }
+.plan .pg-extra .kv { display: grid; gap: .6rem; }
+.plan .pg-extra .kv li { flex-direction: column; gap: .05rem; }
+.plan .pg-extra .kv li > b { text-align: left; font-weight: 560; color: var(--ink-2); }
+.plan .pg-extra .kv li > span { color: var(--ink); font-weight: 600; }
+.plan .pg-t { margin: 0 0 var(--s-3); font-size: .75rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.plan .btn { margin-top: auto; }
+.plan .pg-extra + .btn { margin-top: var(--s-5); }
+.plan { grid-template-rows: auto auto repeat(4, auto) 1fr auto; }
+.plan .pg-extra { align-self: start; }
