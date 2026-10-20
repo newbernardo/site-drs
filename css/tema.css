@@ -687,3 +687,13 @@ main > #final::before { bottom: 0; left: 0; -webkit-mask: radial-gradient(ellips
 .plan .pg-incl { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; }
 .plan .pg-extra { flex: none; align-self: stretch; }
 .plan .btn { flex: none; margin-top: var(--s-5); }
+
+/* planos: limites numéricos em painel suave; recursos adicionais com texto menor */
+.plan .pg:has(> .kv):not(.pg-extra) { padding: var(--s-4); border: 0; border-radius: var(--radius-m); background: color-mix(in oklab, var(--accent) 6%, var(--bg-raised)); }
+.plan .pg:has(> .kv):not(.pg-extra) .kv li::after { border-bottom-color: color-mix(in oklab, var(--accent) 25%, var(--line-strong)); }
+.plan .pg-extra { padding: var(--s-3) var(--s-4); }
+.plan .pg-extra .pg-t { font-size: .68rem; }
+.plan .pg-extra .kv { gap: .45rem; }
+.plan .pg-extra .kv li { font-size: .75rem; line-height: 1.35; }
+.plan .pg-extra .kv li > span { font-size: .78rem; font-weight: 600; }
+.plan .pg-extra .kv li > b { font-size: .75rem; font-weight: 500; color: var(--ink-3, var(--ink-2)); }
