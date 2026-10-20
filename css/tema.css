@@ -655,3 +655,28 @@ main > #final::before { bottom: 0; left: 0; -webkit-mask: radial-gradient(ellips
 .plan .pg-extra + .btn { margin-top: var(--s-5); }
 .plan { grid-template-rows: auto auto repeat(4, auto) 1fr auto; }
 .plan .pg-extra { align-self: start; }
+
+/* planos 2 e 3: "Tudo do plano anterior, mais:" em vez de repetir a lista */
+.plan .pg-incl { padding: var(--s-3) 0 var(--s-4); }
+.plan .pg-incl p { display: flex; align-items: center; gap: .6rem; margin: 0; font-size: var(--t-sm); font-weight: 600; color: var(--ink); }
+.plan .pg-incl p::before { content: "+"; flex: none; display: grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: 1rem; line-height: 1; }
+.plan .pg-incl b { color: var(--accent); font-weight: 700; }
+
+/* preço: número grande, MZN pequeno e alinhado ao topo, "/ mês" discreto, dentro de um painel suave */
+.plan .price { display: flex; align-items: baseline; gap: .55rem; margin: 0 0 var(--s-5); padding: var(--s-4) var(--s-5); border-radius: var(--radius-m);
+  background: color-mix(in oklab, var(--accent) 7%, var(--bg-raised)); border: 1px solid color-mix(in oklab, var(--accent) 18%, var(--line)); color: var(--ink-2); }
+.plan .price b { display: inline-flex; align-items: flex-start; gap: .35rem; font-size: clamp(2.2rem, 1.7rem + 1.4vw, 3rem); line-height: 1; letter-spacing: -.045em; color: var(--ink); }
+.plan .price b small { margin-top: .3em; font-size: .8125rem; font-weight: 650; letter-spacing: .06em; color: var(--accent); }
+.plan .price > span { font-size: var(--t-sm); font-weight: 500; }
+.plan.feat .price { background: color-mix(in oklab, var(--accent) 12%, var(--bg-raised)); border-color: color-mix(in oklab, var(--accent) 35%, var(--line)); }
+
+/* limites: linhas com pontilhado entre nome e valor, valor em destaque */
+.plan .kv li { align-items: baseline; gap: .5rem; padding: .15rem 0; }
+.plan .pg:not(.pg-extra) .kv li > span { flex: 0 1 auto; white-space: nowrap; }
+.plan .pg:not(.pg-extra) .kv li::after { content: ""; order: 1; flex: 1 1 1rem; min-width: .75rem; height: 0; border-bottom: 1px dotted var(--line-strong); transform: translateY(-.25em); }
+.plan .pg:not(.pg-extra) .kv li > b { order: 2; flex: none; font-size: var(--t-base); font-weight: 700; color: var(--ink); }
+.plan .pg:not(.pg-extra) .kv { gap: .5rem; }
+@media (max-width: 24rem) { .plan .pg:not(.pg-extra) .kv li > span { white-space: normal; } }
+.plan .pg-incl p { gap: .65rem; }
+.plan .price { align-items: center; }
+.plan .price > span { align-self: flex-end; padding-bottom: .3rem; }
