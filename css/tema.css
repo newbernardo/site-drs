@@ -680,3 +680,10 @@ main > #final::before { bottom: 0; left: 0; -webkit-mask: radial-gradient(ellips
 .plan .pg-incl p { gap: .65rem; }
 .plan .price { align-items: center; }
 .plan .price > span { align-self: flex-end; padding-bottom: .3rem; }
+
+/* planos: o espaço de sobra reparte-se pelos grupos (em vez de um vazio no fim), mantendo cartões e botões alinhados */
+.plan { display: flex; flex-direction: column; grid-template-rows: none; }
+.plan .pg:not(.pg-extra):not(.pg-incl) { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; }
+.plan .pg-incl { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; }
+.plan .pg-extra { flex: none; align-self: stretch; }
+.plan .btn { flex: none; margin-top: var(--s-5); }
