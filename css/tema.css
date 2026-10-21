@@ -697,3 +697,11 @@ main > #final::before { bottom: 0; left: 0; -webkit-mask: radial-gradient(ellips
 .plan .pg-extra .kv li { font-size: .75rem; line-height: 1.35; }
 .plan .pg-extra .kv li > span { font-size: .78rem; font-weight: 600; }
 .plan .pg-extra .kv li > b { font-size: .75rem; font-weight: 500; color: var(--ink-3, var(--ink-2)); }
+
+/* planos: botão logo a seguir ao preço; preço sem painel e mais pequeno; recursos adicionais sem caixa */
+.plan .price { padding: 0; margin: 0 0 var(--s-4); background: none; border: 0; border-radius: 0; box-shadow: none; }
+.plan.feat .price { background: none; border: 0; }
+.plan .price b { font-size: clamp(1.7rem, 1.4rem + .8vw, 2.1rem); }
+.plan .price b small { font-size: .72rem; margin-top: .2em; }
+.plan > .btn { margin: 0 0 var(--s-5); }
+.plan .pg-extra { padding: var(--s-1) 0 0; border: 0; border-radius: 0; background: none; }
