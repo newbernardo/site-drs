@@ -709,3 +709,7 @@ main > #final::before { bottom: 0; left: 0; -webkit-mask: radial-gradient(ellips
 /* planos: botões secundários com contorno índigo discreto */
 .plan .btn-ghost { border-color: color-mix(in oklab, var(--accent) 45%, var(--line)); color: var(--accent); }
 .plan .btn-ghost:hover { border-color: var(--accent); background: color-mix(in oklab, var(--accent) 8%, var(--bg-raised)); }
+
+/* planos: rótulos longos podem quebrar linha sem empurrar o valor */
+.plan .pg:not(.pg-extra) .kv li > span { white-space: normal; min-width: 0; }
+.plan .pg:not(.pg-extra) .kv li > b { white-space: nowrap; }
