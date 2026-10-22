@@ -719,3 +719,9 @@ main > #final::before { bottom: 0; left: 0; -webkit-mask: radial-gradient(ellips
 
 /* planos: valores dos limites em índigo, peso normal (sem negrito) */
 .plan .pg:not(.pg-extra) .kv li > b { font-weight: 500; color: var(--accent); font-size: var(--t-md, 1.0625rem); letter-spacing: -.01em; }
+
+/* planos: preço em serifa suave (Fraunces, só para os números), menos "robótico" */
+@font-face { font-family: "Fraunces"; src: url("../vendor/fonts/fraunces-latin-wght-normal.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+.plan .price b { font-family: "Fraunces", "Plus Jakarta Sans", Georgia, serif; font-weight: 600; letter-spacing: -.02em; font-optical-sizing: auto; }
+.plan .price b small { font-family: "Plus Jakarta Sans", system-ui, sans-serif; letter-spacing: .06em; }
+.plan .price b { font-size: clamp(1.9rem, 1.55rem + .9vw, 2.35rem); }
