@@ -463,7 +463,7 @@ Recursos adicionais
 
 CTA: Escolher Scale
 
-### Scale Pro (destaque) — 5.099 MZN / mês
+### Scale Pro (destaque) — 4.999 MZN / mês
 - Agentes de IA autônomos
 - Follow-ups automáticos
 - Editor de funis de vendas
@@ -490,7 +490,7 @@ Recursos adicionais
 
 CTA: Escolher Scale Pro
 
-### Scale Agency — 10.499 MZN / mês
+### Scale Agency — 9.999 MZN / mês
 - Agentes de IA autônomos
 - Follow-ups automáticos
 - Editor de funis de vendas
