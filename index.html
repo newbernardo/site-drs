@@ -35,6 +35,22 @@ a{color:var(--acc,#00E5D1);text-decoration:none}a:hover{color:var(--acc3,#00E5D1
 @keyframes eyeglow{0%,100%{opacity:.55}50%{opacity:1}}
 html[data-light] img[data-logo]{content:url(assets/lobo-preto.png)}
 html[data-light] img[data-logo-mark]{content:url(assets/lobo-preto.png)}
+.wn-short{display:none}
+@media (max-width:760px){
+  .wn-links,.wn-enter{display:none!important}
+  .wn-nav{padding:8px 8px 8px 14px!important;gap:10px!important}
+  .wn-logo-text{font-size:18px!important}
+  .wn-logo-img{width:30px!important;height:30px!important}
+  .wn-long{display:none}.wn-short{display:inline}
+  .wn-cta{padding:9px 14px!important;font-size:13px!important}
+  .wn-badge{border-radius:14px!important;letter-spacing:.04em!important}
+  .wn-badge>span:last-child{white-space:normal!important}
+  .wn-bento{grid-template-columns:minmax(0,1fr)!important}
+  .wn-bento>*{grid-column:auto!important;grid-row:auto!important}
+  .wn-cmp{grid-template-columns:minmax(0,1fr)!important}
+  section[style*="padding:120px 24px"]{padding-top:72px!important;padding-bottom:72px!important}
+  .wn-toast{left:8px!important;right:8px!important;min-width:0!important;bottom:-22px!important}
+}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </helmet>
@@ -43,20 +59,20 @@ html[data-light] img[data-logo-mark]{content:url(assets/lobo-preto.png)}
 
 <!-- NAV -->
 <div style="position:sticky;top:0;z-index:50;padding:16px 24px 0;display:flex;justify-content:center">
-  <nav style="width:100%;max-width:1280px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 10px 10px 18px;background:var(--navbg,rgba(var(--on-acc-rgb,10,10,15),.75));backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line,#26262F);border-radius:14px">
+  <nav class="wn-nav" style="width:100%;max-width:1280px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 10px 10px 18px;background:var(--navbg,rgba(var(--on-acc-rgb,10,10,15),.75));backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line,#26262F);border-radius:14px">
     <a href="#top" style="display:flex;align-items:center;gap:10px;white-space:nowrap" style-hover="opacity:.9">
-      <img data-logo="" src="assets/lobo-teal.png" alt="The Wolf Seller" style="width:36px;height:36px;object-fit:contain">
-      <span style="font:700 22px/1 'Plus Jakarta Sans',system-ui,sans-serif;letter-spacing:-.025em;white-space:nowrap;color:var(--text,#F5F5F7)">The <b style="font-weight:700;color:var(--acc,#00E5D1)">Wolf</b> Seller</span>
+      <img class="wn-logo-img" data-logo="" src="assets/lobo-teal.png" alt="The Wolf Seller" style="width:36px;height:36px;object-fit:contain">
+      <span class="wn-logo-text" style="font:700 22px/1 'Plus Jakarta Sans',system-ui,sans-serif;letter-spacing:-.025em;white-space:nowrap;color:var(--text,#F5F5F7)">The <b style="font-weight:700;color:var(--acc,#00E5D1)">Wolf</b> Seller</span>
     </a>
-    <div style="flex:1 1 0;min-width:0;height:22px;overflow:hidden;display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:center">
+    <div class="wn-links" style="flex:1 1 0;min-width:0;height:22px;overflow:hidden;display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:center">
       <a href="#como" style="color:var(--text2,#A0A0B0);font-size:14px;font-weight:500;white-space:nowrap;line-height:22px" style-hover="color:var(--text,#F5F5F7)">Como funciona</a>
       <a href="#casos" style="color:var(--text2,#A0A0B0);font-size:14px;font-weight:500;white-space:nowrap;line-height:22px" style-hover="color:var(--text,#F5F5F7)">Casos de uso</a>
       <a href="#precos" style="color:var(--text2,#A0A0B0);font-size:14px;font-weight:500;white-space:nowrap;line-height:22px" style-hover="color:var(--text,#F5F5F7)">Preços</a>
       <a href="#faq" style="color:var(--text2,#A0A0B0);font-size:14px;font-weight:500;white-space:nowrap;line-height:22px" style-hover="color:var(--text,#F5F5F7)">Perguntas frequentes</a>
     </div>
     <div style="display:flex;align-items:center;gap:8px">
-      <a href="#" style="color:var(--text,#F5F5F7);font-size:14px;font-weight:500;padding:10px 16px;border:1px solid var(--line2,#3A3A48);border-radius:8px;transition:all .2s ease-out" style-hover="background:var(--elev,#1A1A24);color:var(--text,#F5F5F7)">Entrar</a>
-      <a href="#precos" style="background:transparent;color:var(--acc,#00E5D1);font-size:14px;font-weight:600;padding:9px 17px;border-radius:8px;border:1px solid var(--acc,#00E5D1);white-space:nowrap;box-shadow:0 0 16px rgba(var(--acc-rgb,0,229,209),.18);transition:all .2s ease-out" style-hover="background:rgba(var(--acc-rgb,0,229,209),.1);box-shadow:0 0 28px rgba(var(--acc-rgb,0,229,209),.4);color:var(--acc,#00E5D1)">Quero fechar mais vendas</a>
+      <a class="wn-enter" href="#" style="color:var(--text,#F5F5F7);font-size:14px;font-weight:500;padding:10px 16px;border:1px solid var(--line2,#3A3A48);border-radius:8px;transition:all .2s ease-out" style-hover="background:var(--elev,#1A1A24);color:var(--text,#F5F5F7)">Entrar</a>
+      <a class="wn-cta" href="#precos" style="background:transparent;color:var(--acc,#00E5D1);font-size:14px;font-weight:600;padding:9px 17px;border-radius:8px;border:1px solid var(--acc,#00E5D1);white-space:nowrap;box-shadow:0 0 16px rgba(var(--acc-rgb,0,229,209),.18);transition:all .2s ease-out" style-hover="background:rgba(var(--acc-rgb,0,229,209),.1);box-shadow:0 0 28px rgba(var(--acc-rgb,0,229,209),.4);color:var(--acc,#00E5D1)"><span class="wn-long">Quero fechar mais vendas</span><span class="wn-short">Começar</span></a>
     </div>
   </nav>
 </div>
@@ -67,7 +83,7 @@ html[data-light] img[data-logo-mark]{content:url(assets/lobo-preto.png)}
   <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse at 30% 30%,#000 10%,transparent 65%);-webkit-mask-image:radial-gradient(ellipse at 30% 30%,#000 10%,transparent 65%);pointer-events:none"></div>
   <div style="position:relative;width:100%;max-width:1280px;display:flex;flex-wrap:wrap;gap:56px;align-items:center">
     <div style="flex:7 1 560px;min-width:0;display:flex;flex-direction:column;align-items:flex-start">
-      <div data-r="0" style="display:flex;align-items:center;gap:10px;padding:7px 14px 7px 10px;border:1px solid var(--line,#26262F);background:var(--surface,#12121A);border-radius:999px;font:500 12px 'JetBrains Mono',monospace;letter-spacing:.06em;color:var(--text2,#A0A0B0);text-transform:uppercase">
+      <div class="wn-badge" data-r="0" style="display:flex;align-items:center;gap:10px;padding:7px 14px 7px 10px;border:1px solid var(--line,#26262F);background:var(--surface,#12121A);border-radius:999px;font:500 12px 'JetBrains Mono',monospace;letter-spacing:.06em;color:var(--text2,#A0A0B0);text-transform:uppercase">
         <span style="width:8px;height:8px;border-radius:50%;background:var(--ok,#22C55E);animation:livedot 1.6s ease-out infinite"></span>
         <span style="white-space:nowrap">Wolf a vender agora · <span style="color:var(--ice,#FF4D8D)">{{ liveCount }}</span> conversas ativas</span>
       </div>
@@ -85,7 +101,7 @@ html[data-light] img[data-logo-mark]{content:url(assets/lobo-preto.png)}
       <div style="{{ heroTilt }}"><div style="position:relative;background:#0A0A0F;border:1px solid #26262F;border-radius:16px;overflow:hidden;box-shadow:40px 60px 120px rgba(0,0,0,.7),0 0 0 1px rgba(var(--acc-rgb,0,229,209),.06),0 0 80px rgba(var(--acc-rgb,0,229,209),.1)">
         <img src="assets/hero-painel.png" data-hero-img="" alt="Painel The Wolf Seller: lucro líquido estimado, receita total, vendas, taxa de conversão, receita ao longo do tempo e produtos mais vendidos" style="display:block;width:100%;height:auto">
       </div></div>
-      <div ref="{{ toastRef }}" style="position:absolute;left:-36px;bottom:-28px;display:flex;align-items:center;gap:12px;padding:12px 16px 12px 12px;background:var(--surface,#12121A);border:1px solid var(--line2,#3A3A48);border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.6);transition:opacity .25s ease-out,transform .25s ease-out;min-width:270px">
+      <div class="wn-toast" ref="{{ toastRef }}" style="position:absolute;left:-36px;bottom:-28px;display:flex;align-items:center;gap:12px;padding:12px 16px 12px 12px;background:var(--surface,#12121A);border:1px solid var(--line2,#3A3A48);border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.6);transition:opacity .25s ease-out,transform .25s ease-out;min-width:270px">
         <span style="width:34px;height:34px;flex:none;border-radius:50%;background:#000;border:1px solid var(--acc,#00E5D1);box-shadow:0 0 14px rgba(var(--acc-rgb,0,229,209),.5);display:flex;align-items:center;justify-content:center"><img src="assets/lobo-branco.png" alt="" style="width:24px;height:24px;object-fit:contain"></span>
         <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:13px;font-weight:600">{{ toastTitle }}</span><span style="font:500 11px 'JetBrains Mono',monospace;color:var(--ok,#22C55E)">{{ toastMeta }}</span></div>
       </div>
@@ -575,7 +591,7 @@ html[data-light] img[data-logo-mark]{content:url(assets/lobo-preto.png)}
       <span style="font:500 12px 'JetBrains Mono',monospace;letter-spacing:.1em;color:var(--acc,#00E5D1)">COMPARATIVO</span>
       <h2 style="margin:0;font:700 clamp(32px,4vw,48px)/1.05 'Satoshi',sans-serif;letter-spacing:-.03em;max-width:760px;text-wrap:balance">Não se trata apenas de automatizar. Trata-se de ter um sistema.</h2>
     </div>
-    <div data-r="0" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;font-size:15px">
+    <div class="wn-cmp" data-r="0" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;font-size:15px">
       <div style="border:1px solid var(--line,#26262F);border-radius:16px;background:var(--chat,#0F0F15);overflow:hidden">
         <div style="padding:20px 24px;border-bottom:1px solid var(--line,#26262F);font:500 12px 'JetBrains Mono',monospace;letter-spacing:.1em;color:var(--muted,#84849A)">SEM SISTEMA</div>
         <div style="display:flex;gap:12px;padding:16px 24px;border-bottom:1px solid var(--elev,#1A1A24);color:var(--muted,#84849A)"><span>×</span>Atendimento manual</div>
@@ -607,7 +623,7 @@ html[data-light] img[data-logo-mark]{content:url(assets/lobo-preto.png)}
       <div style="flex:7 1 480px;display:flex;flex-direction:column;gap:18px"><span style="font:500 12px 'JetBrains Mono',monospace;letter-spacing:.1em;color:var(--acc,#00E5D1)">O QUE ESTÁ INCLUÍDO</span><h2 style="margin:0;font:700 clamp(32px,4vw,48px)/1.05 'Satoshi',sans-serif;letter-spacing:-.03em;text-wrap:balance">Tudo para colocar o seu processo de vendas no WhatsApp a funcionar.</h2></div>
       <p style="flex:3 1 260px;margin:0;font-size:16px;color:var(--text2,#A0A0B0)">Não é uma ferramenta. <span style="color:var(--text,#F5F5F7)">É um sistema completo de vendas.</span></p>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:minmax(170px,auto);gap:16px">
+    <div class="wn-bento" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:minmax(170px,auto);gap:16px">
       <div data-r="0" style="grid-column:span 2;grid-row:span 2;background:var(--card,#14141C);border:1px solid var(--line,#26262F);border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:14px;overflow:hidden;transition:all .2s ease-out" style-hover="border-color:rgba(var(--acc-rgb,0,229,209),.4);transform:translateY(-2px);box-shadow:0 8px 32px rgba(var(--acc-rgb,0,229,209),.08)">
         <span style="font:500 12px 'JetBrains Mono',monospace;letter-spacing:.1em;color:var(--acc,#00E5D1)">01</span>
         <h3 style="margin:0;font:700 28px/1.15 'Satoshi',sans-serif;letter-spacing:-.02em">Agentes de IA especialistas em vendas</h3>
