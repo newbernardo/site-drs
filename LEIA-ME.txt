@@ -1,0 +1,10 @@
+The Wolf Seller — site estático pronto para a Vercel
+
+1. No GitHub, crie um branch novo (ex.: site-novo).
+2. Apague os ficheiros antigos desse branch e carregue TODO o conteúdo desta pasta para a raiz (Add file → Upload files). Commit.
+3. Na Vercel → Settings → Build & Deployment:
+   Framework Preset: Other · Build Command: (vazio) · Output Directory: . · Install Command: (vazio)
+4. Abra o link de Preview do branch e teste.
+5. Se estiver tudo bem, faça merge para main. Para voltar atrás: Deployments → versão antiga → Promote to Production.
+
+Páginas: / · /privacidade · /termos · /reembolsos

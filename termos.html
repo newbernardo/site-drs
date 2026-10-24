@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@500,700,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/icone-teal-1024.png">
+<title>Termos de Uso — The Wolf Seller</title>
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#0A0A0F;color:#F5F5F7;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#00E5D1;text-decoration:none}a:hover{color:#5EF2E4}
+*{box-sizing:border-box}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#0A0A0F;display:flex;flex-direction:column">
+
+  <div style="position:sticky;top:0;z-index:50;padding:16px 24px 0;display:flex;justify-content:center">
+    <nav style="width:100%;max-width:1280px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 10px 10px 18px;background:rgba(10,10,15,.75);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid #26262F;border-radius:14px">
+      <a href="index.html" style="display:flex;align-items:center;gap:10px;white-space:nowrap">
+        <img src="assets/lobo-teal.png" alt="The Wolf Seller" style="width:36px;height:36px;object-fit:contain">
+        <span style="font:700 22px/1 'Plus Jakarta Sans',system-ui,sans-serif;letter-spacing:-.025em;color:#F5F5F7">The <b style="font-weight:700;color:#00E5D1">Wolf</b> Seller</span>
+      </a>
+      <a href="index.html" style="color:#F5F5F7;font-size:14px;font-weight:500;padding:10px 16px;border:1px solid #3A3A48;border-radius:8px;white-space:nowrap" style-hover="background:#1A1A24;color:#F5F5F7">← Voltar ao site</a>
+    </nav>
+  </div>
+
+  <main style="flex:1;padding:96px 24px 120px;display:flex;justify-content:center">
+    <div style="width:100%;max-width:1080px;display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start">
+
+      <aside data-col="toc" style="{{ asideStyle }}">
+        <span style="font:500 12px 'JetBrains Mono',monospace;letter-spacing:.1em;color:#00E5D1">LEGAL</span>
+        <h1 style="margin:0;font:900 clamp(36px,4.4vw,52px)/1 'Satoshi',sans-serif;letter-spacing:-.035em">Termos de Uso</h1>
+        <span style="font:500 12px 'JetBrains Mono',monospace;letter-spacing:.06em;color:#84849A">ÚLTIMA ATUALIZAÇÃO · 9 OUT 2026</span>
+        <div style="display:flex;flex-direction:column;border-top:1px solid #26262F;margin-top:8px">
+          <a href="#s1" style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #1A1A24;font-size:14px;color:#A0A0B0" style-hover="color:#F5F5F7"><span style="font:500 12px 'JetBrains Mono',monospace;color:#84849A">01</span>Aceitação</a>
+          <a href="#s2" style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #1A1A24;font-size:14px;color:#A0A0B0" style-hover="color:#F5F5F7"><span style="font:500 12px 'JetBrains Mono',monospace;color:#84849A">02</span>O serviço</a>
+          <a href="#s3" style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #1A1A24;font-size:14px;color:#A0A0B0" style-hover="color:#F5F5F7"><span style="font:500 12px 'JetBrains Mono',monospace;color:#84849A">03</span>Conta e acesso</a>
+          <a href="#s4" style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #1A1A24;font-size:14px;color:#A0A0B0" style-hover="color:#F5F5F7"><span style="font:500 12px 'JetBrains Mono',monospace;color:#84849A">04</span>Planos e pagamentos</a>
+          <a href="#s5" style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #1A1A24;font-size:14px;color:#A0A0B0" style-hover="color:#F5F5F7"><span style="font:500 12px 'JetBrains Mono',monospace;color:#84849A">05</span>Teste grátis de 7 dias</a>
+          <a href="#s6" style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #1A1A24;font-size:14px;color:#A0A0B0" style-hover="color:#F5F5F7"><span style="font:500 12px 'JetBrains Mono',monospace;color:#84849A">06</span>Uso aceitável</a>
+          <a href="#s7" style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #1A1A24;font-size:14px;color:#A0A0B0" style-hover="color:#F5F5F7"><span style="font:500 12px 'JetBrains Mono',monospace;color:#84849A">07</span>Os seus conteúdos e dados</a>
+          <a href="#s8" style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #1A1A24;font-size:14px;color:#A0A0B0" style-hover="color:#F5F5F7"><span style="font:500 12px 'JetBrains Mono',monospace;color:#84849A">08</span>Resultados e disponibilidade</a>
+          <a href="#s9" style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #1A1A24;font-size:14px;color:#A0A0B0" style-hover="color:#F5F5F7"><span style="font:500 12px 'JetBrains Mono',monospace;color:#84849A">09</span>Suspensão e cancelamento</a>
+          <a href="#s10" style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #1A1A24;font-size:14px;color:#A0A0B0" style-hover="color:#F5F5F7"><span style="font:500 12px 'JetBrains Mono',monospace;color:#84849A">10</span>Alterações</a>
+          <a href="#s11" style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #1A1A24;font-size:14px;color:#A0A0B0" style-hover="color:#F5F5F7"><span style="font:500 12px 'JetBrains Mono',monospace;color:#84849A">11</span>Lei aplicável e contacto</a>
+        </div>
+      </aside>
+
+      <article style="flex:6 1 480px;min-width:0;display:flex;flex-direction:column;gap:12px">
+        <section id="s1" style="scroll-margin-top:120px;padding:32px;background:#14141C;border:1px solid #26262F;border-radius:16px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#00E5D1">01</span><h2 style="margin:0;font:700 22px/1.25 'Satoshi',sans-serif;letter-spacing:-.015em">Aceitação</h2></div>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#A0A0B0">Ao criar uma conta, subscrever um plano ou usar The Wolf Seller («nós»), concorda com estes Termos. <span style="color:#F5F5F7">Se não concordar, não utilize o serviço.</span></p>
+        </section>
+
+        <section id="s2" style="scroll-margin-top:120px;padding:32px;background:#14141C;border:1px solid #26262F;border-radius:16px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#00E5D1">02</span><h2 style="margin:0;font:700 22px/1.25 'Satoshi',sans-serif;letter-spacing:-.015em">O serviço</h2></div>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#A0A0B0">The Wolf Seller disponibiliza agentes de IA especializados em vendas, funis prontos e automação de atendimento, follow-up, confirmação de pagamento e entrega, para uso através do WhatsApp.</p><p style="margin:0;font-size:15px;line-height:1.7;color:#A0A0B0">As funcionalidades dependem do plano subscrito:</p><div style="display:flex;flex-wrap:wrap;gap:8px"><span style="padding:8px 14px;border:1px solid rgba(0,229,209,.4);background:rgba(0,229,209,.06);border-radius:999px;font-size:14px;color:#F5F5F7">Filhote</span><span style="padding:8px 14px;border:1px solid rgba(0,229,209,.4);background:rgba(0,229,209,.06);border-radius:999px;font-size:14px;color:#F5F5F7">Alfa</span><span style="padding:8px 14px;border:1px solid rgba(0,229,209,.4);background:rgba(0,229,209,.06);border-radius:999px;font-size:14px;color:#F5F5F7">Matilha</span></div>
+        </section>
+
+        <section id="s3" style="scroll-margin-top:120px;padding:32px;background:#14141C;border:1px solid #26262F;border-radius:16px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#00E5D1">03</span><h2 style="margin:0;font:700 22px/1.25 'Satoshi',sans-serif;letter-spacing:-.015em">Conta e acesso</h2></div>
+          <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.6;color:#A0A0B0"><li style="display:flex;gap:12px"><span style="color:#00E5D1;flex:none">—</span>É responsável por manter a confidencialidade das suas credenciais e por toda a atividade realizada na sua conta.</li><li style="display:flex;gap:12px"><span style="color:#00E5D1;flex:none">—</span>Deve fornecer informação verdadeira e mantê-la atualizada.</li><li style="display:flex;gap:12px"><span style="color:#00E5D1;flex:none">—</span>Cada conta destina-se ao negócio que a subscreveu; não pode revender o acesso sem autorização escrita.</li></ul>
+        </section>
+
+        <section id="s4" style="scroll-margin-top:120px;padding:32px;background:#14141C;border:1px solid #26262F;border-radius:16px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#00E5D1">04</span><h2 style="margin:0;font:700 22px/1.25 'Satoshi',sans-serif;letter-spacing:-.015em">Planos e pagamentos</h2></div>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#A0A0B0">Os preços e o que cada plano inclui são os apresentados na <a href="index.html#precos" style="color:#00E5D1">página de planos</a> no momento da subscrição. Os pagamentos são processados por prestadores terceiros.</p><p style="margin:0;padding:14px 16px;border-radius:10px;background:rgba(0,229,209,.07);border:1px solid rgba(0,229,209,.25);font-size:14px;line-height:1.6;color:#F5F5F7">Pode cancelar a renovação a qualquer momento; o cancelamento produz efeito no fim do período já pago.</p>
+        </section>
+
+        <section id="s5" style="scroll-margin-top:120px;padding:32px;background:#14141C;border:1px solid #26262F;border-radius:16px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#00E5D1">05</span><h2 style="margin:0;font:700 22px/1.25 'Satoshi',sans-serif;letter-spacing:-.015em">Teste grátis de 7 dias</h2></div>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#A0A0B0">Os novos subscritores têm <span style="color:#F5F5F7">7 dias grátis</span> para experimentar The Wolf Seller. No fim do período de teste, decide se continua com o plano escolhido. Veja as condições em <a href="reembolsos.html" style="color:#00E5D1">Teste Grátis e Reembolsos</a>.</p>
+        </section>
+
+        <section id="s6" style="scroll-margin-top:120px;padding:32px;background:#14141C;border:1px solid rgba(255,77,141,.35);border-radius:16px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#00E5D1">06</span><h2 style="margin:0;font:700 22px/1.25 'Satoshi',sans-serif;letter-spacing:-.015em">Uso aceitável</h2></div>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#A0A0B0">Compromete-se a usar The Wolf Seller apenas para fins legítimos. É proibido:</p><ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.6;color:#A0A0B0"><li style="display:flex;gap:12px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#FF4D8D;flex:none">×</span>Enviar spam ou mensagens a pessoas que não as esperam ou que pediram para não ser contactadas.</li><li style="display:flex;gap:12px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#FF4D8D;flex:none">×</span>Promover produtos ou serviços ilegais, fraudulentos ou enganosos.</li><li style="display:flex;gap:12px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#FF4D8D;flex:none">×</span>Violar os termos e políticas do WhatsApp/Meta ou de outras plataformas que utilize em conjunto com The Wolf Seller.</li><li style="display:flex;gap:12px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#FF4D8D;flex:none">×</span>Tentar aceder indevidamente aos sistemas, interferir com o seu funcionamento ou contornar limites do plano.</li></ul>
+        </section>
+
+        <section id="s7" style="scroll-margin-top:120px;padding:32px;background:#14141C;border:1px solid #26262F;border-radius:16px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#00E5D1">07</span><h2 style="margin:0;font:700 22px/1.25 'Satoshi',sans-serif;letter-spacing:-.015em">Os seus conteúdos e dados</h2></div>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#A0A0B0"><span style="color:#F5F5F7">Os produtos, textos, ficheiros e dados que carrega continuam a ser seus.</span> Concede-nos apenas a licença necessária para operar o serviço em seu nome. É responsável por ter o direito de usar esses conteúdos e de contactar os seus clientes.</p><p style="margin:0;font-size:15px;line-height:1.7;color:#A0A0B0">O tratamento de dados pessoais está descrito na <a href="privacidade.html" style="color:#00E5D1">Política de Privacidade</a>.</p>
+        </section>
+
+        <section id="s8" style="scroll-margin-top:120px;padding:32px;background:#14141C;border:1px solid #26262F;border-radius:16px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#00E5D1">08</span><h2 style="margin:0;font:700 22px/1.25 'Satoshi',sans-serif;letter-spacing:-.015em">Resultados e disponibilidade</h2></div>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#A0A0B0">The Wolf Seller é uma ferramenta: os resultados de vendas dependem do seu produto, oferta, tráfego e mercado, pelo que não os garantimos.</p><p style="margin:0;font-size:15px;line-height:1.7;color:#A0A0B0">Trabalhamos para manter o serviço disponível, mas podem ocorrer interrupções por manutenção ou por falhas de serviços de terceiros (como o WhatsApp).</p><p style="margin:0;padding:14px 16px;border-radius:10px;background:#0F0F15;border:1px solid #3A3A48;font-size:14px;line-height:1.6;color:#F5F5F7">Na medida permitida pela lei, a nossa responsabilidade limita-se ao valor pago por si nos três meses anteriores ao evento que originou a reclamação.</p>
+        </section>
+
+        <section id="s9" style="scroll-margin-top:120px;padding:32px;background:#14141C;border:1px solid #26262F;border-radius:16px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#00E5D1">09</span><h2 style="margin:0;font:700 22px/1.25 'Satoshi',sans-serif;letter-spacing:-.015em">Suspensão e cancelamento</h2></div>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#A0A0B0">Podemos suspender ou encerrar contas que violem estes Termos, com aviso sempre que possível. Pode encerrar a sua conta a qualquer momento contactando-nos.</p>
+        </section>
+
+        <section id="s10" style="scroll-margin-top:120px;padding:32px;background:#14141C;border:1px solid #26262F;border-radius:16px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#00E5D1">10</span><h2 style="margin:0;font:700 22px/1.25 'Satoshi',sans-serif;letter-spacing:-.015em">Alterações</h2></div>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#A0A0B0">Podemos atualizar estes Termos. Quando as alterações forem relevantes, avisaremos por email ou na plataforma. Continuar a usar The Wolf Seller depois disso implica aceitação da nova versão.</p>
+        </section>
+
+        <section id="s11" style="scroll-margin-top:120px;padding:32px;background:#14141C;border:1px solid #26262F;border-radius:16px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 14px 'JetBrains Mono',monospace;color:#00E5D1">11</span><h2 style="margin:0;font:700 22px/1.25 'Satoshi',sans-serif;letter-spacing:-.015em">Lei aplicável e contacto</h2></div>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#A0A0B0">Estes Termos regem-se pela <span style="color:#F5F5F7">lei de Moçambique</span>. Para qualquer questão, escreva para:</p><a href="mailto:info@thewolfseller.com" style="align-self:flex-start;display:flex;align-items:center;gap:10px;color:#00E5D1;font-size:15px;font-weight:600;padding:12px 20px;border-radius:8px;border:1px solid #00E5D1" style-hover="background:rgba(0,229,209,.1);color:#00E5D1">info@thewolfseller.com <span>→</span></a>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer style="padding:32px 24px;display:flex;justify-content:center;border-top:1px solid #26262F">
+    <div style="width:100%;max-width:1280px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font:500 12px 'JetBrains Mono',monospace;color:#84849A">
+      <span>© 2026 The Wolf Seller. Todos os direitos reservados.</span>
+      <div style="display:flex;gap:20px"><a href="index.html" style="color:#84849A" style-hover="color:#F5F5F7">Início</a><a href="privacidade.html" style="color:#84849A" style-hover="color:#F5F5F7">Privacidade</a><a href="termos.html" style="color:#F5F5F7">Termos</a><a href="reembolsos.html" style="color:#84849A" style-hover="color:#F5F5F7">Reembolsos</a></div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { side: true };
+  componentDidMount() {
+    this.measure = () => {
+      const el = document.querySelector('[data-col="toc"]'), sib = el && el.nextElementSibling;
+      const side = !!(el && sib && sib.getBoundingClientRect().left >= el.getBoundingClientRect().right - 1);
+      if (side !== this.state.side) this.setState({ side });
+    };
+    this.ro = new ResizeObserver(() => this.measure());
+    this.ro.observe(document.documentElement);
+    requestAnimationFrame(this.measure);
+  }
+  componentWillUnmount() { this.ro && this.ro.disconnect(); }
+  renderVals() {
+    return { asideStyle: { flex: '3 1 240px', display: 'flex', flexDirection: 'column', gap: 20, alignSelf: 'flex-start', position: this.state.side ? 'sticky' : 'static', top: 120 } };
+  }
+}
+</script>
+</body>
+</html>
