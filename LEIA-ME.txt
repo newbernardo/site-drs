@@ -8,3 +8,10 @@ The Wolf Seller — site estático pronto para a Vercel
 5. Se estiver tudo bem, faça merge para main. Para voltar atrás: Deployments → versão antiga → Promote to Production.
 
 Páginas: / · /privacidade · /termos · /reembolsos
+
+MODO PRÉ-LANÇAMENTO
+O site está em modo pré-lançamento (secção do canal do WhatsApp + botões dos planos a apontar para o canal).
+Para voltar ao site normal (botões de registo originais, sem a secção do canal), em index.html troque
+  <html data-modo="prelancamento">  por  <html>
+O código original dos botões de registo continua no ficheiro (classe only-live).
+Backup completo da versão anterior: tag git "pre-lancamento-backup".
