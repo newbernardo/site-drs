@@ -2,6 +2,6 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/livro", "destination": "/pagina-de-vendas-livro/index.html" }
+    { "source": "/livro", "destination": "/pagina-de-vendas-livro" }
   ]
 }
