@@ -50,6 +50,9 @@ html[data-modo="prelancamento"] .only-live{display:none!important}
   .wn-badge{border-radius:14px!important;letter-spacing:.04em!important}
   .wn-badge>span:last-child{white-space:normal!important}
   .wn-hero-btns>a{flex:1 1 100%;text-align:center}
+  .wn-hm{width:min(210px,52vw)!important}
+  .wn-bubble{left:auto!important;right:-80px!important;top:6px!important;padding:9px 12px 8px!important}
+  .wn-bubble span:first-child{font-size:14px!important}
   .wn-brain{display:none!important}
   .wn-bento{grid-template-columns:minmax(0,1fr)!important}
   .wn-bento>*{grid-column:auto!important;grid-row:auto!important}
@@ -84,34 +87,57 @@ html[data-modo="prelancamento"] .only-live{display:none!important}
 </div>
 
 <!-- HERO -->
-<section id="top" data-screen-label="01 Hero" style="position:relative;padding:96px 24px 120px;display:flex;justify-content:center">
+<section id="top" data-screen-label="01 Hero" style="position:relative;padding:72px 24px 120px;display:flex;justify-content:center;overflow:hidden">
   <div style="position:absolute;left:50%;top:-260px;width:1400px;height:900px;background:radial-gradient(ellipse 60% 55% at 50% 40%,rgba(var(--acc-rgb,169,139,255),.18),transparent 70%);pointer-events:none;animation:heroPulse 8s ease-in-out infinite alternate"></div>
-  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse at 30% 30%,#000 10%,transparent 65%);-webkit-mask-image:radial-gradient(ellipse at 30% 30%,#000 10%,transparent 65%);pointer-events:none"></div>
-  <div style="position:relative;width:100%;max-width:1280px;display:flex;flex-wrap:wrap;gap:56px;align-items:center">
-    <div style="flex:8 1 560px;min-width:0;display:flex;flex-direction:column;align-items:flex-start">
-      <div class="wn-badge" data-r="0" style="display:flex;align-items:center;gap:10px;padding:7px 14px 7px 10px;border:1px solid var(--line,#2A2635);background:var(--surface,#14131A);border-radius:999px;font:500 12px 'JetBrains Mono',monospace;letter-spacing:.06em;color:var(--text2,#A59DB0);text-transform:uppercase">
-        <span style="width:8px;height:8px;border-radius:50%;background:var(--ok,#22C55E);animation:livedot 1.6s ease-out infinite"></span>
-        <span style="white-space:nowrap">Wolf - Seu vendedor no <span style="color:var(--acc,#A98BFF)">WhatsApp</span></span>
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse at 50% 25%,#000 10%,transparent 65%);-webkit-mask-image:radial-gradient(ellipse at 50% 25%,#000 10%,transparent 65%);pointer-events:none"></div>
+  <div style="position:relative;width:100%;max-width:960px;display:flex;flex-direction:column;align-items:center;text-align:center">
+
+    <div class="wn-badge" data-r="0" style="display:flex;align-items:center;gap:10px;padding:7px 14px 7px 10px;border:1px solid var(--line,#2A2635);background:var(--surface,#14131A);border-radius:999px;font:500 12px 'JetBrains Mono',monospace;letter-spacing:.06em;color:var(--text2,#A59DB0);text-transform:uppercase">
+      <span style="width:8px;height:8px;border-radius:50%;background:var(--ok,#22C55E);animation:livedot 1.6s ease-out infinite"></span>
+      <span style="white-space:nowrap">Wolf - Seu vendedor no <span style="color:var(--acc,#A98BFF)">WhatsApp</span></span>
+    </div>
+
+    <div class="wn-hm" data-r="60" style="position:relative;width:min(300px,64vw);margin-top:36px">
+      <div style="position:absolute;inset:-18% -30% 0;background:radial-gradient(closest-side,rgba(var(--acc-rgb,169,139,255),.32),transparent 72%);pointer-events:none"></div>
+      <img src="assets/wolf-hero.webp" alt="Wolf, o agente de IA vendedor do The Wolf Seller" width="720" height="692" style="position:relative;display:block;width:100%;height:auto;-webkit-mask-image:linear-gradient(#000 68%,transparent 98%);mask-image:linear-gradient(#000 68%,transparent 98%)">
+      <div class="wn-bubble" style="position:absolute;left:calc(100% - 28px);top:34px;display:flex;flex-direction:column;gap:4px;align-items:flex-start;padding:12px 16px 10px;background:var(--elev,#1D1927);border:1px solid var(--line2,#3A3246);border-radius:18px 18px 18px 4px;box-shadow:0 16px 40px rgba(0,0,0,.5);text-align:left;white-space:nowrap">
+        <span style="font:700 18px 'Satoshi',sans-serif;letter-spacing:-.01em">Olá, eu sou o Wolf.</span>
+        <span style="align-self:flex-end;font:500 10px 'JetBrains Mono',monospace;color:var(--acc,#A98BFF);letter-spacing:.04em">agora ✓✓</span>
       </div>
-      <h1 data-r="80" style="margin:28px 0 0;font-family:'Satoshi',sans-serif;font-weight:900;font-size:clamp(36px,4.2vw,60px);line-height:1.1;letter-spacing:-.035em">Tu tratas do produto.<br>O Wolf trata do trabalho<br class="wn-br"> de o vender.</h1>
-      <p data-r="160" style="margin:28px 0 0;max-width:680px;font-size:17px;line-height:1.6;color:var(--text2,#A59DB0);text-wrap:pretty">A falta de experiência em vendas ou dificuldades com as tecnologias não têm de limitar o potencial do teu negócio. Montamos o script e o funil de vendas do seu produto para que comeces a vender sem precisares de aprender técnicas de vendas nem construir automações.</p>
-      <div class="wn-hero-btns" data-r="240" style="display:flex;gap:12px;margin-top:40px;flex-wrap:wrap">
+    </div>
+
+    <h1 data-r="100" style="margin:8px 0 0;font-family:'Satoshi',sans-serif;letter-spacing:-.035em;text-wrap:balance">
+      <span style="display:block;font-weight:700;font-size:clamp(22px,2.8vw,36px);line-height:1.15;color:var(--text2,#A59DB0)">Fui criado para fazer uma única coisa.</span>
+      <span style="display:block;margin-top:10px;font-weight:900;font-size:clamp(34px,5.6vw,80px);line-height:1.02">E faço-a muito bem: <span style="display:inline-block;background:linear-gradient(90deg,var(--acc,#A98BFF),#D9CCFF);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 28px rgba(var(--acc-rgb,169,139,255),.45))">VENDER.</span></span>
+    </h1>
+
+    <p data-r="160" style="margin:28px 0 0;max-width:720px;font-size:18px;line-height:1.65;color:var(--text2,#A59DB0);text-wrap:pretty">Sou um <span style="color:var(--text,#F4F2F7);font-weight:500">agente de Inteligência Artificial especializado em vendas pelo WhatsApp</span>. Assumo cada conversa com os seus clientes, faço a <span style="color:var(--text,#F4F2F7);font-weight:500">qualificação</span>, respondo a <span style="color:var(--text,#F4F2F7);font-weight:500">dúvidas e objeções</span>, desperto o interesse, faço <span style="color:var(--text,#F4F2F7);font-weight:500">follow-ups estratégicos</span> e conduzo cada oportunidade até ao <span style="color:var(--text,#F4F2F7);font-weight:500">fechamento</span>.</p>
+
+    <div data-r="200" style="margin-top:48px;padding-top:36px;border-top:1px solid var(--line,#2A2635);max-width:780px;width:100%;display:flex;flex-direction:column;gap:10px">
+      <span style="font:600 clamp(17px,2vw,22px)/1.3 'Satoshi',sans-serif;color:var(--muted,#8A8296)">Não estou aqui apenas para responder mensagens.</span>
+      <span style="font:800 clamp(24px,3.4vw,40px)/1.15 'Satoshi',sans-serif;letter-spacing:-.025em;text-wrap:balance">Estou aqui para transformar <span style="color:var(--acc,#A98BFF)">conversas em vendas</span> e <span style="color:var(--ice,#F2A04B)">oportunidades em resultados</span>.</span>
+    </div>
+
+    <div data-r="240" style="margin-top:44px;display:flex;flex-direction:column;align-items:center;gap:22px">
+      <span style="font:900 clamp(20px,2.4vw,28px)/1.2 'Satoshi',sans-serif;letter-spacing:-.02em">Eu sou o <span style="color:var(--acc,#A98BFF)">Wolf</span>. E vender é o que faço de melhor.</span>
+      <div class="wn-hero-btns" style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
         <a href="#precos" style="background:var(--acc,#A98BFF);color:var(--on-acc,#0A0912);font-size:16px;font-weight:600;padding:16px 32px;border:1px solid transparent;border-radius:8px;white-space:nowrap;box-shadow:0 0 24px rgba(var(--acc-rgb,169,139,255),.3);transition:all .2s ease-out" style-hover="box-shadow:0 0 40px rgba(var(--acc-rgb,169,139,255),.5);transform:scale(1.02);color:var(--on-acc,#0A0912)">Quero fechar mais vendas</a>
         <a href="#problema" style="white-space:nowrap;color:var(--text,#F4F2F7);font-size:16px;font-weight:600;padding:16px 32px;border-radius:8px;border:1px solid var(--line2,#3A3246);transition:all .2s ease-out" style-hover="background:var(--elev,#1D1927);color:var(--text,#F4F2F7)">Ver o que resolvemos</a>
       </div>
-      <div data-r="300" style="display:flex;gap:20px;margin-top:28px;flex-wrap:wrap;font:500 12px 'JetBrains Mono',monospace;color:var(--muted,#8A8296);letter-spacing:.04em">
-        <span>Pronto para vender em minutos · <span style="color:var(--acc,#A98BFF)">7 dias de teste grátis</span></span>
-      </div>
+      <span style="font:500 12px 'JetBrains Mono',monospace;color:var(--muted,#8A8296);letter-spacing:.04em">Pronto para vender em minutos · <span style="color:var(--acc,#A98BFF)">7 dias de teste grátis</span></span>
     </div>
-    <div data-r="200" style="flex:5 1 400px;min-width:0;max-width:100%;position:relative">
-      <div style="{{ heroTilt }}"><div style="position:relative;background:#0A0912;border:1px solid #2A2635;border-radius:16px;overflow:hidden;box-shadow:40px 60px 120px rgba(0,0,0,.7),0 0 0 1px rgba(var(--acc-rgb,169,139,255),.06),0 0 80px rgba(var(--acc-rgb,169,139,255),.1)">
+
+    <div data-r="200" style="position:relative;width:100%;max-width:1040px;margin-top:84px">
+      <div style="position:absolute;inset:-6% -4% -10%;background:radial-gradient(closest-side,rgba(var(--acc-rgb,169,139,255),.16),transparent 75%);pointer-events:none"></div>
+      <div style="position:relative;background:#0A0912;border:1px solid #2A2635;border-radius:16px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.7),0 0 0 1px rgba(var(--acc-rgb,169,139,255),.06)">
         <img src="assets/hero-painel.png" data-hero-img="" alt="Painel The Wolf Seller: lucro líquido estimado, receita total, vendas, taxa de conversão, receita ao longo do tempo e produtos mais vendidos" style="display:block;width:100%;height:auto">
-      </div></div>
-      <div class="wn-toast" ref="{{ toastRef }}" style="position:absolute;left:-36px;bottom:-28px;display:flex;align-items:center;gap:12px;padding:12px 16px 12px 12px;background:var(--surface,#14131A);border:1px solid var(--line2,#3A3246);border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.6);transition:opacity .25s ease-out,transform .25s ease-out;min-width:270px">
+      </div>
+      <div class="wn-toast" ref="{{ toastRef }}" style="position:absolute;left:-20px;bottom:-28px;display:flex;align-items:center;gap:12px;padding:12px 16px 12px 12px;background:var(--surface,#14131A);border:1px solid var(--line2,#3A3246);border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.6);transition:opacity .25s ease-out,transform .25s ease-out;min-width:270px;text-align:left">
         <span style="width:34px;height:34px;flex:none;border-radius:50%;background:#000;border:1px solid var(--acc,#A98BFF);box-shadow:0 0 14px rgba(var(--acc-rgb,169,139,255),.5);display:flex;align-items:center;justify-content:center"><img src="assets/mascote-cabeca.png" alt="" style="width:30px;height:30px;object-fit:contain"></span>
         <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:13px;font-weight:600">{{ toastTitle }}</span><span style="font:500 11px 'JetBrains Mono',monospace;color:var(--ok,#22C55E)">{{ toastMeta }}</span></div>
       </div>
     </div>
+
   </div>
 </section>
 
