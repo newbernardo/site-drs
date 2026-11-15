@@ -17,7 +17,7 @@ O código original dos botões de registo continua no ficheiro (classe only-live
 Backup completo da versão anterior: tag git "pre-lancamento-backup".
 
 INTERRUPTORES NO <html> (index.html)
-  data-modo="prelancamento"  -> botões dos planos levam ao canal do WhatsApp (apague para os botões de registo).
+  data-modo="prelancamento"  -> (DESLIGADO agora) botões dos planos levam ao canal do WhatsApp. Para voltar a esse modo, acrescente data-modo="prelancamento" em <html>.
   data-teste="off"           -> esconde tudo o que fala do teste grátis (apague para voltar a mostrar).
-  data-embreve="off"         -> esconde a secção "Em breve" do canal e os rótulos "Lançamento em breve" (apague para voltar a mostrar).
+  data-embreve="off"         -> esconde a secção "Em breve" do canal, os rótulos "Lançamento em breve" e os recursos com selo "EM BREVE" (apague para voltar a mostrar).
 Nada foi apagado do código: o conteúdo do teste grátis e do "em breve" continua no ficheiro, só escondido.
