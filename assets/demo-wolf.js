@@ -5,14 +5,6 @@
 
   var OPT_UMIDADE = ['Parte de baixo da parede', 'No teto, quando chove', 'À volta das janelas'];
 
-  var CONTACTS = [
-    { n: 'Nelson', s: 'Podemos marcar a visita sábado de manhã, com a família toda?' },
-    { n: 'Alberto', s: 'Tenho visita disponível quinta às 9:00 ou sábado às 10:00. Qual fica melhor para si?' },
-    { n: 'Ricardo', s: 'Feito! 🛍️ Kit de 2 meses, com entrega em Maputo amanhã. Envio-lhe já os dados de pagamento.' },
-    { n: 'Marta', s: 'Pagamento completo, Marta! ✅ Bem-vinda ao Programa 12 Semanas.' },
-    { n: 'Ana', s: 'Dá, sim. No sábado tenho de manhã às 8:30, 9:00 e 11:00.' }
-  ];
-
   var TABS = [
     {
       name: 'Recepção', niche: 'Imobiliária', who: 'Nelson', stage: 'Recepção', result: 'Respondido em 3 segundos', t0: '22:15',
@@ -144,6 +136,57 @@
     }
   ];
 
+  /* Nichos: cada aba é um nicho; dentro dele, os momentos são conversas diferentes.
+     Os nomes da lista mudam de nicho para nicho. */
+  var NICHES = [
+    {
+      name: 'Imobiliária', convs: [0, 3],
+      list: [
+        { n: 'Celeste', s: 'Obrigada, vou ver as fotos com o meu marido.', t: '21:48' },
+        { n: 'Hélder', s: 'Pode ser terça às 15:00.', t: '19:20' },
+        { n: 'Dulce', s: 'Qual é o valor do condomínio?', t: '17:05' },
+        { n: 'Armando', s: 'Já enviei os documentos para o banco.', t: 'Ontem' }
+      ]
+    },
+    {
+      name: 'Impermeabilização', convs: [1, 2],
+      list: [
+        { n: 'Fátima', s: 'Pode vir na sexta de manhã.', t: '16:12' },
+        { n: 'Joaquim', s: 'Obrigado pelo orçamento, vou ver.', t: '13:40' },
+        { n: 'Lurdes', s: 'A mancha já está maior.', t: '11:02' },
+        { n: 'Sérgio', s: 'Sim, é na laje.', t: 'Ontem' }
+      ]
+    },
+    {
+      name: 'Suplementos capilares', convs: [4, 7, 10],
+      list: [
+        { n: 'Neusa', s: 'Chegou tudo bem, obrigada!', t: '15:22' },
+        { n: 'Tomás', s: 'Qual é o kit mais indicado para mim?', t: '12:48' },
+        { n: 'Cláudia', s: 'Posso pagar quando receber?', t: '10:31' },
+        { n: 'Eduardo', s: 'Quero o de 2 meses.', t: 'Ontem' }
+      ]
+    },
+    {
+      name: 'Emagrecimento', convs: [5, 6, 8],
+      list: [
+        { n: 'Graça', s: 'Já comecei o plano de hoje 😊', t: '18:30' },
+        { n: 'Isabel', s: 'Quanto tempo dura o programa?', t: '14:15' },
+        { n: 'Teresa', s: 'Enviei o comprovativo.', t: '09:58' },
+        { n: 'Lídia', s: 'Perdi 2 kg esta semana!', t: 'Ontem' }
+      ]
+    },
+    {
+      name: 'Clínica dentária', convs: [9],
+      list: [
+        { n: 'Rui', s: 'Confirmado para quinta às 14:00.', t: '17:44' },
+        { n: 'Benilde', s: 'Tem horário para clareamento?', t: '15:09' },
+        { n: 'Paulo', s: 'Obrigado, até amanhã.', t: '11:36' },
+        { n: 'Glória', s: 'Quanto custa a consulta?', t: 'Ontem' }
+      ]
+    }
+  ];
+  var MOMENT_LABEL = ['Recepção', 'Reengajamento', 'Qualificação', 'Qualificação de alto valor', 'Objeção de confiança', '«Quando o salário cair»', '«Vou falar com o meu marido»', 'Encomenda', 'Pagamento', 'Marcação', 'Pós-venda e recompra'];
+
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function h(tag, cls, html) {
@@ -161,42 +204,41 @@
     return ('0' + Math.floor(total / 60)).slice(-2) + ':' + ('0' + (total % 60)).slice(-2);
   }
   var ARROW = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
-  var HOUSE = '<svg viewBox="0 0 24 24" fill="none" stroke="#A59DB0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>';
+  var HOUSE = '<svg viewBox="0 0 24 24" fill="none" stroke="#6F6586" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>';
 
   function init(root) {
-    var active = 0, token = 0, timers = [], played = false;
-    var lastTime = '';
+    var ni = 0, ci = 0, token = 0, timers = [], played = false;
 
     root.innerHTML = '';
     var wd = h('div', 'wd');
 
     var head = h('div', 'wd-head');
-    head.appendChild(h('h2', '', 'Veja o <em>Wolf</em> a vender em cada momento da conversa'));
-    head.appendChild(h('p', '', 'Do primeiro olá à recompra: o que um robô responde mal e uma equipa não consegue fazer a todos, a toda a hora.'));
+    head.appendChild(h('h2', '', 'Uma pequena demonstração do estilo de conversa do <em>Wolf</em>'));
+    head.appendChild(h('p', '', 'Escolha o seu nicho e veja como ele atende: com calma, com contexto e com personalidade, como uma pessoa.'));
     wd.appendChild(head);
 
     var tabs = h('div', 'wd-tabs');
     tabs.setAttribute('role', 'tablist');
-    tabs.setAttribute('aria-label', 'Momentos do funil de vendas');
-    var tabEls = TABS.map(function (t, i) {
-      var b = h('button', 'wd-tab', '<b>' + esc(t.name) + '</b><small>' + esc(t.niche) + '</small>');
+    tabs.setAttribute('aria-label', 'Nichos');
+    var tabEls = NICHES.map(function (n, i) {
+      var b = h('button', 'wd-tab', esc(n.name));
       b.type = 'button';
       b.id = 'wd-tab-' + i;
       b.setAttribute('role', 'tab');
       b.setAttribute('aria-controls', 'wd-panel');
-      b.addEventListener('click', function () { select(i, true); });
+      b.addEventListener('click', function () { selectNiche(i, true); });
       tabs.appendChild(b);
       return b;
     });
     tabs.addEventListener('keydown', function (e) {
-      var k = e.key, n = TABS.length, i = active;
-      if (k === 'ArrowRight' || k === 'ArrowDown') i = (active + 1) % n;
-      else if (k === 'ArrowLeft' || k === 'ArrowUp') i = (active - 1 + n) % n;
+      var k = e.key, n = NICHES.length, i = ni;
+      if (k === 'ArrowRight' || k === 'ArrowDown') i = (ni + 1) % n;
+      else if (k === 'ArrowLeft' || k === 'ArrowUp') i = (ni - 1 + n) % n;
       else if (k === 'Home') i = 0;
       else if (k === 'End') i = n - 1;
       else return;
       e.preventDefault();
-      select(i, true);
+      selectNiche(i, true);
       tabEls[i].focus();
     });
     wd.appendChild(tabs);
@@ -204,28 +246,22 @@
     var frame = h('div', 'wd-frame');
     frame.id = 'wd-panel';
     frame.setAttribute('role', 'tabpanel');
-    var bar = h('div', 'wd-bar',
+    frame.appendChild(h('div', 'wd-bar',
       '<div class="wd-dots" aria-hidden="true"><i></i><i></i><i></i></div>' +
-      '<div class="wd-bar-t"><img src="assets/mascote-cabeca.png" alt="" width="20" height="20"><span>Painel · The Wolf Seller</span></div>' +
-      '<div class="wd-live"><i></i>AO VIVO · EXEMPLO</div>');
-    frame.appendChild(bar);
+      '<div class="wd-bar-t"><img src="assets/mascote-cabeca.png" alt="" width="18" height="18"><span>Painel · The Wolf Seller</span></div>' +
+      '<div class="wd-live"><i></i>EXEMPLO</div>'));
 
     var body = h('div', 'wd-body');
     var list = h('div', 'wd-list');
-    list.appendChild(h('div', 'wd-lab', 'Conversas'));
-    var itemEls = CONTACTS.map(function (c) {
-      var it = h('div', 'wd-item',
-        '<div class="wd-ini" aria-hidden="true">' + esc(c.n.charAt(0)) + '</div>' +
-        '<div class="wd-it"><b>' + esc(c.n) + '</b><span class="s"></span><em>Atendida pelo assistente</em></div>');
-      it.querySelector('.s').textContent = c.s;
-      list.appendChild(it);
-      return it;
-    });
     body.appendChild(list);
 
     var main = h('div', 'wd-main');
     var did = h('div', 'wd-did');
     main.appendChild(did);
+    var moments = h('div', 'wd-moments');
+    moments.setAttribute('role', 'group');
+    moments.setAttribute('aria-label', 'Momentos da conversa');
+    main.appendChild(moments);
     var chead = h('div', 'wd-chead');
     main.appendChild(chead);
     var msgs = h('div', 'wd-msgs');
@@ -241,21 +277,14 @@
     frame.appendChild(body);
     wd.appendChild(frame);
 
-    var cta = h('div', 'wd-cta',
-      '<a class="p" href="#precos">Quero o Wolf a vender no meu WhatsApp</a><a class="s" href="#precos">Ver os planos</a>');
-    wd.appendChild(cta);
+    wd.appendChild(h('div', 'wd-cta',
+      '<a class="p" href="#precos">Quero o Wolf a vender no meu WhatsApp</a><a class="s" href="#precos">Ver os planos</a>'));
     root.appendChild(wd);
 
-    function clearTimers() {
-      timers.forEach(clearTimeout);
-      timers = [];
-    }
-    function later(fn, ms, tk) {
-      timers.push(setTimeout(function () { if (tk === token) fn(); }, ms));
-    }
-    function scrollDown() {
-      msgs.scrollTop = msgs.scrollHeight;
-    }
+    function clearTimers() { timers.forEach(clearTimeout); timers = []; }
+    function later(fn, ms, tk) { timers.push(setTimeout(function () { if (tk === token) fn(); }, ms)); }
+    function scrollDown() { msgs.scrollTop = msgs.scrollHeight; }
+    function conv() { return TABS[NICHES[ni].convs[ci]]; }
 
     function waveform() {
       var s = '', hs = [8, 14, 20, 12, 22, 16, 9, 18, 24, 13, 7, 19, 23, 11, 15, 21, 10, 17, 8, 14];
@@ -294,16 +323,14 @@
       col.appendChild(h('div', 'wd-bub', bubbleHTML(m, time, isWolf)));
       var btns = m.opts || m.btns;
       if (btns) {
-        var g = h('div', 'wd-opts' + (m.btns && m.btns.length < 4 && m.btns !== m.opts ? ' row' : ''));
+        var g = h('div', 'wd-opts' + (m.btns ? ' row' : ''));
         btns.forEach(function (b) { g.appendChild(h('span', 'wd-btn', esc(b))); });
         col.appendChild(g);
       }
       row.appendChild(col);
       if (isWolf) {
         var av = h('img', 'wd-av');
-        av.src = 'assets/mascote-cabeca.png';
-        av.alt = 'Wolf';
-        av.width = 28; av.height = 28;
+        av.src = 'assets/mascote-cabeca.png'; av.alt = 'Wolf'; av.width = 24; av.height = 24;
         row.appendChild(av);
       }
       return row;
@@ -315,15 +342,15 @@
       col.appendChild(h('div', 'wd-bub', '<span>Wolf a escrever…</span><i></i><i></i><i></i>'));
       row.appendChild(col);
       var av = h('img', 'wd-av');
-      av.src = 'assets/mascote-cabeca.png'; av.alt = ''; av.width = 28; av.height = 28;
+      av.src = 'assets/mascote-cabeca.png'; av.alt = ''; av.width = 24; av.height = 24;
       row.appendChild(av);
       return row;
     }
 
-    function renderStatic(i) {
-      var t = TABS[i], time = t.t0;
+    function renderStatic() {
+      var t = conv(), time = t.t0;
       msgs.innerHTML = '';
-      t.m.forEach(function (m, idx) {
+      t.m.forEach(function (m) {
         if (m.k === 's') {
           if (m.set) time = m.set; else if (m.add) time = addMin(time, m.add);
           msgs.appendChild(buildRow(m, time));
@@ -333,13 +360,13 @@
         }
       });
       msgs.querySelectorAll('.wd-row').forEach(function (r) { r.style.animation = 'none'; });
-      scrollDown();
+      msgs.scrollTop = 0;
     }
 
-    function play(i) {
+    function play() {
       var tk = ++token;
       clearTimers();
-      var t = TABS[i], time = t.t0, idx = 0;
+      var t = conv(), time = t.t0, idx = 0;
       msgs.innerHTML = '';
       msgs.scrollTop = 0;
       function next() {
@@ -352,8 +379,7 @@
           later(next, 450, tk);
           return;
         }
-        var isWolf = m.k === 'w';
-        var len = (m.t || '').length;
+        var isWolf = m.k === 'w', len = (m.t || '').length;
         if (isWolf) {
           var ty = typingRow();
           msgs.appendChild(ty);
@@ -384,51 +410,73 @@
       return '';
     }
 
-    function fill(i) {
-      var t = TABS[i];
+    function fillNiche() {
+      var n = NICHES[ni];
       tabEls.forEach(function (b, j) {
-        var on = j === i;
+        var on = j === ni;
         b.setAttribute('aria-selected', on ? 'true' : 'false');
         b.tabIndex = on ? 0 : -1;
       });
-      frame.setAttribute('aria-labelledby', 'wd-tab-' + i);
-      CONTACTS.forEach(function (c, j) {
-        var on = c.n === t.who;
-        itemEls[j].classList.toggle('on', on);
-        itemEls[j].querySelector('.s').textContent = on ? lastWolfText(t) : c.s;
+      frame.setAttribute('aria-labelledby', 'wd-tab-' + ni);
+      moments.innerHTML = '';
+      moments.style.display = n.convs.length > 1 ? '' : 'none';
+      n.convs.forEach(function (idx, j) {
+        var b = h('button', 'wd-m', esc(MOMENT_LABEL[idx]));
+        b.type = 'button';
+        b.addEventListener('click', function () { selectConv(j, true); });
+        moments.appendChild(b);
+      });
+    }
+
+    function fillConv() {
+      var t = conv(), n = NICHES[ni];
+      Array.prototype.forEach.call(moments.children, function (b, j) {
+        b.setAttribute('aria-pressed', j === ci ? 'true' : 'false');
+      });
+      list.innerHTML = '';
+      list.appendChild(h('div', 'wd-lab', 'Conversas'));
+      var rows = [{ n: t.who, s: lastWolfText(t), t: t.t0, on: true }].concat(n.list);
+      rows.forEach(function (c) {
+        var it = h('div', 'wd-item' + (c.on ? ' on' : ''),
+          '<div class="wd-ini" aria-hidden="true">' + esc(c.n.charAt(0)) + '</div>' +
+          '<div class="wd-it"><div class="top"><b>' + esc(c.n) + '</b><time>' + esc(c.t) + '</time></div><span class="s"></span><em>Atendida pelo assistente</em></div>');
+        it.querySelector('.s').textContent = c.s;
+        list.appendChild(it);
       });
       did.innerHTML = '<b>O que o Wolf fez aqui:</b> ' + esc(t.did);
       chead.innerHTML = '<div class="wd-ini" aria-hidden="true">' + esc(t.who.charAt(0)) + '</div><b>' + esc(t.who) + '</b><span>WHATSAPP</span>';
       card.innerHTML =
-        '<div class="wd-lab" style="padding:0">Ficha do cliente</div>' +
+        '<div class="wd-lab">Ficha do cliente</div>' +
         '<div class="wd-who"><div class="wd-ini" aria-hidden="true">' + esc(t.who.charAt(0)) + '</div><div><b>' + esc(t.who) + '</b><span>Cliente · WhatsApp</span></div></div>' +
         '<span class="wd-stage">' + esc(t.stage) + '</span>' +
         (t.result ? '<div class="wd-res"><small>Resultado</small><strong>' + esc(t.result) + '</strong></div>' : '') +
-        '<div class="wd-kv"><div><span>Canal</span><b>WhatsApp</b></div><div><span>Atendido por</span><b>Wolf</b></div><div><span>Mensagens</span><b>' + t.m.filter(function (m) { return m.k !== 's'; }).length + '</b></div></div>';
+        '<div class="wd-kv"><div><span>Nicho</span><b>' + esc(n.name) + '</b></div><div><span>Atendido por</span><b>Wolf</b></div></div>';
     }
 
-    function select(i, user) {
-      active = i;
-      fill(i);
-      if (reduce) { renderStatic(i); return; }
+    function show(user) {
+      fillConv();
+      if (reduce) { renderStatic(); return; }
       if (user) played = true;
-      if (played) play(i); else renderStatic(i);
+      if (played) play(); else renderStatic();
     }
+    function selectNiche(i, user) { ni = i; ci = 0; fillNiche(); show(user); }
+    function selectConv(j, user) { ci = j; show(user); }
 
-    select(0, false);
+    fillNiche();
+    show(false);
 
     if (!reduce && 'IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (es) {
         if (es[0].isIntersecting && !played) {
           played = true;
-          play(active);
+          play();
           io.disconnect();
         }
       }, { threshold: 0.3 });
       io.observe(frame);
     } else if (!reduce) {
       played = true;
-      play(active);
+      play();
     }
   }
 
