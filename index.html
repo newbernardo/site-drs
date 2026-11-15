@@ -55,7 +55,6 @@ html[data-modo="prelancamento"] .only-live{display:none!important}
   .wn-hm{width:min(210px,52vw)!important}
   .wn-bubble{left:auto!important;right:-80px!important;top:6px!important;padding:9px 12px 8px!important}
   .wn-bubble span:first-child{font-size:14px!important}
-  .wn-brain{display:none!important}
   .wn-bento{grid-template-columns:minmax(0,1fr)!important}
   .wn-bento>*{grid-column:auto!important;grid-row:auto!important}
   .wn-cmp{grid-template-columns:minmax(0,1fr)!important}
@@ -247,29 +246,6 @@ html[data-modo="prelancamento"] .only-live{display:none!important}
       <div data-r="200" style="display:grid;grid-template-columns:96px 1fr;gap:24px;padding:28px 0;border-bottom:1px solid rgba(var(--on-acc-rgb,10,9,18),.25)"><span style="font:700 48px/1 'JetBrains Mono',monospace;letter-spacing:-.04em">03</span><div style="display:flex;flex-direction:column;gap:8px"><h3 style="margin:0;font:700 24px/1.2 'Satoshi',sans-serif;letter-spacing:-.02em">É um caçador que não desiste da venda, nem se esquece de um cliente</h3><p style="margin:0;font-size:16px;line-height:1.6;color:rgba(var(--on-acc-rgb,10,9,18),.78)">Faz follow-up de quem desapareceu e acompanha cada pedido, do pagamento à entrega, com o estado atualizado no painel.</p><span style="align-self:flex-start;display:flex;gap:8px;align-items:center;margin-top:4px;padding:6px 12px;border:1px solid rgba(var(--on-acc-rgb,10,9,18),.35);border-radius:999px;font:500 12px 'JetBrains Mono',monospace;letter-spacing:.04em">✓ Usa API Oficial do WhatsApp — o seu número não bloqueia.</span></div></div>
       <p data-r="0" style="margin:28px 0 0;font:700 18px 'Satoshi',sans-serif">Da primeira mensagem à venda realizada — sem depender de você.</p>
     </div>
-  </div>
-</section>
-
-<!-- WOLF BRAIN -->
-<section class="wn-brain" id="wolf-brain" data-screen-label="05b Wolf Brain" style="padding:120px 24px;display:flex;justify-content:center;background:var(--bg,#0A0912)">
-  <div style="width:100%;max-width:1280px;display:flex;flex-direction:column;gap:48px">
-    <div data-r="0" style="display:flex;flex-wrap:wrap;gap:24px 56px;align-items:flex-end;justify-content:space-between">
-      <div style="flex:7 1 480px;display:flex;flex-direction:column;gap:18px">
-        <span style="font:500 12px 'JetBrains Mono',monospace;letter-spacing:.1em;color:var(--acc,#A98BFF)">WOLF BRAIN</span>
-        <h2 style="margin:0;font:700 clamp(32px,4vw,48px)/1.05 'Satoshi',sans-serif;letter-spacing:-.03em;text-wrap:balance">O processo por trás do Agente de vendas <i><span style="font-style: normal; font-size: clamp(32px, 4vw, 48px); letter-spacing: -0.03em; text-wrap-mode: initial;">Wolf.</span></i></h2>
-      </div>
-      <p style="flex:4 1 300px;margin:0;font-size:17px;line-height:1.6;color:var(--text2,#A59DB0)">Visão panorâmica do caminho percorrido pelos seus leads até virarem clientes.</p>
-    </div>
-    <div data-r="100"><div style="padding:6px;border-radius:22px;background:var(--surface,#14131A);border:1px solid var(--line,#2A2635);box-shadow:0 40px 100px rgba(0,0,0,.45),0 0 80px rgba(var(--acc-rgb,169,139,255),.08)"><div style="border:1px solid rgba(var(--acc-rgb,169,139,255),.22);border-radius:16px;overflow:hidden;background:#0A0912">
-      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;border-bottom:1px solid #2A2635;background:#14131A">
-        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><img src="assets/mascote-cabeca.png" alt="" style="width:22px;height:22px;object-fit:contain"><span style="font:700 14px 'Plus Jakarta Sans',sans-serif;letter-spacing:-.02em;color:#F4F2F7">Wolf Brain</span><span style="font:500 11px 'JetBrains Mono',monospace;letter-spacing:.06em;color:#8A8296">{{ wbHint }}</span></div>
-        <span style="display:flex;align-items:center;gap:8px;font:500 11px 'JetBrains Mono',monospace;letter-spacing:.08em;color:#22C55E"><span style="width:7px;height:7px;border-radius:50%;background:#22C55E;animation:livedot 1.6s ease-out infinite"></span>AO VIVO · SIMULAÇÃO</span>
-      </div>
-      <div style="{{ wbBox }}">
-        <img src="assets/wolf-brain-fundo.png" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none">
-        <iframe src="https://app.thewolfseller.com/demo/wolf-brain" title="Wolf Brain — demonstração interativa do funil de vendas" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0;background:#0A0912"></iframe>
-      </div>
-    </div></div></div>
   </div>
 </section>
 
@@ -1024,14 +1000,12 @@ class Component extends DCLogic {
       heroTilt: this.state.narrow
         ? { position: 'relative' }
         : { position: 'relative', transform: 'perspective(1400px) rotateY(-6deg) rotateX(2deg)', transformOrigin: '100% 50%' },
-      wbBox: { position: 'relative', width: '100%', aspectRatio: this.state.phone ? '4 / 5' : '16 / 10', maxHeight: '85vh', overflow: 'hidden', background: '#0A0912' },
-      wbHint: this.state.phone ? '· TOQUE NUM CARTÃO PARA APROXIMAR' : '· CLIQUE NUM CARTÃO PARA APROXIMAR · ARRASTE PARA MOVER',
       faqs: this.faqData.map(([q, a], i) => { const open = (this.state.faqIdx ?? 0) === i; return { q, a, open, toggle: () => this.setState({ faqIdx: open ? -1 : i }), icon: { flex: 'none', width: 32, height: 32, borderRadius: '50%', border: '1px solid ' + (open ? 'var(--acc)' : 'var(--line2)'), color: open ? 'var(--acc)' : 'var(--text)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'JetBrains Mono',monospace", fontSize: 18, transform: open ? 'rotate(45deg)' : 'none', transition: 'all .2s ease-out' } }; }),
       objs: this.objData.map(([q], i) => { const on = (this.state.objIdx ?? 0) === i; return { q, pick: () => this.setState({ objIdx: i }), style: { textAlign: 'left', padding: '18px 22px', borderRadius: 12, cursor: 'pointer', font: "600 16px/1.4 'Satoshi',sans-serif", transition: 'all .2s ease-out', background: on ? 'rgba(var(--acc-rgb),.1)' : 'var(--card)', border: '1px solid ' + (on ? 'rgba(var(--acc-rgb),.5)' : 'var(--line)'), borderLeft: '3px solid ' + (on ? 'var(--acc)' : 'transparent'), color: on ? 'var(--text)' : 'var(--text2)' } }; }),
       objA: this.objData[this.state.objIdx ?? 0][1],
       faqLeft: { flex: '4 1 340px', display: 'flex', flexDirection: 'column', gap: 18, alignSelf: 'flex-start', position: this.state.faqSide ? 'sticky' : 'static', top: 120 },
       comoLeft: { flex: '4 1 340px', display: 'flex', flexDirection: 'column', gap: 18, alignSelf: 'flex-start', position: this.state.comoSide ? 'sticky' : 'static', top: 120 },
-      wbFrame: { position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0, background: '#0A0912', opacity: this.state.wbOk ? 1 : 0, transition: 'opacity .4s ease-out' },
+
       swatches, paletteName: cur.toUpperCase(),
       setDark: () => this.setState({ light: false }), setLight: () => this.setState({ light: true }),
       darkBtn: { padding: '5px 10px', border: 0, borderRadius: '999px', cursor: 'pointer', font: "500 10px 'JetBrains Mono',monospace", letterSpacing: '.08em', background: this.isLight() ? 'transparent' : 'var(--text)', color: this.isLight() ? 'var(--text2)' : 'var(--bg)' },
