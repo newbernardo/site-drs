@@ -19,7 +19,7 @@
       name: 'Reengajamento', niche: 'Impermeabilização', who: 'Alberto', stage: 'Recepção → Qualificação', result: '', t0: '14:02',
       did: 'o cliente parou a meio; 10 minutos depois o Wolf voltou com uma pergunta de um toque.',
       m: [
-        { k: 'w', t: 'Alberto, a humidade aparece mais onde?', opts: OPT_UMIDADE },
+        { k: 'w', t: 'Alberto, poderia me dizer onde a humidade aparece mais?', opts: OPT_UMIDADE },
         { k: 's', t: '10 minutos sem resposta', add: 10 },
         { k: 'w', t: 'Alberto, sei que o dia é corrido. Para eu lhe dizer se o seu caso se resolve por dentro ou por fora, basta tocar numa opção:', btns: ['Como funciona?', 'Serve para mim?'] },
         { k: 'c', t: 'Serve para mim?' },
