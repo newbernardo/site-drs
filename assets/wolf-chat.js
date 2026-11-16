@@ -41,7 +41,7 @@
     return e;
   }
 
-  var panel = null, msgs, input, sendBtn, waLink, chips, trigger = null;
+  var panel = null, backdrop = null, msgs, input, sendBtn, waLink, chips, trigger = null;
   var history = [], lastQuestion = '', busy = false, isOpen = false;
 
   function waHref() {
@@ -192,6 +192,9 @@
     wa.appendChild(h('small', '', 'Não encontrou a resposta? A nossa equipa atende-o no WhatsApp.'));
     panel.appendChild(wa);
 
+    backdrop = h('div', 'wc-backdrop');
+    backdrop.addEventListener('click', close);
+    document.body.appendChild(backdrop);
     document.body.appendChild(panel);
   }
 
@@ -199,6 +202,7 @@
     if (!panel) build();
     isOpen = true;
     panel.classList.add('open');
+    if (backdrop) backdrop.classList.add('open');
     if (trigger) {
       trigger.classList.add('open');
       trigger.setAttribute('aria-expanded', 'true');
@@ -212,6 +216,7 @@
     if (!panel) return;
     isOpen = false;
     panel.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
     if (trigger) {
       trigger.classList.remove('open');
       trigger.setAttribute('aria-expanded', 'false');
