@@ -1,6 +1,6 @@
 /* Chat do Wolf no site.
    O botão flutuante do WhatsApp (a.wn-wa) abre este pop-up em vez de ir direto para o WhatsApp.
-   Duas camadas: (1) o Wolf responde a perguntas; (2) o botão "Preciso de falar com alguém" leva ao WhatsApp.
+   Duas camadas: (1) o Wolf responde a perguntas; (2) o botão "Falar com alguém" leva ao WhatsApp.
 
    LIGAÇÃO À BASE DE CONHECIMENTO (fica para depois):
    - A chave de API NUNCA vai para este ficheiro. Ela fica num servidor (por exemplo uma função /api/chat na Vercel),
@@ -58,7 +58,7 @@
     b.textContent = text;
     col.appendChild(b);
     if (handoff) {
-      var a = h('a', 'wc-inline-wa', WA_ICON + '<span>Preciso de falar com alguém</span>');
+      var a = h('a', 'wc-inline-wa', WA_ICON + '<span>Falar com alguém</span>');
       a.href = waHref();
       a.target = '_blank';
       a.rel = 'noopener';
@@ -184,7 +184,7 @@
     panel.appendChild(form);
 
     var wa = h('div', 'wc-wa');
-    waLink = h('a', '', WA_ICON + '<span>Preciso de falar com alguém</span>');
+    waLink = h('a', '', WA_ICON + '<span>Falar com alguém</span>');
     waLink.href = waHref();
     waLink.target = '_blank';
     waLink.rel = 'noopener';

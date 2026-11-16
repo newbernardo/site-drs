@@ -31,4 +31,4 @@ CHAT DO WOLF (pop-up do botão do WhatsApp)
     WOLF_AI_MODEL     (opcional) para trocar o modelo sem mexer no código.
     KV_REST_API_URL e KV_REST_API_TOKEN (opcionais, recomendadas): contadores partilhados dos limites (Upstash/Vercel KV).
   Limites por visitante: 6 perguntas por minuto, 20 por hora, 40 por dia; teto global de 3.000 por dia; 500 caracteres por pergunta.
-  Quando o Wolf não sabe responder, ou há limite/erro, o chat mostra o botão "Preciso de falar com alguém" (WhatsApp).
+  Quando o Wolf não sabe responder, ou há limite/erro, o chat mostra o botão "Falar com alguém" (WhatsApp).
