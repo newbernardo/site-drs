@@ -214,8 +214,6 @@
       a.setAttribute('data-wc', '1');
       a.setAttribute('aria-expanded', 'false');
       a.setAttribute('aria-label', 'Abrir o chat com o Wolf');
-      var tip = a.querySelector('.tip');
-      if (tip) tip.textContent = 'Fale com o Wolf';
       trigger = a;
     }
   }
