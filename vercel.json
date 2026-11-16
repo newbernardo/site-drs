@@ -2,6 +2,14 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/livro", "destination": "/pagina-de-vendas-livro" }
-  ]
+    {
+      "source": "/livro",
+      "destination": "/pagina-de-vendas-livro"
+    }
+  ],
+  "functions": {
+    "api/chat.js": {
+      "includeFiles": "knowledge/**"
+    }
+  }
 }

@@ -28,6 +28,8 @@
 .wc-msgs{display:flex;flex-direction:column;gap:8px;padding:16px;height:300px;max-height:calc(100dvh - 330px);min-height:180px;overflow-y:auto;background:var(--chat,#0F0E16);scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:var(--line2,#3A3246) transparent}
 .wc-row{display:flex;animation:wcIn .25s ease-out both}
 .wc-row.w{justify-content:flex-start}.wc-row.u{justify-content:flex-end}
+.wc-col{display:flex;flex-direction:column;gap:6px;max-width:86%;min-width:0}
+.wc-col .wc-b{max-width:100%}
 .wc-b{max-width:86%;padding:10px 14px;font-size:14.5px;line-height:1.5;white-space:pre-line;overflow-wrap:anywhere}
 .wc-row.w .wc-b{background:var(--bubble,#181624);border:1px solid var(--line,#2A2635);border-left:2px solid var(--acc,#A98BFF);border-radius:14px 14px 14px 4px}
 .wc-row.u .wc-b{background:var(--acc,#A98BFF);color:var(--on-acc,#0A0912);border-radius:14px 14px 4px 14px;font-weight:500}
@@ -38,6 +40,12 @@
 .wc-chip{appearance:none;-webkit-appearance:none;cursor:pointer;font:500 13px/1.2 'Inter',sans-serif;color:var(--acc,#A98BFF);background:transparent;border:1px solid rgba(var(--acc-rgb,169,139,255),.45);border-radius:999px;padding:8px 12px;transition:background .2s ease-out}
 .wc-chip:hover{background:rgba(var(--acc-rgb,169,139,255),.12)}
 .wc-chip:focus-visible{outline:2px solid var(--acc,#A98BFF);outline-offset:2px}
+
+/* botão do WhatsApp dentro da conversa */
+.wc-inline-wa{display:flex;align-items:center;justify-content:center;gap:10px;padding:12px 14px;border-radius:12px;background:#25D366;color:#fff;font:600 14px 'Inter',sans-serif;transition:transform .2s ease-out,box-shadow .2s ease-out}
+.wc-inline-wa:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(37,211,102,.35)}
+.wc-inline-wa:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.wc-inline-wa svg{width:20px;height:20px;flex:none}
 
 /* campo de pergunta */
 .wc-form{display:flex;gap:8px;padding:12px 14px;border-top:1px solid var(--line,#2A2635);background:var(--surface,#14131A)}

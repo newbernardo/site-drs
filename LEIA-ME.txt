@@ -21,3 +21,14 @@ INTERRUPTORES NO <html> (index.html)
   data-teste="off"           -> esconde tudo o que fala do teste grátis (apague para voltar a mostrar).
   data-embreve="off"         -> esconde a secção "Em breve" do canal, os rótulos "Lançamento em breve" e os recursos com selo "EM BREVE" (apague para voltar a mostrar).
 Nada foi apagado do código: o conteúdo do teste grátis e do "em breve" continua no ficheiro, só escondido.
+
+CHAT DO WOLF (pop-up do botão do WhatsApp)
+  api/chat.js          função da Vercel que consulta a IA (OpenAI, modelo gpt-6-luna). Não tem chave no código.
+  knowledge/base.md    base de conhecimento do Wolf do site. Edite este ficheiro para mudar o que ele sabe e publique.
+  assets/wolf-chat.js  pop-up (parte visual). CONFIG no topo: endpoint, textos, limite por sessão.
+  Variáveis na Vercel (Settings > Environment Variables):
+    WOLF_AI_API_KEY   (obrigatória) chave da OpenAI. Ative em Production e Preview.
+    WOLF_AI_MODEL     (opcional) para trocar o modelo sem mexer no código.
+    KV_REST_API_URL e KV_REST_API_TOKEN (opcionais, recomendadas): contadores partilhados dos limites (Upstash/Vercel KV).
+  Limites por visitante: 6 perguntas por minuto, 20 por hora, 40 por dia; teto global de 3.000 por dia; 500 caracteres por pergunta.
+  Quando o Wolf não sabe responder, ou há limite/erro, o chat mostra o botão "Preciso de falar com alguém" (WhatsApp).

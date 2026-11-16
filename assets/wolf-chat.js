@@ -5,24 +5,27 @@
    LIGAÇÃO À BASE DE CONHECIMENTO (fica para depois):
    - A chave de API NUNCA vai para este ficheiro. Ela fica num servidor (por exemplo uma função /api/chat na Vercel),
      que recebe a pergunta, consulta a base de conhecimento e devolve a resposta.
-   - Para ligar: preencha CONFIG.endpoint com o endereço desse servidor, por exemplo '/api/chat'.
-   - Contrato esperado:
+   - O servidor é api/chat.js; a chave está na variável WOLF_AI_API_KEY da Vercel e a base de conhecimento em knowledge/base.md.
+   - Contrato:
        pedido   POST  { "message": "texto da pergunta", "history": [ { "role": "user"|"assistant", "content": "..." } ] }
-       resposta 200   { "reply": "texto da resposta" }
-     Qualquer outro resultado (erro, tempo esgotado) mostra a mensagem de falha e sugere o WhatsApp.
-   - Enquanto CONFIG.endpoint estiver vazio, o chat funciona em modo de demonstração (resposta fixa). */
+       resposta 200   { "reply": "texto da resposta", "handoff": true|false }   (handoff: mostra o botão do WhatsApp no chat)
+       resposta 429   { "reply": "...", "handoff": true, "limited": true }      (limite de perguntas atingido)
+     Qualquer outro resultado (erro, tempo esgotado) mostra a mensagem de falha com o botão do WhatsApp.
+   - Se CONFIG.endpoint ficar vazio, o chat funciona em modo de demonstração (resposta fixa). */
 (function () {
   'use strict';
 
   var CONFIG = {
-    endpoint: '',                       // ex.: '/api/chat'
+    endpoint: '/api/chat',              // deixe '' para o modo de demonstração
     timeoutMs: 20000,
     whatsapp: '258820983752',
     whatsappBase: 'Venho do site quero esclarecer uma dúvida',
     greeting: 'Olá! Eu sou o Wolf. 🐺\nPode fazer qualquer pergunta: estou aqui pronto para responder.',
     suggestions: ['Quanto custa?', 'Como funciona?', 'Funciona para o meu nicho?'],
-    demoReply: 'Estou quase pronto para responder a tudo. Por agora, a nossa equipa responde-lhe no WhatsApp: toque em «Preciso de falar com alguém».',
-    failReply: 'Não consegui responder agora. Pode tentar de novo, ou falar com a nossa equipa no WhatsApp: toque em «Preciso de falar com alguém».',
+    demoReply: 'Estou quase pronto para responder a tudo. Por agora, a nossa equipa responde-lhe no WhatsApp: toque no botão abaixo.',
+    failReply: 'Não consegui responder agora. Para não o deixar sem resposta, fale diretamente com um agente da nossa equipa: toque no botão abaixo e atendemos no WhatsApp.',
+    limitReply: 'Já respondi a várias perguntas por agora. Para continuar, fale diretamente com um agente da nossa equipa: toque no botão abaixo e atendemos no WhatsApp.',
+    maxPerSession: 20,                  // limite do lado do visitante (o servidor tem os seus próprios limites)
     maxLen: 500
   };
 
@@ -48,11 +51,20 @@
 
   function scrollDown() { msgs.scrollTop = msgs.scrollHeight; }
 
-  function addMsg(role, text) {
+  function addMsg(role, text, handoff) {
     var row = h('div', 'wc-row ' + (role === 'user' ? 'u' : 'w'));
+    var col = h('div', 'wc-col');
     var b = h('div', 'wc-b');
     b.textContent = text;
-    row.appendChild(b);
+    col.appendChild(b);
+    if (handoff) {
+      var a = h('a', 'wc-inline-wa', WA_ICON + '<span>Preciso de falar com alguém</span>');
+      a.href = waHref();
+      a.target = '_blank';
+      a.rel = 'noopener';
+      col.appendChild(a);
+    }
+    row.appendChild(col);
     msgs.appendChild(row);
     scrollDown();
     return row;
@@ -67,10 +79,10 @@
     return row;
   }
 
-  // Ponto único de ligação: devolve uma Promise com o texto da resposta.
+  // Ponto único de ligação: devolve uma Promise com { reply, handoff }.
   function askWolf(question) {
     if (!CONFIG.endpoint) {
-      return new Promise(function (resolve) { setTimeout(function () { resolve(CONFIG.demoReply); }, reduce ? 0 : 700); });
+      return new Promise(function (resolve) { setTimeout(function () { resolve({ reply: CONFIG.demoReply, handoff: true }); }, reduce ? 0 : 700); });
     }
     var ctl = ('AbortController' in window) ? new AbortController() : null;
     var timer = setTimeout(function () { if (ctl) ctl.abort(); }, CONFIG.timeoutMs);
@@ -81,29 +93,42 @@
       signal: ctl ? ctl.signal : undefined
     }).then(function (r) {
       clearTimeout(timer);
-      if (!r.ok) throw new Error('http ' + r.status);
-      return r.json();
-    }).then(function (d) {
-      if (!d || typeof d.reply !== 'string' || !d.reply.trim()) throw new Error('resposta vazia');
-      return d.reply.trim();
+      return r.json().then(function (d) {
+        if (!r.ok && r.status !== 429) throw new Error('http ' + r.status);
+        if (!d || typeof d.reply !== 'string' || !d.reply.trim()) throw new Error('resposta vazia');
+        return { reply: d.reply.trim(), handoff: !!d.handoff };
+      });
     });
+  }
+
+  function sessionCount() {
+    try { return parseInt(sessionStorage.getItem('wolfChatN') || '0', 10) || 0; } catch (e) { return 0; }
+  }
+  function sessionBump() {
+    try { sessionStorage.setItem('wolfChatN', String(sessionCount() + 1)); } catch (e) { /* ignora */ }
   }
 
   function send(text) {
     text = (text || '').trim().slice(0, CONFIG.maxLen);
     if (!text || busy) return;
-    busy = true;
-    sendBtn.disabled = true;
     if (chips && chips.parentNode) chips.parentNode.removeChild(chips);
     addMsg('user', text);
     lastQuestion = text;
     waLink.href = waHref();
     input.value = '';
+    if (CONFIG.endpoint && sessionCount() >= CONFIG.maxPerSession) {
+      addMsg('assistant', CONFIG.limitReply, true);
+      sendBtn.disabled = true;
+      return;
+    }
+    busy = true;
+    sendBtn.disabled = true;
+    sessionBump();
     var ty = typing();
-    askWolf(text).then(function (reply) { return reply; }, function () { return CONFIG.failReply; }).then(function (reply) {
+    askWolf(text).then(function (r) { return r; }, function () { return { reply: CONFIG.failReply, handoff: true }; }).then(function (r) {
       if (ty.parentNode) ty.parentNode.removeChild(ty);
-      addMsg('assistant', reply);
-      history.push({ role: 'user', content: text }, { role: 'assistant', content: reply });
+      addMsg('assistant', r.reply, r.handoff);
+      history.push({ role: 'user', content: text }, { role: 'assistant', content: r.reply });
       busy = false;
       sendBtn.disabled = !input.value.trim();
       input.focus();
