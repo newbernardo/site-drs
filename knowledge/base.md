@@ -40,6 +40,90 @@ Pode vender produtos digitais (e-books, cursos, mentorias), produtos físicos (c
 - Funciona com o número de WhatsApp do negócio. É possível ter mais do que um número (depende do plano).
 - Risco de banimento: a configuração está preparada para escalar e evitar os problemas que causam bloqueios, mas o cumprimento das políticas do WhatsApp continua a ser essencial.
 
+## 4.1 Como funciona o painel (parte funcional)
+
+Nesta secção, «você» é o dono do negócio que usa o Wolf. Ao responder no chat, adaptar ao visitante.
+
+### Geral
+- O Wolf atende os clientes do negócio no WhatsApp, a qualquer hora: recebe quem chega dos anúncios ou do número do negócio, conversa, tira dúvidas, apresenta o produto, trata das objeções e leva o cliente até à compra (pedido, pagamento ou marcação).
+- Não é preciso saber programar nem ter conhecimentos técnicos. Tudo se configura no painel, com perguntas guiadas. O painel funciona no computador e no telemóvel.
+
+### Ligar o WhatsApp
+- Liga-se o número de WhatsApp do negócio ao Wolf, no menu WhatsApp.
+- Pode ter-se um número para cada produto, ou um só número para vários produtos: o Wolf pergunta ao cliente qual lhe interessa e segue com o produto certo.
+- A nossa equipa ajuda a ligar o número, sem custo, na implementação.
+
+### Criar um produto
+- Carrega-se em «Criar produto» e escolhe-se o tipo: produto físico, produto digital (curso, e-book, acesso) ou serviço.
+- O assistente do produto faz perguntas simples, etapa a etapa: o que é, para quem é, como funciona, a garantia, as perguntas frequentes, como se fecha a venda. Pode gravar-se e continuar mais tarde.
+- No fim, o Wolf mostra um resumo de tudo o que foi respondido, com a ortografia corrigida. Onde não percebeu bem, pergunta «Percebi bem? Quis dizer isto?», e o dono aceita a sugestão ou mantém o seu texto.
+- A partir das respostas, o Wolf gera as mensagens do funil (a pergunta inicial, a apresentação do produto, a pergunta para avançar). O dono vê-as como o cliente as vai ver e aprova. Nada sai sem a aprovação do dono.
+- No fim, o painel mostra a lista do que ainda falta (por exemplo, ligar o número ou ativar o produto), com a ligação para cada coisa.
+
+### Artigos (modelos, cores, tamanhos)
+- Num produto físico ou num serviço, criam-se os artigos: cada modelo, cor ou tamanho, com o seu preço e o stock. Num serviço, cada artigo tem a sua duração.
+- Os artigos podem ser importados de uma folha de cálculo.
+- O Wolf usa os artigos na conversa: mostra as opções, diz o que está disponível e regista a escolha do cliente.
+
+### Como se fecha a venda
+Para cada produto, escolhe-se como a venda termina:
+- Na conversa: o Wolf envia os dados de pagamento e recebe o comprovativo. Num produto físico, o cliente também pode pagar na entrega.
+- Num link de compra: o Wolf envia o link onde o cliente compra.
+- Na loja física: o Wolf envia a morada e o horário da loja.
+- Numa reunião ou chamada: o Wolf marca a reunião pelos horários da Agenda do dono.
+
+### Pagamentos e comprovativos
+- Os meios de pagamento (M-Pesa, e-Mola, conta) configuram-se uma vez, para todos os produtos.
+- O cliente envia o comprovativo na conversa e o Wolf lê-o: confirma o valor, avisa se está ilegível ou repetido, e trata dos pagamentos incompletos.
+- Os pedidos dos produtos físicos aparecem no menu Pedidos, onde se acompanha a entrega até ao fim.
+
+### Produtos digitais
+- Depois de o pagamento ser confirmado, o Wolf entrega sozinho os ficheiros ou o acesso ao cliente.
+- Em produtos de preço baixo, pode escolher-se estratégias como enviar uma amostra antes, ou entregar primeiro e o cliente pagar depois.
+
+### Serviços, Agenda e reuniões
+- No menu Agenda, definem-se os dias e as horas de atendimento.
+- O Wolf propõe os horários livres ao cliente e marca o serviço ou a reunião na conversa.
+- Na véspera, o Wolf lembra o cliente da marcação, e o cliente pode confirmar ou pedir para remarcar.
+
+### O funil de venda
+O Wolf conduz cada cliente por etapas:
+1. Receção: dá as boas-vindas e pergunta o nome.
+2. Qualificação: percebe a situação do cliente com uma pergunta de opções.
+3. Apresentação: mostra o produto e as provas.
+4. Encomenda e pagamento: recolhe os dados ou envia o pagamento.
+5. Pós-venda: agradece, acompanha e pode oferecer outro produto.
+Todas as mensagens do funil podem ser vistas e alteradas no menu Funis de venda.
+
+### Follow-ups e recuperação
+- Quando o cliente deixa de responder, o Wolf volta a falar com ele nos momentos certos, com mensagens adequadas à etapa em que parou.
+- Se o cliente disser quando prefere ser contactado («fale comigo na sexta»), o Wolf combina e volta nesse dia.
+
+### Depois da compra
+- Upsell e downsell: logo a seguir à compra, o Wolf pode oferecer outro produto do dono que combine com o que o cliente comprou.
+- Recompra: em produtos que se gastam (cremes, suplementos, recargas), indica-se daqui a quantos dias o cliente volta a precisar. O Wolf envia-lhe uma mensagem 2 dias antes de acabar, a perguntar se quer outro.
+
+### O agente não inventa
+- O Wolf só afirma o que está nos dados do produto. Se o cliente pergunta uma coisa que não está lá, o Wolf não inventa: a pergunta fica registada como lacuna no painel, para o dono responder.
+- Não promete descontos, prazos nem garantias que o dono não escreveu.
+- Fala português de Moçambique e trata o cliente por «você».
+
+### O dono continua no controlo
+- No menu Inbox, vê todas as conversas, em tempo real, e pode assumir uma conversa a qualquer momento e responder ele mesmo.
+- Quando o cliente pede uma coisa que só uma pessoa pode decidir (por exemplo, um desconto), o Wolf passa a conversa ao dono, que recebe um aviso.
+
+### Testar antes de vender
+- No Simulador, conversa-se com o próprio agente como se fosse um cliente, sem tocar em clientes reais, para ver como responde antes de ativar o produto.
+
+### Anúncios e métricas
+- Ligam-se as campanhas da Meta (Facebook e Instagram) e vê-se, no menu Anúncios Meta, quanto custa cada venda e que anúncios trazem clientes.
+- No Dashboard, nas Métricas e nas Vendas, acompanham-se as conversas, as vendas, a conversão e a receita de cada produto.
+
+### Equipa, ativação e suporte
+- Podem convidar-se pessoas da equipa para o painel, cada uma com o seu acesso.
+- A conta fica ativa depois de o pagamento da subscrição ser confirmado pela nossa equipa.
+- Na implementação, a nossa equipa ajuda sem custo a configurar o primeiro produto e o primeiro funil. No menu Suporte, fala-se com a equipa pelo WhatsApp a qualquer momento.
+
 ## 5. Planos e preços (em MZN por mês)
 
 | | Filhote | Alfa | Matilha |
