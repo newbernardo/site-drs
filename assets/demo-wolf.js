@@ -217,7 +217,7 @@
 
     var head = h('div', 'wd-head');
     head.appendChild(h('h2', '', 'Uma pequena demonstração do estilo de conversa do <em>Wolf</em>'));
-    head.appendChild(h('p', '', 'Escolha o seu nicho e veja como ele atende: com calma, com contexto e com personalidade, como uma pessoa.'));
+    head.appendChild(h('p', '', 'Escolha o seu nicho e veja como ele atende: com calma, com contexto e com personalidade, como um vendedor profissional.'));
     wd.appendChild(head);
 
     var tabs = h('div', 'wd-tabs');
