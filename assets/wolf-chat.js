@@ -18,7 +18,7 @@
   var CONFIG = {
     endpoint: '/api/chat',              // deixe '' para o modo de demonstração
     timeoutMs: 20000,
-    whatsapp: '258820983752',
+    whatsapp: '258867372079',
     whatsappBase: 'Venho do site quero esclarecer uma dúvida',
     greeting: 'Olá! Eu sou o Wolf. 🐺\nPode fazer qualquer pergunta: estou aqui pronto para responder.',
     suggestions: ['Quanto custa?', 'Como funciona?', 'Funciona para o meu nicho?'],

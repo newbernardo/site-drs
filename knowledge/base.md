@@ -132,7 +132,7 @@ Exemplo de conta: uma loja com 4 modelos de sapatos, em 6 tamanhos e 4 cores, te
 
 ## 10. Contactos
 
-- Suporte e equipa (WhatsApp): +258 82 098 3752.
+- Suporte e equipa (WhatsApp): +258 86 737 2079.
 - Email: info@thewolfseller.com
 - Localização: Maputo, Moçambique.
 - Site: thewolfseller.com — Instagram: @new.bernardo — YouTube: @newdelfim
